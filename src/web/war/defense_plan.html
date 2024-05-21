@@ -1,0 +1,213 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+<LINK REL="stylesheet" HREF="/archspace.css">
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999" onLoad="MM_preloadImages('$IMAGE_SERVER_URL/image/as_game/bu_helpen.gif')">
+<TABLE WIDTH="610" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext">
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>$RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp;$PRODUCT_POINT
+              &nbsp;&nbsp;&nbsp;&nbsp;$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;$NET_POWER
+            </DIV>
+          </TD>
+          <!--HELP BUTTON-->
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center"></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" HEIGHT="18"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/fleet/defense_plan_title.gif" WIDTH="439" HEIGHT="41">
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <FORM ACTION="defense_plan_special_old.as" METHOD=post NAME=SPECIAL>
+  <TR>
+    <TD ALIGN="center">
+      <TABLE WIDTH="330" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR>
+          <TD CLASS="maintext" WIDTH="171">$STRING_GENERIC_DEFENSE_PLAN</TD>
+          <TD VALIGN="BOTTOM"><A HREF=defense_plan_generic_new.as><IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_new_change.gif" HEIGHT="11" BORDER="0"></A>&nbsp;&nbsp;<A HREF=defense_plan_generic_delete.as><IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_delete.gif" HEIGHT="11" BORDER="0"></A>&nbsp;</TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <INPUT TYPE=hidden NAME="PLAN_BUTTON" VALUE="">
+  $SPECIAL_DEFENSE_PLAN_INFO
+  </FORM>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext">&nbsp;</TD>
+  </TR>
+  <FORM ACTION="defense_plan_special_new.as" METHOD=post>
+  <TR>
+    <TD ALIGN="center">
+      <TABLE WIDTH="550" BORDER="1" CELLSPACING="0" CELLPADDING="0" BORDERCOLOR="#2A2A2A">
+        <TR>
+          <TD WIDTH="24" CLASS="tabletxt" ALIGN="CENTER">
+            <INPUT TYPE="checkbox" NAME="RACE_CHECK">
+          </TD>
+          <TD WIDTH="78" CLASS="tabletxt" ALIGN="LEFT">$STRING_RACE</TD>
+          <TD COLSPAN="2" CLASS="tabletxt" ALIGN="CENTER" WIDTH="440">
+            <TABLE WIDTH="440" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+              <TR ALIGN="RIGHT">
+                <TD CLASS="maintext" WIDTH="74">$STRING_HUMAN
+                  <INPUT TYPE="checkbox" NAME="HUMAN_CHECK">
+                </TD>
+                <TD WIDTH="81" CLASS="maintext">$STRING_TARGOID
+                  <INPUT TYPE="checkbox" NAME="TARGOID_CHECK">
+                </TD>
+                <TD WIDTH="94" CLASS="maintext">$STRING_BUCKANEER
+                  <INPUT TYPE="checkbox" NAME="BUCKANEER_CHECK">
+                </TD>
+                <TD WIDTH="87" CLASS="maintext">$STRING_TECANOID
+                  <INPUT TYPE="checkbox" NAME="TECANOID_CHECK">
+                </TD>
+                <TD COLSPAN="6" CLASS="maintext" WIDTH="104">$STRING_EVINTOS
+                  <INPUT TYPE="checkbox" NAME="EVINTOS_CHECK">
+                </TD>
+              </TR>
+              <TR ALIGN="RIGHT">
+                <TD CLASS="maintext" WIDTH="74">$STRING_AGERUS
+                  <INPUT TYPE="checkbox" NAME="AGERUS_CHECK">
+                </TD>
+                <TD WIDTH="81" CLASS="maintext">$STRING_BOSALIAN
+                  <INPUT TYPE="checkbox" NAME="BOSALIAN_CHECK">
+                </TD>
+                <TD WIDTH="94" CLASS="maintext">$STRING_XELOSS
+                  <INPUT TYPE="checkbox" NAME="XELOSS_CHECK">
+                </TD>
+                <TD WIDTH="87" CLASS="maintext">$STRING_XERUSIAN
+                  <INPUT TYPE="checkbox" NAME="XERUSIAN_CHECK">
+                </TD>
+                <TD COLSPAN="6" CLASS="maintext" WIDTH="104">$STRING_XESPERADOS
+                  <INPUT TYPE="checkbox" NAME="XESPERADOS_CHECK">
+                </TD>
+              </TR>
+            </TABLE>
+          </TD>
+        </TR>
+        <TR>
+          <TD WIDTH="24" CLASS="tabletxt" ALIGN="CENTER">
+            <INPUT TYPE="checkbox" NAME="POWER_CHECK">
+          </TD>
+          <TD WIDTH="78" CLASS="tabletxt" ALIGN="LEFT">$STRING_POWER_RATIO</TD>
+          <TD COLSPAN="2" CLASS="maintext" ALIGN="LEFT" WIDTH="440">
+            <P><BR>
+              &nbsp;$STRING_MIN_
+              <SELECT NAME="POWER_FROM">
+                <OPTION VALUE="50">50</OPTION>
+                <OPTION VALUE="60">60</OPTION>
+                <OPTION VALUE="70">70</OPTION>
+                <OPTION VALUE="80">80</OPTION>
+                <OPTION VALUE="90">90</OPTION>
+                <OPTION VALUE="100">100</OPTION>
+              </SELECT>
+              % &nbsp;&nbsp;$STRING_MAX_&nbsp;
+              <SELECT NAME="POWER_TO">
+                <OPTION VALUE="100">100</OPTION>
+                <OPTION VALUE="120">120</OPTION>
+                <OPTION VALUE="140">140</OPTION>
+                <OPTION VALUE="160">160</OPTION>
+                <OPTION VALUE="180">180</OPTION>
+                <OPTION VALUE="200">200</OPTION>
+              </SELECT>
+              % <BR>
+              &nbsp; </P>
+          </TD>
+        </TR>
+        <TR>
+          <TD WIDTH="24" CLASS="tabletxt" ALIGN="CENTER">
+            <INPUT TYPE="checkbox" NAME="ATTACK_TYPE_CHECK">
+          </TD>
+          <TD WIDTH="78" CLASS="tabletxt" ALIGN="LEFT">$STRING_ATTACK_TYPE</TD>
+          <TD COLSPAN="2" CLASS="maintext" ALIGN="LEFT" WIDTH="440">
+            <P><BR>
+              &nbsp;$STRING_SIEGE
+              <INPUT TYPE="checkbox" NAME="SIEGE_CHECK">
+              &nbsp;&nbsp; &nbsp;&nbsp;$STRING_BLOCKADE
+              <INPUT TYPE="checkbox" NAME="BLOCKADE_CHECK">
+              <BR>
+              &nbsp; </P>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext">
+      <TABLE WIDTH="330" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR>
+          <TD CLASS="maintext" WIDTH="214">$MAKE_NEW_PLAN_MESSAGE</TD>
+          <TD WIDTH="116" VALIGN="BOTTOM"><INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_new.gif" WIDTH="41" HEIGHT="11"></TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  </FORM>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center"> <A HREF="war.as">$WAR_MAIN</A> <A HREF="siege_planet.as">$SIEGE_PLANET</A> <A HREF="blockade.as">$BLOCKADE</A> <A HREF="raid.as">$RAID</A> <A HREF="privateer.as">$PRIVATEER</A> <FONT COLOR="616161">$DEFENSE_PLAN</FONT> <A HREF="battle_report.as">$BATTLE_REPORT</A></TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            <CENTER>
+				$ADLINE_BOTTOM
+            </CENTER>
+            </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+</TABLE>
+<P>&nbsp;</P>
+</BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</html>

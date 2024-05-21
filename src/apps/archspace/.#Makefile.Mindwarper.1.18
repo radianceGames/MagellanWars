@@ -1,0 +1,556 @@
+CC=g++33
+MSG=$(HOME)/bin/message
+TEST=/bin/test
+XGETTEXT=/usr/local/bin/xgettext
+MSGFMT=/usr/local/bin/msgfmt
+DOC=/usr/local/bin/doc++
+MAKE=/usr/bin/make
+CFLAGS=-g -pipe -Wall -DTHREAD_SAFE -O2
+#LIBDIRS=-L/usr/local/lib -L/usr/lib -L$(HOME)/src/libs -L/space/mysql/lib/mysql -L/usr/local/lib/pth
+#LIBDIRS=-L$(HOME)/src/libs -L/usr/lib -L/usr/local/lib -L/space/mysql/lib/mysql -L/usr/local/lib/pth
+LIBDIRS=-L../../libs -L/usr/local/lib -L/usr/local/lib/gcc-lib/i386-portbld-freebsd4.10/3.3.6/ -L/usr/local/lib/mysql -L/usr/local/lib/pth
+#LIBS=-larchspace -lcrypt -lcipher -lkvm -static -lmysqlclient -lintl -lpth -lm -lz
+#LIBS=-larchspace -lcipher -lintl -lmysqlclient -lpth -lz -static
+LIBS=-larchspace -lpth -lmysqlclient -lintl -lz
+INCLUDES=-I/usr/local/include -I/usr/local/include/mysql -I../../libs/include -I/usr/local/include/pth
+DEFINES=-DLINUX -DEVENTS -DNOREFFERER #-DSSL -DNOEMPIRERETAL
+HEADERFILES=\
+		archspace.h \
+		pages.h \
+		triggers.h \
+		message.h \
+		ctrl.model.h \
+		banner.h \
+		script.h \
+		define.h \
+		project.h \
+		admiral.h \
+		player.h \
+		planet.h \
+		encyclopedia.h \
+		game.h \
+		tech.h \
+		council.h \
+		race.h \
+		universe.h \
+		component.h \
+		news.h \
+		ship.h \
+		fleet.h \
+		defense.plan.h \
+		action.h \
+		relation.h \
+		battle.h \
+		defense.plan.h \
+		rank.h \
+		blackmarket.h \
+		spy.h \
+		ending.h \
+		admin.h \
+		fortress.h \
+		magistrate.h \
+		empire.h \
+		prerequisite.h \
+		bounty.h \
+		portal.h \
+		preference.h
+
+LIBHEADERS=\
+		../../libs/include/database.h \
+		../../libs/include/frame.h \
+		../../libs/include/net.h \
+		../../libs/include/types.h \
+		../../libs/include/cgi.h \
+		../../libs/include/debug.h \
+		../../libs/include/key.h \
+		../../libs/include/runtime.h \
+		../../libs/include/util.h \
+		../../libs/include/common.h \
+		../../libs/include/define.h \
+		../../libs/include/message.h \
+		../../libs/include/store.h
+
+CCFILES=\
+		action.cc \
+		admiral.cc admiral.list.cc \
+		admiral.name.list.cc admiral.name.table.cc \
+		component.cc \
+		ship.cc \
+		fleet.cc \
+		\
+		banner.cc \
+		player.cc \
+		player.table.cc \
+		race.table.cc \
+		race.cc \
+		planet.cc \
+		ctrl.model.cc \
+		council.cc \
+		resource.cc \
+		planet.list.cc \
+		council.table.cc \
+		planet.table.cc \
+		player.list.cc \
+		tech.cc \
+		tech.list.cc \
+		known.tech.cc \
+		known.tech.list.cc \
+		tech.table.cc \
+		script.cc \
+		encyclopedia.cc \
+		diplomatic.message.cc \
+		diplomatic.messagebox.cc \
+		council.message.cc \
+		council.messagebox.cc \
+		action.list.cc \
+		action.table.cc \
+		admission.cc \
+		admission.list.cc \
+		archspace.cc \
+		main.cc \
+		arch.conn.cc \
+		game.cc \
+		project.cc \
+		project.list.cc \
+		project.table.cc \
+		purchased.project.cc \
+		purchased.project.list.cc \
+		cluster.cc \
+		universe.cc \
+		cluster.list.cc \
+		planet.sort.list.cc \
+		cluster.name.list.cc \
+		council.list.cc  \
+		news.cc \
+		known.tech.news.cc \
+		planet.news.cc \
+		purchased.project.news.cc \
+		discovered.project.news.cc \
+		planet.news.center.cc \
+		news.center.cc \
+		admiral.news.cc  \
+		player.action.cc \
+		player.action.list.cc \
+		player.action.table.cc \
+		council.action.cc \
+		council.action.list.cc \
+		council.action.table.cc \
+		relation.cc \
+		relation.list.cc \
+		player.relation.cc \
+		player.relation.list.cc \
+		player.relation.table.cc \
+		council.relation.cc \
+		council.relation.list.cc \
+		council.relation.table.cc \
+		battle.cc \
+		defense.plan.cc \
+		effect.cc \
+		event.cc \
+		prerequisite.cc \
+		bounty.cc \
+		bounty.table.cc \
+		offeredbounty.cc\
+		offeredbounty.table.cc\
+		portal.cc \
+		portal.list.cc \
+		portal.table.cc \
+		preference.cc \
+		\
+		rank.cc \
+		blackmarket.cc \
+		spy.cc \
+		ending.global.cc \
+		admin.cc \
+		fortress.cc \
+		magistrate.cc \
+		empire.cc \
+		\
+		page/notfound.cc \
+		page/common.cc \
+                page/bot.cc \
+		page/game.cc \
+		page/create.cc \
+		page/create2.cc \
+		page/login.cc \
+		page/logout.cc \
+		page/death_menu.cc \
+		page/death_main.cc \
+		page/menu.cc \
+		page/main.cc \
+		page/restart.cc \
+		page/quit.cc \
+		page/retire.cc \
+		page/retire_result.cc \
+		page/head_title.cc \
+		page/show_event.cc \
+		page/answer_event.cc \
+		page/preference.cc \
+		page/a0s/player_power.cc \
+		page/a0s/delete_player.cc \
+		page/domestic/domestic.cc \
+		page/domestic/domestic_link.cc \
+		page/domestic/concentration_mode.cc \
+		page/domestic/concentration_mode_result.cc \
+		page/domestic/planet_management.cc \
+		page/domestic/planet_detail.cc \
+		page/domestic/planet_destroy_confirm.cc \
+		page/domestic/planet_destroy_cancel.cc \
+		page/domestic/planet_management_building_result.cc \
+		page/domestic/planet_management_invest_result.cc \
+		page/domestic/research.cc \
+		page/domestic/research_invest_result.cc \
+		page/domestic/research_tech_detail.cc \
+		page/domestic/research_result.cc \
+		page/domestic/tech_tree.cc \
+		page/domestic/research_tech_achievement.cc \
+		page/domestic/project.cc \
+		page/domestic/project_confirm.cc \
+		page/domestic/project_result.cc \
+		page/domestic/whitebook.cc \
+		page/domestic/whitebook_control_model.cc \
+		page/domestic/whitebook_control_model_detail.cc \
+		page/domestic/whitebook_control_model_tech.cc \
+		page/domestic/whitebook_control_model_project.cc \
+		page/domestic/whitebook_control_model_planet.cc \
+		page/domestic/planet_invest_pool.cc \
+		page/domestic/planet_invest_pool_result.cc \
+		page/domestic/planet_invest_pool_enable.cc \
+		page/domestic/planet_invest_pool_enable_result.cc \
+		\
+		page/diplomacy/diplomacy.cc \
+		page/diplomacy/diplomacy_link.cc \
+		page/diplomacy/diplomacy_status_list.cc \
+                page/diplomacy/diplomacy_management.cc \
+		page/diplomacy/read_diplomatic_message.cc \
+		page/diplomacy/read_diplomatic_message_unanswered.cc \
+		page/diplomacy/read_diplomatic_message_delete.cc \
+		page/diplomacy/diplomatic_message_accuse.cc \
+		page/diplomacy/read_diplomatic_message_result.cc \
+		page/diplomacy/send_diplomatic_message.cc \
+		page/diplomacy/send_diplomatic_message_write.cc \
+		page/diplomacy/send_diplomatic_message_result.cc \
+		page/diplomacy/inspect_other_player.cc \
+		page/diplomacy/inspect_other_player_result.cc \
+		page/diplomacy/spy.cc \
+		page/diplomacy/spy_change_security_level.cc \
+		page/diplomacy/spy_change_security_level_result.cc \
+		page/diplomacy/spy_confirm.cc \
+		page/diplomacy/spy_result.cc \
+		\
+		page/council/council.cc \
+		page/council/council_link.cc \
+		page/council/council_vote.cc \
+		page/council/council_vote_result.cc \
+		page/council/admission_request.cc \
+		page/council/admission_request_result.cc \
+		page/council/delete_admission_request_result.cc \
+		page/council/donation.cc \
+		page/council/donation_result.cc \
+		page/council/speaker_menu.cc \
+		page/council/independence_declaration.cc \
+		page/council/independence_declaration_result.cc \
+		page/council/team_spirit.cc \
+		page/council/distribute.cc \
+		page/council/project.cc \
+		page/council/financial_aid.cc \
+		page/council/change_council_name.cc \
+		page/council/change_council_slogan.cc \
+		page/council/player_admission.cc \
+		page/council/player_admission_read.cc \
+		page/council/player_admission_reply.cc \
+		page/council/player_admission_accuse.cc \
+		page/council/newplayer_assignment_option.cc \
+		page/council/council_diplomacy.cc \
+		page/council/diplomatic_message_read.cc \
+		page/council/diplomatic_message_reply.cc \
+		page/council/diplomatic_message_accuse.cc \
+		page/council/diplomacy_status_list.cc \
+		page/council/inspect_other_council.cc \
+		page/council/inspect_other_council_result.cc \
+		page/council/diplomatic_message.cc \
+		page/council/send_diplomatic_message.cc \
+		page/council/send_diplomatic_message_write.cc \
+		page/council/send_diplomatic_message_result.cc \
+		page/council/player_dismiss.cc \
+		page/council/player_dismiss_confirm.cc \
+		page/council/player_dismiss_result.cc \
+		\
+		page/fleet/fleet_link.cc \
+		page/fleet/ship_design.cc \
+		page/fleet/ship_design2.cc \
+		page/fleet/ship_design_confirm.cc \
+		page/fleet/ship_design_register.cc \
+		page/fleet/ship_design_notregister.cc \
+		page/fleet/ship_design_delete_confirm.cc \
+		page/fleet/ship_design_delete_result.cc \
+		page/fleet/ship_building.cc \
+		page/fleet/ship_building_invest.cc \
+		page/fleet/ship_building_insert.cc \
+		page/fleet/ship_building_delete.cc \
+		page/fleet/ship_pool.cc \
+		page/fleet/ship_pool_scrap_confirm.cc \
+		page/fleet/ship_pool_scrap_result.cc \
+		page/fleet/fleet.cc \
+		page/fleet/form_new_fleet.cc \
+		page/fleet/form_new_fleet_confirm.cc \
+		page/fleet/form_new_fleet_result.cc \
+		page/fleet/reassignment.cc \
+		page/fleet/reassignment2.cc \
+		page/fleet/expedition.cc \
+		page/fleet/expedition_confirm.cc \
+		page/fleet/expedition_result.cc \
+		page/fleet/mission.cc \
+		page/fleet/mission2.cc \
+		page/fleet/fleet_commander.cc \
+		page/fleet/fleet_commander_view_options.cc \
+		page/fleet/fleet_commander_information.cc \
+		page/fleet/fleet_commander_dismiss_confirm.cc \
+		page/fleet/fleet_commander_dismiss_result.cc \
+		page/fleet/mission_train_result.cc \
+		page/fleet/mission_station_result.cc \
+		page/fleet/mission_patrol_result.cc \
+		page/fleet/mission_dispatch_result.cc \
+		page/fleet/recall.cc \
+		page/fleet/recall_confirm.cc \
+		page/fleet/recall_result.cc \
+		page/fleet/disband.cc \
+		page/fleet/disband_confirm.cc \
+		page/fleet/disband_result.cc \
+		page/fleet/reassignment_commander_change_confirm.cc \
+		page/fleet/reassignment_commander_change_result.cc \
+		page/fleet/reassignment_removeadd_ship_confirm.cc \
+		page/fleet/reassignment_removeadd_ship_result.cc \
+		page/fleet/reassignment_ship_reassignment_confirm.cc \
+		page/fleet/reassignment_ship_reassignment_result.cc \
+		page/fleet/class_specification.cc \
+		\
+		page/war/war_link.cc \
+		page/war/war.cc \
+		page/war/siege_planet.cc \
+		page/war/siege_planet_fleet.cc \
+		page/war/siege_planet_fleet_deployment.cc \
+		page/war/siege_planet_planet.cc \
+		page/war/siege_planet_result.cc \
+		page/war/blockade.cc \
+		page/war/blockade_fleet.cc \
+		page/war/blockade_fleet_deployment.cc \
+		page/war/blockade_planet.cc \
+		page/war/blockade_result.cc \
+		page/war/raid.cc \
+		page/war/raid_fleet.cc \
+		page/war/raid_planet.cc \
+		page/war/raid_result.cc \
+		page/war/privateer.cc \
+		page/war/privateer_fleet.cc \
+		page/war/privateer_result.cc \
+		page/war/defense_plan.cc \
+		page/war/defense_plan_generic_new.cc \
+		page/war/defense_plan_generic_deployment.cc \
+		page/war/defense_plan_generic_result.cc \
+		page/war/defense_plan_generic_delete.cc \
+		page/war/defense_plan_special_new.cc \
+		page/war/defense_plan_special_new_deployment.cc \
+		page/war/defense_plan_special_new_result.cc \
+		page/war/defense_plan_special_old.cc \
+		page/war/defense_plan_special_change_deployment.cc \
+		page/war/defense_plan_special_change_result.cc \
+		page/war/defense_plan_special_delete_result.cc \
+		page/war/battle_report.cc \
+		page/war/battle_report2.cc \
+		page/war/battle_report_detail.cc \
+		page/war/battle_report_search.cc \
+		\
+		page/info/info_link.cc \
+		page/info/info.cc \
+		page/info/player_search.cc \
+		page/info/player_search_result.cc \
+		page/info/council_search.cc \
+		page/info/council_search_result.cc \
+		page/info/clusters.cc \
+		page/info/clusters_council.cc \
+		page/info/rank_player_overall.cc \
+		page/info/rank_player_fleet.cc \
+		page/info/rank_player_planet.cc \
+		page/info/rank_player_tech.cc \
+		page/info/rank_council_overall.cc \
+		page/info/rank_council_fleet.cc \
+		page/info/rank_council_planet.cc \
+		page/info/rank_council_diplomatic.cc \
+		page/blackmarket/blackmarket_link.cc \
+		page/blackmarket/blackmarket.cc \
+		page/blackmarket/tech_deck.cc \
+		page/blackmarket/tech_deck_bid.cc \
+		page/blackmarket/tech_deck_bid_result.cc \
+		page/blackmarket/fleet_deck.cc \
+		page/blackmarket/fleet_deck_admiral.cc \
+		page/blackmarket/fleet_deck_admiral_bid.cc \
+		page/blackmarket/fleet_deck_admiral_bid_result.cc \
+		page/blackmarket/officers_lounge.cc \
+		page/blackmarket/officers_lounge_bid.cc \
+		page/blackmarket/officers_lounge_bid_result.cc \
+		page/blackmarket/rare_goods.cc \
+		page/blackmarket/rare_goods_bid.cc \
+		page/blackmarket/rare_goods_bid_result.cc \
+		page/blackmarket/leasers_office.cc \
+		page/blackmarket/leasers_office_bid.cc \
+		page/blackmarket/leasers_office_bid_result.cc \
+		\
+		page/empire/empire_link.cc \
+		page/empire/empire_diplomacy.cc \
+		page/empire/show_action.cc \
+		page/empire/answer_action.cc \
+		page/empire/bounty.cc \
+		page/empire/bounty_confirm.cc \
+		page/empire/bounty_result.cc \
+		page/empire/bribe.cc \
+		page/empire/bribe_result.cc \
+		page/empire/request_boon.cc \
+		page/empire/request_boon_result.cc \
+		page/empire/request_mediation.cc \
+		page/empire/request_mediation_result.cc \
+		page/empire/invade_empire.cc \
+		page/empire/invade_magistrate_confirm.cc \
+		page/empire/invade_magistrate_fleet.cc \
+		page/empire/invade_magistrate_fleet_deployment.cc \
+		page/empire/invade_magistrate_result.cc \
+		page/empire/invade_empire_planet_confirm.cc \
+		page/empire/invade_empire_planet_fleet.cc \
+		page/empire/invade_empire_planet_fleet_deployment.cc \
+		page/empire/invade_empire_planet_result.cc \
+		page/empire/invade_fortress_fleet.cc \
+		page/empire/invade_fortress_fleet_deployment.cc \
+		page/empire/invade_fortress_result.cc \
+		page/empire/invade_empire_capital_planet_confirm.cc \
+		page/empire/invade_empire_capital_planet_fleet.cc \
+		page/empire/invade_empire_capital_planet_fleet_deployment.cc \
+		page/empire/invade_empire_capital_planet_result.cc \
+		\
+		page/admin/admin_link.cc \
+		page/admin/admin.cc \
+		page/admin/inspect.cc \
+		page/admin/player_confirm.cc \
+		page/admin/player.cc \
+		page/admin/player_research_status.cc \
+		page/admin/player_see_domestic.cc \
+		page/admin/player_message.cc \
+		page/admin/player_message_read.cc \
+		page/admin/player_message_delete_confirm.cc \
+		page/admin/player_message_delete_result.cc \
+		page/admin/council_message.cc \
+		page/admin/council_message_read.cc \
+		page/admin/council_message_delete_confirm.cc \
+		page/admin/council_message_delete_result.cc \
+		page/admin/player_send_message.cc \
+		page/admin/player_send_message_result.cc \
+		page/admin/player_punishment.cc \
+		page/admin/player_punishment_result.cc \
+		page/admin/player_punishment_delete_character_confirm.cc \
+		page/admin/player_punishment_delete_character_result.cc \
+		page/admin/council.cc \
+		page/admin/council_control.cc \
+		page/admin/council_control_result.cc \
+		page/admin/black_market_control.cc \
+		page/admin/black_market_control_result.cc \
+		page/admin/config.cc \
+		page/admin/reboot_confirm.cc \
+		page/admin/reboot_result.cc \
+		page/admin/reset_confirm.cc \
+		page/admin/reset_result.cc \
+		page/admin/broadcast_confirm.cc \
+		page/admin/broadcast_result.cc \
+		\
+		trigger/key.cc \
+		trigger/push.cc \
+		trigger/action.cc \
+		trigger/optimize.cc \
+		trigger/debug.cc \
+		trigger/relation.timeout.cc \
+		trigger/rank.cc \
+		trigger/blackmarket.cc \
+		trigger/run.crontab.cc \
+		trigger/crontab.new.player.cc \
+		trigger/crontab.empire.cc \
+		trigger/crontab.empire.counterattack.cc \
+		trigger/crontab.event.cc \
+		trigger/crontab.council.cc \
+		trigger/crontab.commerce.cc
+#		page/domestic.cc page/select_mode.cc \
+#		page/select_mode2.cc page/whitebook.cc page/planet_manage.cc \
+#		page/planet_manage2.cc page/planet_manage3.cc \
+#		page/research_manage.cc page/research_manage2.cc \
+#		page/council.cc page/council_vote.cc page/council_vote_result.cc \
+#		page/donation.cc page/donation_result.cc page/speaker_menu.cc \
+#		page/distribute.cc page/financial_aid.cc page/council_name.cc \
+#		page/council_slogan.cc page/suicide.cc page/logout.cc \
+#		page/independence_declaration.cc \
+#		page/independence_declaration_result.cc \
+#		page/admission_request.cc page/admission_request_result.cc \
+#		page/admission_accept.cc \
+#		page/login.cc page/create.cc \
+
+
+
+MSGFILES= $(CCFILES)
+
+CCOBJS=$(CCFILES:.cc=.o)
+
+.cc.o: #$(HEADERFILES)
+	$(CC) -c $< -o $@ $(CFLAGS) $(INCLUDES) $(DEFINES)
+
+all:archspace install
+
+archspace:$(CCOBJS) ../../libs/libarchspace.a
+	$(CC) -o archspace $(CCOBJS) $(LIBDIRS) $(LIBS) 
+
+viewsize:viewsize.cc ../../libs/libarchspace.a
+	$(CC) -c viewsize.cc -o viewsize.o $(CFLAGS) $(INCLUDES) $(DEFINES)
+	$(CC) viewsize.o -o viewsize $(LIBDIRS) $(LIBS)
+
+
+clean:
+	rm -f $(CCOBJS)
+
+install:archspace
+	cp archspace $(HOME)/game/bin/archspace.new
+
+CLEAN:
+	/usr/local/bin/mysql Archspace2 < $(HOME)/src/apps/archspace/DB/all.sql
+
+INSTALL:
+	$(HOME)/game/bin/spacectl stop
+	/usr/local/bin/mysql Archspace2 < $(HOME)/src/apps/archspace/DB/all.sql
+	sleep 2 
+	make	
+	$(HOME)/game/bin/spacectl start
+
+restart:RESTART
+
+RESTART:
+	$(HOME)/game/bin/spacectl stop
+	sleep 2
+	make	
+	$(HOME)/game/bin/spacectl start
+
+STOP:
+	$(HOME)/game/bin/spacectl stop
+
+START:
+	$(HOME)/game/bin/spacectl start
+
+message:
+	@if [ -f msg/archspace.po ]; then \
+		rm msg/archspace.po; \
+	fi
+
+	$(XGETTEXT) --keyword=GETTEXT -d archspace \
+			--language=C++ --output=msg/archspace.po \
+			--no-location --sort-output \
+			--width=80 $(MSGFILES); \
+	cd msg && $(MAKE) || exit 1;
+
+msg/archspace.src: $(MSGFILES)
+	$(MSG) -o msg/archspace.src $(MSGFILES)
+
+document:
+	$(DOC) -d doc -f $(HEADERFILES) $(LIBHEADERS)

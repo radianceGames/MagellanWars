@@ -1,0 +1,277 @@
+# Type: Planet, Fixed, Council, Onetime
+#       Planet의 경우 실제 가격은 여기 표시된 Cost에 소유한 행성 수를 곱한 것이 됨
+
+
+# Control Model은 race script와 동일. 단, 안 쓰는 것은 있음.
+# Control : Environment, Growth, Efficiency, Genius, Production,
+#      Facility Cost, Military, Commerce, Spy, Diplomacy,
+#      Research(Social, Life, Matter, Info)
+#      -: -    else: +
+
+# Attr : Classism, Totalism, Personalism, Targoid, Human 각각 해당 전용.
+
+# 효과를 정리할 수 없는 Project는 comment out한 상태.
+# 효과:
+#	MilitaryBaseDamageRate(double) - 행성 공략전에서 (double)배만큼 MB 파워 올림
+#	EventRate(int) - 마이너스도 가능. event 발생 확률*(int)퍼센트.
+#	<Defend>
+#		Spy(int) - Spy CM 1 만큼에 해당하는 방어
+#		Raid(int) - (int) 퍼센트만큼 Raid 피해 감소
+#		Novarization(int) - (int) 퍼센트만큼 Novarization 발생 확률(피해?) 감소
+#		<Destroy>
+#		 	Population(int(==percent))  - Elixir Bed. (int) 퍼센트만큼 인구 파괴 효과 감소
+#	<Domain> - 국내에서(방어전이나, 단순한 국내 이동)
+#		<Mine> - 아군 함대
+#			Delay(int) - 이동 시 delay(멀리 갈 때)/int
+#			Speed(double) - Speed*(double)
+#			AR(double) - AR*(double)
+#			DR(double) - DR*(double)
+#		<Enemy> - 적 함대
+#			MoraleMulti(int) - Morale 상승 시에는 상승치/(int) 만큼, 하강 시에는 하강치*(int)만큼 적용
+#
+#
+#위에 따라 정리는 했으나 다른 부분이 안 돼서 추가할 수 없는 Project:
+#	Elixir Bed(Spy)
+#	Transparant Image Control System(Event)
+#
+#추가는 했지만 일부 기능이 빠진 Project:
+#	Galactic Agreement of Free Commerce(Defensive Spy)
+#	Archmage(반란 이벤트 확률 감소: Event 종료 후에 볼 것),
+#	Solar Control System(Novarization: Spy?)
+#	Nova Plant(Novarization 상태가 되어야 하나?)
+#
+#Attribute 관련되는 Project:
+#	Mind Control Center, Saga Archive, Clone Family, Imperial Palace, Symbol of Liberation, The One Unified Mind, Organic Plant, Humanoid Plant, Galactic Liberalism Movement
+#
+#위에 따라 정리해서 Beta에서 전투 끝나면 추가할 수 있을 Project:
+#	Planetary Shield(Fleet/War)
+#	Crimson Eye(Fleet/Battle)
+#	Impregnable Area(Fleet/Battle/War)
+#	Dimension Gate(Fleet)
+#
+#아직도 정리 불가:
+#	Ghost Patrol(Spy 중에서 정보 관련 보호. Spy 종료 후),
+#	Information Network Library(Spy/Empire. 게다가 유일하게 Period가 들어가는 Project라서..)
+#
+
+<Human Ending Mk.I>
+{
+	Number(7201),
+	Description("out42der should fill this description"),
+	<Prerequisite>
+	[
+		Tech()
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		<Produce RP Per Turn>
+		{
+			Amount(3000),
+			Apply("Absolute")
+		},
+		<Produce MP Per Turn>
+		{
+			Amount(3000),
+			Apply("Absolute")
+		}
+	},
+	<Race>
+	{
+		# For Human
+		Race("1")
+	},
+	Cost(0)
+},
+<Evnitos Ending Mk.I>
+{
+	Number(7202),
+	Description("out42der should fill this description"),
+	<Prerequisite>
+	[
+		Tech()
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Efficiency(-3),
+		Genius(2)
+	},
+	<Race>
+	{
+		# For Evintos
+		Race("5")
+	},
+	Cost(0)
+},
+<Xesperados Ending Mk.I>
+{
+	Number(7203),
+	Description("out42der should fill this description"),
+	<Prerequisite>
+	[
+		Tech()
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Diplomacy(2),
+		Military(2)
+	},
+	<Race>
+	{
+		# Xesperados
+		Race("10")
+	},
+	Cost(0)
+},
+<Tecanoid Ending Mk.I>
+{
+	Number(7204),
+	Description("out42der should fill this description"),
+	<Prerequisite>
+	[
+		Tech()
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Genious(2),
+		Efficiency(2),
+		Diplomacy(-1)
+	},
+	<Race>
+	{
+		# For Tecanoid
+		Race("4")
+	},
+	Cost(0)
+},
+<Bosalian Ending Mk.I>
+{
+	Number(7205),
+	Description("out42der should fill this description"),
+	<Prerequisite>
+	[
+		Tech()
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+#Nullify Pacifist racial ability		
+		Military(1)
+	},
+	<Race>
+	{
+		# For Bosalian
+		Race("7")
+	},
+	Cost(0)
+},
+<Xerusian Ending Mk.I>
+{
+	Number(7206),
+	Description("out42der should fill this description"),
+	<Prerequisite>
+	[
+		Tech()
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+#Nahodoom Ray Launcher		
+	},
+	<Race>
+	{
+		# For Xerusian
+		Race("9")
+	},
+	Cost(0)
+},
+<Targoid Ending Mk.I>
+{
+	Number(7207),
+	Description("out42der should fill this description"),
+	<Prerequisite>
+	[
+		Tech()
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Military(2)
+	},
+	<Race>
+	{
+		# For Targoid
+		Race("2")
+	},
+	Cost(0)
+},
+<Agerus Ending Mk.I>
+{
+	Number(7208),
+	Description("out42der should fill this description"),
+	<Prerequisite>
+	[
+		Tech()
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Diplomacy(2),
+		Efficiency(2)
+	},
+	<Race>
+	{
+		# For Agerus
+		Race("6")
+	},
+	Cost(0)
+},
+<Buckaneer>
+{
+	Number(7209),
+	Description("out42der should fill this description"),
+	<Prerequisite>
+	[
+		Tech()
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Military(2),
+		Commerce(2),
+		Efficiency(-2),
+		Diplomacy(-2),
+#halves detection chance where do raid or privateering
+	},
+	<Race>
+	{
+		# For Buckaneer
+		Race("3")
+	},
+	Cost(0)
+},
+<Xeloss Ending Mk.I>
+{
+	Number(7210),
+	Description("out42der should fill this description"),
+	<Prerequisite>
+	[
+		Tech()
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+#+20% all psi attack damage
+	},
+	<Race>
+	{
+		# For Xeloss
+		Race("8")
+	},
+	Cost(0)
+}
+
+

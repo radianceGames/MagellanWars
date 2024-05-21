@@ -1,0 +1,185 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+<LINK REL="stylesheet" HREF="/archspace.css">
+<STYLE type="text/css">
+<!--
+TABLE {border-width: 2px; border-style: solid; border-color: black; }
+TD {border-width: 2px; border-style: solid; border-color: black;; }
+TH {border-width: 2px; border-style: solid; border-color: black; }
+// add to .tabletxt
+.tabletxt {border-width: thin; border-style: solid; border-color: #2A2A2A;}
+-->
+</STYLE>
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999" onLoad="MM_preloadImages('$IMAGE_SERVER_URL/image/as_game/bu_helpen.gif')">
+<TABLE WIDTH="610" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <TABLE WIDTH=550 CELLSPACING=0 CELLPADDING=0>
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext">
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>$RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp;$PRODUCT_POINT
+              &nbsp;&nbsp;&nbsp;&nbsp;$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;$NET_POWER
+            </DIV>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR ALIGN="CENTER">
+    <TD><IMG SRC="$IMAGE_SERVER_URL/image/as_game/diplomacy/spy_title.gif"></TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center"></TD>
+  </TR>
+  <TR>
+    <TH ALIGN="center" CLASS="tabletxt">$STRING_ADMIN_TITLE</TH>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+
+      <TABLE WIDTH="550" CELLSPACING="0" CELLPADDING="0">
+        <TR>
+          <FORM METHOD=post ACTION="admin.as">
+          <TH CLASS="tabletxt" BGCOLOR="#171717">$STRING_ADMIN_SETTING</TD>
+          <TD CLASS="tabletxt" ALIGN=center BGCOLOR="#171717">
+            <TABLE CELLSPACING=0  ALIGN=CENTER WIDTH=100% HEIGHT=100% BGCOLOR=BLACK CELLPADDING=0 >
+              <TR>
+				<TH CLASS="tabletxt" BGCOLOR="#171717" WIDTH=5 STYLE="width: 30px;">
+				ID:
+				</TH>
+				<TH CLASS="tabletxt" BGCOLOR="#171717">
+				Name:
+				</TH>
+				<TH CLASS="tabletxt" BGCOLOR="#171717">
+				Admin Type:
+				</TH>
+				<TH CLASS="tabletxt" BGCOLOR="#171717">
+				Dev Type:
+				</TH>
+			  </TR>
+              $ADMIN_LIST
+              </TR>
+            </TABLE>
+          </TD>
+          <TD CLASS="tabletxt"><INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok.gif"></TD>
+          </FORM>
+        </TR>
+        <TR>
+          <TH CLASS="tabletxt" BGCOLOR="#171717">$STRING_BANNED_IP</TD>
+          <TD CLASS="tabletxt" COLSPAN=2 ALIGN=center>
+            <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+              <FORM METHOD=post ACTION="admin.as">
+              <TR>
+                <TD CLASS="tabletxt">
+                  <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+                    $BANNED_IP_LIST
+                    <TR>
+                      <TD CLASS="tabletxt" ALIGN=center COLSPAN=2><INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_delete.gif"></TD>
+                    </TR>
+                  </TABLE>
+                </TD>
+              </TR>
+              </FORM>
+            </TABLE>
+          </TD>
+        </TR>
+        <TR>
+          <TH CLASS="tabletxt" BGCOLOR="#171717">$STRING_REBOOT</TD>
+          <TD CLASS="tabletxt">&nbsp;</TD>
+          <TD><A HREF="reboot_confirm.as"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok.gif" BORDER=0></A></TD>
+        </TR>
+        <TR>
+          <FORM METHOD=post ACTION="reset_confirm.as">
+          <TH CLASS="tabletxt" BGCOLOR="#171717">$STRING_RESET</TD>
+          <TD CLASS="tabletxt">
+            <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+              <TR>
+                <TD CLASS="tabletxt">
+                  $STRING_THE_CONQUEROR_S_NAME :
+                  &nbsp;<INPUT TYPE=text NAME=CONQUEROR_NAME>
+                </TD>
+              </TR>
+              <TR>
+                <TD CLASS="tabletxt">
+                  $STRING_THE_NAME_OF_THE_CONQUEROR_S_COUNCIL :
+                  &nbsp;<INPUT TYPE=text NAME=CONQUEROR_COUNCIL_NAME>
+                </TD>
+              </TR>
+            </TABLE>
+          </TD>
+          <TD CLASS=tabletxt><INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok.gif" BORDER=0></TD>
+          </FORM>
+        </TR>
+        <TR>
+          <FORM METHOD=post ACTION="broadcast_confirm.as">
+          <TH CLASS="tabletxt" BGCOLOR="#171717">$STRING_BROADCAST</TD>
+          <TD CLASS="tabletxt">
+            <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+              <TR>
+                <TD CLASS="tabletxt">
+                  $STRING_MESSAGE
+                  &nbsp;<INPUT TYPE=radio CHECKED NAME=BROADCAST_TYPE VALUE=MESSAGE>
+                  $STRING_MAIL
+                  &nbsp;<INPUT TYPE=radio NAME=BROADCAST_TYPE VALUE=MAIL>
+                </TD>
+              </TR>
+              <TR>
+                <TD CLASS="tabletxt">
+                  <INPUT TYPE=textarea NAME=BROADCAST_MESSAGE>
+                </TD>
+              </TR>
+            </TABLE>
+          </TD>
+          <TD CLASS="tabletxt"><INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok.gif"></TD>
+          </FORM>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD class="maintext" align="center">
+	    <TABLE WIDTH="550" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+		<TR>
+        <TD CLASS="tabletxt" COLSPAN="4">
+		<FONT COLOR="#616161">$ADMIN_LINK_STRING</FONT> - <FONT COLOR="#666666">$ADMIN_LINK_DES_STRING</FONT><BR>
+		<A HREF="inspect.as">$INSPECT_LINK_STRING</A> - <FONT COLOR="#666666">$INSPECT_LINK_DES_STRING</FONT><BR>
+		<A HREF="black_market_control.as">$BLACK_MARKET_LINK_STRING</A> - <FONT COLOR="#666666">$BLACK_MARKET_LINK_DES_STRING</FONT><BR>
+	    <A HREF="config.as" TARGET="contents">$CONFIG_LINK_STRING</A> - <FONT COLOR="#666666">$CONFIG_LINK_DES_STRING</FONT><BR>
+		<A HREF="council_control.as" TARGET="contents">$RESTRICTION_LINK_STRING</A> - <FONT COLOR="#666666">$RESTRICTION_LINK_DES_STRING</FONT><BR>
+		</TD>
+	 </TD>
+  </TR>
+</TABLE>
+<P>
+&nbsp;
+</P>
+</BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</html>
+

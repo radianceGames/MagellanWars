@@ -1,0 +1,310 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+<LINK REL="stylesheet" HREF="/archspace.css">
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999" onLoad="MM_preloadImages('$IMAGE_SERVER_URL/image/as_game/bu_helpen.gif')">
+<TABLE WIDTH="610" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ROWSPAN="2" ALIGN="center">
+      <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext">
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>$RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp;$PRODUCT_POINT
+              &nbsp;&nbsp;&nbsp;&nbsp;$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;$NET_POWER
+            </DIV>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> </TR>
+  <TR>
+    <TD>
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center"></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" HEIGHT="18"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/diplomacy/spy_title.gif">
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext">$PORTAL_INFORMATION_MESSAGE</TD>
+  </TR>
+  <TR>
+<!-- PORTAL USER SECTION -->
+    <TD ALIGN="center">
+      <TABLE WIDTH="550" BORDER="1" CELLSPACING="0" CELLPADDING="0" BORDERCOLOR="#2A2A2A">
+<!-- PORTAL USER ID SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_PORTAL_ID</FONT>
+          </TD>
+          <TD CLASS="tabletxt">&nbsp;$PORTAL_ID</TD>
+        </TR>
+<!-- PORTAL USER NAME SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_PORTAL_NAME</FONT>
+          </TD>
+          <TD CLASS="tabletxt">&nbsp;$PORTAL_NAME<BR>
+	        <FORM METHOD=post ACTION=player.as>
+			<INPUT TYPE=input NAME=NEW_PORTAL_NAME>
+			<INPUT TYPE=hidden NAME=PORTAL_ID VALUE=$PORTAL_ID>
+			<INPUT TYPE=hidden NAME=BY_WHAT VALUE=PORTAL_NAME>
+            <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_change.gif">
+	        </FORM>
+		  </TD>
+        </TR>
+<!-- PORTAL USER EMAIL SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_E_MAIL</FONT>
+          </TD>
+          <TD CLASS="tabletxt">&nbsp;$E_MAIL<BR>
+	        <FORM METHOD=post ACTION=player.as>
+			<INPUT TYPE=input NAME=NEW_EMAIL>
+			<INPUT TYPE=hidden NAME=PORTAL_ID VALUE=$PORTAL_ID>
+            <INPUT TYPE=hidden NAME=BY_WHAT VALUE=EMAIL>
+            <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_change.gif">
+	        </FORM>
+		  </TD>
+        </TR>
+<!-- PORTAL USER PASSWORD SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_PASSWORD</FONT>
+          </TD>
+          <TD CLASS="tabletxt">&nbsp;$PASSWORD<BR>
+	        <FORM METHOD=post ACTION=player.as>
+			<INPUT TYPE=input NAME=NEW_PASSWORD>
+			<INPUT TYPE=hidden NAME=PORTAL_ID VALUE=$PORTAL_ID>
+            <INPUT TYPE=hidden NAME=BY_WHAT VALUE=PASSWORD>
+            <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_change.gif">
+	        </FORM>
+		  </TD>
+        </TR>
+<!-- PORTAL USER FIRST_NAME SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_FIRST_NAME</FONT>
+          </TD>
+          <TD CLASS="tabletxt">&nbsp;$FIRST_NAME</TD>
+        </TR>
+<!-- PORTAL USER LAST_NAME SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_LAST_NAME</FONT>
+          </TD>
+          <TD CLASS="tabletxt">&nbsp;$LAST_NAME</TD>
+        </TR>
+<!-- PORTAL USER ICQ SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_ICQ</FONT>
+          </TD>
+          <TD CLASS="tabletxt">&nbsp;$ICQ</TD>
+        </TR>
+<!-- PORTAL USER GENDER SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_GENDER</FONT>
+          </TD>
+          <TD CLASS="tabletxt">&nbsp;$GENDER</TD>
+        </TR>
+<!-- PORTAL USER AGE SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_AGE</FONT>
+          </TD>
+          <TD CLASS="tabletxt">&nbsp;$AGE</TD>
+        </TR>
+<!-- PORTAL USER COUNTRY SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_COUNTRY</FONT>
+          </TD>
+          <TD CLASS="tabletxt">&nbsp;$COUNTRY</TD>
+        </TR>
+<!-- PORTAL USER JOB SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_JOB</FONT>
+          </TD>
+          <TD CLASS="tabletxt">&nbsp;$JOB</TD>
+        </TR>
+<!-- PORTAL USER HOW_KNOW_US SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_HOW_KNOW_US</FONT>
+          </TD>
+          <TD CLASS="tabletxt">&nbsp;$HOW_KNOW_US</TD>
+        </TR>
+<!-- PORTAL USER CREATED_TIME SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_CREATED_TIME</FONT>
+          </TD>
+          <TD CLASS="tabletxt">&nbsp;$CREATED_TIME</TD>
+        </TR>
+<!-- PORTAL USER USER_LEVEL SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+			<FONT COLOR="666666">&nbsp;$STRING_USER_LEVEL</FONT>
+          </TD>
+          <TD CLASS="tabletxt">
+	        <FORM METHOD=post ACTION=player.as>
+			&nbsp;$USER_LEVEL_SELECT
+			<INPUT TYPE=hidden NAME=PORTAL_ID VALUE=$PORTAL_ID>
+			<INPUT TYPE=hidden NAME=BY_WHAT VALUE=USER_LEVEL>
+            <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_change.gif">
+			</FORM>
+          </TD>
+        </TR>
+<!-- PORTAL USER DEV_LEVEL SECTION -->
+		<TR>
+          <TD CLASS="tabletxt" WIDTH="150" BGCOLOR="#171717">
+            <FONT COLOR="666666">&nbsp;$STRING_DEV_LEVEL</FONT>
+          </TD>
+          <TD CLASS="tabletxt">
+	        <FORM METHOD=post ACTION=player.as>
+			&nbsp;$DEV_LEVEL_SELECT
+			<INPUT TYPE=hidden NAME=PORTAL_ID VALUE=$PORTAL_ID>
+			<INPUT TYPE=hidden NAME=BY_WHAT VALUE=DEV_LEVEL>
+            <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_change.gif">
+			</FORM>
+          </TD>
+        </TR>
+		</FORM>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext">$PLAYER_INFORMATION_MESSAGE</TD>
+  </TR>
+  <!-- PLAYER SECTION -->
+  $PLAYER_INFO
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+<!--  <TR>
+    <TD ALIGN="center">$STRING_SEE_LOG_MESSAGE</TD>
+  </TR>
+  <TR> -->
+    <!-- USER LOG SECTION -->
+<!--    <TD ALIGN="center">
+      <TABLE WIDTH=400>
+        <FORM METHOD=post ACTION="query_log.php3">
+        <TR>
+          <TD WIDTH=30><INPUT TYPE=radio NAME=BY_WHAT VALUE=ACTION SELECTED></TD>
+          <TD CLASS="tabletxt">$STRING_ACTION_LOG</TD>
+        </TR>
+        <TR>
+          <TD WIDTH=30><INPUT TYPE=radio NAME=BY_WHAT VALUE=NEW_ACCOUNT></TD>
+          <TD CLASS="tabletxt">$STRING_NEW_ACCOUNT_LOG</TD>
+        </TR>
+        <TR>
+          <TD WIDTH=30><INPUT TYPE=radio NAME=BY_WHAT VALUE=NEW_PLAYER></TD>
+          <TD CLASS="tabletxt">$STRING_NEW_PLAYER_LOG</TD>
+        </TR>
+        <TR>
+          <TD WIDTH=30><INPUT TYPE=radio NAME=BY_WHAT VALUE=DEAD_PLAYER></TD>
+          <TD CLASS="tabletxt">$STRING_DEAD_PLAYER_LOG</TD>
+        </TR>
+        <TR>
+          <TD CLASS="tabletxt" ALIGN="center">
+            $STRING_YEAR : <SELECT NAME=YEAR>
+              <OPTION VALUE=2001>2001</OPTION>
+              </SELECT>
+            $STRING_MONTH : <SELECT NAME=MONTH>
+              <OPTION VALUE=1>01</OPTION>
+              <OPTION VALUE=2>02</OPTION>
+              <OPTION VALUE=3>03</OPTION>
+              <OPTION VALUE=4>04</OPTION>
+              <OPTION VALUE=5>05</OPTION>
+              <OPTION VALUE=6>06</OPTION>
+              <OPTION VALUE=7>07</OPTION>
+              <OPTION VALUE=8>08</OPTION>
+              <OPTION VALUE=9>09</OPTION>
+              <OPTION VALUE=10>10</OPTION>
+              <OPTION VALUE=11>11</OPTION>
+              <OPTION VALUE=12>12</OPTION>
+              </SELECT>
+            $STRING_DAY : <SELECT NAME=DAY>
+              <OPTION VALUE="01-10">01-10</OPTION>
+              <OPTION VALUE="11-20">11-20</OPTION>
+              <OPTION VALUE="21-">21-</OPTION>
+              </SELECT>
+          </TD>
+        </TR>
+        <TR>
+          <TD CLASS="tabletxt" ALIGN="center">
+            <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok.gif">
+          </TD>
+        </TR>
+        </FORM>
+      </TABLE>
+    </TD>
+  </TR>-->
+  <TR>
+    <TD CLASS="tabletxt">&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext">
+      $SEND_MESSAGE_MESSAGE
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext">
+      $SEND_MAIL_MESSAGE
+    </TD>
+  </TR>
+  <TR>
+    <TD class="maintext" align="center" WIDTH="556">
+      <A HREF="admin.as">$ADMIN_LINK_STRING</A>
+      <A HREF="inspect.as">$INSPECT_LINK_STRING</A>
+      <A HREF="black_market_control.as">$BLACK_MARKET_LINK_STRING</A>
+      <A HREF="config.as" TARGET="contents">$CONFIG_LINK_STRING</A>
+      <A HREF="council_control.as" TARGET="contents">$RESTRICTION_LINK_STRING</A>
+	 </TD>
+  </TR>
+  <TR>
+    <TD class="maintext" align="center" WIDTH="556">
+      <A HREF="admin.as">$ADMIN_LINK_STRING</A>
+      <A HREF="inspect.as">$INSPECT_LINK_STRING</A>
+      <A HREF="black_market_control.as">$BLACK_MARKET_LINK_STRING</A>
+      <A HREF="config.as" TARGET="contents">$CONFIG_LINK_STRING</A>
+      <A HREF="council_control.as" TARGET="contents">$RESTRICTION_LINK_STRING</A>
+	 </TD>
+  </TR>
+</TABLE>
+<P>&nbsp;</P>
+</BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</html>
+

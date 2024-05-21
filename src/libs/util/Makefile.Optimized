@@ -1,0 +1,40 @@
+CC=g++
+CFLAGS=-g -Wall -pipe -O2 -march=pentium4 -mcpu=pentium4 -fomit-frame-pointer
+LIBDIRS=-L/usr/lib -L/usr/local/lib -L/usr/local/lib/mysql -L/usr/lib/mysql
+LIBS=-static -lstdc++ -lpth -lmysqlclient -lz
+INCLUDES=-I/usr/include/g++ -I/usr/include -I../include -I/usr/include/pth -I/usr/include/mysql
+DEFINES=-DLINUX -DDEBUG
+
+LEX=flex
+
+VPATH=$(HOME)src/libs/include
+
+HEADERFILES=
+CCFILES=collection.cc debug.cc etc.cc inifile.cc list.cc \
+		list.sort.cc list.string.cc node.cc string.cc \
+		commandset.cc mysql.cc script.cc list.integer.cc \
+		list.integer.unsigned.cc math.cc memory.cc
+
+CCOBJS=$(CCFILES:.cc=.o) lex.o
+
+all:lib 
+
+.cc.o:
+	$(CC) -c $< $(CFLAGS) $(INCLUDES) $(DEFINES)
+
+lex.cc:script.l
+	$(LEX) -olex.cc -P_AS script.l 
+
+lex.o:lex.cc
+	$(CC) $(CFLAGS) -c lex.cc $(INCLUDES)
+
+lib:$(CCOBJS)
+
+
+clean:
+	rm -f *.o lex.cc
+
+
+test: $(CCOBJS) test.cc
+	$(CC) -c test.cc $(CFLAGS) $(INCLUDES) $(DEFINES)
+	$(CC) -o test test.o $(CCOBJS) $(LIBDIRS) $(LIBS)

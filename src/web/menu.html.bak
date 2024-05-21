@@ -1,0 +1,62 @@
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+
+<!-- Original Code Courtesy of the TREEVIEW people -->
+<!-- Code for browser detection -->
+<script src="/ua.js"></script>
+<!-- Infrastructure code for the tree -->
+<script src="/ftiens4.js"></script>
+
+<!-- Execution of the code that actually builds the specific tree.
+     The variable foldersTree creates its structure with calls to
+	 gFld, insFld, and insDoc -->
+<script language="JavaScript">
+<!--
+USETEXTLINKS = 1
+PRESERVESTATE = 1
+USEICONS = 0
+ICONPATH = '$IMAGE_SERVER_URL/image/'
+foldersTree = gFld("", "")
+
+$TREE_FIELDS
+//-->
+</script>-
+
+<!-- Pointless stuff... -->
+<script type="text/javascript" language="JavaScript" src="/subMenu2.js"></script>
+<script language="JavaScript">
+<!-- 
+if ((navigator.appName.indexOf('Opera') != -1)||(navigator.appName.indexOf('Microsoft') != -1)) {
+	document.write('<'+'link rel="stylesheet" href="/subMenu2.css" />');
+}
+// -->
+</SCRIPT>
+<link rel="stylesheet" href="/archspace.css">
+<script language="javascript">
+<!-- 
+if (navigator.appName.indexOf('Microsoft') == -1) {
+	document.write('<'+'link rel="stylesheet" href="/mozilla.css" />');
+}
+// -->
+</script>
+</head>
+
+<body bgcolor="#000000" background=$BG_IMAGE marginwidth="0" marginheight="0" topmargin="0" leftmargin="0"><!--
+a<img src="$IMAGE_SERVER_URL/image/as_game/menu_main.gif">-->
+<!-- Removing this link will make the script stop from working -->
+<div style="position:absolute; top:0; left:0; "><table border=0><tr><td><font size=-2>
+<a style="font-size:7pt;text-decoration:none;color:silver" href="http://www.treemenu.net/" target=_blank> </a></font></td></tr></table></div>
+<div>
+<!-- Build the browser's objects and display default view of the 
+     tree. -->
+<script>initializeDocument()</script>
+<noscript>
+A tree for site navigation will open here if you enable JavaScript in your browser.
+</noscript>
+</div>
+</body>
+</html>

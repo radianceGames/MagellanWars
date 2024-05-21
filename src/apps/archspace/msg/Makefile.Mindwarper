@@ -1,0 +1,31 @@
+MSGFMT=/usr/local/bin/msgfmt
+MSGMERGE=/usr/local/bin/msgmerge
+LANGUAGES=ko jp
+
+all: languages
+
+languages: archspace.po
+	@for i in $(LANGUAGES); do \
+		echo "--> $(SDP)$$i"; \
+		if [ -d $$i ]; then \
+			if [ -d $$i/LC_MESSAGES ]; then \
+				if [ -f $$i/LC_MESSAGES/archspace.po ]; then \
+					$(MSGMERGE) -qo $$i/LC_MESSAGES/archspace.po \
+							$$i/LC_MESSAGES/archspace.po archspace.po; \
+					$(MSGFMT) -o $$i/LC_MESSAGES/archspace.mo --statistics\
+								$$i/LC_MESSAGES/archspace.po; \
+				else  \
+					echo "copy archspace.po"; \
+					cp -f archspace.po $$i/LC_MESSAGES; \
+				fi; \
+			else \
+				mkdir -p $$i/LC_MESSAGES; \
+				cp archspace.po $$i/LC_MESSAGES; \
+			fi; \
+		else \
+			mkdir -p $$i; \
+			mkdir -p $$i/LC_MESSAGES; \
+			cp archspace.po $$i/LC_MESSAGES; \
+		fi; \
+		echo "<-- $(SDP)$$i"; \
+	done

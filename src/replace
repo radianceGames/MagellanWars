@@ -1,0 +1,8 @@
+#!/bin/sh
+while test $# != 0
+do
+	echo "## $1"
+	mv $1 /tmp/test.sed
+	sed -f to.c /tmp/test.sed > $1
+	shift
+done

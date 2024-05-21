@@ -1,0 +1,23 @@
+CC=g++
+CFLAGS=-g -Wall 
+LIBDIRS=-L/usr/lib
+LIBS=-static -lstdc++ 
+INCLUDES=-I/usr/g++ -I/usr/include -I../include -I/usr/local/include/pth -I/usr/local/include/mysql
+DEFINES=-DDEBUG
+
+VPATH=$(HOME)src/libs/include
+
+HEADERFILES=
+CCFILES= cgiserver.cc connection.cc html.cc htmls.cc \
+		pages.cc page.cc query.list.cc query.cc filehtml.cc
+
+CCOBJS=$(CCFILES:.cc=.o)
+
+.cc.o:
+	$(CC) -c $< $(CFLAGS) $(INCLUDES) $(DEFINES)
+
+lib:$(CCOBJS)
+
+
+clean:
+	rm -f *.o 

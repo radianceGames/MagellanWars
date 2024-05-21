@@ -1,0 +1,22 @@
+CC=g++
+CFLAGS=-g -Wall -pipe -O2 -march=pentium4 -mcpu=pentium4 -fomit-frame-pointer
+LIBDIRS=-L/usr/lib
+LIBS=-static -lstdc++ 
+INCLUDES=-I/usr/g++ -I/usr/include -I../include -I/usr/include/pth -I/usr/include/mysql
+DEFINES=-DLINUX -DDEBUG
+
+VPATH=$(HOME)src/libs/include
+
+HEADERFILES=
+CCFILES= application.cc
+
+CCOBJS=$(CCFILES:.cc=.o)
+
+.cc.o:
+	$(CC) -c $< $(CFLAGS) $(INCLUDES) $(DEFINES)
+
+lib:$(CCOBJS)
+
+
+clean:
+	rm -f *.o 

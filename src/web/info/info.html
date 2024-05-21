@@ -1,0 +1,192 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+<LINK REL="stylesheet" HREF="/archspace.css">
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999" onLoad="MM_preloadImages('$IMAGE_SERVER_URL/image/as_game/bu_helpen.gif')">
+<TABLE WIDTH="610" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ROWSPAN="2" ALIGN="center">
+      <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext">
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>$RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp;$PRODUCT_POINT
+              &nbsp;&nbsp;&nbsp;&nbsp;$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;$NET_POWER
+              </DIV>
+          </TD>
+          <!--HELP BUTTON-->
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> </TR>
+  <TR>
+    <TD>
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center"></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" HEIGHT="18"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/info/title_info.gif" WIDTH="392" HEIGHT="138">
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR CLASS="maintext">
+    <TH ALIGN="center" HEIGHT="25">$STRING_PLAYER_SEARCH</TH>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext">
+      <TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0" BORDERCOLOR="#2A2A2A">
+        <TR ALIGN="CENTER">
+          <TD>
+          <FORM METHOD=post ACTION=player_search.as>
+            <TABLE WIDTH="275" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+              <TR>
+                <TD CLASS="maintext" ALIGN="RIGHT" WIDTH="38" HEIGHT="30">
+                  <INPUT TYPE="radio" NAME="BY_WHAT" VALUE="PLAYER_ID" CHECKED>
+                </TD>
+                <TD CLASS="maintext" ALIGN="RIGHT" WIDTH="135" HEIGHT="30">$STRING_BY_ID_NUMBER&nbsp;&nbsp;</TD>
+                <TD COLSPAN="2" HEIGHT="30" WIDTH="102">
+                  <INPUT TYPE=text SIZE=10 MAXLENGTH=15 NAME=PLAYER_ID>
+                </TD>
+              </TR>
+              <TR>
+                <TD WIDTH="38" CLASS="maintext" ALIGN="RIGHT" HEIGHT="30">
+                  <INPUT TYPE="radio" NAME="BY_WHAT" VALUE="PLAYER_NAME">
+                </TD>
+                <TD WIDTH="135" CLASS="maintext" ALIGN="RIGHT" HEIGHT="30">$STRING_BY_NAME&nbsp;&nbsp;</TD>
+                <TD COLSPAN="2" HEIGHT="30" WIDTH="102">
+                  <INPUT TYPE=text SIZE=10 MAXLENGTH=15 NAME=PLAYER_NAME>
+                </TD>
+              </TR>
+              <TR>
+                <TD WIDTH="38" CLASS="maintext" ALIGN="RIGHT" HEIGHT="30">
+                  <INPUT TYPE="radio" NAME="BY_WHAT" VALUE="MEMBER_ID">
+                </TD>
+                <TD WIDTH="135" CLASS="maintext" ALIGN="RIGHT" HEIGHT="30">$STRING_BY_COUNCIL_MEMBER&nbsp;&nbsp;</TD>
+                <TD COLSPAN="2" HEIGHT="30" WIDTH="102">
+                  $MEMBER_SELECT
+                </TD>
+              </TR>
+              <TR ALIGN="CENTER">
+                <TD COLSPAN="4" CLASS="maintext" HEIGHT="30"><INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok.gif" WIDTH="31" HEIGHT="11" BORDER="0"></TD>
+              </TR>
+            </TABLE>
+            </FORM>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center"> &nbsp;&nbsp; </TD>
+  </TR>
+  <TR>
+    <TH ALIGN="center" CLASS="maintext" HEIGHT="25">$STRING_COUNCIL_SEARCH</TH>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext"> </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" HEIGHT="30" CLASS="maintext">
+      <TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0" BORDERCOLOR="#2A2A2A">
+        <TR ALIGN="CENTER">
+          <TD>
+          <FORM METHOD=post ACTION=council_search.as>
+            <TABLE WIDTH="312" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+              <TR>
+                <TD WIDTH="30" CLASS="maintext" ALIGN="RIGHT" HEIGHT="30">
+                  <INPUT TYPE="radio" NAME="BY_WHAT" VALUE="COUNCIL_ID" CHECKED>
+                </TD>
+                <TD WIDTH="115" CLASS="maintext" ALIGN="RIGHT" HEIGHT="30">$STRING_BY_COUNCIL_ID_NUMBER&nbsp;&nbsp;</TD>
+                <TD HEIGHT="30" WIDTH="101">
+                  <INPUT TYPE=text SIZE=10 MAXLENGTH=15 NAME=COUNCIL_ID>
+                </TD>
+              </TR>
+              <TR>
+                <TD WIDTH="30" CLASS="maintext" ALIGN="RIGHT" HEIGHT="30">
+                  <INPUT TYPE="radio" NAME="BY_WHAT" VALUE="COUNCIL_NAME">
+                </TD>
+                <TD WIDTH="115" CLASS="maintext" ALIGN="RIGHT" HEIGHT="30">$STRING_BY_COUNCIL_NAME&nbsp;&nbsp;</TD>
+                <TD HEIGHT="30" WIDTH="101">
+                  <INPUT TYPE=text SIZE=10 MAXLENGTH=15 NAME=COUNCIL_NAME>
+                </TD>
+              </TR>
+              <TR ALIGN="CENTER">
+                <TD COLSPAN="4" CLASS="maintext" HEIGHT="30"><INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok.gif" WIDTH="31" HEIGHT="11" BORDER="0"></TD>
+              </TR>
+            </TABLE>
+            </FORM>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center">
+      <TABLE WIDTH="550" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR>
+          <TD CLASS="tabletxt" COLSPAN="4">
+            <P><A HREF="clusters.as">$CLUSTERS</A> - <FONT COLOR="666666">$CLUSTERS_EXPLAIN</FONT><BR>
+              <A HREF="rank_player_overall.as">$RANKING</A> - <FONT COLOR="#666666">$RANKING_EXPLAIN</FONT><BR></P>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            <CENTER>
+				$ADLINE_BOTTOM
+            </CENTER>
+            </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+</TABLE>
+<P>&nbsp;</P>
+</BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</html>
+

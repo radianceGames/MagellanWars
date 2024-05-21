@@ -1,0 +1,147 @@
+# 4XXX: Ship
+# Upkeep Cost = 1.8^(ship class)
+
+<Gunboat>
+{
+	Number(4001),
+	Description("Though it is not much more than a single flying weapon outfitted with a bridge and an engine, the Gunboat is a necessary component of any beginning ruler's armada.  While not too intimidating, these ships can nonetheless inflict significant damage.  Also, the Gunboat's small size and lack of devices makes it quick to produce and cost-efficient.  They may be fairly insignificant individually, but many a battle has been decided by a fleet of these little ships attacking an unprepared enemy at just the right time."),
+	Class(1),
+	Space(100),
+	Weapon(1),
+	Slot(100),
+	Device(0),
+	Cost(100),
+	Upkeep(2)
+},
+<Corvette>
+{
+	Number(4002),
+	Description("This smaller-class ship is often used as an armed escort for traders and political transports.  The Corvette is significantly smaller than a Destroyer, but can use its speed to evade more powerful enemies. This ship was not designed for a full offensive, but it can do an excellent job at distracting the enemy while other ships move into position or escape, or it can be used in flanking attacks against smaller armadas.  The Corvette is also the largest class ship that players begin with."),
+	Class(2),
+	Space(176),
+	Weapon(2),
+	Slot(88),
+	Device(0),
+	Cost(309),
+	Upkeep(3)
+},
+<Frigate>
+{
+	Number(4003),
+	Description("This ship is usually deployed to keep smaller and faster ships away from the less maneuverable Destroyers.  While not as maneuverable as the Corvette, the Frigate has more firepower.  Frigates are also useful in flanking and rear attacks against enemy Cruisers otherwise engaged in combat.  This is also the first ship which can be fitted with enhancing devices; Since these enhancements can perform a variety of functions, the Frigate is the first class of truly versatile ships."),
+	Class(3),
+	Space(306),
+	Weapon(2),
+	Slot(153),
+	Device(1),
+	Cost(936),
+	Upkeep(6)
+},
+<Destroyer>
+{
+	Number(4004),
+	Description("This is a small, relatively fast and well-armed warship often used to support larger vessels.  While its armament and enhancing devices are on par with the Frigate, the Destroyer sports a significantly thicker hull.  This means that the loss of some speed and agility as compared to the Frigate is made up for by the ability to take a greater amount of damage before incapacitation.  This allows a fleet of Destroyers to hold fast against smaller numbers of superior class ships."),
+	Class(4),
+	Space(537),
+	Weapon(3),
+	Slot(179),
+	Device(1),
+	Cost(2884),
+	Upkeep(11)
+},
+<Cruiser>
+{
+	Number(4005),
+	Description("The Cruiser is large, fast, and moderately armored and gunned.  For several reasons, the Cruiser is the first in a more advanced generation of warships, distinguishing it from the smaller vessels: it has room for two additional devices, can hold some of the more powerful devices, and is the smallest ship which requires off-planet construction (though not necessarily in a vacuum.)  The Cruiser is the pinnacle of elementary spacecraft development, and is often the largest ship that many evolving races have in their armada.  Eventually, though, they are surpassed as the race learns new methods of production."),
+	Class(5),
+	Space(940),
+	Weapon(4),
+	Slot(235),
+	Device(2),
+	Cost(8836),
+	Upkeep(19)
+},
+<BattleCruiser>
+{
+	Number(4006),
+	Description("The differences between a Cruiser and the more formidable BattleCruiser are few but significant.  They both have the same number of weapons batteries, but the size of each battery is greatly increased, greatly magnifying the offensive power of each BattleCruiser. This ship is also lighter and faster that the Battleship, while being able to take much more damage than the average Cruiser.  In fact, it is often a perfect combination of the classes above and below it."),
+	Class(6),
+	Space(1640),
+	Weapon(4),
+	Slot(410),
+	Device(2),
+	Cost(26896),
+	Upkeep(34)
+},
+<BattleShip>
+{
+	Number(4007),
+	Description("With the capability of destroying an average space station single-handedly, the Battleship forms the foundation of any serious armada.  It is the largest, most heavily armed and armored type of ship able to be manufactured within gravity.  Its lack of speed demands an array of escorts (Frigate class and smaller) to protect its vulnerable flanks and rear.  Of course, such escorts are usually easily provided by anyone with the power to create a fleet of Battleships."),
+	Class(7),
+	Space(2870),
+	Weapon(5),
+	Slot(574),
+	Device(2),
+	Cost(82369),
+	Upkeep(61)
+},
+<Dreadnaught>
+{
+	Number(4008),
+	Description("This ponderous beast is so large and well armed that it can barely be called a ship, and must be built in orbit.  This super-vessel is bloated with weaponry and armor, and is a menace for any class of opposing forces.  Many an opponent has suddenly realized they were doomed when they saw this powerful creation appear amidst its enemies fleets. Obviously, the Dreadnought requires a full deployment of escorts and support vessels."),
+	Class(8),
+	Space(5025),
+	Weapon(5),
+	Slot(1005),
+	Device(3),
+	Cost(252506),
+	Upkeep(110)
+},
+<Mobile Fortress>
+{
+	Number(4009),
+	Description("The Mobile Fortress is so large and so well armed that it can only be classified a space station.  (Though it is reasonably movable, its real function is to destroy any enemies who are foolish enough to approach.)  This titan is large enough that it is a feature itself, around which an armada can station a defense.  It does still retain enough movement though, that it can be brought to bear against any weaponry that your opponent might have which is larger.  The Mobile Fortress is basically an excuse to put many, many guns together in one place."),
+	Class(9),
+	Space(8796),
+	Weapon(6),
+	Slot(1466),
+	Device(4),
+	Cost(773696),
+	Upkeep(198)
+},
+<Doomstar>
+{
+	Number(4010),
+	Description("The Doomstar, as its name implies, is nearly a celestial body in its own right.  The pinnacle of space design for any known sentient species, this behemoth is so large that merely trying to land it on a planet would cause an ecological catastrophe.  It is large enough that it generates a large gravitational pull, which would wreak havoc on itself and any planets that it approached.  Fitted with a terrifying array of weaponry, the Doomstar can dispense annihilation upon any nearly any enemy.  Simply put, anyone who tries attacking a Doomstar deserves what they get."),
+	Class(10),
+	Space(15400),
+	Weapon(7),
+	Slot(2200),
+	Device(5),
+	Cost(2371600),
+	Upkeep(357)
+},
+<Astral Carrier>
+{
+	Number(4011),
+	Description("The size of a small moon, the Astral Carrier is capable of housing an entire fleet within. Although all races desire to command an armada of Astral Carriers, only a few possess the capability to construct one, and even fewer are capable of deploying more than a handful of these juggernauts in battle."),
+	Class(11),
+	Space(27200),
+	Weapon(8),
+	Slot(3400),
+	Device(6),
+	Cost(7271500),
+	Upkeep(642)
+},
+<Suncrusher>
+{
+	Number(4012),
+	Description("A small number of races eventually progress beyond even the mighty Astral Carrier to construct the Suncrusher. One can only hope to imagine the destruction a single one of these can cause, and barely comprehend how it is even capable of mobility. Though it possesses fearsome weapon capabilities, sufficient firepower to destroy entire planets, its sheer size convinces enemies to surrender without even trying. It truly is terror's physical manifestation."),
+	Class(12),
+	Space(48000),
+	Weapon(10),
+	Slot(4800),
+	Device(8),
+	Cost(22294000),
+	Upkeep(1156)
+}

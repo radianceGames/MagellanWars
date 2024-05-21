@@ -1,0 +1,3 @@
+delete FROM asbb_posts_text using asbb_posts_text, asbb_posts where asbb_posts.forum_id > '1000' AND asbb_posts_text.post_id = asbb_posts.post_id;
+delete FROM asbb_topics WHERE asbb_topics.forum_id > '1000';
+delete FROM asbb_posts WHERE asbb_posts.forum_id > '1000';

@@ -1,0 +1,2211 @@
+# 51XX: Armor, 52XX: Computer, 53XX: Shield, 54XX: Engine, 55XX: Device, 61XX: Weapon(Beam), 62XX: Weapon(Missile), 63XX: Weapon(Projectile)
+
+# Category: ARMOR: Armor, COMP: Computer, SHLD: Shield, ENGN: Engine, DEV: Device, WPN: Weapon
+
+# 51XX: Armor
+# Type: NORM(normal), BIO(bio), REACT(Reactive)
+# Effect: Beam(double), Projectile(double), Missile(double), Fighter(double): 각각에 해당하는 공격 유형에 방어율 * 괄호 안의 수치
+#   Psi(double): Psi 계열 공격 방어율 * 괄호 안의 수치
+#   Repair(double): Repair Speed * 괄호 안의 수치
+#   Heal(double): Healing * 괄호 안의 수치
+# DR: Defense Rate
+# HPMult: HP Multiplier
+
+<티타늄>
+{
+	Number(5101),
+#	<Prerequisite>
+#	[
+#		Number()
+#	],
+	Description("처음 게임을 시작할 때부터 고를 수 있는 기초적인 선체용 장갑이다. 티타늄 장갑은 사실상 적의 공격을 막는 장갑이라기보다는 외벽 정도에 가깝다. 초반에 함선을 지키는 정도로는 충분할 지도 모르지만, 더 강한 함대를 위해서라면 티타늄은 부족하다"),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(1),
+	DR(30),
+	HPMult(1.0)
+},
+<미스릴>
+{
+	Number(5102),
+	<Prerequisite>
+	[
+		Number(1311)
+	],
+	Description("실제로 전설적인 은으로 만들어진 것은 아니지만, 초능력 공격에 대한 강한 방어력 때문에 \"미스릴\" 이란 별칭을 얻었다. 초능력 공격에 대해서도 매우 효과적으로, 몇 가지 부가적인 이득이 있는 것으로 알려져 있다. 제국 내에서 인간의 이름이 널리 퍼진 이유중 하나이다.."),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(2),
+	<Effect>
+	{
+		<PSI Defense>
+		{
+			Amount( 15 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(34),
+	HPMult(1.35)
+},
+<아다만티윰>
+{
+	Number(5103),
+	<Prerequisite>
+	[
+		Number(1325)
+	],
+	Description("한 단계 향상된 표준 장갑 기종이다. 자가 회복 능력은 없지만, 초기에 선택할 수 있는 장갑 중 초능력 공격에 가장 강한 장갑이다. 또한 아다만티움 장갑은 통상 공격에도 상당히 강한 면모를 보인다."),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(3),
+	<Effect>
+	{
+		<PSI Defense>
+		{
+			Amount( 30 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(40),
+	HPMult(1.85)
+},
+<뉴트로늄>
+{
+	Number(5104),
+	<Prerequisite>
+	[
+		Number(1329)
+	],
+	Description("뉴트로늄 장갑을 한마디로 표현하자면 견고하다고 할 수 있다. 가장 튼튼한 장갑의 하나로 유용하다. 뉴트로늄의 금속 구조는 광선류 무기를 반사시켜 버리기 때문에 매우 효과적이다. 그러나 이 장갑은 가공이 쉽지 않다. 이 장갑을 수리할 때 드는 시간은 새로 만들 때 드는 시간의 두배 가량 소모된다."),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(4),
+	<Effect>
+	{
+		<Beam Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Repair Speed>
+		{
+			Amount( -50 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(53),
+	HPMult(3.0)
+},
+<에터늄>
+{
+	Number(5105),
+	<Prerequisite>
+	[
+		Number(1333)
+	],
+	Description("이름이 암시하듯이 이 장갑은 가장 튼튼하고 가장 내구성이 좋은 장갑이다. 그러나 에터늄 장갑은 전투 중 수리가 불가능하다. 대개 이 장갑은 매우 튼튼하고 흠집을 내는 것도 쉽지는 않아서 고칠 일이 그렇게 잦은 편은 아니다."),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(5),
+	<Effect>
+	{
+		<Projectile Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Beam Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Non-Repairable>
+		{
+		}
+	},
+	DR(83),
+	HPMult(3.85)
+},
+<자가 복구 크리스탈>
+{
+	Number(5106),
+	<Prerequisite>
+	[
+		Number(1318)
+	],
+	Description("자가 복구 크리스탈은 자가 회복 능력을 가진 최초의 장갑 형태중 하나이다. 자가 복구능력은 매우 유용하지만, 미사일에 다소 약하다. 충분히 자가복구를 할 시간이 주어지면, 상당한 수준의 통상 공격을 흡수할 수 있다. "),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(2),
+	<Effect>
+	{
+		<Beam Defense>
+		{
+			Amount( 10 ),
+			Type( "Proportional" )
+		},
+		<Projectile Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Missile Defense>
+		{
+			Amount( -5 ),
+			Type( "Proportional" )
+		},
+		<Repair>
+		{
+			Amount( 3 ),
+			Type( "Proportional" ),
+			Period( 10 )
+		}
+	},
+	DR(36),
+	HPMult(1.2)
+},
+<반물질 크리스탈>
+{
+	Number(5107),
+	<Prerequisite>
+	[
+		Number(1328)
+	],
+	Description("자가 복구 크리스탈 장갑과 반물질 활성 장갑의 장점을 결합시킨 장갑으로, 양쪽의 이점을 지니고 있다.  복구 속도가 그리 빠르지는 않지만 이 장갑은 자가 복구가 가능하며, 반물질 장갑의 반응기술을 통해 자가 복구 장갑의 약점도 보완이 되었다. "),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(4),
+	DR(40),
+	HPMult(2.4),
+	<Effect>
+	{
+		<Beam Defense>
+		{
+			Amount( 10 ),
+			Type( "Proportional" )
+		},
+		<Missile Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Projectile Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Repair>
+		{
+			Amount( 1 ),
+			Type( "Proportional" ),
+			Period( 10 )
+		}
+	}
+},
+<바이오센트릭>
+{
+	Number(5108),
+	<Prerequisite>
+	[
+		Number(1413)
+	],
+	Description("자가회복 기능이 있는 다른 초기형 장갑이다. 빔 공격을 막는 것 이외에는 그리 효용성이 높지 않으나, 두 배 이상의 공격을 차단할 수 있다. 자가 복구성과 높은 방어력 때문에 초기 설비로 선호도가 매우 높은 장갑이다."),
+	Category("ARMOR"),
+	Type("BIO"),
+	Level(2),
+	<Effect>
+	{
+		<Repair>
+		{
+			Amount( 3 ),
+			Type( "Proportional" ),
+			Period( 10 )
+		},
+		<PSI Defense>
+		{
+			Amount( -20 ),
+			Type( "Proportional" )
+		},
+		<Missile Defense>
+		{
+			Amount( -20 ),
+			Type( "Proportional" )
+		},
+		<Projectile Defense>
+		{
+			Amount( -10 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(30),
+	HPMult(2.0)
+},
+<생체장갑>
+{
+	Number(5109),
+	<Prerequisite>
+	[
+		Number(1418)
+	],
+	Description("최초로 개발된 진정한 의미의 \"살아있는\" 장갑이다. 제한적이지만 원시적 자각능력까지도 가지고 있다. 이 자각능력 때문에 초능력 공격에 어느 정도 취약점을 보이는 것이 약점이라고 할 수 있다."),
+	Category("ARMOR"),
+	Type("BIO"),
+	Level(3),
+	<Effect>
+	{
+		<Repair>
+		{
+			Amount( 3 ),
+			Type( "Proportional" ),
+			Period( 5 )
+		},
+		<PSI Defense>
+		{
+			Amount( -20 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(36),
+	HPMult(2.0)
+},
+<에너지-생체 크리스탈>
+{
+	Number(5110),
+	<Prerequisite>
+	[
+		Number(1422)
+	],
+	Description("타 크리스탈 장갑류보다 자가 복구능력이 뛰어나며 내구력도 훨씬 높은 개량형 장갑이다. 탄도무기에 어느 정도 취약점을 보이긴 하지만 전반적으로 매우 강한 장갑임에는 틀림이 없다."),
+	Category("ARMOR"),
+	Type("BIO"),
+	Level(5),
+	<Effect>
+	{
+		<Repair>
+		{
+			Amount( 1 ),
+			Type( "Proportional" ),
+			Period( 2 )
+		},
+		<PSI Defense>
+		{
+			Amount( 50 ),
+			Type( "Proportional" )
+		},
+		<Projectile Defense>
+		{
+			Amount( -20 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(50),
+	HPMult(3.4)
+},
+<반물질 반응 장갑>
+{
+	Number(5111),
+	<Prerequisite>
+	[
+		Number(1322)
+	],
+	Description("반물질을 특이한 공법으로 가공하여 만든 이 장갑은 미사일류의 특정 무기종류에 매우 효과적인 장갑이다. 유일한 결점은 동종의 다른 장갑에 비해서 복구력이 떨어지는데 있다고 할 수 있다."),
+	Category("ARMOR"),
+	Type("REACT"),
+	Level(3),
+	<Effect>
+	{
+		<Missile Defense>
+		{
+			Amount( 35 ),
+			Type( "Proportional" )
+		},
+		<Projectile Defense>
+		{
+			Amount( 10 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(30),
+	HPMult(1.55)
+},
+<레플렉슘>
+{
+	Number(5112),
+	<Prerequisite>
+	[
+		Number(1330)
+	],
+	Description("동종의 다른 장갑에 비해 내구력은 조금 떨어지지만, 어느 한구석 처지는 부분이 없는 매우 훌륭한 장갑이다. 높은 유연성과 반사성으로 인해 미사일이나 빔등 대다수의 무기에 강한 면모를 보인다."),
+	Category("ARMOR"),
+	Type("REACT"),
+	Level(4),
+	<Effect>
+	{
+		<Missile Defense>
+		{
+			Amount( 50 ),
+			Type( "Proportional" )
+		},
+	},
+	DR(40),
+	HPMult(2.1)
+},
+<클라인의 방벽>
+{
+	Number(5113),
+	<Prerequisite>
+	[
+		Number(1334)
+	],
+	Description("공간의 기묘한 뒤틀림을 형성하는 매우 특이한 형태의 장갑이다. 이런 특성 때문에 전반적으로 모든 종류의 공격에 거의 피해를 입지 않는다. 탄환류 무기에 어느정도 취약점을 보이나, 빔이나 미사일류의 무기는 거의 통하지 않는다. 그 이외에 내구성이 약간 떨어지는 정도 이외엔 다른 흠을 찾을 수 없다."),
+	Category("ARMOR"),
+	Type("REACT"),
+	Level(5),
+	<Effect>
+	{
+		<Missile Defense>
+		{
+			Amount( 50 ),
+			Type( "Proportional" )
+		},
+		<Projectile Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Beam Defense>
+		{
+			Amount( 50 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(40),
+	HPMult(2.2)
+},
+
+# 52XX: Computer
+
+# AR: Attack Rate
+# DR: Defense Rate
+
+<전자 컴퓨터>
+{
+	Number(5201),
+	<Prerequisite>
+	[
+		Number(1201)
+	],
+	Description("가장 기본적인 컴퓨터로, 대부분의 제조와 가공에 사용된다. 고속의 전자컴퓨터를 이용하면 제국 내를 안전하고 빠르게 이동할 수 있다."),
+	Category("COMP"),
+	Level(1),
+	AR(100),
+	DR(233)
+},
+<광학 컴퓨터>
+{
+	Number(5202),
+	<Prerequisite>
+	[
+		Number(1208)
+	],
+	Description("우주 여행을 위해 고안된 다음 세대 컴퓨터이다. 이 기종은 광자파를 이용하여 정보의 처리능력과 처리용량에 비약적 발전을 가져왔다."),
+	Category("COMP"),
+	Level(2),
+	AR(133),
+	DR(289)
+},
+<유전자 컴퓨터>
+{
+	Number(5203),
+	<Prerequisite>
+	[
+		Number(1213)
+	],
+	Description("이는 3세대 컴퓨터이며, 제국에서 통용되는 가장 일반적인 기종의 함선용 컴퓨터이다. 이 컴퓨터는 이전 기종만큼 빠른 정보 처리능력을 보유하고 있으며, 동시에 인공지각을 통한 직관적 판단을 내리는 능력도 보유하고 있다. 이 직관적 판단력은 전투나 기습같은 촌각을 다투는 상황에서 그 진가를 발휘한다."),
+	Category("COMP"),
+	Level(3),
+	AR(172),
+	DR(354)
+},
+<양자 컴퓨터>
+{
+	Number(5204),
+	<Prerequisite>
+	[
+		Number(1221)
+	],
+	Description("4세대의 컴퓨터이다. 대부분의 종족들은 4단계 이상의 컴퓨터를 개발할 수 없다. 이 컴퓨터는 양자 처리장치를 사용하여 기존의 컴퓨터보다 월등한 정보 처리능력을 자랑한다."),
+	Category("COMP"),
+	Level(4),
+	AR(218),
+	DR(429)
+},
+<신경망 컴퓨터>
+{
+	Number(5205),
+	<Prerequisite>
+	[
+		Number(1223)
+	],
+	Description("함선에 탑재하는 컴퓨터로는 궁극의 단계에 이른 컴퓨터가 신경망 컴퓨터이다. 자가진화 알고리즘을 사용하기 때문에 이 컴퓨터는 어떤 상황에서도 적합한 판단을 내릴 수 있다. 이 점 때문에 이 컴퓨터는 함선에 탑재되는 타 기종의 컴퓨터보다 우수하다."),
+	Category("COMP"),
+	Level(5),
+	AR(271),
+	DR(518)
+},
+
+# 53XX: Shield
+
+# Deflection: Deflection Solidity
+# Str: Strength
+# Recharge: Recharge Rate
+
+<전자기 방어막>
+{
+	Number(5301),
+	<Prerequisite>
+	[
+		Number(1202)
+	],
+	Description("모든 종족들이 개발하여 사용할 수 있는 가장 기본적인 방어막이다. 행성 주위의 우주진 같은 미세한 장애물 때문에 자주 쓰인다. 전투시에도 약간의 방어력을 제공하긴 하지만 그리 대단하지는 않다. "),
+	Category("SHLD"),
+	Level(1),
+	Deflection(1),
+	<Recharge>
+	[
+		Class1(1),
+		Class2(2),
+		Class3(3),
+		Class4(4),
+		Class5(5),
+		Class6(6),
+		Class7(7),
+		Class8(8),
+		Class9(9),
+		Class10(10)
+	],
+	<Str>
+	[
+		Class1(15),
+		Class2(26),
+		Class3(43),
+		Class4(74),
+		Class5(125),
+		Class6(213),
+		Class7(362),
+		Class8(616),
+		Class9(1046),
+		Class10(1779)
+	]
+},
+<중력양자 방어막>
+{
+	Number(5302),
+	<Prerequisite>
+	[
+		Number(1320)
+	],
+	Description("다음 단계의 방어막으로, 대부분의 종족은 행성의 중심 핵 광업 기술의 개발과 더불어 개발하곤 한다. 이 방어막은 주로 행성의 중심핵에서 볼 수 있는 불리한 환경과 고압으로부터 광산 설비의 안정을 보장하기 위한 용도로 사용된다. 이 방어막의 부가된 방어력은 전투 중에 매우 유용하다."),
+	Category("SHLD"),
+	Level(2),
+	Deflection(2),
+	<Recharge>
+	[
+		Class1(2),
+		Class2(4),
+		Class3(6),
+		Class4(8),
+		Class5(10),
+		Class6(12),
+		Class7(14),
+		Class8(16),
+		Class9(18),
+		Class10(20)
+	],
+	<Str>
+	[
+		Class1(21),
+		Class2(36),
+		Class3(61),
+		Class4(103),
+		Class5(175),
+		Class6(298),
+		Class7(507),
+		Class8(862),
+		Class9(1465),
+		Class10(2490)
+	]
+},
+<편향막(디플렉터)>
+{
+	Number(5303),
+	<Prerequisite>
+	[
+		Number(1219)
+	],
+	Description("3세대 방어막이다.  중성 양자 방어막을 개량한 것으로, 확률과 카오스 인자를 사용해서, 가장 위험한 곳을 예측하여 취약점이나 위험한 부분에 방어력을 강화시킨다."),
+	Category("SHLD"),
+	Level(3),
+	Deflection(3),
+	<Recharge>
+	[
+		Class1(3),
+		Class2(6),
+		Class3(9),
+		Class4(12),
+		Class5(15),
+		Class6(18),
+		Class7(21),
+		Class8(24),
+		Class9(27),
+		Class10(30)
+	],
+	<Str>
+	[
+		Class1(29),
+		Class2(50),
+		Class3(85),
+		Class4(144),
+		Class5(246),
+		Class6(417),
+		Class7(710),
+		Class8(1206),
+		Class9(2051),
+		Class10(3486)
+	]
+},
+<배리어>
+{
+	Number(5304),
+	<Prerequisite>
+	[
+		Number(1223)
+	],
+	Description("배리어는 4세대 방어막이다. 이를 개발하는 데는 몇가지 중요한 과학 기술이 필요하지만, 많은 종족들은 이들 기술을 이해할 능력이 없는 관계로 4세대 이상의 방어막은 연구할 수가 없다. 배리어 방어막은 진보된 예측방법을 이용한다."),
+	Category("SHLD"),
+	Level(4),
+	Deflection(4),
+	<Recharge>
+	[
+		Class1(4),
+		Class2(8),
+		Class3(12),
+		Class4(16),
+		Class5(20),
+		Class6(24),
+		Class7(28),
+		Class8(32),
+		Class9(36),
+		Class10(40)
+	],
+	<Str>
+	[
+		Class1(41),
+		Class2(70),
+		Class3(119),
+		Class4(202),
+		Class5(344),
+		Class6(584),
+		Class7(994),
+		Class8(1689),
+		Class9(2871),
+		Class10(4881)
+	]
+},
+<다상 방어막>
+{
+	Number(5305),
+	<Prerequisite>
+	[
+		Number(1335)
+	],
+	Description("가장 발달된 형태의 방어막이다. 이 수준의 방어막을 연구해 낼 수 있는 종족은 그리 많지 않으며 그만큼 이 방어막이 개발되면 전국에 끼칠 영향은	대단하다. 기존의 방어막과는 다른 방식으로 에너지를 운용하며, 다른 차원으로 에너지를 전사시킬 수가 있기 때문에 종종 공격을 한 상대에게 피해를 되돌려주는 경우도 있다."),
+	Category("SHLD"),
+	Level(5),
+	Deflection(5),
+	<Recharge>
+	[
+		Class1(5),
+		Class2(10),
+		Class3(15),
+		Class4(20),
+		Class5(25),
+		Class6(30),
+		Class7(35),
+		Class8(40),
+		Class9(45),
+		Class10(50)
+	],
+	<Str>
+	[
+		Class1(58),
+		Class2(98),
+		Class3(167),
+		Class4(283),
+		Class5(481),
+		Class6(818),
+		Class7(1391),
+		Class8(2365),
+		Class9(4020),
+		Class10(6834)
+	]
+},
+
+# 54XX: Engine
+
+# BSpeed: Battle Speed
+# Mobility: Battle Mobility
+# CSpeed: Cruise Speed
+
+<역추진 엔진>
+{
+	Number(5401),
+#	<Prerequisite>
+#	[
+#		Number()
+#	],
+	Description("모든 종족이 초반에 사용할 수 있는 엔진이다.전혀 효율적이지 않으며 이것의 사용은 종족의 낙후된 기술력을 보여주곤 한다. 물건을 움직이기 때문에 엔진이라고 겨우 불릴만 한 물건이다."),
+	Category("ENGN"),
+	Level(1),
+#	CSpeed(),
+	<BSpeed>
+	[
+		Class1(16),
+		Class2(15),
+		Class3(14),
+		Class4(14),
+		Class5(13),
+		Class6(13),
+		Class7(12),
+		Class8(11),
+		Class9(10),
+		Class10(9)
+	],
+	<Mobility>
+	[
+		Class1(45),
+		Class2(41),
+		Class3(37),
+		Class4(33),
+		Class5(30),
+		Class6(27),
+		Class7(24),
+		Class8(21),
+		Class9(18),
+		Class10(15)
+	]
+},
+<핵융합엔진>
+{
+	Number(5402),
+	<Prerequisite>
+	[
+		Number(1310)
+	],
+	Description("2세대의 엔진이다. 진정한 의미의 우주여행은 융합엔진 이후에나 가능해졌다는게 지금까지의 통설이다. 역추진로켓 엔진보다 많은 발전을 보이긴 했으나 역시 많이 부족한 엔진이다."),
+	Category("ENGN"),
+	Level(2),
+#	CSpeed(),
+	<BSpeed>
+	[
+		Class1(22),
+		Class2(21),
+		Class3(20),
+		Class4(19),
+		Class5(18),
+		Class6(17),
+		Class7(16),
+		Class8(15),
+		Class9(14),
+		Class10(13)
+	],
+	<Mobility>
+	[
+		Class1(54),
+		Class2(49),
+		Class3(44),
+		Class4(40),
+		Class5(36),
+		Class6(32),
+		Class7(28),
+		Class8(24),
+		Class9(21),
+		Class10(18)
+	]
+},
+<반물질 엔진>
+{
+	Number(5403),
+	<Prerequisite>
+	[
+		Number(1322)
+	],
+	Description("3세대의 엔진이다. 현재 제국 내에서 일반적으로 사용되는 엔진이다. 반물질 작용의 막강한 힘을 이용하기 때문에	이전의 엔진들보다 빠르고 기동성이 높다."),
+	Category("ENGN"),
+	Level(3),
+#	CSpeed(),
+	<BSpeed>
+	[
+		Class1(31),
+		Class2(30),
+		Class3(29),
+		Class4(27),
+		Class5(25),
+		Class6(24),
+		Class7(23),
+		Class8(21),
+		Class9(19),
+		Class10(17)
+	],
+	<Mobility>
+	[
+		Class1(65),
+		Class2(59),
+		Class3(53),
+		Class4(48),
+		Class5(43),
+		Class6(38),
+		Class7(34),
+		Class8(30),
+		Class9(26),
+		Class10(22)
+	]
+},
+<임펄스 엔진>
+{
+	Number(5404),
+	<Prerequisite>
+	[
+		Number(1332)
+	],
+	Description("임펄스 엔진은 4세대 엔진이며 과학이 상당히 발전하지 않으면 사용할 수 없는 엔진이다. 이 엔진은 최첨단의 에너지-물질과학을 이용하여 엔진에서 낭비되던 에너지를 사용할 수 있기 때문에 기존의 어느 엔진보다도 효율이 높고 성능이 좋다."),
+	Category("ENGN"),
+	Level(4),
+#	CSpeed(),
+	<BSpeed>
+	[
+		Class1(42),
+		Class2(40),
+		Class3(38),
+		Class4(36),
+		Class5(34),
+		Class6(32),
+		Class7(30),
+		Class8(28),
+		Class9(26),
+		Class10(24)
+	],
+	<Mobility>
+	[
+		Class1(78),
+		Class2(71),
+		Class3(64),
+		Class4(58),
+		Class5(52),
+		Class6(46),
+		Class7(41),
+		Class8(36),
+		Class9(31),
+		Class10(26)
+	]
+},
+<위상차 추진 엔진>
+{
+	Number(5405),
+	<Prerequisite>
+	[
+		Number(1334)
+	],
+	Description("위상차 추진엔진은 제국 내에서는 궁극의 엔진으로 통한다. 위상차 공간이동이라는 특이한 방식으로 이동을 한다.	제 3자에게 있어서 이 엔진으로 이동할 경우 한 점에서 갑자기 다른 한 점으로 점프를 한 것 처럼 보일 수도 있다. 실제로는, 함선의 앞쪽 공간을 다른 차원으로 구부려 넣기 때문에 이동 거리가 짧아진다."),
+	Category("ENGN"),
+	Level(5),
+#	CSpeed(),
+	<BSpeed>
+	[
+		Class1(59),
+		Class2(57),
+		Class3(54),
+		Class4(51),
+		Class5(48),
+		Class6(46),
+		Class7(43),
+		Class8(40),
+		Class9(37),
+		Class10(34)
+	],
+	<Mobility>
+	[
+		Class1(93),
+		Class2(85),
+		Class3(77),
+		Class4(69),
+		Class5(62),
+		Class6(55),
+		Class7(49),
+		Class8(43),
+		Class9(37),
+		Class10(31)
+	]
+},
+
+# 55XX: Device
+
+# BSpeed: Battle Speed
+# Mobility: Battle Mobility
+# CSpeed: Cruise Speed
+
+<관성 중화장치>
+{
+	Number(5501),
+	<Prerequisite>
+	[
+		Number(1312)
+	],
+	Description("	관성 중화장치는 초반에 탑재할 수 있는 기본장비중 하나이다. 초반에 쓸 수 있는 장비중에서 가장 쓸모가 있는 장비이기도 하다. 속도를 줄여야 할 때, 관성을 중화시켜 감속을 쉽게 하기 때문에, 관성중화장치를 사용하는	함선들은 기동성이 매우 좋다. 이는 회피기동의 효율을 높이는 등 전장에서는 귀중한 잇점이 된다."),
+	Category("DEV"),
+	Level(1),
+	<Effect>
+	{
+		<DR against Beam>
+		{
+			Amount(20),
+			Type( "Proportional" )
+		},
+		<Mobility>
+		{
+			Amount(20),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<증폭 칩>
+{
+	Number(5502),
+	<Prerequisite>
+	[
+		Number(1318)
+	],
+	Description("이 장치는 \"칩\" 이라기보다는, 세밀하게 만들어진 결정 구조이다. 이 \"칩\"은 함선을 조종하는 동안 생성되는 열을 다른곳으로 분산시킨다. 이 열의 분산은 전투중에 무기를 식힐 때, 그리고 방어막에 실린 여분의 열을 제거할 때 큰 도움을 준다."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<Shield Solidity>
+		{
+			Amount(1),
+			Type("Absolute"),
+		},
+		<Shield Strength>
+		{
+			Amount(10),
+			Type("Proportional"),
+		},
+		<Cooling Time>
+		{
+			Amount(-5),
+			Type("Proportional"),
+		},
+	},
+	MinC(1),
+	MaxC(10)
+},
+<초능력 드라이브>
+{
+	Number(5503),
+	<Prerequisite>
+	[
+		Number(1419)
+	],
+	Description("이 장치는 초능력을 가진 종족들만 사용할 수 있다. 초능력 드라이브를 함선에 탑재하면 함선의 파일럿은 초능력을 집중하여 함선의 속도를 더욱 가속시킬 수 있다. 이는 어떤 함선에도 상당한 잇점을 부여한다."),
+	Category("DEV"),
+	Level(5),
+	<Attribute>
+	{
+		Name( "PSI Race Only" )
+	},
+	<Effect>
+	{
+		<Mobility>
+		{
+			Amount(25),
+			Type( "Proportional" )
+		},
+		<Speed>
+		{
+			Amount(25),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<방어장 생성기>
+{
+	Number(5504),
+	<Prerequisite>
+	[
+		Number(1314)
+	],
+	Description("'방어장' 생성기라는 이름은 상당히 혼동을 야기할 소지가 높으나, 이 장치 자체는 방어장이라기 보다는 현재 함선에 탑재된 방어장을 더욱 개선시키는 장치이다. 이는 통일 에너지 이론을 바탕으로 하여 함선에 어떤 방어막을 설치하더라도 이를 강화할 수 있게 한 것이다."),
+	Category("DEV"),
+	Level(1),
+	<Effect>
+	{
+		<Shield Solidity>
+		{
+			Amount(1),
+			Type("Absolute"),
+		},
+		<Shield Strength>
+		{
+			Amount(25),
+			Type("Proportional"),
+		},
+		<Impenetrable Shield>
+		{
+			Amount(10),
+			Type("Absolute"),
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<고에너지 포커스>
+{
+	Number(5505),
+	<Prerequisite>
+	[
+		Number(1332)
+	],
+	Description("이 장치는 어떤 빔 무기에도 사용할 수 있다.	이 장치를 탑재하면 빔 무기의 집중력을 개량하여 적에게 더욱 강한 에너지를 발사하게 된다.	그 결과 파괴력이 훨씬 향상된다. "),
+	Category("DEV"),
+	Level(5),
+	<Effect>
+	{
+		<Beam Damage>
+		{
+			Amount(20),
+			Type("Proportional"),
+		}
+	},
+	MinC(5),
+	MaxC(10)
+},
+<초능력 제어장치>
+{
+	Number(5506),
+	<Prerequisite>
+	[
+		Number(1421)
+	],
+	Description("이 장치는 초능력을가진 종족들만 사용할 수 있다. 이 장치는 각 제독들이 참고할 수 있는 일종의 인터페이스의 형태를 띠고 있다. 이 인터페이스에서 각 함선의 제독들은 그들의 함선 전반에 관해 여러가지 부가적 컨트롤을 할 수 있다. 이는 각 함선의 초능력 공격/방어력의 향상으로 나타난다."),
+	Category("DEV"),
+	Level(5),
+	<Attribute>
+	{
+		Name( "PSI Race Only" )
+	},
+	<Effect>
+	{
+		<PSI Attack>
+		{
+			Amount(10),
+			Type("Proportional"),
+		},
+		<PSI Defense>
+		{
+			Amount(15),
+			Type("Proportional"),
+		}
+	},
+	MinC(4),
+	MaxC(10)
+},
+<광폭장 생성기>
+{
+	Number(5507),
+	<Prerequisite>
+	[
+		Number(1126)
+	],
+	Description("이 장치는 초능력을가진 종족들만 사용할 수 있다. 함선의 제독이 그의 미움을 이 장치에 주입시키면 함대 주위에 특별한 장을 형성한다. 이 장 안에 들어가는 적함은 누구나 초능력 공격을 받게 된다. 또한, 이 초능력 공격은 적의 함선을 파괴할 뿐 아니라 적의 전의도 꺾는다."),
+	Category("DEV"),
+	Level(4),
+	<Attribute>
+	{
+		Name( "PSI Race Only" )
+	},
+	<Effect>
+	{
+		<PSI Damage>
+		{
+			Amount( 800 ),
+			Type( "Absolute" ),
+			Range( 875 ),
+			Period(50),
+			Target( "Enemy Fleet" )
+		}
+	},
+	MinC(7),
+	MaxC(10)
+},
+<정신 보호장치>
+{
+	Number(5508),
+	<Prerequisite>
+	[
+		Number(1420)
+	],
+	Description("이 장치는 함선의 중앙에 설치한다. 이 장치는 모든 승무원에게 자신감과 고요함을 느끼게 한다. 또한, 초능력 방어를 향상시키며, 적의 초능력 공격의 결과로 일어날 수 있는 승무원의 공황상태같은 기타 불리한 상태를 예방한다."),
+	Category("DEV"),
+	Level(4),
+	<Effect>
+	{
+		<PSI Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Berserk Modifier>
+		{
+			Amount( -10 ),
+			Type( "Absolute" )
+		},
+		<Morale Modifier>
+		{
+			Amount( -10 ),
+			Type( "Absolute" )
+		},
+	},
+	MinC(1),
+	MaxC(10)
+},
+<추진력 강화장치>
+{
+	Number(5509),
+	<Prerequisite>
+	[
+		Number(1316)
+	],
+	Description("이 장치는 함선의 어떤 엔진이라도 덧달 수 있다. 이 장치는 엔진의 출력을 향상시키며, 효율을 높인다. 그 결과 함선은 빨리 움직이며 제어는 용이해진다. 이 장치가 반드시 필요한 함선들도 있다."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<Mobility>
+		{
+			Amount(15),
+			Type( "Proportional" )
+		},
+		<Speed>
+		{
+			Amount(15),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<방어막 강화기>
+{
+	Number(5510),
+	<Prerequisite>
+	[
+		Number(1214)
+	],
+	Description("이름이 암시하듯 이 장치는 방어막을 강화시키는 장치이다.	이 장치를 설치하면 방어막의 안정성을 매우 강화시킬 수 있다. 또한, 피해를 입었을 경우에도 빨리 회복할 수 있다."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<Shield Recharge Rate>
+		{
+			Amount(100),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<ECM 전파교란기>
+{
+	Number(5511),
+	<Prerequisite>
+	[
+		Number(1215)
+	],
+	Description("이 장치는 적의 공격에 대한 방어책이며 미사일이 함선을 추격하는데 이용하는 신호를 지우는 일을 한다.	이 장치의 덕에 미사일끼리 충돌하여 폭발하고 함선은 아무 피해를 입지 않는 경우도 종종 발생한다."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<DR against Missile>
+		{
+			Amount( 25 ),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<은폐장 발생기>
+{
+	Number(5512),
+	<Prerequisite>
+	[
+		Number(1217)
+	],
+	Description("이 장치는 위대한 전술가와 해적들이 모두 매우 귀중하게 여기는 장치중 하나이다. 완성도는 그다지 높지 않지만, 이 장치를 쓸 경우 적에게 탐지되지 않고 이동할 수 있다. 은폐장 형성에 필요한 에너지는 함선의 크기가 커짐에 따라 기하급수적으로 늘어난다. 그래서 함선이 어느정도 이상 커지면 이 장치를 사용할 수 없다."),
+	Category("DEV"),
+	Level(4),
+	<Effect>
+	{
+		<Stealth>
+		{
+			Amount( 25 )
+		},
+		<Complete Cloaking>
+		{
+		}
+	},
+	MinC(1),
+	MaxC(5)
+},
+<생체장갑 재생기>
+{
+	Number(5513),
+	<Prerequisite>
+	[
+		Number(1418)
+	],
+	Description("이 장치는 장치라기보다는 막대한 양의 영양분과 스테로이드 덩어리라고 볼 수 있다. 이 장치는 생체장갑에 이들 영양분과 스테로이드를 투입하여 재생을 가속시킨다. 그렇기때문에 이 장치를 항시 사용할 수는 없다. 하지만 전투는 일반적으로 그다지 오래 지속되지 않고, 이 장치를 사용하여 소기의 득을 보기엔 충분하다."),
+	Category("DEV"),
+	Level(3),
+	<Attribute>
+	{
+		Name("Bio Armor Only"),
+	},
+	<Effect>
+	{
+		<Repair>
+		{
+			Amount( 3 ),
+			Type( "Proportional" ),
+			Period( 10 )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<자가 수리 장치>
+{
+	Number(5514),
+	<Prerequisite>
+	[
+		Number(1328)
+	],
+	Description("이 \"장치\"는 아주 작은 로봇의 엄청난 무리로 구성되어 있다. 이 로봇의 떼는 수리가 필요한 곳이 있으면 어디든 몰려가서 수리를 한다. 굳이 제한이라고 하면 소형 함선의 경우 수리하는 데 함선 내에 있는 물자보다 많은 양을 필요로 할 때가 있다.	어느 특정 크기 이상의 함선에 이 장치를 사용하면 이 문제를 해결할 수 있다."),
+	Category("DEV"),
+	Level(4),
+	<Attribute>
+	{
+		Name( "Non-Bio Armor Only" )
+	},
+	<Effect>
+	{
+		<Repair>
+		{
+			Amount( 2 ),
+			Type( "Proportional" ),
+			Period( 10 )
+		}
+	},
+	MinC(3),
+	MaxC(10)
+},
+<훈련 주사기>
+{
+	Number(5515),
+	<Prerequisite>
+	[
+		Number(1417)
+	],
+	Description("이 장치는 나노머신과 약물의 혼합물을 주사하는 도구이다.	이 장치를 승무원에게 사용하면 그들에게 백전노장이 겪으면서 얻은 온갖 능력과 심리적 자신감을 주입할 수 있다. 심지어 이 도구의 힘을 빌면 신참 함대도 산전수전 다 겪은 함대처럼 노련하게 전투에 임할 수 있다."),
+	Category("DEV"),
+	Level(3),
+	<Effect>
+	{
+		<Trained>
+		{
+		}
+	},
+	MinC(6),
+	MaxC(10)
+},
+<강화 선체>
+{
+	Number(5516),
+	<Prerequisite>
+	[
+		Number(1317)
+	],
+	Description("이 장치는 함선 전체에 배치되어 있다. 극소형의 로봇을 사용하여 선체 전체를 보호하며 이는 장갑 성능의 전반적인 향상을 가져온다. 이 장치를 사용할 경우 완파될 상황의 선체가 파괴되지는 않고 심각한 수준의 피해를 입는 정도로 마무리 되기 때문에 전투에 투입되는 함선에는 매우 필요한 장치라고 할 수 있다."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<HP>
+		{
+			Amount(20),
+			Type("Proportional"),
+		},
+		<Impenetrable Armor>
+		{
+			Amount(15)
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<중력장 교란기>
+{
+	Number(5517),
+	<Prerequisite>
+	[
+		Number(1316)
+	],
+	Description("이 장치는 대형 우주선의 큰 골칫거리중 하나이다. 함선 내 적절한 위치에 이 장치를 설치하면 특이한 장이 함선 주위에 생성되는데, 이 장 안에 적함이 들어올 경우	방향 조정에 심각한 지장을 겪게 된다. 이 장은 중심부위로 안정화 하기 때문에 이 장치를 탑재한 함선은 영향을 받지 않으나, 일정 거리 바깥에 있는 함선들은 \"낙하방향\"이 계속 바뀌는 듯한 느낌을 받게 된다. 이 장치는 일정한 수준 이상의 질량을 필요로 하기 때문에 대형 함선에만 탑재할 수 있다."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<Mobility>
+		{
+			Amount(-20),
+			Type( "Proportional" ),
+			Range( 1000 ),
+			Target( "Enemy Fleet" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<광-11>
+{
+	Number(5518),
+	<Prerequisite>
+	[
+		Number(1220)
+	],
+	Description("이 장치는 무기와는 관련이 없으나 상당히 파괴력이 높은 장치이다. 이 장치는 근처의 적함대와 접속하여 함선 컴퓨터에 대량의 쓸모 없는 정보를 퍼붓는다.	적함대가 어느정도 발달한 보안장치를 설비하고 있지 않으면 이는 치명적인 결과를 불러 일으킬 수 있다."),
+	Category("DEV"),
+	Level(4),
+	<Effect>
+	{
+		<Computer>
+		{
+			Amount(-20),
+			Type( "Proportional" ),
+			Range( 900 ),
+			Target( "Enemy Fleet" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<정신 추적기>
+{
+	Number(5519),
+	<Prerequisite>
+	[
+		Number(1117)
+	],
+	Description("이 장치는 오로지 정신을 추적하는 기능 밖에 없다. 하지만 초능력 무기와 함께 목표에게 사용하면 엄청나게 정밀도를 높일 수 있다."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<PSI Attack>
+		{
+			Amount(10),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<초능력 배리어>
+{
+	Number(5520),
+	<Prerequisite>
+	[
+		Number(1422)
+	],
+	Description("어떻게 정신이 작용하는지에 대해서만 이해하면 이 장치는 매우 간단한 것이다. 어떠한 초능력 공격이 들어오면 공격의 초점을 흐리게 만들어 피해를 입을 확률을 줄인다. 단, 그 공격을 당할 경우 피해를 줄여주지는 못한다."),
+	Category("DEV"),
+	Level(5),
+	<Effect>
+	{
+		<PSI Defense>
+		{
+			Amount(35),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<인공지능 함대>
+{
+	Number(5521),
+	<Prerequisite>
+	[
+		Number(1213)
+	],
+	Description("이것은 어떠한 함대라도 탐을 낼 만한 장비다. 실제로 생명을 가진 함선을 보유한 종족도 있긴 하지만, 보통 함대 자체가 의식을 갖는 것은 아니고 대개 하나하나의 함선들이 독립적으로 생각한다. 이 장치는 그들의 의식을 연결하여 함대 자체를 하나의 거대한 생명체처럼 인식하게 만든다. 결과적으로, 그 함대는 우주의 어느 함대에도 지지 않을 정도의 운용성을 발휘하게 된다."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<Efficiency>
+		{
+			Amount(15),
+			Type( "Absolute" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<보조 프로세서>
+{
+	Number(5522),
+	<Prerequisite>
+	[
+		Number(1212)
+	],
+	Description("비교적으로 간단한 장치이다. 이 장치는 메인 컴퓨터를 보조하는 프로세서로, 메인 컴퓨터의 정확성을 크게 향상시킨다. 그 결과, 같은 정확도를 유지하면서도 더욱 빨리 데이터를 처리하기 때문에 여러 방면에서 함대 능력의 향상을 불러 일으킨다."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<Computer>
+		{
+			Amount(10),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<탈출 포드>
+{
+	Number(5523),
+	<Prerequisite>
+	[
+		Number(1315)
+	],
+	Description("전투에 전혀 도움을 주지 않는 장치 치고는 이 장치는 상당히 큰 공간을 차지한다. 하지만 대부분의 사령관들은 이 장치가 없는 함선은 승선을 거부한다. 또한 많은 통치자들은 수족같은 장군들을 살리기 위해서 함선에 반드시 이 장치를 설치하곤 한다. "),
+	Category("DEV"),
+	Level(3),
+	<Effect>
+	{
+		<Commander Survival>
+		{
+			Amount(20),
+			Type( "Absolute" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<구조신호등>
+{
+	Number(5524),
+	<Prerequisite>
+	[
+		Number(1123)
+	],
+	Description("이 장치는 그리 크지 않지만 상당한 전력을 소모한다.	이 장치는 매우 작아서 표준 EVA 수트에 장착할 수도 있다.	탈출 포드가 없는 함선을 지휘하는 사령관의 경우 이 장치를 이용하여 만약의 경우를 대비할 수 있다.	이 장치를 탈출 포드에 장치할 경우 더욱 효과가 좋다."),
+	Category("DEV"),
+	Level(4),
+	<Effect>
+	{
+		<Commander Survival>
+		{
+			Amount(10),
+			Type( "Absolute" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+
+<우주 광업 모듈>
+{
+	Number(5525),
+#	<Prerequisite>
+#	[
+#		Number()
+#	],
+
+	Description("NONE"),
+	Category("DEV"),
+	Level(1),
+	<Race>
+	{
+		Race("Buckaneer"),
+	},
+	<Effect>
+	{
+		<Space Mining>
+		{
+#			Amount(),
+#			Type(""),
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+
+<항 초능력 장치>
+{
+	Number(5526),
+#	<Prerequisite>
+#	[
+#		Number()
+#	],
+
+	Description("None"),
+	Category("DEV"),
+	Level(1),
+	<Race>
+	{
+		Race("Xerusian"),
+	},
+	<Effect>
+	{
+		<PSI Neutralization Field>
+		{
+			Amount(95),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+
+# 6XXX: Weapon
+
+# Type: BM(Beam), MSL(Missile), PRJ(Projectile), (FGT(Fighter))
+# AR: Attack Rate
+# Roll: Roll
+# Dice: Dice
+# Space: 차지하는 공간
+# CT: Cooling Time. 발사 딜레이
+# Range: Attack Range. 사정거리
+# AOF: Angle of Fire. 발사각. 전면 기준
+# WSpeed: Weapon Speed. 턴당 이동하는 무기 속도
+
+<레이저>
+{
+	Number(6101),
+	<Prerequisite>
+	[
+		Number(1302)
+	],
+	Description("레이저는 모든 빔 무기류의 가장 기본이라 할 수 있다. 빛을 특정한 결정 구조에 집중하여 발사하는 것으로 효과적인 장비가 될 수도, 혹은 치명적인 무기가 될 수도 있다. 제국내 모든 종족들이 보통 소유하고 있는 무기로 볼 수 있다. 나중에 개발된 무기에 비하면 그리 위력적이지는 않지만 초보자들에게는 빼놓을 수 없는 무기이다."),
+	Category("WPN"),
+	Level(1),
+	Type("BM"),
+	AR(100),
+	Roll(2),
+	Dice(4),
+	Space(25),
+	CT(50),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<플라즈마 빔>
+{
+	Number(6102),
+	<Prerequisite>
+	[
+		Number(1307)
+	],
+	Description("플라즈마 빔 무기는 물질의 상태 전이에 대한 지식을 기반으로 하여 플라즈마 선을 적에게 집중시키는 무기이다. 파괴력은 상당하며, 치명적일 수도 있다. 	이런 종류의 무기로부터 방어할 수 있는 지식을 확보하지 못한 적에게는 매우 치명적인 무기이다."),
+	Category("WPN"),
+	Level(2),
+	Type("BM"),
+	<Effect>
+	{
+		<Shield Overheat>
+		{
+		},
+		<Additional Damage to Bio Armor>
+		{
+			Amount(100),
+			Type("Proportional"),
+		}
+	},
+	AR(120),
+	Roll(3),
+	Dice(4),
+	Space(28),
+	CT(70),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<크리스탈 레이저>
+{
+	Number(6103),
+	<Prerequisite>
+	[
+		Number(1318)
+	],
+	Description("크리스탈 레이저는 크리스탈 정련기술을 사용하여 레이저 무기의 집중부속에 쓰이는 렌즈의 순도를 높인 레이저이다. 그래서 크리스탈 레이저는 더욱 정확하고 더욱 파괴력도 강하다.	그러나 보통의 레이저만큼 렌즈가 빨리 식지 않기 때문에 재장전 시간이 길어질 수 밖에 없다는 결점이 있다."),
+	Category("WPN"),
+	Level(2),
+	Type("BM"),
+	AR(120),
+	Roll(4),
+	Dice(4),
+	Space(30),
+	CT(60),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<중력양자 빔>
+{
+	Number(6104),
+	<Prerequisite>
+	[
+		Number(1316)
+	],
+	Description("중력양자 빔은 다량의 중력양자를 한 점으로 투사한 것이다. 중력양자 빔은 날아가면서 궤적에 놓인 모든 물체의 인력으로 인해 엄청난 속도와 질량을 끌어 모은다. 그 결과, 목표물에 중력양자 빔이 명중하면 중력양자 빔 자체의 파괴력 외에 중력양자 빔이 궤적으로부터 끌어모은 속도와 질량에 의한 파괴력이 가중되어 더욱 치명적인 결과를 불러 일으킨다."),
+	Category("WPN"),
+	Level(3),
+	Type("BM"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(25)
+		},
+		<Armor Piercing>
+		{
+			Amount(25)
+		}
+	},
+	AR(144),
+	Roll(4),
+	Dice(4),
+	Space(29),
+	CT(55),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<초능력 블라스터>
+{
+	Number(6105),
+	<Prerequisite>
+	[
+		Number(1419)
+	],
+	Description("초능력 블라스터는 통상의 사용하는 종족에 따라 '보통의' 무기에서 '치명적인' 무기도 될 수 있는 무기이다. 종족 고유의 초능력을 사용하기도 하나 이 목적을 위해 고안된 기계의 힘으로도 작동하며, 눈에 보이지는 않으나 엄청난 파괴력으로 적을 공격한다."),
+	Category("WPN"),
+	Level(3),
+	Type("BM"),
+	<Effect>
+	{
+		<PSI>
+		{
+		},
+		<PSI Empower>
+		{
+			Amount( 100 ),
+			Type( "Proportional" )
+		}
+	},
+	AR(144),
+	Roll(4),
+	Dice(4),
+	Space(35),
+	CT(72),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<중성자 블라스터>
+{
+	Number(6106),
+	<Prerequisite>
+	[
+		Number(1325)
+	],
+	Description("중성자 블래스터는 소립자 물리학을 이용한 무기로, 중성자를 투사하여 선체를 파괴하는 무기이다. 중성자 빔은 정찰레이저의 진로를 따라 적을 추적한다. 선체에 명중할 경우 선체와 함께 작용하여 심각한 타격을 입히며 완파가 되지 않더라도 전투 불능의 상태까지 몰고 갈 수 있는 강력한 무기이다."),
+	Category("WPN"),
+	Level(3),
+	Type("BM"),
+	<Effect>
+	{
+		<Additional Damage to Bio Armor>
+		{
+			Amount(100),
+			Type("Proportional"),
+		}
+	},
+	AR(144),
+	Roll(5),
+	Dice(5),
+	Space(38),
+	CT(60),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<페이저>
+{
+	Number(6107),
+	<Prerequisite>
+	[
+		Number(1326)
+	],
+	Description("페이저는 목표물의 시공 교류를 변화시키는 강력한 무기이다. 거의 아무런 데미지가 없는 경우부터, 페이저에게 파괴된 물체의 구성 요소조차 완전히 파괴/소멸되는 경우까지 편차가 매우 심하다. 그러나 페이저는 제국 내에서 쓰이는 전투에서 가장 효용성이 높은 무기 중 하나이다."),
+	Category("WPN"),
+	Level(4),
+	Type("BM"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount( 50 )
+		}
+	},
+	AR(173),
+	Roll(5),
+	Dice(4),
+	Space(36),
+	CT(40),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<타키온 빔>
+{
+	Number(6108),
+	<Prerequisite>
+	[
+		Number(1331)
+	],
+	Description("목표 물체의 존재론적 확률을 변화시킨다. 이 무기가 꾀하는 바는, 목표 물체를 구성하고 있는 모든 미립자들이 서로 \"임의로\" 반발하도록 하는 것이다. 한순간만이라도 그렇게 된다면, 목표 영역 내의 모든 입자들이 퍼지려 하는 힘이 엄청난 폭발력으로 바뀌게 된다."),
+	Category("WPN"),
+	Level(4),
+	Type("BM"),
+	AR(273),
+	Roll(5),
+	Dice(5),
+	Space(40),
+	CT(54),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<불협화음 진동>
+{
+	Number(6109),
+	<Prerequisite>
+	[
+		Number(1216)
+	],
+	Description("지금까지 발명된 빔 무기중 가장 치명적인 것이다. 이 광선의 파괴력은 타의 추종을 불허할 정도이다. 더우기, 이 무기는 적의 장갑이 무엇이든 이들을 전부 무시하고 공격을 하기 때문에 더욱 파괴력이 높다고 할 수 있다."),
+	Category("WPN"),
+	Level(5),
+	Type("BM"),
+	<Effect>
+	{
+		<Armor Piercing>
+		{
+			Amount( 100 )
+		}
+	},
+	AR(200),
+	Roll(7),
+	Dice(7),
+	Space(50),
+	CT(70),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<초능력 폭풍 발사기>
+{
+	Number(6110),
+	<Prerequisite>
+	[
+		Number(1424)
+	],
+	Description("초능력 폭풍 발사기는 그 자체의 파괴력 이외에도 초능력 폭풍을 견뎌낸 개체에 남는 무시무시한 후유증때문에 더욱 치명적인 무기이다. 이 무기는 4차원에 소용돌이를 일으켜 3차원 공간에 환영을 불러 일으킨다. 언제나 파괴력이 치명적인 것은 아니지만 그 후유증은 비교할 수 없이 강력해서 제 아무리 대담한 사령관이라고 해도 겁을 집어먹고 후퇴할 수 밖에 없다."),
+	Category("WPN"),
+	Level(5),
+	Type("BM"),
+	<Effect>
+	{
+		<PSI>
+		{
+		}
+	},
+	AR(200),
+	Roll(5),
+	Dice(5),
+	Space(38),
+	CT(50),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<핵 미사일>
+{
+	Number(6201),
+	<Prerequisite>
+	[
+		Number(1301)
+	],
+	Description("과거에 가장 위협적인 무기였었던 핵미사일은 흔히 과학이 발전함에 따라 뒷전으로 밀려나곤 한다. 사실상 다른 성계로 갈 정도의 과학력을 보유한 종족이라면 누구라도 이보다 나은 파괴력을 지닌 무기를 소유하게 된다. 그러나 여전히 핵 미사일은 파괴력이 강대한 무기이며, 대부분의 종족이 처음 새 성계에 자리잡을 때 보호수단으로 이용하는 무기이다."),
+	Category("WPN"),
+	Level(1),
+	Type("MSL"),
+	AR(100),
+	Roll(5),
+	Dice(5),
+	Space(18),
+	CT(200),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<핵융합 미사일>
+{
+	Number(6202),
+	<Prerequisite>
+	[
+		Number(1306)
+	],
+	Description("핵 융합 미사일은 기존의 핵 미사일을 개량한 것이다. 과학이 발달함에 따라 핵융합의 힘을 훨씬 능률적으로 사용할 수 있게 된 종족들이 무기쪽으로 시선을 돌려 바로 개발해낸 것이 핵 융합 미사일이다. 초기에 개발이 가능하며 매우 위력이 막강하다."),
+	Category("WPN"),
+	Level(2),
+	Type("MSL"),
+	AR(120),
+	Roll(10),
+	Dice(10),
+	Space(33),
+	CT(300),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<노바 어뢰>
+{
+	Number(6203),
+	<Prerequisite>
+	[
+		Number(1327)
+	],
+	Description("이 무기는 핵무기의 궁극의 형태라고 봐도 그리 틀린 말이 아니다. 핵 융합의 기술을 다른 수준으로 끌어올린 무기이다. 이 미사일은 폭발하면서 목표물로부터 일시적으로 항성을 만들어 낼 정도로 큰 융합반응을 일으킨다. 이 무기보다 파괴력이 강한 무기는 제국 내에서도 손으로 꼽는다. 전장에서는 더할 나위 없는 강한 무기이지만, 재장전 시간이 너무 긴게 흠이다."),
+	Category("WPN"),
+	Level(3),
+	Type("MSL"),
+	AR(144),
+	Roll(15),
+	Dice(15),
+	Space(38),
+	CT(400),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<가미가제 어뢰>
+{
+	Number(6204),
+	<Prerequisite>
+	[
+		Number(1115)
+	],
+	Description("가미가제 어뢰는 전 우주에서 논의의 대상이 되는 무기이다. 이 무기는 생명체의 근간인 생명력을 이용하여 적을 추적한다. 물론 이러한 접촉은 쌍방이 느낄 수 있는 것이고, 개중에는 이 무기때문에 생기는 충격을 무의식적으로 느끼는 사람들도 있다. 이 무기의 지속적인 사용은 결국 안좋은 결과를 몰고 올 것이라는 주장은 여기에 기반한다. 하지만 정작 군부나 국가의 지도자들 치고 이런 충고를 새겨 듣는 이는 없다; 누구라도 몇몇의 잔소리때문에 이렇게 효율이 좋은 무기를 포기하긴 힘들것이다."),
+	Category("WPN"),
+	Level(3),
+	Type("MSL"),
+	AR(200),
+	Roll(10),
+	Dice(10),
+	Space(30),
+	CT(330),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<죽음의 포자>
+{
+	Number(6205),
+	<Prerequisite>
+	[
+		Number(1416)
+	],
+	Description("죽음의 포자라는 이름은 그다지 위협적으로 들리는 이름은 아니지만, 이 무기에도 알맞는 쓰임새가 있다. 점점 더 많은 종족들이 여러 목적으로 인해 인공 생명에 의존하는 현재, 죽음의 포자는 매우 파괴적인 무기가 될 수 있다. 적이 생체 방어막을 사용하여 스스로를 보호하려 할 경우, 이 죽음의 포자는 그런 방어막 자체를 자신의 먹이로 삼아 더욱 큰 파괴력을 발휘하게 된다."),
+	Category("WPN"),
+	Level(3),
+	Type("MSL"),
+	<Effect>
+	{
+		<Additional Damage to Bio Armor>
+		{
+			Amount( 700 ),
+			Type( "Proportional" )
+		}
+	},
+	AR(144),
+	Roll(7),
+	Dice(7),
+	Space(30),
+	CT(280),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<반물질 미사일>
+{
+	Number(6206),
+	<Prerequisite>
+	[
+		Number(1322)
+	],
+	Description("반물질 미사일이란 참으로 간단하다. 이 프로젝트에서 일했던 한 개발자가 말했다\"적당한 제어 없이 일반 물체와 접촉하게 되었을 때, 이 물질이 어떻게 반응할지 상상해 보십시오.\". 사실 이 과학자는 시험품을 제작하던 중 반물질의 보관 실수로 인해 그런 상황을 목격한 최초의 인물이 되고 만다. 적합한 장례를 치를 만큼의 시신도 남지 않았음은 말할 필요도 없다."),
+	Category("WPN"),
+	Level(4),
+	Type("MSL"),
+	AR(172),
+	Roll(20),
+	Dice(20),
+	Space(40),
+	CT(480),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<리플렉슘 미사일>
+{
+	Number(6207),
+	<Prerequisite>
+	[
+		Number(1330)
+	],
+	Description("어떤 알려지지 않은 이유로, 리플렉슘과 방어막이 충돌하면 방어막을 지탱하는 엔진에 엄청난 부하가 전달된다. 그래서 방어막을 광범위하게 사용하는 적에게는 더할 나위 없이 효과적인 무기가 리플렉슘 미사일이다. 물론 강한 물체가 고속으로 충돌하는 사태는 우습게 볼 일도 아니다."),
+	Category("WPN"),
+	Level(4),
+	Type("MSL"),
+	<Effect>
+	{
+		<Shield Distortion>
+		{
+			Amount( 30 )
+		}
+	},
+	AR(172),
+	Roll(15),
+	Dice(15),
+	Space(40),
+	CT(355),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<초능력 펄스 충격기>
+{
+	Number(6208),
+	<Prerequisite>
+	[
+		Number(1422)
+	],
+	Description("이 장치는 초능력을 사용한 치명적인 무기이다. 이 미사일은 함선의 승무원들의 초능력 에너지를 적함에 집중시키는 도구이다. 그들은 그 능력을 사용하여 적의 엔트로피를 위험한 레벨까지 촉진시킨다. 적이 대응하지 못한다면, 손쉽게 그들을 파멸시킬 수 있다."),
+	Category("WPN"),
+	Level(4),
+	Type("MSL"),
+	<Effect>
+	{
+		<PSI>
+		{
+		}
+	},
+	AR(172),
+	Roll(13),
+	Dice(10),
+	Space(32),
+	CT(300),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<타임-웨이크 자동 유도 미사일>
+{
+	Number(6209),
+	<Prerequisite>
+	[
+		Number(1333)
+	],
+	Description("타임-웨이크 유도 미사일은 이해하기에 쉽지 않은 무기이다. 이 무기는 적의 미래의 행로를 추적하는 능력과, 가장 최적의 행로를 결정하는 능력이 있어서 매우 치명적이며 효과적이다. 심지어는 스스로 공간/시간을 재배치해서 적의 방어막과 장갑을 뚫고 들어갔다는 보고서도 있다."),
+	Category("WPN"),
+	Level(5),
+	Type("MSL"),
+	<Effect>
+	{
+		<Shield Distortion>
+		{
+			Amount(65)
+		},
+		<Armor Piercing>
+		{
+			Amount(25)
+		}
+	},
+	AR(250),
+	Roll(15),
+	Dice(17),
+	Space(50),
+	CT(375),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<자동 유도 블랙홀>
+{
+	Number(6210),
+	<Prerequisite>
+	[
+		Number(1334)
+	],
+	Description("유도 블랙홀은 현존하는 무기중 가장 강력한 무기이다. 이 미사일은 일시적으로 작은 블랙홀을 형성시켜 소규모의 함선으로 이뤄진 함대는 완전히 파괴되어버리고, 가장 큰 함선으로도 심각한 타격은 피할 수 없다. 유일한 흠이라면 재장전 시간이 오래 걸린다는 것 정도이다."),
+	Category("WPN"),
+	Level(5),
+	Type("MSL"),
+	AR(250),
+	Roll(40),
+	Dice(31),
+	Space(100),
+	CT(500),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<레일 건>
+{
+	Number(6301),
+	<Prerequisite>
+	[
+		Number(1305)
+	],
+	Description("레일건은 지난 수천년간 사용된 기본 구조를 그대로 간직하고 있는 무기이다. 기본적으로 탄환에 충분한 가속을 주어 적에게 발사하면 적에게 어느정도 타격을 가할 수 있다. 이 기본 원리는 여러 단계에 걸쳐 세련되게 발전했지만 여전히 레일건은 효율성이 높고 쓸모 있는 무기이다. 탄환을 엄청나게 가속을 시키되 아무 전하도 충전시키지 않기 때문에 어떤 종류의 방어막도 뚫고 들어갈 수 있고 이것은 레일건의 가장 큰 장점중 하나이다."),
+	Category("WPN"),
+	Level(1),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		}
+	},
+	AR(50),
+	Roll(2),
+	Dice(4),
+	Space(30),
+	CT(30),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+},
+<개틀링 레일 건>
+{
+	Number(6302),
+	<Prerequisite>
+	[
+		Number(1312)
+	],
+	Description("기존의 레일건을 더욱 효과적으로 개량시킨 것이다. 관성의 법칙을 사용하여 더 많은 양의 탄환을 적에게 쏘아보낸다. 그래서 적에게 명중할 경우 더 큰 파괴력이 가해지게 된다. 또한 조작이 쉽고 제어가 용이하며 총열에 열이 적게 전해지기 때문에 같은 단위시간 내에 더 많은 양의 탄환을 발사할 수 있다."),
+	Category("WPN"),
+	Level(2),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		}
+	},
+	AR(50),
+	Roll(3),
+	Dice(4),
+	Space(50),
+	CT(17),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+},
+<매스 드라이버>
+{
+	Number(6303),
+	<Prerequisite>
+	[
+		Number(1319)
+	],
+	Description("매스 드라이버는 강력한 전자기장을 이용하여 엄청난 속도로 탄환을 발사하는 무기이다.	개틀링 레일건처럼 제약이 많지 않으며, 탄환의 엄청난 속도와 질량은 사정거리와 파괴력의 향상을 가져온다."),
+	Category("WPN"),
+	Level(2),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		}
+	},
+	AR(60),
+	Roll(4),
+	Dice(5),
+	Space(32),
+	CT(50),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+},
+<가우스 캐논>
+{
+	Number(6304),
+	<Prerequisite>
+	[
+		Number(1329)
+	],
+	Description("압축된 물질을 발사하는 무기이다. 탄환이 압축되어 더욱 높은 밀도와 질량을 가지기 때문에 파괴력이 상당히 증대되어 있다. 그 결과 방어막 뿐 아니라 장갑까지도 어느정도 뚫고 들어갈 수 있다."),
+	Category("WPN"),
+	Level(3),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		},
+		<Armor Piercing>
+		{
+			Amount(25)
+		}
+	},
+	AR(83),
+	Roll(5),
+	Dice(5),
+	Space(51),
+	CT(35),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+},
+<반물질 캐논>
+{
+	Number(6305),
+	<Prerequisite>
+	[
+		Number(1328)
+	],
+	Description("레일건과 반물질 무기의 원리가 결합된 무기이다. 반물질 탄환을 레일건을 발사하듯이 쏘는 이 무기는 반물질의 탄환이 가지는 특성으로 말미암아 더욱 높은 파괴력과 살상력을 지닌다. 가장 효과적인 발사무기중 하나이다."),
+	Category("WPN"),
+	Level(4),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		}
+	},
+	AR(90),
+	Roll(6),
+	Dice(6),
+	Space(50),
+	CT(30),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+},
+<전자동 가우스 캐논>
+{
+	Number(6306),
+	<Prerequisite>
+	[
+		Number(1333)
+	],
+	Description("가우스 캐논에서 중요한 요소인 속도를 개량한 것이다. 시공을 조작하여, 열을 더욱 빨리 제거할 수 있기 때문에 장전시간도 짧아지고, 엄청난 속도로 발사할 수 있다. 적의 방어를 뚫는 힘도 약간은 증강되었다."),
+	Category("WPN"),
+	Level(4),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		},
+		<Armor Piercing>
+		{
+			Amount(25)
+		}
+	},
+	AR(90),
+	Roll(5),
+	Dice(5),
+	Space(68),
+	CT(17),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+},
+<디스토션 블라스터>
+{
+	Number(6307),
+	<Prerequisite>
+	[
+		Number(1334)
+	],
+	Description("디스토션 블래스터는 가장 치명적이고 강력한 무기중 하나이다. 이 무기의 단 한방으로도 보통의 무기로는 줄 수 없을만큼의 피해를 줄 수 있다. 다른 무기의 10배 이상의 속도로 탄환을 발사하기 때문에 엄청난 파괴력과 살상력을 지닌다. 이 무기는 다른 차원에 있는 입자를 적의 중심부로 발사하는데, 그렇게 되면 이들 입자가 충돌을 일으킬 때마다 충돌한 입자를 타 차원의 법칙에 따르게 만들기 때문에 그 결과는 치명적이다."),
+	Category("WPN"),
+	Level(5),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		},
+		<Armor Piercing>
+		{
+			Amount(25)
+		},
+		<Additional Damage to Bio Armor>
+		{
+			Amount(-50),
+			Type( "Proportional" )
+		}
+	},
+	AR(120),
+	Roll(10),
+	Dice(10),
+	Space(100),
+	CT(31),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+}
+
+

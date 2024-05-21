@@ -1,0 +1,22 @@
+CC=g++
+CFLAGS=-g -Wall -pipe -O2 -march=pentium4 -mcpu=pentium4 -fomit-frame-pointer
+LIBDIRS=-L/usr/local/lib
+LIBS=-static -lstdc++ 
+INCLUDES=-I/usr/include/g++ -I/usr/include -I/usr/include/mysql -I../include -I/usr/include/pth
+DEFINES=-DLINUX -DDEBUG
+
+VPATH=$(HOME)src/libs/include
+
+HEADERFILES=
+CCFILES= key.cc crypt.conn.cc
+
+CCOBJS=$(CCFILES:.cc=.o)
+
+.cc.o:
+	$(CC) -c $< $(CFLAGS) $(INCLUDES) $(DEFINES)
+
+lib:$(CCOBJS)
+
+
+clean:
+	rm -f *.o 

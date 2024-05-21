@@ -1,0 +1,2457 @@
+N# 51XX: Armor, 52XX: Computer, 53XX: Shield, 54XX: Engine, 55XX: Device, 61XX: Weapon(Beam), 62XX: Weapon(Missile), 63XX: Weapon(Projectile)
+
+# Category: ARMOR: Armor, COMP: Computer, SHLD: Shield, ENGN: Engine, DEV: Device, WPN: Weapon
+
+# 51XX: Armor
+# Type: NORM(normal), BIO(bio), REACT(Reactive)
+# Effect: Beam(double), Projectile(double), Missile(double), Fighter(double): 각각에 해당하는 공격 유형에 방어율 * 괄호 안의 수치
+#   Psi(double): Psi 계열 공격 방어율 * 괄호 안의 수치
+#   Repair(double): Repair Speed * 괄호 안의 수치
+#   Heal(double): Healing * 괄호 안의 수치
+# DR: Defense Rate
+# HPMult: HP Multiplier
+
+<Titanium>
+{
+	Number(5101),
+#	<Prerequisite>
+#	[
+#		Tech()
+#	],
+	Description("This is the basic hull that all ships are built with. It has some benefit for defense, but its main purpose is to keep outside things outside, and inside things in. This is a reasonable goal for any beginning fleet, however, if one truly wants to be powerful, you must have better armor than this."),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(1),
+	DR(30),
+	HPMult(1.0)
+},
+<Mithril>
+{
+	Number(5102),
+	<Prerequisite>
+	[
+		Tech(1311)
+	],
+	Description("This armor is not made of actual mithril, but it has been named so because of its resemblance to the mythical magical metal. It also appears to have some added benefit in that it appears to be quite effective against psychic attacks. This may also be another reason that the human name has been taken up throughout the Empire."),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(2),
+	<Effect>
+	{
+		<PSI Defense>
+		{
+			Amount( 15 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(34),
+	HPMult(1.35)
+},
+<Adamantium>
+{
+	Number(5103),
+	<Prerequisite>
+	[
+		Tech(1325)
+	],
+	Description("This armor is the next upgrade to the standard armor types. It has no self repair ability, but it does have some other benefits. It is the best armor up to this level for preventing psychic damages. It also a relatively strong armor and can take a good amount of damage before it gives out."),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(3),
+	<Effect>
+	{
+		<PSI Defense>
+		{
+			Amount( 30 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(40),
+	HPMult(1.85)
+},
+<Neutronium>
+{
+	Number(5104),
+	<Prerequisite>
+	[
+		Tech(1329)
+	],
+	Description("One thing can be said of Neutronium. It is tough. This is one of the most durable of armors that is available. Its metallic structure is also quite effective at deflecting beam weaponry. The major drawback to this armor is that it is not easy to work with. This means any repairs made to this armor require almost twice as long to make."),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(4),
+	<Effect>
+	{
+		<Beam Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Repair Speed>
+		{
+			Amount( -50 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(53),
+	HPMult(3.0)
+},
+<Eternium>
+{
+	Number(5105),
+	<Prerequisite>
+	[
+		Tech(1333)
+	],
+	Description("The name says it all. This is the strongest and most durable armor available. The main drawback is that it is impossible to repair during combat. However, this armor can take so much abuse, that it is rarely necessary to repair it."),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(5),
+	<Effect>
+	{
+		<Projectile Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Beam Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Non-Repairable>
+		{
+		}
+	},
+	DR(78),
+	HPMult(3.85)
+},
+<Self-Recovering Crystal>
+{
+	Number(5106),
+	<Prerequisite>
+	[
+		Tech(1318)
+	],
+	Description("This is one of the earliest armors to have a self repair faculty. While this can be quite useful, the armor is somewhat weak to missiles. A captain with a ship with SRC must surely pray at night that the repairs can keep up with the missile damage, for if they do, this fine armor can stop almost any other low level weapon."),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(2),
+	<Effect>
+	{
+		<Beam Defense>
+		{
+			Amount( 10 ),
+			Type( "Proportional" )
+		},
+		<Projectile Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Missile Defense>
+		{
+			Amount( -5 ),
+			Type( "Proportional" )
+		},
+		<Repair>
+		{
+			Amount( 3 ),
+			Type( "Proportional" ),
+			Period( 10 )
+		}
+	},
+	DR(36),
+	HPMult(1.2)
+},
+<Anti-Matter Crystal>
+{
+	Number(5107),
+	<Prerequisite>
+	[
+		Tech(1328)
+	],
+	Description("By combining the ideas of Crystal armor and Anti-matter reactive armor this armor draws some of the benefits from each. Like SRC this armor will repair itself, although not as quickly. As it also uses the reactive techniques of Anti-matter armor, it has overcome all the weaknesses that SRC has."),
+	Category("ARMOR"),
+	Type("NORM"),
+	Level(4),
+	DR(40),
+	HPMult(2.4),
+	<Effect>
+	{
+		<Beam Defense>
+		{
+			Amount( 10 ),
+			Type( "Proportional" )
+		},
+		<Missile Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Projectile Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Repair>
+		{
+			Amount( 1 ),
+			Type( "Proportional" ),
+			Period( 10 )
+		}
+	}
+},
+<Biocentric>
+{
+	Number(5108),
+	<Prerequisite>
+	[
+		Tech(1413)
+	],
+	Description("This is the other early armor which also has the ability to repair itself. This armor is weak to all weapon types except for beams, however, it is over all a stronger armor and can take almost twice as much abuse before giving out. This added ability to take damage, coupled with the repair action make this armor a common choice among many commanders."),
+	Category("ARMOR"),
+	Type("BIO"),
+	Level(2),
+	<Effect>
+	{
+		<Repair>
+		{
+			Amount( 3 ),
+			Type( "Proportional" ),
+			Period( 10 )
+		},
+		<PSI Defense>
+		{
+			Amount( -20 ),
+			Type( "Proportional" )
+		},
+		<Missile Defense>
+		{
+			Amount( -10 ),
+			Type( "Proportional" )
+		},
+		<Projectile Defense>
+		{
+			Amount( -10 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(30),
+	HPMult(1.8)
+},
+<Organic>
+{
+	Number(5109),
+	<Prerequisite>
+	[
+		Tech(1418)
+	],
+	Description("This is the first truly living armor. It even has a limited primitive awareness. The fact that it is alive allows it to heal itself during battles. The drawback is that its awareness makes it slightly more susceptible to psychic attacks."),
+	Category("ARMOR"),
+	Type("BIO"),
+	Level(3),
+	<Effect>
+	{
+		<Repair>
+		{
+			Amount( 3 ),
+			Type( "Proportional" ),
+			Period( 5 )
+		},
+		<PSI Defense>
+		{
+			Amount( -20 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(36),
+	HPMult(2.4)
+},
+<Energy-Organic Crystal>
+{
+	Number(5110),
+	<Prerequisite>
+	[
+		Tech(1422)
+	],
+	Description("This Crystal armor heals faster than other crystal types. It is also the most durable of all the crystal armors. The one drawback that it has is a weakness to projectiles. This may not matter overly much though, as this is the second strongest armor available."),
+	Category("ARMOR"),
+	Type("BIO"),
+	Level(5),
+	<Effect>
+	{
+		<Repair>
+		{
+			Amount( 1 ),
+			Type( "Proportional" ),
+			Period( 2 )
+		},
+		<Missile Defense>
+		{
+			Amount( 5 ),
+			Type( "Proportional" )
+		},
+		<Projectile Defense>
+		{
+			Amount( -10 ),
+			Type( "Proportional" )
+		},
+		<Beam Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<PSI Defense>
+		{
+			Amount( 50 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(50),
+	HPMult(4.1)
+},
+<Anti-Matter Reactive Armor>
+{
+	Number(5111),
+	<Prerequisite>
+	[
+		Tech(1323)
+	],
+	Description("This armor uses a tailored form of anti matter to deflect certain types of weaponry. It is particularly effective against missiles. The one drawback to this armor is the fact that it is not as resilient as other armors of the same class."),
+	Category("ARMOR"),
+	Type("REACT"),
+	Level(3),
+	<Effect>
+	{
+		<Missile Defense>
+		{
+			Amount( 35 ),
+			Type( "Proportional" )
+		},
+		<Projectile Defense>
+		{
+			Amount( 10 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(30),
+	HPMult(1.55)
+},
+<Reflexium>
+{
+	Number(5112),
+	<Prerequisite>
+	[
+		Tech(1330)
+	],
+	Description("This armor is not as durable as other armors of its class, however, it is one of the best all around armors for deflecting incoming attacks. Its flexibility and high reflective ness mean that it is particularly good at deflecting any missile or beam type weapons."),
+	Category("ARMOR"),
+	Type("REACT"),
+	Level(4),
+	<Effect>
+	{
+		<Missile Defense>
+		{
+			Amount( 50 ),
+			Type( "Proportional" )
+		},
+	},
+	DR(40),
+	HPMult(2.1)
+},
+<Wall of Klein>
+{
+	Number(5113),
+	<Prerequisite>
+	[
+		Tech(1334)
+	],
+	Description("This armor is actually designed so that it folds space in odd ways. This allows it to avoid almost all forms of attack. It is most susceptible to projectile weapons, and is almost immune to beam and missile weapons. Its one drawback is that it is not very durable for its class."),
+	Category("ARMOR"),
+	Type("REACT"),
+	Level(5),
+	<Effect>
+	{
+		<Missile Defense>
+		{
+			Amount( 45 ),
+			Type( "Proportional" )
+		},
+		<Projectile Defense>
+		{
+			Amount( 20 ),
+			Type( "Proportional" )
+		},
+		<Beam Defense>
+		{
+			Amount( 40 ),
+			Type( "Proportional" )
+		}
+	},
+	DR(40),
+	HPMult(2.2)
+},
+
+# 52XX: Computer
+
+# AR: Attack Rate
+# DR: Defense Rate
+
+<Electronic Computer>
+{
+	Number(5201),
+	<Prerequisite>
+	[
+		Tech(1201)
+	],
+	Description("This is the most basic of computers. It is used in the most basic of manufacturing and processing. By using top speed computers of this type it is possible to safely pilot a ship throughout the empire."),
+	Category("COMP"),
+	Level(1),
+	AR(100),
+	DR(233)
+},
+<Optical Computer>
+{
+	Number(5202),
+	<Prerequisite>
+	[
+		Tech(1208)
+	],
+	Description("This is the second level of computers used for space travel. The main innovation of this computer is the use of light particle/waves to enhance processing speed and capability."),
+	Category("COMP"),
+	Level(2),
+	AR(133),
+	DR(289)
+},
+<Genetic Computer>
+{
+	Number(5203),
+	<Prerequisite>
+	[
+		Tech(1213)
+	],
+	Description("This is the third and most common type of ship computer in use in the Empire. Utilizing artificial consciousness, this computer is able to process things as fast as its predecessors, however with its own consciousness, it can occasionally make intuitive judgments, which save time."),
+	Category("COMP"),
+	Level(3),
+	AR(172),
+	DR(354)
+},
+<Quantum Computer>
+{
+	Number(5204),
+	<Prerequisite>
+	[
+		Tech(1221)
+	],
+	Description("This is the fourth level of computer which many races never achieve. By using quantum processors this computer operates much faster than any computer before."),
+	Category("COMP"),
+	Level(4),
+	AR(218),
+	DR(429)
+},
+<Neuro Computer>
+{
+	Number(5205),
+	<Prerequisite>
+	[
+		Tech(1223)
+	],
+	Description("This is the final level of computer which is ever used in ships. Using the most self advancing algorithms, this computer is able to evolve itself to fit certain situations. This makes it much more powerful and versatile than any other computers which are small enough to be housed on a ship of any size."),
+	Category("COMP"),
+	Level(5),
+	AR(271),
+	DR(518)
+},
+
+# 53XX: Shield
+
+# Deflection: Deflection Solidity
+# Str: Strength
+# Recharge: Recharge Rate
+
+<Electromagnetic Shield>
+{
+	Number(5301),
+	<Prerequisite>
+	[
+		Tech(1202)
+	],
+	Description("This is the basic shielding that all races develop. This level of shielding is required for a ship to survive the minute amounts of particles that are normally encountered around planets. It also helps somewhat during a battle, but is not that decisive."),
+	Category("SHLD"),
+	Level(1),
+	Deflection(1),
+	<Recharge>
+	[
+		Class1(2),
+		Class2(4),
+		Class3(6),
+		Class4(8),
+		Class5(10),
+		Class6(12),
+		Class7(14),
+		Class8(16),
+		Class9(18),
+		Class10(20)
+	],
+	<Str>
+	[
+		Class1(30),
+		Class2(52),
+		Class3(86),
+		Class4(148),
+		Class5(250),
+		Class6(426),
+		Class7(724),
+		Class8(1232),
+		Class9(2092),
+		Class10(3558)
+	]
+},
+<Graviton Shield>
+{
+	Number(5302),
+	<Prerequisite>
+	[
+		Tech(1320)
+	],
+	Description("This is the second level of shielding. In most races it is developed along with core mining techniques. It is needed for this purpose in order to keep the mining equipment safe from the huge pressure and hostile environment found in the cores of planets. The added strength of this shielding makes it more useful for battle."),
+	Category("SHLD"),
+	Level(2),
+	Deflection(2),
+	<Recharge>
+	[
+		Class1(4),
+		Class2(8),
+		Class3(12),
+		Class4(16),
+		Class5(20),
+		Class6(24),
+		Class7(28),
+		Class8(32),
+		Class9(36),
+		Class10(40)
+	],
+	<Str>
+	[
+		Class1(42),
+		Class2(72),
+		Class3(122),
+		Class4(206),
+		Class5(350),
+		Class6(596),
+		Class7(1014),
+		Class8(1724),
+		Class9(2930),
+		Class10(4980)
+	]
+},
+<Deflector>
+{
+	Number(5303),
+	<Prerequisite>
+	[
+		Tech(1219)
+	],
+	Description("This is the third level of shielding. Using probability and chaos factors this shielding improves on the Graviton shield by protective energy in areas which are predicted to be most threatened."),
+	Category("SHLD"),
+	Level(3),
+	Deflection(3),
+	<Recharge>
+	[
+		Class1(6),
+		Class2(12),
+		Class3(18),
+		Class4(24),
+		Class5(30),
+		Class6(36),
+		Class7(42),
+		Class8(48),
+		Class9(54),
+		Class10(60)
+	],
+	<Str>
+	[
+		Class1(58),
+		Class2(100),
+		Class3(170),
+		Class4(288),
+		Class5(492),
+		Class6(832),
+		Class7(1420),
+		Class8(2412),
+		Class9(4102),
+		Class10(6972)
+	]
+},
+<Barrier>
+{
+	Number(5304),
+	<Prerequisite>
+	[
+		Tech(1223)
+	],
+	Description("This is the fourth level of shielding. This level is not achieved by many races because they never research some of the basic ideas necessary for its development. Basically, this shielding uses even more advanced predictive means to focus and protect."),
+	Category("SHLD"),
+	Level(4),
+	Deflection(4),
+	<Recharge>
+	[
+		Class1(8),
+		Class2(16),
+		Class3(24),
+		Class4(32),
+		Class5(40),
+		Class6(48),
+		Class7(56),
+		Class8(64),
+		Class9(72),
+		Class10(80)
+	],
+	<Str>
+	[
+		Class1(82),
+		Class2(140),
+		Class3(238),
+		Class4(404),
+		Class5(688),
+		Class6(1168),
+		Class7(1988),
+		Class8(3378),
+		Class9(5742),
+		Class10(9762)
+	]
+},
+<Multiphase Shield>
+{
+	Number(5305),
+	<Prerequisite>
+	[
+		Tech(1335)
+	],
+	Description("This is the final level of shielding available. It is rarely achieved by most races, but is of great use to those who do. By using energy in different means and transferring some energy through differing dimensions, this shield is sometimes able to in effect reverse the damage done to it as it happens."),
+	Category("SHLD"),
+	Level(5),
+	Deflection(5),
+	<Recharge>
+	[
+		Class1(10),
+		Class2(20),
+		Class3(30),
+		Class4(40),
+		Class5(50),
+		Class6(60),
+		Class7(70),
+		Class8(80),
+		Class9(90),
+		Class10(100)
+	],
+	<Str>
+	[
+		Class1(116),
+		Class2(196),
+		Class3(334),
+		Class4(566),
+		Class5(962),
+		Class6(1636),
+		Class7(2782),
+		Class8(4730),
+		Class9(8040),
+		Class10(13668)
+	]
+},
+
+# 54XX: Engine
+
+# BSpeed: Battle Speed
+# Mobility: Battle Mobility
+# CSpeed: Cruise Speed
+
+<Retro>
+{
+	Number(5401),
+#	<Prerequisite>
+#	[
+#		Tech()
+#	],
+	Description("This is the basic engine used by all space faring races at one point. It is by no means efficient and is often seen as a sign that a race is primitive. It does accomplish its goal of moving things from one place to another."),
+	Category("ENGN"),
+	Level(1),
+#	CSpeed(),
+	<BSpeed>
+	[
+		Class1(16),
+		Class2(15),
+		Class3(14),
+		Class4(14),
+		Class5(13),
+		Class6(13),
+		Class7(12),
+		Class8(11),
+		Class9(10),
+		Class10(9)
+	],
+	<Mobility>
+	[
+		Class1(45),
+		Class2(41),
+		Class3(37),
+		Class4(33),
+		Class5(30),
+		Class6(27),
+		Class7(24),
+		Class8(21),
+		Class9(18),
+		Class10(15)
+	]
+},
+<Fusion>
+{
+	Number(5402),
+	<Prerequisite>
+	[
+		Tech(1310)
+	],
+	Description("This is the second level of engine. It is considered by many races to be the first true type of engine used by intelligent species. It is a noted improvement on its predecessor, but it is still by no means the best."),
+	Category("ENGN"),
+	Level(2),
+#	CSpeed(),
+	<BSpeed>
+	[
+		Class1(22),
+		Class2(21),
+		Class3(20),
+		Class4(19),
+		Class5(18),
+		Class6(17),
+		Class7(16),
+		Class8(15),
+		Class9(14),
+		Class10(13)
+	],
+	<Mobility>
+	[
+		Class1(54),
+		Class2(49),
+		Class3(44),
+		Class4(40),
+		Class5(36),
+		Class6(32),
+		Class7(28),
+		Class8(24),
+		Class9(21),
+		Class10(18)
+	]
+},
+<Anti-Matter>
+{
+	Number(5403),
+	<Prerequisite>
+	[
+		Tech(1322)
+	],
+	Description("This is the third level of engines. This is in fact the average engine in use throughout the empire. Using the improved power of antimatter reactions, this engine is faster and more useful for maneuvers than its predecessors."),
+	Category("ENGN"),
+	Level(3),
+#	CSpeed(),
+	<BSpeed>
+	[
+		Class1(31),
+		Class2(30),
+		Class3(29),
+		Class4(27),
+		Class5(25),
+		Class6(24),
+		Class7(23),
+		Class8(21),
+		Class9(19),
+		Class10(17)
+	],
+	<Mobility>
+	[
+		Class1(65),
+		Class2(59),
+		Class3(53),
+		Class4(48),
+		Class5(43),
+		Class6(38),
+		Class7(34),
+		Class8(30),
+		Class9(26),
+		Class10(22)
+	]
+},
+<Impulse>
+{
+	Number(5404),
+	<Prerequisite>
+	[
+		Tech(1332)
+	],
+	Description("This is the fourth level of engines and is only utilized by the most advanced races. This Engine is much more efficient than those before as it uses an advanced knowledge of energy-matter science to recapture much of the energy normally misused by engines."),
+	Category("ENGN"),
+	Level(4),
+#	CSpeed(),
+	<BSpeed>
+	[
+		Class1(42),
+		Class2(40),
+		Class3(38),
+		Class4(36),
+		Class5(34),
+		Class6(32),
+		Class7(30),
+		Class8(28),
+		Class9(26),
+		Class10(24)
+	],
+	<Mobility>
+	[
+		Class1(78),
+		Class2(71),
+		Class3(64),
+		Class4(58),
+		Class5(52),
+		Class6(46),
+		Class7(41),
+		Class8(36),
+		Class9(31),
+		Class10(26)
+	]
+},
+<Phase>
+{
+	Number(5405),
+	<Prerequisite>
+	[
+		Tech(1334)
+	],
+	Description("This is the most advanced form of engine in use in the Empire. It used an understanding of the nature of space to move. To observers, the ship appears to simply jump from one place to another. This is inaccurate however as the ship is actually bending portions of the space in front of it into other dimensions, thus reducing the actual distance that it travels."),
+	Category("ENGN"),
+	Level(5),
+#	CSpeed(),
+	<BSpeed>
+	[
+		Class1(59),
+		Class2(57),
+		Class3(54),
+		Class4(51),
+		Class5(48),
+		Class6(46),
+		Class7(43),
+		Class8(40),
+		Class9(37),
+		Class10(34)
+	],
+	<Mobility>
+	[
+		Class1(93),
+		Class2(85),
+		Class3(77),
+		Class4(69),
+		Class5(62),
+		Class6(55),
+		Class7(49),
+		Class8(43),
+		Class9(37),
+		Class10(31)
+	]
+},
+
+# 55XX: Device
+
+# BSpeed: Battle Speed
+# Mobility: Battle Mobility
+# CSpeed: Cruise Speed
+
+<Inertia Nullifier>
+{
+	Number(5501),
+	<Prerequisite>
+	[
+		Tech(1312)
+	],
+	Description("The Inertial Nullifier is one of the most basic of the devices available. It is however still quite useful. By allowing you to increase the speed with which you decelerate, this device allows your to be much more maneuverable. This aids in movement through the battlefield, as well as allowing you to be more effective at evasive maneuvers."),
+	Category("DEV"),
+	Level(1),
+	<Effect>
+	{
+		<DR against Projectile>
+		{
+			Amount(5),
+			Type( "Proportional" )
+		},
+		<DR against Beam>
+		{
+			Amount(25),
+			Type( "Proportional" )
+		},
+		<Mobility>
+		{
+			Amount(30),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Amplifying Chip>
+{
+	Number(5502),
+	<Prerequisite>
+	[
+		Tech(1318)
+	],
+	Description("This chip is not truly a chip at all. It is actually a carefully created crystalline structure. This \"chip\" can then be used to help redirect heat produced during ship operations. This is most noticed in that is aids in cooling weapons down, and also in removing extra energy trapped by shields."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<Shield Solidity>
+		{
+			Amount(1),
+			Type("Absolute")
+		},
+		<Shield Strength>
+		{
+			Amount(20),
+			Type("Proportional")
+		},
+		<Cooling Time>
+		{
+			Amount(-5),
+			Type("Proportional")
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Psi Drive>
+{
+	Number(5503),
+	<Prerequisite>
+	[
+		Tech(1419),
+		Race("Psi")
+	],
+	Description("This device is only available to races with Psi ability. It allows the pilot to use its energy to focus and speed the movements of the ship. Such enhancement will aid any fleet, if the pilot is able to use it."),
+	Category("DEV"),
+	Level(5),
+	<Attribute>
+	{
+		Name( "PSI Race Only" )
+	},
+	<Effect>
+	{
+		<Mobility>
+		{
+			Amount(45),
+			Type( "Proportional" )
+		},
+		<Speed>
+		{
+			Amount(45),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Force Field Generator>
+{
+	Number(5504),
+	<Prerequisite>
+	[
+		Tech(1314)
+	],
+	Description("While the name may be confusing, this device is not in and of itself a shield. It is merely a device that enhances the effectiveness of any shielding you may already possess. This is done by using knowledge of the unifying force behind all energy to strengthen whatever shields you have on your ships."),
+	Category("DEV"),
+	Level(1),
+	<Effect>
+	{
+		<Shield Solidity>
+		{
+			Amount(2),
+			Type("Absolute")
+		},
+		<Shield Strength>
+		{
+			Amount(30),
+			Type("Proportional")
+		},
+		<Impenetrable Shield>
+		{
+			Amount(15),
+			Type("Absolute")
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<High Energy Focus>
+{
+	Number(5505),
+	<Prerequisite>
+	[
+		Tech(1332)
+	],
+	Description("This device can be fitted to all of your beam weapons. It refines the focus of any beam that uses it allowing greater energy to be focused on your foes. This results in additional damage, if you are able to hit them."),
+	Category("DEV"),
+	Level(5),
+	<Effect>
+	{
+		<Beam Damage>
+		{
+			Amount(20),
+			Type("Proportional")
+		}
+	},
+	MinC(5),
+	MaxC(10)
+},
+<Psi-Control System>
+{
+	Number(5506),
+	<Prerequisite>
+	[
+		Tech(1421),
+		Race("Psi")
+	],
+	Description("This device is only available to races with Psi ability. It is a special interface for the commander of each ship. This interface allows them additional control of all aspects of their ship. The main benefits however can be seen in the offensive and defensive abilities of the ship's psychic abilities."),
+	Category("DEV"),
+	Level(5),
+	<Attribute>
+	{
+		Name( "PSI Race Only" )
+	},
+	<Effect>
+	{
+		<PSI Attack>
+		{
+			Amount(60),
+			Type("Proportional")
+		},
+		<PSI Defense>
+		{
+			Amount(100),
+			Type("Proportional")
+		}
+	},
+	MinC(4),
+	MaxC(10)
+},
+<Insanity Field Generator>
+{
+	Number(5507),
+	<Prerequisite>
+	[
+		Tech(1124),
+		Race("Psi")
+	],
+	Description("This device is only usable by those races with Psi ability. By projecting their hatred into the device, they are able to fashion a field around their fleet, which will inflict a psychic attack to any fleets that enter. This attack will destroy your enemies confidence as it also destroys their ships."),
+	Category("DEV"),
+	Level(4),
+	<Attribute>{
+		Name( "PSI Race Only" )
+	},
+	<Effect>
+	{
+		<PSI Damage>
+		{
+			Amount( 2000 ),
+			Type( "Absolute" ),
+			Range( 875 ),
+			Period(50),
+			Target( "Enemy Fleet" )
+		}
+	},
+	MinC(6),
+	MaxC(10)
+},
+<Mind Protector>
+{
+	Number(5508),
+	<Prerequisite>
+	[
+		Tech(1420)
+	],
+	Description("This device is placed in the center of your ship. It radiates a psychic sense of well-being and calmness. This improves your fleet's ability to resist psychic damages, and also prevents the panic or other states that some crews are occasionally forced into by some of the more horrible psychic attacks."),
+	Category("DEV"),
+	Level(4),
+	<Effect>
+	{
+		<PSI Defense>
+		{
+			Amount( 50 ),
+			Type( "Proportional" )
+		},
+		<Berserk Modifier>
+		{
+			Amount( -10 ),
+			Type( "Absolute" )
+		},
+		<Panic Modifier>
+		{
+			Amount( -15 ),
+			Type( "Absolute" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Booster Device>
+{
+	Number(5509),
+	<Prerequisite>
+	[
+		Tech(1316)
+	],
+	Description("This component may be added to any type of ship engine. It basically \"boosts\" the output and efficiency of your engines. This allows faster movement and better control. For some ships, this is almost a required addition."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<Mobility>
+		{
+			Amount(40),
+			Type( "Proportional" )
+		},
+		<Speed>
+		{
+			Amount(40),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Shield Capacitor>
+{
+	Number(5510),
+	<Prerequisite>
+	[
+		Tech(1214)
+	],
+	Description("This device is just what its name suggests. It is a capacitor which greatly increases the stability of your shields. It also allows them to rebound faster from any damage that it takes."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<Shield Recharge Rate>
+		{
+			Amount(250),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<ECM Jammer>
+{
+	Number(5511),
+	<Prerequisite>
+	[
+		Tech(1215)
+	],
+	Description("This device is a counter, counter measure. It works by canceling the signals that missiles use to track and move after your ships. It will occasionally allow your ships to escape unscathed from an explosion that could remove them from existence in seconds."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<DR against Missile>
+		{
+			Amount( 35 ),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Cloaking Field Generator>
+{
+	Number(5512),
+	<Prerequisite>
+	[
+		Tech(1217)
+	],
+	Description("This device is prized both by great tacticians and pirates alike. While nowhere near perfect, it will often allow a fleet to go undetected. This device draws on power in a geometric amount. This means that after a ship is a certain size, it is impossible to power the cloaking field."),
+	Category("DEV"),
+	Level(4),
+	<Effect>
+	{
+		<Stealth>
+		{
+			Amount( 25 )
+		},
+		<Complete Cloaking>
+		{
+		}
+	},
+	MinC(1),
+	MaxC(5)
+},
+<Organic Regenerator>
+{
+	Number(5513),
+	<Prerequisite>
+	[
+		Tech(1418)
+	],
+	Description("This device is a vast supply of nutrients and steroids which can be fed into organic armor to allow it to heal faster. The effect cannot be used constantly, but as most battles do not last too long, it is almost always long enough to make a difference."),
+	Category("DEV"),
+	Level(3),
+	<Attribute>
+	{
+		Name("Bio Armor Only")
+	},
+	<Effect>
+	{
+		<Repair>
+		{
+			Amount( 4 ),
+			Type( "Proportional" ),
+			Period( 10 )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Auto Repairing Device>
+{
+	Number(5514),
+	<Prerequisite>
+	[
+		Tech(1328)
+	],
+	Description("This \"device\" is actually a gigantic herd of miniscule robots. They swarm about your ship making repairs as needed. The only limitation is that they often need more materials than are available on smaller ships. This means that it is only truly useful on ships of a certain size."),
+	Category("DEV"),
+	Level(4),
+	<Attribute>
+	{
+		Name( "Non-Bio Armor Only" )
+	},
+	<Effect>
+	{
+		<Repair>
+		{
+			Amount( 3 ),
+			Type( "Proportional" ),
+			Period( 10 )
+		}
+	},
+	MinC(3),
+	MaxC(10)
+},
+<Train Injector>
+{
+	Number(5515),
+	<Prerequisite>
+	[
+		Tech(1417)
+	],
+	Description("This device is a mixture of nanomachines and drugs. It instills your crew with the abilities and heart of battle scarred veterans. This allows even the newest fleet to be more useful than your enemies could expect."),
+	Category("DEV"),
+	Level(3),
+	<Effect>
+	{
+		<Trained>
+		{
+		},
+		<Berserk Modifier>
+		{
+			Amount( -10 ),
+			Type( "Absolute" )
+		},
+		<Panic Modifier>
+		{
+			Amount( -15 ),
+			Type( "Absolute" )
+		},
+		<Efficiency>
+		{
+			Amount( 10 ),
+			Type( "Absolute" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Reinforced Hull>
+{
+	Number(5516),
+	<Prerequisite>
+	[
+		Tech(1317)
+	],
+	Description("This component is actually placed throughout your entire ship. Using microscale robots, you enforce the entire structure of your ships. This increases the effectiveness of your armor. Such effectiveness is often prized during a battle when make the difference between severe damage and a full hull breach."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<HP>
+		{
+			Amount(20),
+			Type("Proportional")
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Gyro Deformator>
+{
+	Number(5517),
+	<Prerequisite>
+	[
+		Tech(1316)
+	],
+	Description("This device is often the bane of larger ships. By positioning it correctly within your ship, you can extend a field that will cause havoc to any enemy ships directional controls. This field is stable towards the center and will not effect your ship, but outside of that for a certain range, any ships will feel as though \"down\" is constantly changing. This device can only be put on larger ships, as smaller ships lack the mass to make this device effective."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<Mobility>
+		{
+			Amount(-25),
+			Type( "Proportional" ),
+			Range( 1000 ),
+			Target( "Enemy Fleet" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Kwang-11>
+{
+	Number(5518),
+	<Prerequisite>
+	[
+		Tech(1220)
+	],
+	Description("This device is one of the more insidious ones available. It will link itself to nearby enemy fleets and bombard their computers with useless and delaying information. This can cripple some fleets computers, if their computer security measures are not advanced enough."),
+	Category("DEV"),
+	Level(4),
+	<Effect>
+	{
+		<Computer>
+		{
+			Amount(-15),
+			Type( "Proportional" ),
+			Range( 900 ),
+			Target( "Enemy Fleet" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Mind Tracker>
+{
+	Number(5519),
+	<Prerequisite>
+	[
+		Tech(1117)
+	],
+	Description("This device is aptly named. The one thing it does is tracks minds. This, when paired with the targeting for your psi weapons allows much greater accuracy."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<PSI Attack>
+		{
+			Amount(70),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Psi Barrier>
+{
+	Number(5520),
+	<Prerequisite>
+	[
+		Tech(1422)
+	],
+	Description("This device is simple enough, once a race understands certain things about how the psyche works. It lessens the focus of any incoming psi attacks. This will increase your chance to avoid damage, but will not lessen the impact if you do succumb to the threat."),
+	Category("DEV"),
+	Level(5),
+	<Effect>
+	{
+		<PSI Defense>
+		{
+			Amount(50),
+			Type( "Proportional" )
+		},
+		<PSI Neutralization Field>
+		{
+			Amount(25),
+			Type( "Absolute" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Self-Conscious Fleet>
+{
+	Number(5521),
+	<Prerequisite>
+	[
+		Tech(1213)
+	],
+	Description("This is an interesting addition to any fleet. Where some races ships are actual beings, even for them their fleets are not entities unto themselves. The ships are still independent thinkers. This device links the minds controlling the ships into one large being that becomes the fleet. This can increase overall coordination of almost any fleet."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<Efficiency>
+		{
+			Amount(35),
+			Type( "Absolute" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Coprocessor>
+{
+	Number(5522),
+	<Prerequisite>
+	[
+		Tech(1212)
+	],
+	Description("This is a relatively simple device. It is basically a processor, which runs in tandem with your computer. This processor greatly increases the accuracy of your main computer. This increase has many effects as it allows your computer to function faster while maintaining the same accuracy."),
+	Category("DEV"),
+	Level(2),
+	<Effect>
+	{
+		<Computer>
+		{
+			Amount(10),
+			Type( "Proportional" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Escape Pod>
+{
+	Number(5523),
+	<Prerequisite>
+	[
+		Tech(1315)
+	],
+	Description("This device takes up quite a bit of space for something that does not help with combat.  Many commanders will refuse to command a fleet without one.  Many rulers actually have them built into their ships because any chance of recovering a trusted, experienced commander is something they like."),
+	Category("DEV"),
+	Level(3),
+	<Effect>
+	{
+		<Commander Survival>
+		{
+			Amount(20),
+			Type( "Absolute" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Homing Beacon>
+{
+	Number(5524),
+	<Prerequisite>
+	[
+		Tech(1123)
+	],
+	Description("This device is not large, but the amount of power that it uses is.  It is actually small enough to attach to a standard EVA suit.  For commanders without escape pods, having one of these attached to the suit can offer some chance of rescue.  If one is attached to an escape pod, the combination is even more effective."),
+	Category("DEV"),
+	Level(4),
+	<Effect>
+	{
+		<Commander Survival>
+		{
+			Amount(20),
+			Type( "Absolute" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Space Mining Module>
+{
+	Number(5525),
+	<Prerequisite>
+	[
+		Race("3")
+	],
+
+	Description("Asteroids from all around the galaxies contain some valuable trading ressources. The buckaneers have designed this device to collect  those ressources and trading them to make a living with their spaceships."),
+	Category("DEV"),
+	Level(1),
+	<Effect>
+	{
+		<Space Mining>
+		{
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Anti-PSI Device>
+{
+	Number(5526),
+	<Prerequisite>
+	[
+		Race("9")
+	],
+
+	Description("None"),
+	Category("DEV"),
+	Level(1),
+	<Effect>
+	{
+		<PSI Neutralization Field>
+		{
+			Amount(65),
+			Type( "Absolute" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Ablative Coating>
+{
+	Number(5527),
+	<Prerequisite>
+	[
+		Tech(1328)
+	],
+	Description("Ablative Coating is an additional reactive plating that can be added to the hull of any ship. This coating provides a counterforce to incoming ballistic weapons fire by slowing down projectiles with its spongelike density. Under beam weapon fire, this coating will boil away, carrying away a portion of the beam's energy. Ablative Coating's light, airy structure is also a good cushion versus the force of incoming missile blasts."),
+	Category("DEV"),
+	Level(3),
+	<Effect>
+	{
+		<Impenetrable Armor>
+		{
+			Amount(15)
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Crimson Figurehead>
+{
+	Number(5528),
+	<Prerequisite>
+	[
+		Tech(1420)
+	],
+	Description("The brother of the famed 'Crimson Eye', this horrid device can bring even the mightest of admirals to their knees in suffering. This device attempts to fill the mind of enemies with an unimaginably Hell-ish nightmare. Enemy fleets often break formation and run in terror with little provocation as a result of the Crimson Figurehead."),
+	Category("DEV"),
+	Level(4),
+	<Effect>
+	{
+		<Panic Modifier>
+		{
+			Amount(5),
+			Type( "Proportional" ),
+			Range( 1000 ),
+			Target( "Enemy Fleet" )
+		},
+		<Berserk Modifier>
+		{
+			Amount(5),
+			Type( "Proportional" ),
+			Range( 1000 ),
+			Target( "Enemy Fleet" )
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+<Ballistic Accelerator>
+{
+	Number(5529),
+	<Prerequisite>
+	[
+		Tech(1221)
+	],
+	Description("Utilizing quantum mechanics, the ballistic accelerator is fit onto ships and weaponry to enhance the speed of projectile weapons considerably, and thus both damage and accuracy, giving the target enemy fleet less time to respond accordingly. However, due to the device's additional power requirements, the weapons enhanced by this device also suffer additional cooldown time."),
+	Category("DEV"),
+	Level(4),
+	<Effect>
+	{
+		<Projectile AR>
+		{
+			Amount(20),
+			Type("Proportional")
+		},
+		<Projectile Damage>
+		{
+			Amount(15),
+			Type("Proportional")
+		},
+		<Projectile Cooling Time>
+		{
+			Amount(10),
+			Type("Proportional")
+		}
+	},
+	MinC(5),
+	MaxC(10)
+},
+
+<Phase Shift Generator>
+{
+	Number(5530),
+	<Prerequisite>
+	[
+		Race("3")
+	],
+	Description("The Phase Shift Generator temporarily alters the phase varience of the ship it is mounted on this allows the ship to avoid detection. The power requirements for this technology are so vast that the power needed to phase cloak a Mobile Fortress would simply be too high to sustain and so can only be used on Dreadnaught class or lower. A ship cannot fire while phased and therefore must phase back into normal space to engage the enemy."),
+	Category("DEV"),
+	Level(5),
+	<Effect>
+	{
+		<Complete Cloaking>
+		{
+		}
+	},
+	MinC(1),
+	MaxC(8)
+},
+
+<Mercurial Thruster>
+{
+	Number(5531),
+	<Prerequisite>
+	[
+		Tech(1326)
+	],
+	Description("With the fabrication of these new thrusters from mercury infused uranium, unheard of mobility and control was implemented. The new material was so intensely heat resistant that the time of component overheating ceased to exist. The advancement of this cutting-edge technology has redefined battle commanding and changed the realm of fleet delegation and maneuverability forever."),
+	Category("DEV"),
+	Level(5),
+	<Effect>
+	{
+		<Speed>
+		{
+			Amount(80),
+			Type( "Proportional" )
+		},
+		<Mobility>
+		{
+			Amount(70),
+			Type( "Proportional" )
+		},
+		<Shield Strength>
+		{
+			Amount(-75),
+			Type("Proportional")
+		}
+	},
+	MinC(1),
+	MaxC(10)
+},
+
+
+# 6XXX: Weapon
+
+# Type: BM(Beam), MSL(Missile), PRJ(Projectile), (FGT(Fighter))
+# AR: Attack Rate
+# Roll: Roll
+# Dice: Dice
+# Space: 차지하는 공간
+# CT: Cooling Time. 발사 딜레이
+# Range: Attack Range. 사정거리
+# AOF: Angle of Fire. 발사각. 전면 기준
+# WSpeed: Weapon Speed. 턴당 이동하는 무기 속도
+
+<Laser>
+{
+	Number(6101),
+	<Prerequisite>
+	[
+		Tech(1302)
+	],
+	Description("The Laser is the basic idea behind all beam weapons. The focusing of light through the correct crystal matrix can make it into an efficient tool or a deadly weapon. This is another of the weapons that all races in the Empire seem to possess. Although not as powerful as some later weapons, the laser is an important weapon for all starting rulers."),
+	Category("WPN"),
+	Level(1),
+	Type("BM"),
+	AR(100),
+	Roll(2),
+	Dice(4),
+	Space(25),
+	CT(50),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<Plasma Beam>
+{
+	Number(6102),
+	<Prerequisite>
+	[
+		Tech(1307)
+	],
+	Description("The Plasma Beam is a uses the your knowledge of the differing states of matter to form and project a focused ray of plasma at your enemies. When this matter reaches its target, the reaction is quite deadly. This makes the plasma beam quite effective against enemies who have not yet developed technology which protects from this type of attack."),
+	Category("WPN"),
+	Level(2),
+	Type("BM"),
+	<Effect>
+	{
+		<Shield Overheat>
+		{
+		},
+		<Additional Damage to Bio Armor>
+		{
+			Amount(100),
+			Type("Proportional")
+		}
+	},
+	AR(120),
+	Roll(3),
+	Dice(4),
+	Space(28),
+	CT(70),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<Crystal Laser>
+{
+	Number(6103),
+	<Prerequisite>
+	[
+		Tech(1318)
+	],
+	Description("The Crystal Laser uses your knowledge of crystal manipulation to purify the focusing component in your laser weaponry. This newly focused beam is more deadly and more accurate than its predecessor. This new lens does not cool as fast as the originals though, which means you cannot fire as often without risking dangerous temperatures."),
+	Category("WPN"),
+	Level(2),
+	Type("BM"),
+	AR(120),
+	Roll(4),
+	Dice(4),
+	Space(30),
+	CT(60),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<Graviton Beam>
+{
+	Number(6104),
+	<Prerequisite>
+	[
+		Tech(1320)
+	],
+	Description("The Graviton Beam is actually a focused projection of many graviton particles. As this projection moves it gathers both speed and mass through attraction to objects in its path. This means that when it hits it has much speed and mass, this, along with the actual effect of the particles on the target itself allow this beam to crush your enemies."),
+	Category("WPN"),
+	Level(3),
+	Type("BM"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(25)
+		},
+		<Armor Piercing>
+		{
+			Amount(25)
+		}
+	},
+	AR(144),
+	Roll(4),
+	Dice(4),
+	Space(29),
+	CT(55),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<Psi Blaster>
+{
+	Number(6105),
+	<Prerequisite>
+	[
+		Tech(1419),
+		Race(7)
+	],
+	Description("The Psi Blaster is a weapon that can go from merely dangerous to outright deadly if used by the correct races. Powered by either a races own ability or by machines cleverly created for the purpose, the psi blaster destroys your enemies with forces that cannot be seen but only felt."),
+	Category("WPN"),
+	Level(3),
+	Type("PRJ"),
+	<Effect>
+	{
+		<PSI>
+		{
+		},
+#		<PSI Empower>
+#		{
+#			Amount( 100 ),
+#			Type( "Proportional" )
+#		}
+	},
+	AR(144),
+	Roll(4),
+	Dice(7),
+	Space(35),
+	CT(72),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<Psi Disrupter>
+{
+	Number(6309),
+	<Prerequisite>
+	[
+		Race(8)
+	],
+	Description("The Psi Disrupter releases large bursts of devastating psionic energy upon contact with enemy vessels. As Bosalians consider this weapon to be too brutal to be used due to the immense amount of pain and terror inflicted upon the victum's mind before their death, it is a clear mark of Xeloss war activity."),
+	Category("WPN"),
+	Level(2),
+	Type("MSL"),
+	<Effect>
+	{
+		<PSI>
+		{
+		},
+#		<PSI Empower>
+#		{
+#			Amount( 100 ),
+#			Type( "Proportional" )
+#		}
+	},
+	AR(160),
+	Roll(4),
+	Dice(8),
+	Space(40),
+	CT(180),
+	Range(1300),
+	AOF(60),
+	WSpeed(1000)
+},
+<Neutron Blaster>
+{
+	Number(6106),
+	<Prerequisite>
+	[
+		Tech(1325)
+	],
+	Description("The Neutron Blaster uses the understanding of sub atomic physics to assemble neutrons which are tailored to rip through hull components. These are then projected along the path of a guiding laser to the enemy. Upon contact, they interact with the hull and can often cripple if not destroy an enemy ship."),
+	Category("WPN"),
+	Level(3),
+	Type("BM"),
+	<Effect>
+	{
+		<Additional Damage to Bio Armor>
+		{
+			Amount(100),
+			Type("Proportional")
+		}
+	},
+	AR(144),
+	Roll(5),
+	Dice(5),
+	Space(38),
+	CT(60),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<Phasor>
+{
+	Number(6107),
+	<Prerequisite>
+	[
+		Tech(1329)
+	],
+	Description("The Phasor is a deadly weapon that can alter the way in which space-time and the target interact. This can cause a high range of effects, from almost no damage, to complete destruction/dissolution of the component materials of the effected target. The phasor is perhaps on of the better known weapons in the current fighting happening within the Empire."),
+	Category("WPN"),
+	Level(5),
+	Type("BM"),
+	<Effect>
+	{
+		<Shield Overheat>
+		{
+		}
+	},
+	AR(230),
+	Roll(7),
+	Dice(7),
+	Space(50),
+	CT(45),
+	Range(1000),
+	AOF(180),
+	WSpeed(1000)
+},
+<Tachyon Beam>
+{
+	Number(6108),
+	<Prerequisite>
+	[
+		Tech(1219)
+	],
+	Description("The Tachyon Beam is a force which alters the probability of the target structure. The desired effect is to cause all of the particles of the structure to \"randomly\" repel each other. If this can be achieved for even an instant it can cause the effected area to explode as all of the particles attempt to put distance between their neighbors."),
+	Category("WPN"),
+	Level(4),
+	Type("BM"),
+	<Effect>
+	{
+		<Armor Piercing>
+		{
+			Amount( 45 )
+		}
+	},
+	AR(273),
+	Roll(5),
+	Dice(6),
+	Space(40),
+	CT(54),
+	Range(1000),
+	AOF(60),
+	WSpeed(1000)
+},
+<Oscillation of Dissonance>
+{
+	Number(6109),
+	<Prerequisite>
+	[
+		Tech(1224)
+	],
+	Description("The Oscillation of Dissonance is the most deadly Beam weapon to be invented. It has the power to rip ships to pieces faster than any other beam weapon. One of the more deadly aspects of this weapon is its ability to ignore almost all armor that your enemies may have on their ships."),
+	Category("WPN"),
+	Level(5),
+	Type("BM"),
+	<Effect>
+	{
+		<Armor Piercing>
+		{
+			Amount( 80 )
+		}
+	},
+	AR(200),
+	Roll(7),
+	Dice(7),
+	Space(50),
+	CT(70),
+	Range(1000),
+	AOF(360),
+	WSpeed(1000)
+},
+<Psi Storm Launcher>
+{
+	Number(6110),
+	<Prerequisite>
+	[
+		Tech(1424),
+		Race("Psi")
+	],
+	Description("The Psi Storm Launcher is a weapon often feared not just for the obvious damage it can do to matter, but also for the effects upon minds that survive it. This weapon creates a temporary vortice to the fourth dimension allowing psionic apparitions to manifest in our physical space. They do not always choose to do great damage, but the mental storms this living thoughts create can cause the bravest commanders to retreat."),
+	Category("WPN"),
+	Level(5),
+	Type("BM"),
+	<Effect>
+	{
+		<PSI>
+		{
+		},
+		<Shield Distortion>
+		{
+			Amount( 25 )
+		}
+	},
+	AR(200),
+	Roll(7),
+	Dice(10),
+	Space(38),
+	CT(72),
+	Range(1200),
+	AOF(120),
+	WSpeed(1000)
+},
+<Nuclear Missile>
+{
+	Number(6201),
+	<Prerequisite>
+	[
+		Tech(1301)
+	],
+	Description("The Nuclear Missile was in the past one of the most feared weapons known. However, as races leave their first planet, they inevitably discover more powerful means of destruction. The nuclear missile is still a great force for destruction, and is in fact the one missile type that all races seem to have when they first reach the stars."),
+	Category("WPN"),
+	Level(1),
+	Type("MSL"),
+	AR(100),
+	Roll(5),
+	Dice(5),
+	Space(18),
+	CT(200),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<Fusion Missile>
+{
+	Number(6202),
+	<Prerequisite>
+	[
+		Tech(1306)
+	],
+	Description("The Fusion Missile is a logical progression from the nuclear missile. As a race refines their science, they are able to truly utilize fusion power efficiently. This power can be used for many things. One of these uses is to make more deadly weapons. This is the second type of missile that many races use as its power is a simple upgrade to that of the nuclear missile that proves so effective early in a powers career."),
+	Category("WPN"),
+	Level(2),
+	Type("MSL"),
+	AR(120),
+	Roll(8),
+	Dice(10),
+	Space(33),
+	CT(300),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<Nova Torpedo>
+{
+	Number(6203),
+	<Prerequisite>
+	[
+		Tech(1327)
+	],
+	Description("The Nova Torpedo is the final stage of the evolution of the nuclear missile. This missile takes initial science of fusion to a new height. With the use of each of these missiles a temporary star is created out of the component atoms of the target. This missile has the capacity for more damage than all but two other weapons. This force can be of great help in a battle, but be warned…the weapon takes a long time to prepare before it can be used again."),
+	Category("WPN"),
+        Level(4),
+        Type("MSL"),
+        AR(172),
+        Roll(18),
+        Dice(20),
+        Space(40),
+        CT(480),
+        Range(1500),
+        AOF(180),
+        WSpeed(50)
+},
+<Kamikaze Conscious Torpedo>
+{
+	Number(6204),
+	<Prerequisite>
+	[
+		Tech(1115)
+	],
+	Description("The Kamikaze Torpedo has caused demonstrations upon numerous words. This weapon uses the very force that lies behind all living things to track your enemy. Of course, this link is rarely one way, so when this weapon is activated, those who can notice are often said to cringe at the shock this device sends thru the unconsciousness. Some people have begun to argue that this abuse will have repercussions, but few rulers head this. The weapon is too efficient to avoid using it because it gives some sensitive people headaches."),
+	Category("WPN"),
+	Level(3),
+	Type("MSL"),
+	<Effect>
+	{
+		<PSI>
+		{
+		},
+		<Additional Damage to Bio Armor>
+		{
+			Amount( 200 ),
+			Type( "Proportional" )
+		}
+		
+	},
+	AR(200),
+	Roll(8),
+	Dice(10),
+	Space(28),
+	CT(330),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<Death Spore>
+{
+	Number(6205),
+	<Prerequisite>
+	[
+		Tech(1416)
+	],
+	Description("The Death Spore might not sound like the most threatening weapon. However, this device has it uses. In this time when more and more races are turning to artificial life forms for many things, the death spore is merely the destructive use of this trend. This weapon is tailored to damage your enemies, and woe be to the enemy who tries to use any sort of living shield to protect themselves, as this life form will use such shielding to fuel itself to even greater destructive heights."),
+	Category("WPN"),
+	Level(3),
+	Type("MSL"),
+	<Effect>
+	{
+		<Additional Damage to Bio Armor>
+		{
+			Amount( 700 ),
+			Type( "Proportional" )
+		}
+	},
+	AR(144),
+	Roll(7),
+	Dice(7),
+	Space(30),
+	CT(280),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<Anti-Matter Missile>
+{
+	Number(6206),
+	<Prerequisite>
+	[
+		Tech(1322)
+	],
+	Description("The Antimatter Missile seems simple enough. As one developer said while working on this project, \"just imagine what this material will do when it comes into contact with regular matter, without the proper controls.\. In fact this scientist witnessed it first hand when a containment mistake was made during prototype construction. It goes without saying that there was not enough of him for a proper burial."),
+        Category("WPN"),
+        Level(3),
+        Type("MSL"),
+        AR(144),
+        Roll(10),
+        Dice(20),
+        Space(38),
+        CT(400),
+        Range(1500),
+        AOF(180),
+        WSpeed(50)
+},
+<Reflexium Missile>
+{
+	Number(6207),
+	<Prerequisite>
+	[
+		Tech(1330)
+	],
+	Description("The Reflexium Missile is the use of an interesting property of reflexium. For some reason any interaction between this metal and most shielding causes great stress to the powering component of shields. This makes this weapon quite effective against those who utilize shielding to a great extent. Of course, the effect of a strong material impacting an object at high speed is nothing to laugh at either."),
+	Category("WPN"),
+	Level(4),
+	Type("MSL"),
+	<Effect>
+	{
+		<Shield Distortion>
+		{
+			Amount( 100 )
+		}
+	},
+	AR(172),
+	Roll(12),
+	Dice(20),
+	Space(40),
+	CT(355),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<Psionic Pulse Shocker>
+{
+	Number(6208),
+	<Prerequisite>
+	[
+		Tech(1422),
+		Race("Psi")
+	],
+	Description("The Psionic Pulse Shocker a deadly method of using psionic forces. This missile is in fact a focusing device for the psionic energies of your crew. They then use their abilities to hasten the entropy within your enemies to dangerous levels. If the enemy is unprepared, this can easily be their undoing."),
+	Category("WPN"),
+	Level(4),
+	Type("MSL"),
+	<Effect>
+	{
+		<PSI>
+		{
+		},
+		<Shield Distortion>
+		{
+			Amount( 75 )
+		}
+	},
+	AR(172),
+	Roll(10),
+	Dice(14),
+	Space(32),
+	CT(240),
+	Range(1700),
+	AOF(180),
+	WSpeed(50)
+},
+<Time-Wake Homing Missile>
+{
+	Number(6209),
+	<Prerequisite>
+	[
+		Tech(1333)
+	],
+	Description("The Time-Wake Homing Missile is a tricky weapon to figure out. Whether it is in fact tracking its enemies future path, or if it tracks its own future to determine the best path, this missile can be quite deadly and effective. There are even reports of it relocating itself through space/time and thus penetrating enemy shields and armor."),
+	Category("WPN"),
+	Level(5),
+	Type("MSL"),
+	<Effect>
+	{
+		<Shield Distortion>
+		{
+			Amount(65)
+		},
+		<Armor Piercing>
+		{
+			Amount(25)
+		}
+	},
+	AR(250),
+	Roll(16),
+	Dice(17),
+	Space(50),
+	CT(375),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<Homing Black Hole>
+{
+	Number(6210),
+	<Prerequisite>
+	[
+		Tech(1335)
+	],
+	Description("The Homing Black Hole is easily the single most powerful weapon ever created. This missile calls into being a temporary and small black hole, which can destroy fleets of weak vessels and cripple some of the largest ships in existence. The only drawback to this weapon is that it takes a long time to bring the next shot online."),
+	Category("WPN"),
+	Level(5),
+	Type("MSL"),
+	AR(220),
+	Roll(40),
+	Dice(28),
+	Space(100),
+	CT(500),
+	Range(1500),
+	AOF(180),
+	WSpeed(50)
+},
+<Rail Gun>
+{
+	Number(6301),
+	<Prerequisite>
+	[
+		Tech(1305)
+	],
+	Description("The Rail Gun uses the basic principle that species have been using for thousands of Millennia. If you throw something at your enemies fast enough, it will hurt them. While this principle has been refined in other ways, the rail gun is still an effective way to harm your enemy. The fact that you are only accelerating simple matter and not charging it means that this type of weapon is especially useful because it can pass through almost any shields that your enemy may use."),
+	Category("WPN"),
+	Level(1),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		}
+	},
+	AR(50),
+	Roll(2),
+	Dice(4),
+	Space(30),
+	CT(30),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+},
+<Gatling Rail Gun>
+{
+	Number(6302),
+	<Prerequisite>
+	[
+		Tech(1312)
+	],
+	Description("The Gatling Rail Gun is a more effective version of the rail gun. It uses an understanding of inertia in order to direct a larger amount of matter toward your enemy. This means that when you hit you should usually do a greater amount of damage to your enemy. The fact that you have greater control also means there is less heat built up during the shot, so you can fire more often."),
+	Category("WPN"),
+	Level(2),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		}
+	},
+	AR(50),
+	Roll(3),
+	Dice(4),
+	Space(45),
+	CT(17),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+},
+<Mass Driver>
+{
+	Number(6303),
+	<Prerequisite>
+	[
+		Tech(1319)
+	],
+	Description("The Mass Driver uses a strong electromagnetic field to propel a projectile towards your enemy at amazing speeds. This weapon does not have as much restraint as the gatling rail gun, however the greater speed and mass allow this weapon to be somewhat more effective both in hitting your enemy and in causing damage."),
+	Category("WPN"),
+	Level(2),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		}
+	},
+	AR(60),
+	Roll(4),
+	Dice(5),
+	Space(32),
+	CT(50),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+},
+<Gauss Cannon>
+{
+	Number(6304),
+	<Prerequisite>
+	[
+		Tech(1329)
+	],
+	Description("The Gauss Cannon uses compressed material for the projectile. This material has much greater density and mass, so the force is exerts on its target is much more focused. This means that not only will this weapon pass through shields, but it will even penetrate a portion of your enemies armor."),
+	Category("WPN"),
+	Level(4),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		},
+		<Armor Piercing>
+		{
+			Amount(25)
+		}
+	},
+	AR(83),
+	Roll(7),
+	Dice(7),
+	Space(51),
+	CT(35),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+},
+<Anti-Matter Cannon>
+{
+	Number(6305),
+	<Prerequisite>
+	[
+		Tech(1328)
+	],
+	Description("The Anti-Matter Cannon work on a combination of the principles used to create the rail gun and the anti-matter missile. Firing shots as though they were normal rail gun charges, the projectiles fired are much more deadly, and so the overall weapon becomes one of the most efficient projectile weapons available."),
+	Category("WPN"),
+	Level(3),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		}
+	},
+	AR(90),
+	Roll(6),
+	Dice(7),
+	Space(50),
+	CT(30),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+},
+<Autofire Gauss Cannon>
+{
+	Number(6306),
+	<Prerequisite>
+	[
+		Tech(1333)
+	],
+	Description("The Autofire Gauss Cannon improves on the gauss cannon in one significant manner, speed. By using knowledge of space/time you are able to remove the heat from this weapon much faster and thus fire it at a greatly increased rate. It also has a slightly increased ability to make it past enemy defenses."),
+	Category("WPN"),
+	Level(4),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		},
+		<Armor Piercing>
+		{
+			Amount(25)
+		}
+	},
+	AR(90),
+	Roll(6),
+	Dice(7),
+	Space(50),
+	CT(17),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+},
+<Distortion Blaster>
+{
+	Number(6307),
+	<Prerequisite>
+	[
+		Tech(1334)
+	],
+	Description("The Distortion Blaster is one of the most deadly weapons ever to be created. One shot from this monstrous weapon can out-damage some of the weaker weapons. Of course, it fires at speeds almost ten times faster than many missiles, which is why it is so feared. This weapon works by projecting small pieces of material from other dimensions into your enemies midst. These particles have a horrible effect on the enemy as they try to make anything they contact conform to their dimensional laws."),
+	Category("WPN"),
+	Level(5),
+	Type("PRJ"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		},
+		<Armor Piercing>
+		{
+			Amount(25)
+		},
+		<Additional Damage to Bio Armor>
+		{
+			Amount(-50),
+			Type( "Proportional" )
+		}
+	},
+	AR(120),
+	Roll(10),
+	Dice(11),
+	Space(100),
+	CT(31),
+	Range(800),
+	AOF(60),
+	WSpeed(200)
+},
+
+<Nahodoom Ray Launcher>
+{
+	Number(6308),
+	<Prerequisite>
+	[
+		Project(9006),
+		Race(9)
+	],
+	Description("3... 2... 1... Fire! Silent, yet excited atmosphere surrounds the scientists, staring down the experiment from their lab afar. Ultra-powerful Energy rays out of the test warship just disposed the target down to molecular level. This weapon, utilizing the Permanent Engine, is named \"Nahodoom,\" and will render the futile resistance of the aboriginal creatures in the new world quite hopeless and useless - if they can miniaturize this beast, that is."),
+	Category("WPN"),
+	Level(5),
+	Type("BM"),
+	<Effect>
+	{
+		<Shield Piercing>
+		{
+			Amount(100)
+		},
+		<Armor Piercing>
+		{
+			Amount(60)
+		}
+	},
+	AR(160),
+	Roll(15),
+	Dice(13),
+	Space(120),
+	CT(60),
+	Range(900),
+	AOF(150),
+	WSpeed(900)
+}

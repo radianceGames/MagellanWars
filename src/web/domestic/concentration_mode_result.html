@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+<LINK REL="stylesheet" HREF="/archspace.css">
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999" onLoad="MM_preloadImages('$IMAGE_SERVER_URL/image/as_game/bu_helpen.gif')">
+<table width="610" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td WIDTH="556">
+      <table  width=590 border="0" cellspacing="0" cellpadding="0" height="100" bgcolor="#000000" align="center">
+        <tr align="center" valign="middle">
+          <td>
+            $ADLINE
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" WIDTH="556">
+      <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <!--~-------- ROW4 --------~-->
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext">
+            <DIV ALIGN="CENTER" CLASS="white">
+			<IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>
+			$RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp;
+			$PRODUCT_POINT&nbsp;&nbsp;&nbsp;&nbsp;
+			$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;
+			$NET_POWER</DIV>
+          </TD>
+          <!--HELP BUTTON-->
+        </TR>
+        <!--~------ END ROW4 ------~-->
+      </TABLE>
+    </td>
+  </tr>
+  <tr>
+    <td WIDTH="556">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="maintext" align="center" WIDTH="556"></td>
+  </tr>
+  <tr>
+    <td align="center" WIDTH="556"><img src="$IMAGE_SERVER_URL/image/as_game/domestic/concentration_title.gif" WIDTH="439" HEIGHT="41"></td>
+  </tr>
+  <tr>
+    <td class="maintext" align="center" WIDTH="556">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="maintext" align="center" WIDTH="556"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/result/error.gif"></td>
+  </tr>
+  <tr>
+    <td class="maintext" align="center" WIDTH="556">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="maintext" align="center" WIDTH="556">$RESULT_MESSAGE</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="maintext" align="center" WIDTH="550">
+      <TABLE CLASS="tabletxt" BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="350" BORDERCOLOR="#2A2A2A">
+        <TR>
+          <TH WIDTH="140" BGCOLOR="#171717">$STRING_CONTROL_MODEL</TD>
+          <TH WIDTH="70" BGCOLOR="#171717">$STRING_BEFORE</TD>
+          <TH WIDTH="70" BGCOLOR="#171717">$STRING_AFTER</TD>
+          <TH WIDTH="70" BGCOLOR="#171717">$STRING_CHANGE</TD>
+        </TR>
+        <TR>
+          <TD>
+            &nbsp;$STRING_PRODUCTION_CM<BR>
+            &nbsp;$STRING_MILITARY_CM<BR>
+            &nbsp;$STRING_RESEARCH_CM<BR>
+          </TD>
+          <TD ALIGN="RIGHT">
+            <INPUT TYPE=text SIZE=5 VALUE=$BEFORE_PRODUCTION_CM STYLE="border:0;background-color:#000000;color:#999999" readonly>
+            <INPUT TYPE=text SIZE=5 VALUE=$BEFORE_MILITARY_CM STYLE="border:0;background-color:#000000;color:#999999" readonly>
+            <INPUT TYPE=text SIZE=5 VALUE=$BEFORE_RESEARCH_CM STYLE="border:0;background-color:#000000;color:#999999" readonly>
+          </TD>
+          <TD ALIGN="RIGHT">
+            <INPUT TYPE=text SIZE=5 VALUE=$AFTER_PRODUCTION_CM NAME=RESULT_PRODUCTION_CM STYLE="border:0;background-color:#000000;color:#999999" readonly>
+            <INPUT TYPE=text SIZE=5 VALUE=$AFTER_MILITARY_CM NAME=RESULT_MILITARY_CM STYLE="border:0;background-color:#000000;color:#999999" readonly>
+            <INPUT TYPE=text SIZE=5 VALUE=$AFTER_RESEARCH_CM NAME=RESULT_RESEARCH_CM STYLE="border:0;background-color:#000000;color:#999999" readonly>
+          </TD>
+          <TD ALIGN="RIGHT">
+            <INPUT TYPE=text SIZE=5 VALUE=$CHANGE_PRODUCTION_CM NAME=CHANGE_PRODUCTION_CM STYLE="border:0;background-color:#000000;color:#999999" readonly>
+            <INPUT TYPE=text SIZE=5 VALUE=$CHANGE_MILITARY_CM NAME=CHANGE_MILITARY_CM STYLE="border:0;background-color:#000000;color:#999999" readonly>
+            <INPUT TYPE=text SIZE=5 VALUE=$CHANGE_RESEARCH_CM NAME=CHANGE_RESEARCH_CM STYLE="border:0;background-color:#000000;color:#999999" readonly>
+          </TD>
+        </TR>
+      </TABLE>
+    </td>
+  </tr>
+  <tr>
+    <td class="maintext" align="center" WIDTH="556">&nbsp; </td>
+  </tr>
+  <tr>
+    <td class="maintext" align="center" height="18" WIDTH="556">
+      <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR VALIGN="bottom">
+          <TD><IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_done1.gif">
+            <A HREF="domestic.as"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_done2.gif" BORDER=0 NAME="image"></A>
+          </TD>
+        </TR>
+      </TABLE>
+    </td>
+  </tr>
+  <tr>
+    <td class="maintext" align="center" height="18" WIDTH="556">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="maintext" align="center" WIDTH="556">
+      <A HREF="domestic.as">$DOMESTIC_MAIN</A>
+      <FONT COLOR="616161">$CONCENTRATION_MODE</FONT>
+      <A HREF="planet_management.as">$PLANET_MANAGEMENT</A>
+      <A HREF="research.as" TARGET="contents">$RESEARCH</A>
+      <A HREF="project.as" TARGET="contents">$PROJECT</A>
+      <A HREF="whitebook.as" TARGET="contents">$WHITEBOOK</A></td>
+  </tr>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            <CENTER>
+				$ADLINE_BOTTOM
+            </CENTER>
+            </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+</table>
+<p>&nbsp;</p>
+</BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</html>

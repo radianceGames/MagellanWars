@@ -1,0 +1,1914 @@
+<Scientific Mishap>
+{
+	Number(1200),
+	<Type>
+	[
+		Type("Major")
+	],
+	Duration(36),
+	Description("One of your scientists was certain that they had found a way to replicate matter and increase the resources of your planets.  Unfortunately, they were wrong and the experiment had a major impact on the planet they were testing it on."),
+	MinHonor(0),
+	MaxHonor(40),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Planet Resource>
+		{
+			BeginOnly("Yes"),
+			Arg1(-2),
+			Duration(0)
+		}
+	]
+},
+
+<Attempted Military Coup>
+{
+	Number(1202),
+	<Type>
+	[
+		Type("Major")
+	],
+	Description("The on planet military on one of your planets attempts to take the planet from you.  You are able to put the revolt down yourself, but you must divert critical resources to the effort."),
+	Duration(6),
+	MinHonor(0),
+	MaxHonor(30),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Set Fleet Mission>
+		{
+			Arg1(8),
+			Arg2(7200),
+			Duration(6)
+		},
+		<Set Fleet Mission>
+		{
+			Arg1(8),
+			Arg2(7200),
+			Duration(6)
+		},
+		<Set Fleet Mission>
+		{
+			Arg1(8),
+			Arg2(7200),
+			Duration(6)
+		},
+		<Set Fleet Mission>
+		{
+			Arg1(8),
+			Arg2(7200),
+			Duration(6)
+		}
+	]
+},
+
+<Succession>
+{
+	Number(1203),
+	<Type>
+	[
+		Type("Major")
+	],
+	Description("One of your planets has rebelled and succeeded from your empire!"),
+	Duration(36),
+	MinHonor(0),
+	MaxHonor(40),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Lose Planet>
+		{
+			BeginOnly("Yes"),
+			Duration(0)
+		}
+	]
+},
+
+<Dockside Sabotage>
+{
+	Number(1204),
+	<Type>
+	[
+		Type("Major")
+	],
+	Description("Somehow, your ship storage docks have been sabotaged.  None of the ships in your pool survived the explosion."),
+	Duration(36),
+	MinHonor(0),
+	MaxHonor(20),
+	MinTurn(2016),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Destroy All Docked Ship>
+		{
+			BeginOnly("Yes"),
+			Duration(0)
+		}
+	]
+},
+
+<Racial Amnesia>
+{
+	Number(1206),
+	<Type>
+	[
+		Type("Major")
+	],
+	Description("When those cosmic radiation storms came through, you didn't think it caused any damage.  Unfortunately, that is because you forgot.  In fact, you forgot quite a bit."),
+	Duration(36),
+	MinTurn(1440),
+	MaxTurn(2000),
+	<EffectList>
+	[
+		<Lose Tech>
+		{
+			BeginOnly("Yes"),
+			Duration(0)
+		},
+		<Lose Project>
+		{
+			BeginOnly("Yes"),
+			Duration(0)
+		}
+	]
+},
+
+<Governmental Collapse>
+{
+	Number(1209),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Human Only")
+	],
+	Description("The current form of government has been removed through a coup.  For a while, things are rough, but after people adapt, things seem better.  For a while at least."),
+	Duration(288),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(-4),
+			Duration(144)
+		},
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(-4),
+			Duration(144)
+		},
+		<Change Control Model>
+		{
+			Target(10),
+			Arg1(-4),
+			Duration(144)
+		},
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(2),
+			Duration(288)
+		},
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(2),
+			Duration(288)
+		},
+		<Change Control Model>
+		{
+			Target(10),
+			Arg1(2),
+			Duration(288)
+		}
+	]
+},
+
+<Colony Lost/Refound>
+{
+	Number(1210),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Targoid Only")
+	],
+	Description("One of your research colonies was given too much freedom by the parent mind, and all contact was lost.  This colony was on its own for a while.  When it was regained, the parent mind decided to incorporate all its new knowledge and resources."),
+	Duration(288),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			BeginOnly("Yes"),
+			Apply("Absolute"),
+			Arg1(5000000),
+			Duration(0)
+		},
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(2),
+			Duration(288)
+		}
+	]
+},
+
+<Mystic Vision>
+{
+	Number(1211),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Xeloss Only")
+	],
+	Description("One of your High politicians has been given a vision.  This vision inspires your people and they work with greater ferocity for a while."),
+	Duration(288),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change All Commander Ability>
+		{
+			Target(0),
+			Arg1(2),
+			Duration(288)
+		},
+		<Change All Commander Ability>
+		{
+			Target(1),
+			Arg1(2),
+			Duration(288)
+		},
+		<Change All Commander Ability>
+		{
+			Target(2),
+			Arg1(2),
+			Duration(288)
+		},
+		<Change All Commander Ability>
+		{
+			Target(3),
+			Arg1(2),
+			Duration(288)
+		},
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(2),
+			Duration(288)
+		}
+	]
+},
+
+<New Race Joins Up>
+{
+	Number(1212),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Xesperados Only")
+	],
+	Description("The remains of another race which survived the M-13 collapse join you.  They bring a new technology with them and new ways of thinking."),
+	Duration(288),
+	MinTurn(576),
+	MaxTurn(1152),
+	<EffectList>
+	[
+		<Gain Tech>
+		{
+			BeginOnly("Yes"),
+			Duration(0)
+		},
+		<Gain Tech>
+		{
+			BeginOnly("Yes"),
+			Duration(0)
+		},
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(2),
+			Duration(288)
+		}
+	]
+},
+
+<Living Asteroid Belt Found>
+{
+	Number(1213),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Agerus Only")
+	],
+	Description("In your wanderings you encounter a rogue spawn of young Agerus. You bring them under your control and add them to your fleet."),
+	Duration(36),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Gain Commander>
+		{
+			BeginOnly("Yes"),
+			Arg1(12),
+			Duration(0)
+		},
+		<Gain Commander>
+		{
+			BeginOnly("Yes"),
+			Arg1(12),
+			Duration(0)
+		}
+	]
+},
+
+<Successful Evintos Infiltration>
+{
+	Number(1214),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Tecanoid Only")
+	],
+	Description("Some of your spies have been able to infiltrate the Evintos in hopes of gaining even more knowledge of how to evolve to a pure machine existence."),
+	Duration(288),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(3),
+			Duration(288)
+		},
+		<Change Control Model>
+		{
+			Target(7),
+			Arg1(3),
+			Duration(288)
+		}
+	]
+},
+
+<Ransom a Famous Pirate>
+{
+	Number(1215),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Buckaneer Only")
+	],
+	Description("You are lucky enough to be in the right place at the right time.  You are able to pay the ransom for a famous pirate who agrees to work for you in repayment."),
+	Duration(36),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			BeginOnly("Yes"),
+			Apply("Absolute"),
+			Arg1(-20000),
+			Duration(0)
+		},
+		<Change Control Model>
+		{
+			Target(6),
+			Arg1(3),
+			Duration(288)
+		},
+		<Gain Commander>
+		{
+			BeginOnly("Yes"),
+			Arg1(19),
+			Duration(0)
+		}
+	]
+},
+
+<Sabotage Discovered>
+{
+	Number(1216),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Bosalian Only")
+	],
+	Description("Your scientists after hundreds of years of study are certain they have proof of an important Truth.  They believe they have proven that the reason your people did not Ascend was that there was sabotage from another race."),
+	Duration(288),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change All Commander Ability>
+		{
+			Target(0),
+			Arg1(5),
+			Duration(288)
+		},
+		<Change All Commander Ability>
+		{
+			Target(1),
+			Arg1(5),
+			Duration(288)
+		},
+		<Change All Commander Ability>
+		{
+			Target(2),
+			Arg1(5),
+			Duration(288)
+		},
+		<Change All Commander Ability>
+		{
+			Target(3),
+			Arg1(5),
+			Duration(288)
+		},
+		<Change Control Model>
+		{
+			Target(4),
+			Arg1(4),
+			Duration(288)
+		}
+	]
+},
+
+<Past Memory Core Found>
+{
+	Number(1217),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Evintos Only")
+	],
+	Description("An old memory core from a lost colony is found.  This core has the knowledge of ages past."),
+	Duration(288),
+	MinTurn(576),
+	MaxTurn(1152),
+	<EffectList>
+	[
+		<Gain Tech>
+		{
+			BeginOnly("Yes"),
+			Duration(0)
+		},
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(-1),
+			Duration(144)
+		}
+	]
+},
+
+<Military Genius Trained>
+{
+	Number(1218),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Xerusian Only")
+	],
+	Description("Your military college has produced one of those genius tacticians that are only born once a millennium.  This person becomes the best professor your academies have ever seen."),
+	Duration(288),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(8),
+			Arg1(7),
+			Duration(288)
+		}
+	]
+},
+
+<Imperial Investigator>
+{
+	Number(1221),
+	<Type>
+	[
+		Type("System")
+#		Type("System"),
+#		Type("Magistrate")
+	],
+	Description("The Empire has sent an investigator to determine if the Magistrate has been giving accurate reports.  He reports to the Empire on your loyalty and the Empire decides that the magistrate has been reporting accurately." ),
+	Duration(36),
+	MinTurn(576),
+	MaxTurn(105120)
+},
+
+<Imperial Investigator>
+{
+	Number(1222),
+	<Type>
+	[
+		Type("System")
+#		Type("System"),
+#		Type("Magistrate")
+	],
+	Description("The Empire has sent an investigator to determine if the Magistrate has been giving accurate reports.  He reports to the Empire on your loyalty and the Empire decides that the magistrate has been too humble on your behalf." ),
+	Duration(36),
+	MinHonor(40),
+	MaxHonor(100),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			BeginOnly("Yes"),
+			Apply("Absolute"),
+			Arg1(100000),
+			Duration(0)
+		},
+		<Change Empire Relation>
+		{
+			BeginOnly("Yes"),
+			Arg1(5),
+			Duration(0)
+		}
+	]
+},
+
+<Imperial Investigator>
+{
+	Number(1223),
+	<Type>
+	[
+		Type("System")
+#		Type("System"),
+#		Type("Magistrate")
+	],
+	Description("The Empire has sent an investigator to determine if the Magistrate has been giving accurate reports.  He reports to the Empire on your loyalty and the Empire decides that the magistrate has been too kind for one as evil as you." ),
+	Duration(36),
+	MinHonor(0),
+	MaxHonor(40),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Empire Relation>
+		{
+			BeginOnly("Yes"),
+			Arg1(-30),
+			Duration(0)
+		}
+	]
+},
+
+<Heroic Rescue>
+{
+	Number(1224),
+	<Type>
+	[
+		Type("System")
+#		Type("System"),
+#		Type("Magistrate")
+	],
+	Description("One of your commanders succeeds in rescuing a kidnapped child of your magistrate."),
+	Duration(36),
+	MinHonor(50),
+	MaxHonor(100),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Empire Relation>
+		{
+			BeginOnly("Yes"),
+			Arg1(30),
+			Duration(0)
+		},
+		<Commander Level Up>
+		{
+			BeginOnly("Yes"),
+			Arg1(1),
+			Duration(0)
+		},
+		<Change Honor>
+		{
+			BeginOnly("Yes"),
+			Arg1(5),
+			Duration(0)
+		}
+		
+	]
+},
+
+<Imperial Gift>
+{
+	Number(1225),
+	<Type>
+	[
+		Type("System")
+#		Type("System"),
+#		Type("Magistrate")
+	],
+	Description("The Emperor, or the Magistrate in his place, has deemed you worth of a gift."),
+	Duration(36),
+	MinHonor(40),
+	MaxHonor(100),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Grant Boon>
+		{
+			BeginOnly("Yes"),
+			Duration(0)
+		}
+	]
+},
+
+<Imperial Levies>
+{
+	Number(1226),
+	<Type>
+	[
+		Type("System")
+#		Type("System"),
+#		Type("Magistrate")
+	],
+	Description("The Emperor has decided to improve the fleets of the Magistrate.  To do this, he is calling for all systems to send warriors.  From your system he demands commanders."),
+	Duration(36),
+#	EmpireRelationMin(50),
+#	EmpireRelationMax(100),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Lose Commander>
+		{
+			BeginOnly("Yes"),
+			Apply("Proportional"),
+			Arg1(5),
+			Duration(0)
+		}
+	]
+},
+
+<Population Explosion>
+{
+	Number(1227),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("One of your planets has had a massive population surge."),
+	Duration(96),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Planet Control Model>
+		{
+			Arg1(1),
+			Arg2(5),
+			Duration(96)
+		}
+	]
+},
+
+<Workers Stay Overtime>
+{
+	Number(1228),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Your workers have been inspired by something... no-one is sure what... but they have been working extra lately."),
+	Duration(96),
+	MinHonor(50),
+	MaxHonor(100),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Planet Control Model>
+		{
+			Arg1(3),
+			Arg2(10),
+			Duration(96)
+		}
+	]
+},
+
+<New Resources Discovered>
+{
+	Number(1229),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Just as you thought that you had exhausted the remains of the main resource of the planet, your scientists discover a large amount of another useful resource."),
+	Duration(36),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Planet Resource>
+		{
+			BeginOnly("Yes"),
+			Arg1(1),
+			Duration(0)
+		}
+	]
+},
+
+<Rampant Epidemic>
+{
+	Number(1230),
+	<Type>
+	[
+		Type("System"),
+		Type("Immune to Agerus")
+	],
+	Description("One of your planets is struck by a meteor which contains the DNA coding for a horrible virus.  This greatly harms your population."),
+	Duration(96),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Planet Population>
+		{
+			BeginOnly("Yes"),
+			Apply("Proportional"),
+			Arg1(-85),
+			Duration(0)
+		},
+		<Change Planet Control Model>
+		{
+			Arg1(1),
+			Arg2(-7),
+			Duration(96)
+		}
+	]
+},
+
+<Natural Tectonic Disaster>
+{
+	Number(1231),
+	<Type>
+	[
+		Type("System"),
+		Type("Immune to Agerus")
+	],
+	Description("One of your major cities experiences major tectonic shifting resulting in earthquakes and minor volcanic eruptions.  Your scientists are able to warn your population in time, but there is major damage to your buildings."),
+	Duration(96),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Planet Lost Building>
+		{
+			BeginOnly("Yes"),
+			Apply("Proportional"),
+			Arg1(-20),
+			Arg2(-1),
+			Duration(0)
+		}
+	]
+},
+
+<Freakish Weather>
+{
+	Number(1232),
+	<Type>
+	[
+		Type("System"),
+		Type("Immune to Agerus")
+	],
+	Description("One of your planets suffers major storms such as tornadoes and hurricanes.  This wrecks some buildings, kills some people, and reduces production."),
+	Duration(3),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Planet Population>
+		{
+			Apply("Proportional"),
+			Arg1(-2),
+			Duration(3)
+		},
+		<Change Planet Control Model>
+		{
+			Arg1(3),
+			Arg2(-2),
+			Duration(3)
+		},
+		<Planet Lost Building>
+		{
+			Apply("Proportional"),
+			Arg1(-2),
+			Arg2(-1),
+			Duration(3)
+		}
+	]
+},
+
+<Radical Terrorists>
+{
+	Number(1233),
+	<Type>
+	[
+		Type("System"),
+		Type("Immune to Agerus")
+	],
+	Description("These terrorists have decided that altering the environment is evil, even if it is necessary to live.  To prove they are dedicated, they blow up your gravity control center."),
+	Duration(36),
+	MinHonor(0),
+	MaxHonor(50),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Lose Planet Gravity Control>
+		{
+			BeginOnly("Yes"),
+			Duration(0)			
+		}
+	]
+},
+
+<Agerus Spawning Frenzy>
+{
+	Number(1234),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Your system is filled with millions of tiny Agerus spawn.  They are too small to recognize as Agerus, but are in search of a good asteroid belt to colonize.  They clog all ship traffic and their hard bodies constantly strain ship shields."),
+	Duration(96),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(15),
+			Arg2(-50),
+			Duration(96)
+		},
+		<Fleet Return Time>
+		{
+			Arg1(20),
+			Duration(144)
+		}
+	]
+},
+
+<Interstellar Dust Cloud>
+{
+	Number(1235),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Your system is filled with a fine particulate cloud which moves seemingly of its own will. This cloud has the effect of dispersing beams fired in it."),
+	Duration(96),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(19),
+			Arg2(-50),
+			Duration(96)
+		}
+	]
+},
+
+<Discrimination Demonstrations>
+{
+	Number(1236),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("A segment of you population demands equal treatment.  They complain for weeks and finally you give in to their demands.  You will let them work, just like all your other subjects. After a while, they decide they don't like work much after all and quit."),
+	Duration(120),
+	MinHonor(0),
+	MaxHonor(50),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(-3),
+			Duration(144)
+		}
+	]
+},
+
+<Temporary Wormhole>
+{
+	Number(1237),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("You have found a temporary wormhole.  With you current technology, you can even make it open where you want.  This helps reduce the time it takes for your attacking fleets to travel."),
+	Duration(144),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Fleet Return Time>
+		{
+			Arg1(-50),
+			Duration(144)
+		}
+	]
+},
+
+<Silly Old Game>
+{
+	Number(1238),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Your people discover an old game from the 'web' days called 'Ultra-Wizard'.  This seems to help morale a lot, but a while later it seems to be affecting your commanders as they all seem to think that a new strategy called 'stacking' would definitely help win battles."),
+	Duration(144),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(3),
+			Duration(144)
+		},
+		<Change All Commander Ability>
+		{
+			Target(9),
+			Arg1(-3),
+			Duration(144)
+		}
+	]
+},
+
+<Insane Mental Giant>
+{
+	Number(1239),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Somewhere in your system, someone or something with enormous psychic powers has gone insane.  It has been broadcasting non-stop on all psychic wavelengths.  All you know is that it is reducing the effects of all psychic attacks in your system, and he keeps repeating something about a being known as 'Dora'."),
+	Duration(96),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(32),
+			Arg2(50),
+			Duration(96)
+		}
+	]
+},
+
+<Carbon Cloud>
+{
+	Number(1240),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("A large dark cloud rolls into your system one day.  Any ships, which travel through the cloud, build up a large deposit of carbon on their hulls.  This greatly slows them down, but ballistic weapons have less effect as this coating absorbs their force."),
+	Duration(96),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(30),
+			Arg2(20),
+			Duration(96)
+		},
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(5),
+			Arg2(-20),
+			Duration(96)
+		},
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(6),
+			Arg2(-20),
+			Duration(96)
+		}
+	]
+},
+
+<Solar Blackout>
+{
+	Number(1241),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("The sun just seemed to disappear one day.  When your scientists went to study why, they found that there were billions of small creatures hurling themselves into the star.  The scientists assume the light from the star will be allowed through in a couple of days.  During the meantime, your planets can survive on their reserve energy.  In fact, the lack of solar rays is allowing some excellent viewings of the galaxy because of a lack of solar interference."),
+	Duration(24),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Planet Control Model>
+		{
+			Arg1(3),
+			Arg2(-1),
+			Duration(24)
+		},
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(20),
+			Arg2(20),
+			Duration(24)
+		}
+	]
+},
+
+<Industrial Nanite Failure>
+{
+	Number(1242),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("These nanites were originally produced in order to help reduce waste.  There was an error in their programming somewhere.  They have been weakening the end product of many of your critical processes.  This is adding major excess waste."),
+	Duration(72),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(7),
+			Arg1(-2),
+			Duration(72)
+		}
+	]
+},
+
+<Experiment Gone Wrong>
+{
+	Number(1243),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Your scientists were studying how your brain works and they made a horrible error.  They accidentally irradiated their own brains too much.  Your research capacity drops alarmingly until you can train some new scientists.  "),
+	Duration(72),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(-5),
+			Duration(72)
+		}
+	]
+},
+
+<Angry Entertainment>
+{
+	Number(1244),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("The young on your planets have started enjoying a new violent form of entertainment.  There are many accidents and many of them seem to be ignoring education."),
+	Duration(144),
+	MinHonor(0),
+	MaxHonor(60),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(1),
+			Arg1(-3),
+			Duration(144)
+		},
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(-3),
+			Duration(144)
+		},
+		<Change Control Model>
+		{
+			Target(4),
+			Arg1(1),
+			Duration(144)
+		}
+	]
+},
+<Religious Revolution>
+{
+	Number(1245),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("The religion of your systems has been greatly altered by recent events.  The people are in a very good mood for a while and willing to ignore problems with the planet around them.  However, this is because they are now blaming their troubles on those in other systems."),
+	Duration(96),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(0),
+			Arg1(3),
+			Duration(96)
+		},
+		<Change Control Model>
+		{
+			Target(9),
+			Arg1(-3),
+			Duration(96)
+		}
+	]
+},
+
+<Mass Hysteria>
+{
+	Number(1246),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Your people are convinced that they are being infiltrated by some alien race.  Suspicion is everywhere and people no longer trust anything.  "),
+	Duration(96),
+	MinHonor(0),
+	MaxHonor(70),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(-3),
+			Duration(96)
+		},
+		<Change Control Model>
+		{
+			Target(9),
+			Arg1(-3),
+			Duration(96)
+		}
+	]
+},
+
+<Computer Virus>
+{
+	Number(1247),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Your computer system has been corrupted by a presentient form of AI.  This AI is drastically slowing your development progress."),
+	Duration(72),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(-3),
+			Duration(72)
+		}
+	]
+},
+
+<New Tech Discovered>
+{
+	Number(1248),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Your scout ships find a relic from earlier in the Empire, and thinking to salvage the materials, return with it.  Upon looting the remains, your engineers discover valuable information in the computers. "),
+	Duration(36),
+	MinTurn(576),
+	MaxTurn(1152),
+	<EffectList>
+	[
+		<Gain Tech>
+		{
+			BeginOnly("Yes"),
+			Duration(0)
+		}
+	]
+},
+
+<Bribe from a Wealthy Merchant>
+{
+	Number(1249),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("A wealthy trading baron asks to open trade with your planets. In exchange he is offering to help start the local economy by giving you 500k PP."),
+	Duration(72),
+	MinHonor(0),
+	MaxHonor(60),
+	MinTurn(576),
+	MaxTurn(1439),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			BeginOnly("Yes"),
+			Apply("Absolute"),
+			Arg1(50000),
+			Duration(0)
+		}
+	]
+},
+
+<Bribe from a Wealthy Merchant>
+{
+	Number(1272),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("A wealthy trading baron asks to open trade with your planets. In exchange he is offering to help start the local economy by giving you 30m PP."),
+	Duration(72),
+	MinHonor(0),
+	MaxHonor(60),
+	MinTurn(1440),
+	MaxTurn(2879),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			BeginOnly("Yes"),
+			Apply("Absolute"),
+			Arg1(3000000),
+			Duration(0)
+		}
+	]
+},
+
+<Bribe from a Wealthy Merchant>
+{
+	Number(1273),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("A wealthy trading baron asks to open trade with your planets. In exchange he is offering to help start the local economy by giving you 300m PP."),
+	Duration(72),
+	MinHonor(0),
+	MaxHonor(60),
+	MinTurn(2880),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			BeginOnly("Yes"),
+			Apply("Absolute"),
+			Arg1(30000000),
+			Duration(0)
+		}
+	]
+},
+
+<Pirates in Your Trading Lanes>
+{
+	Number(1250),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("There have been pirates sighted in your system. Your scout ships detected a band of roving pirates in your trade lanes.  After dispatching them, you gained 800k PP reward for their deaths."),
+	Duration(36),
+	MinTurn(576),
+	MaxTurn(1439),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			BeginOnly("Yes"),
+			Apply("Absolute"),
+			Arg1(30000),
+			Duration(0)
+		}
+	]
+},
+
+<Pirates in Your Trading Lanes>
+{
+	Number(1274),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("There have been pirates sighted in your system. Your scout ships detected a band of roving pirates in your trade lanes.  After dispatching them, you gained 25m PP reward for their deaths."),
+	Duration(36),
+	MinTurn(1440),
+	MaxTurn(2879),,
+	<EffectList>
+	[
+		<Change Production>
+		{
+			BeginOnly("Yes"),
+			Apply("Absolute"),
+			Arg1(2500000),
+			Duration(0)
+		}
+	]
+},
+
+<Pirates in Your Trading Lanes>
+{
+	Number(1275),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("There have been pirates sighted in your system. Your scout ships detected a band of roving pirates in your trade lanes.  After dispatching them, you gained 100m PP reward for their deaths."),
+	Duration(36),
+	MinTurn(2880),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			BeginOnly("Yes"),
+			Apply("Absolute"),
+			Arg1(10000000),
+			Duration(0)
+		}
+	]
+},
+
+<Pirates in Your Trading Lanes>
+{
+	Number(1251),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("There have been pirates sighted in your system. Your trading lanes are under attack by pirates.  All commerce you are under is reduced."),
+	Duration(48),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(6),
+			Arg1(-4),
+			Duration(48)
+		}
+	]
+},
+
+
+<Supercommander Offers You his Help>
+{
+	Number(1252),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("A roving commander with a heroic reputation offers to help you in your cause."),
+	Duration(36),
+	MinHonor(50),
+	MaxHonor(100),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Gain Commander>
+		{
+			BeginOnly("Yes"),
+			Arg1(19),
+			Duration(0)
+		}
+	]
+},
+
+<Assassination>
+{
+	Number(1253),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("One of your active commanders is assassinated."),
+	Duration(36),
+	MinHonor(0),
+	MaxHonor(50),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Lose Commander>
+		{
+			BeginOnly("Yes"),
+			Apply("Absolute"),
+			Arg1(1),
+			Duration(0)
+		}
+	]
+},
+
+<Sabotage>
+{
+	Number(1254),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("One of your fleets has been sabotaged.  All of the ships in this fleet take damage and need repairs."),
+	Duration(36),
+	MinHonor(0),
+	MaxHonor(60),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Damage Fleet>
+		{
+			BeginOnly("Yes"),
+			Apply("Proportional"),
+			Arg1(25),
+			Duration(0)
+		}
+	]
+},
+
+<Previous Civilization Discovered>
+{
+	Number(1255),
+	<Type>
+	[
+		Type("System"),
+		Type("Immune to Agerus")
+	],
+	Description("Your archaeologists discover the remains of a highly advanced civilization on one of your planets."),
+	Duration(48),
+	MinTurn(576),
+	MaxTurn(1152),
+	<EffectList>
+	[
+		<Gain Tech>
+		{
+			BeginOnly("Yes"),
+			Duration(0)
+		},
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(2),
+			Duration(48)
+		}
+	]
+},
+
+<Silicon Insect Swarm>
+{
+	Number(1256),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("These insects fly in one day on the dark side of your planet.  You are afraid at first what damage they might cause.  Then you realize that all they are eating is scrap material.  When they leave weeks later, your planet has undergone a great change."),
+	Duration(36),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Planet Resource>
+		{
+			BeginOnly("Yes"),
+			Arg1(1),
+			Duration(0)
+		}
+	]
+},
+
+<Commerce Title Offered>
+{
+	Number(1258),
+	<Type>
+	[
+		Type("System"),
+		Type("Immune to Agerus"),
+		Type("Answer")
+	],
+	Description("You are elected as the guardian of free commerce by the galaxy commerce guild. All you have to do is pay 1,000,000 PP, and you'll have the title."),
+	Duration(36),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			BeginOnly("Yes"),
+			Apply("Absolute"),
+			Arg1(-100000),
+			Answer("Yes"),
+			Duration(0),
+		},
+		<Change Control Model>
+		{
+			Target(6),
+			Arg1(1),
+			Duration(1440)
+		},
+		<Change Control Model>
+		{
+			Target(6),
+			Arg1(1),
+			Duration(1152)
+		},
+		<Change Control Model>
+		{
+			Target(6),
+			Arg1(1),
+			Duration(864)
+		},
+		<Change Control Model>
+		{
+			Target(6),
+			Arg1(1),
+			Duration(576)
+		},
+		<Change Control Model>
+		{
+			Target(6),
+			Arg1(1),
+			Duration(288)
+		},
+		<Change Honor>
+		{
+			BeginOnly("Yes"),
+			Arg1(10),
+			Duration(0)
+		}
+	]
+},
+
+<Whispers of the Ascended>
+{
+	Number(1262),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("From somewhere, the whispering of those who have ascended is being broadcast to your people's minds. None of your people can understand what the voices are whispering, nor can they determine where the voices are speaking from.  The effect is critical however, because everyone is starting to day-dream, and all industry is stopping, All your fleets are sitting idle."),
+	Duration(72),
+	MinTurn(2016),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(-5),
+			Duration(72)
+		},
+		<Change Control Model>
+		{
+			Target(4),
+			Arg1(-5),
+			Duration(72)
+		}
+	]
+},
+
+<Information Routing Error>
+{
+	Number(1263),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Your main coordination system had a horrible malfunction.  You learned about it in time to avoid it destroying your empire, but it did cause some problems."),
+	Duration(36),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Concentration Mode>
+		{
+			BeginOnly("Yes"),
+			Duration(0)
+		}
+	]
+},
+
+<Horrible Accusations>
+{
+	Number(1264),
+	<Type>
+	[
+		Type("System")
+#		Type("System"),
+#		Type("Magistrate")
+	],
+	Description("Some unknown party has implicated you in an attempt to remove the magistrate from the Emperor's favor. The Magistrate trusted the party and you could feel his scorn response."),
+	Duration(36),
+	MinHonor(0),
+	MaxHonor(60),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Empire Relation>
+		{
+			BeginOnly("Yes"),
+			Arg1(-15),
+			Duration(0)
+		}
+	]
+},
+
+<Horrible Accusations>
+{
+	Number(1265),
+	<Type>
+	[
+		Type("System")
+#		Type("System"),
+#		Type("Magistrate")
+	],
+	Description("Some unknown party has implicated you in an attempt to remove the magistrate from the Emperor's favor. However, the Magistrate trusted you."),
+	Duration(36),
+	MinHonor(40),
+	MaxHonor(100),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Empire Relation>
+		{
+			BeginOnly("Yes"),
+			Arg1(5),
+			Duration(0)
+		}
+	]
+},
+
+<Traitorous Commander>
+{
+	Number(1266),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("One of your commanders has gotten bored with being passed by for promotion.  He has left your system, and takes some money and a ship with him."),
+	Duration(36),
+	MinHonor(0),
+	MaxHonor(40),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Lose Commander>
+		{
+			BeginOnly("Yes"),
+			Apply("Absolute"),
+			Arg1(1),
+			Duration(0)
+		}
+	]
+},
+
+<Energy Leech>
+{
+	Number(1268),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("This odd being latches on to one of your fleet groups and drains all ship energy.  Before it can be destroyed, all hands aboard die.  This includes some of your commanders unfortunately."),
+	Duration(36),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Kill Commander and Disband Fleet>
+		{
+			BeginOnly("Yes"),
+			Duration(0)	
+		}
+	]
+},
+
+<Archeological Find>
+{
+	Number(1269),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Your scientists unearth a strange device one day.  Only after intense study do they realize what it is.  This device will help to moderate this planets gravity."),
+	Duration(36),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Gain Planet Gravity Control>
+		{
+			BeginOnly("Yes"),
+			Duration(0)	
+		}
+	]
+},
+
+<Drug Craze>
+{
+	Number(1270),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("New drug craze sweeps your population. People refuse to learn or work, they just want to have sex all the time."),
+	Duration(72),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(1),
+			Arg1(2),
+			Duration(72)
+		},
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(-3),
+			Duration(72)
+		},
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(-3),
+			Duration(72)
+		},
+		<Change Control Model>
+		{
+			Target(8),
+			Arg1(-3),
+			Duration(72)
+		}
+	]
+},
+
+<Slaves Revolt>
+{
+	Number(1271),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Slaves revolt in almost all of your planets. They are mad and refuse to surrender, so you have no choice but to kill them all. It will take some time before you can rebuild your precious workforce."),
+	MinHonor(0),
+	MaxHonor(30),
+	Duration(72),
+	MinTurn(1440),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(-1),
+			Duration(36)
+		},
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(-1),
+			Duration(72)
+		},
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(-1),
+			Duration(144)
+		},
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(-1),
+			Duration(288)
+		}
+	]
+},
+
+<Commercial Influx>
+{
+	Number(1276),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Your empire enjoys an abnormal increase in commerce temporarily."),
+	Duration(144),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(6),
+			Arg1(3),
+			Duration(144)
+		}
+	]
+},
+
+<Espionage Paranoia>
+{
+	Number(1277),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Your empire is being paranoid about invasions and has upped its defences and expanded its network."),
+	Duration(144),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(5),
+			Arg1(2),
+			Duration(144)
+		},
+		<Change Control Model>
+		{
+			Target(9),
+			Arg1(-2),
+			Duration(144)
+		}
+	]
+},
+
+<Vigorous Economic Development>
+{
+	Number(1278),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("Your workers have begin working hard to transform the recent acquasitions for the empire and improve industrial output in general."),
+	Duration(144),
+	MinTurn(576),
+	MaxTurn(105120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(7),
+			Arg1(2),
+			Duration(144)
+		},
+		<Change Control Model>
+		{
+			Target(0),
+			Arg1(2),
+			Duration(144)
+		}
+	]
+}

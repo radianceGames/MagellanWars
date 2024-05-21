@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+<LINK REL="stylesheet" HREF="/archspace.css">
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999" onLoad="MM_preloadImages('$IMAGE_SERVER_URL/image/as_game/bu_helpen.gif')">
+<TABLE WIDTH="610" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ROWSPAN="2" ALIGN="center">
+      <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext">
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>$RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp;$PRODUCT_POINT
+              &nbsp;&nbsp;&nbsp;&nbsp;$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;$NET_POWER
+            </DIV>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> </TR>
+  <TR>
+    <TD>
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center"></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" HEIGHT="18"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/diplomacy/spy_title.gif">
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext">$CONFIRM_MESSAGE</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+  <FORM METHOD=post ACTION="broadcast_result.as">
+	<TD ALIGN="center" CLASS="tabletxt">
+      <TEXTAREA NAME="BROADCAST_MESSAGE" WRAP="VIRTUAL" COLS="55" ROWS="5">$BROADCAST_MESSAGE</TEXTAREA>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <INPUT TYPE=hidden NAME=BROADCAST_TYPE VALUE=$BROADCAST_TYPE>
+      <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok.gif">
+      <A HREF="admin.as"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_back.gif" BORDER="0"></A>
+    </TD>
+  </TR>
+  </FORM>
+    <TR>
+    <TD class="maintext" align="center" WIDTH="556">
+      <A HREF="admin.as">$ADMIN_LINK_STRING</A>
+      <A HREF="inspect.as">$INSPECT_LINK_STRING</A>
+      <A HREF="black_market_control.as">$BLACK_MARKET_LINK_STRING</A>
+      <A HREF="config.as" TARGET="contents">$CONFIG_LINK_STRING</A>
+      <A HREF="council_control.as" TARGET="contents">$RESTRICTION_LINK_STRING</A>
+	 </TD>
+  </TR>
+</TABLE>
+<P>&nbsp;</P></BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</html>
+

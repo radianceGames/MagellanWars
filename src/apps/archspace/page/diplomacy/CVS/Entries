@@ -1,0 +1,20 @@
+/diplomacy.cc/1.2/Sat Aug 21 21:33:58 2004//
+/diplomacy_link.cc/1.1.1.1/Thu May 13 07:51:57 2004//
+/diplomacy_status_list.cc/1.1.1.1/Thu May 13 07:51:57 2004//
+/diplomatic_message_accuse.cc/1.1.1.1/Thu May 13 07:51:57 2004//
+/inspect_other_player.cc/1.1.1.1/Thu May 13 07:51:57 2004//
+/inspect_other_player_result.cc/1.1.1.1/Thu May 13 07:51:57 2004//
+/read_diplomatic_message.cc/1.1.1.1/Thu May 13 07:51:57 2004//
+/read_diplomatic_message_delete.cc/1.2/Thu Jul 21 14:41:32 2005//
+/read_diplomatic_message_unanswered.cc/1.2/Sat Aug 21 21:33:58 2004//
+/send_diplomatic_message.cc/1.2/Sat Aug 21 21:33:58 2004//
+/send_diplomatic_message_result.cc/1.2/Thu Jul 21 14:41:32 2005//
+/send_diplomatic_message_write.cc/1.1.1.1/Thu May 13 07:51:57 2004//
+/spy_change_security_level.cc/1.1.1.1/Thu May 13 07:51:57 2004//
+/spy_change_security_level_result.cc/1.1.1.1/Thu May 13 07:51:57 2004//
+/read_diplomatic_message_result.cc/1.3/Sat Sep 24 22:57:15 2005//
+/spy_confirm.cc/1.2/Sun Nov  6 11:56:44 2005//
+/spy_result.cc/1.4/Sun Nov  6 11:56:44 2005//
+/spy.cc/1.3/Thu Mar 16 01:55:31 2006//
+/diplomacy_management.cc/1.18/Wed Aug 15 05:03:52 2007//
+D

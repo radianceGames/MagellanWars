@@ -1,0 +1,181 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<script language="JavaScript">
+<!--
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<LINK REL="stylesheet" HREF="/archspace.css">
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999" onLoad="MM_preloadImages('$IMAGE_SERVER_URL/image/as_game/bu_helpen.gif')">
+<FORM ACTION=blockade_fleet_deployment.as METHOD=post>
+<TABLE WIDTH="610" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR> 
+    <TD> 
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle"> 
+          <TD>
+            $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center"> 
+      <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <TR BGCOLOR=$RACE_BG_COLOR> 
+          <TD CLASS="maintext"> 
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>$RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp;$PRODUCT_POINT
+              &nbsp;&nbsp;&nbsp;&nbsp;$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;$POPULATION
+              </DIV>
+          </TD>
+          <!--HELP BUTTON-->
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD CLASS="maintext" ALIGN="center"></TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center" HEIGHT="18"><I><IMG SRC="$IMAGE_SERVER_URL/image/as_game/war/blockade_title.gif" WIDTH="439" HEIGHT="41"></I> 
+    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center"> 
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR> 
+    <TH ALIGN="center" CLASS="maintext" HEIGHT="25">$STRING_FLEET_DEPLOYMENT</TH>
+  </TR>
+  <TR> 
+    <TD ALIGN="center"> 
+      <TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" BORDERCOLOR="#2A2A2A">
+        <TR> 
+          <TD> 
+            <TABLE WIDTH="450" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+              <TR ALIGN="CENTER"> 
+                <TD COLSPAN="6" CLASS="tabletxt">$TARGET_PLAYER<BR></TD>
+              </TR>
+			  <TR HEIGHT="3"> <TD> &nbsp; </TD>
+              </TR>
+		    </TABLE>
+            <TABLE WIDTH="450" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+              <TR> 
+                <TD WIDTH="10" CLASS="tabletxt" ALIGN="CENTER">&nbsp;</TD>
+                <TH WIDTH="140" CLASS="tabletxt" ALIGN="RIGHT"><FONT COLOR=#666666>$STRING_RANKING&nbsp;</FONT></TD>
+                <TD WIDTH="30" CLASS="tabletxt" ALIGN="LEFT">&nbsp;$RANKING</TD>
+                <TD WIDTH="10" CLASS="tabletxt" ALIGN="CENTER">&nbsp;</TD>
+                <TH WIDTH="140" CLASS="tabletxt" ALIGN="RIGHT"><FONT COLOR=#666666>$STRING_POWER&nbsp; </FONT></TD>
+                <TD WIDTH="120" CLASS="tabletxt" ALIGN="LEFT">&nbsp;$POWER</TD>
+              </TR>
+              <TR> 
+                <TD WIDTH="10" CLASS="tabletxt" ALIGN="CENTER">&nbsp;</TD>
+                <TH WIDTH="140" CLASS="tabletxt" ALIGN="RIGHT"><FONT COLOR=#666666>$STRING_NUMBER_OF_PLANET_S_&nbsp; </FONT></TD>
+                <TD WIDTH="30" CLASS="tabletxt" ALIGN="LEFT">&nbsp;$NUMBER_OF_PLANETS</TD>
+                <TD WIDTH="10" CLASS="tabletxt" ALIGN="CENTER">&nbsp;</TD>
+                <TH WIDTH="140" CLASS="tabletxt" ALIGN="RIGHT"><FONT COLOR=#666666>$STRING_NUMBER_OF_FLEET_S_&nbsp;</FONT></TD>
+                <TD WIDTH="120" CLASS="tabletxt" ALIGN="LEFT"> &nbsp;$NUMBER_OF_FLEET_S_</TD>
+              </TR>
+              <TR> 
+                <TD WIDTH="10" CLASS="tabletxt" ALIGN="CENTER">&nbsp;</TD>
+                <TH WIDTH="140" CLASS="tabletxt" ALIGN="RIGHT"><FONT COLOR=#666666>$STRING_RELATION&nbsp;</FONT></TD>
+                <TD WIDTH="30" CLASS="tabletxt" ALIGN="LEFT">&nbsp;$RELATION</TD>
+                <TD WIDTH="10" CLASS="tabletxt" ALIGN="CENTER">&nbsp;</TD>
+                <TH WIDTH="140" CLASS="tabletxt" ALIGN="RIGHT"><FONT COLOR=#666666>$STRING_COUNCIL&nbsp; </FONT></TD>
+                <TD WIDTH="120" CLASS="tabletxt" ALIGN="LEFT">&nbsp;$COUNCIL_NICK</TD>
+              </TR>
+            </TABLE>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center" CLASS="maintext">$SELECT_FLEET_MESSAGE</TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center"> 
+      $FLEETS_TO_SEND
+    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <INPUT TYPE=hidden NAME="TARGET_PLAYER_ID", VALUE="$TARGET_PLAYER_ID">
+  <TR> 
+    <TD ALIGN="center"> 
+      <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR VALIGN="bottom">
+          <TD><IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_done1.gif"> <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok1.gif" WIDTH="49" HEIGHT="44" BORDER="0"><A HREF="war.as"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_cancel.gif" BORDER="0"></A></TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR> 
+    <TD CLASS="maintext" ALIGN="center"> <A HREF="war.as">$WAR_MAIN</A> <A HREF="siege_planet.as">$SIEGE_PLANET</A> <FONT COLOR="616161">$BLOCKADE</FONT> <A HREF="raid.as">$RAID</A> <A HREF="privateer.as">$PRIVATEER</A> <A HREF="defense_plan.as">$DEFENSE_PLAN</A> <A HREF="battle_report.as">$BATTLE_REPORT</A></TD>
+  </TR>
+  <TR> 
+    <TD>&nbsp;</TD>
+  </TR> 
+  <TR> 
+    <TD> 
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle"> 
+          <TD>
+            <CENTER>
+				$ADLINE_BOTTOM
+            </CENTER>
+            </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> 
+    <TD>&nbsp;</TD>
+  </TR>
+</TABLE>
+</FORM>
+<P>&nbsp;</P>
+</body>
+</html>

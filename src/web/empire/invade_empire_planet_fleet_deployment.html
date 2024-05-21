@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+<LINK REL="stylesheet" HREF="/archspace.css">
+<LINK REL="stylesheet" HREF="/cssLib.css">
+<SCRIPT LANGUAGE = "JavaScript">
+<!--
+if (navigator.appName.indexOf('Microsoft') == -1) {
+	document.write('<'+'link rel="stylesheet" href="/mozilla.css" />');
+}
+// -->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999">
+<TABLE WIDTH="610" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext">
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>$RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp;$PRODUCT_POINT
+              &nbsp;&nbsp;&nbsp;&nbsp;$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;$NET_POWER
+              </DIV>
+          </TD>
+          <!--HELP BUTTON-->
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center"></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" HEIGHT="18"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/empire/invade_empire_title.gif">
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+   <TR>
+    <TH ALIGN="center" CLASS="maintext" HEIGHT="25">
+      <TABLE WIDTH="600" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR CLASS="maintext">
+		<TD>
+		<APPLET CODE=Deployment.class ARCHIVE=deploy.jar WIDTH=630 HEIGHT=275>
+		$J_FLEET_INFO
+		$FLEET_INDEX_TO_ID
+		$J_FLEET_LIST
+		<PARAM NAME=TARGET VALUE="invade_empire_planet_result.as">
+		<PARAM NAME=IMAGEDIR VALUE="$IMAGEDIR/">
+		<CENTER>
+		Please get the latest Java plugin.<BR>
+		<A HREF="http://www.java.com/">You can find it here</A>
+		</CENTER>
+		</APPLET>
+		</TD>
+        </TR>
+      </TABLE>
+    </TH>
+  </TR>
+  <TR>
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext"></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+   <TR>
+    <TD ALIGN="center"></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center">
+      <A HREF="empire_diplomacy.as" TARGET="contents">$EMPIRE_DIPLOMACY</a>
+      <A HREF="bribe.as" TARGET="contents">$BRIBE</a>
+      <A HREF="request_boon.as" TARGET="contents">$REQUEST_BOON</a>
+      <A HREF="request_mediation.as" TARGET="contents">$REQUEST_MEDIATION</a>
+      <FONT COLOR="#616161">$INVADE_EMPIRE</FONT>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            <CENTER>
+				$ADLINE_BOTTOM
+            </CENTER>
+            </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+</TABLE>
+<P>&nbsp;</P>
+</BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</html>

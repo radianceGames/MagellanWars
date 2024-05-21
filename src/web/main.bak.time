@@ -1,0 +1,246 @@
+<HTML>
+<HEAD>
+<TITLE>*********ARCHSPACE************</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+</STYLE>
+<LINK REL="stylesheet" HREF="/archspace.css">
+<SCRIPT LANGUAGE=JavaScript>
+var timerID			= null;
+var timerRunning	= false;
+
+// ÇÚµé·¯¿¡¼­ Á¦°øÇÏ´Â ½Ã°£À» º¯¼ö¿¡ ÀúÀå
+var cur				= "$SYSTEM_TIME";
+var nex				= "$NEXT_TIME";
+var interval		= $SECOND_PER_TURN;
+
+// ÇÊµåº°·Î ÆÄ½Ì
+var CurYear		= cur.substring(9, 13);
+var CurMonth	= cur.substring(14, 16);
+var CurDay		= cur.substring(17, 19);
+var CurHour		= cur.substring(25, 27);
+var CurMinute	= cur.substring(28, 30);
+var CurSecond	= cur.substring(31, 33);
+var CurIsAMPM	= cur.substring(34, 36);
+
+var NexYear		= nex.substring(11, 15);
+var NexMonth	= nex.substring(16, 18);
+var NexDay		= nex.substring(19, 21);
+var NexHour		= nex.substring(27, 29);
+var NexMinute	= nex.substring(30, 32);
+var NexSecond	= nex.substring(33, 35);
+var NexIsAMPM	= nex.substring(36, 38);
+
+function init()
+{
+  // Date °´Ã¼ »ý¼º
+  myDate = new Date();
+
+  // ³âµµ, ´Þ, ³¯, ½Ã°£À» ¼ÂÆÃ
+  myDate.setFullYear(CurYear);
+  myDate.setMonth(CurMonth, CurDay);
+  myDate.setHours(CurHour, CurMinute, CurSecond);
+
+  // °¢ º¯¼ö¿¡ ³âµµ, ´Þ, ³¯, ½Ã°£À» ÀúÀå
+  CurYear   = myDate.getYear();
+  CurMonth  = myDate.getMonth();
+  CurDay    = myDate.getDate();
+  CurHour   = myDate.getHours();
+
+  document.all.nex_time.value = NexYear+ "/" +NexMonth+ "/" +NexDay+ " " +NexHour+ ":" +NexMinute+ ":" +NexSecond+ " " +NexIsAMPM; 
+
+  // ÇÑÀÚ¸® ¼ýÀÚ¸é ¾Õ¿¡ 0 ºÙÀÌ±â
+  if (CurMonth >= 0 && CurMonth <= 9)
+  {
+    CurMonth = "0" + CurMonth;
+  }
+  if (CurDay >= 0 && CurDay <= 9)
+  {
+    CurDay = "0" + CurDay;
+  }
+  if (CurHour > 12)
+  {
+    CurHour = CurHour - 12;
+  }
+  if (CurHour >= 0 && CurHour <= 9)
+  {
+    CurHour = "0" + CurHour;
+  }
+  if (CurMinute >= 0 && CurMinute <= 9)
+  {
+    CurMinute = "0" + CurMinute;
+  }
+  if (CurSecond >= 0 && CurSecond <= 9)
+  {
+    CurSecond = "0" + CurSecond;
+  }
+}
+
+/*
+########## STOP_TIME()
+*/
+function stop_time()
+{
+  if(timerRunning)
+  {
+    clearTimeout(timerID);
+  }
+
+  timerRunning = false;
+}
+
+/*
+########## TURN_TIME()
+*/
+function turn_time()
+{
+  document.all.cur_time.value = CurYear+ "/" +CurMonth+ "/" +CurDay+ " " +CurHour+ ":" +CurMinute+ ":" +CurSecond+ " " +CurIsAMPM;
+
+  timerID = setTimeout('turn_time()', 1000);
+  timerRunning = true;
+}
+
+/*
+########## RUNNING()
+*/
+function running()
+{
+  init();
+  stop_time();
+  turn_time();
+}
+</SCRIPT>
+</HEAD>
+<BODY bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" onLoad=running();>
+<TABLE width="610" border="0" cellspacing="0" cellpadding="0">
+    <TR>
+        <TD rowspan="3">
+            &nbsp;
+        </TD>
+        <TD>
+            <TABLE width=590 border="0" cellspacing="0" cellpadding="0" height="80" bgcolor="#000000" align="center">
+                <TR align="center" valign="middle">
+                    <TD>
+						$ADLINE
+					</TD>
+                </TR>
+            </TABLE>
+        </TD>
+        <TD rowspan="3">
+            &nbsp;
+        </TD>
+    </TR>
+    <TR>
+        <TD ROWSPAN="2" ALIGN="CENTER" VALIGN="MIDDLE"><IMG SRC=$IMAGE_MAIN></TD>
+    </TR>
+    <TR>
+    </TR>
+    <TR>
+        <TD rowspan="3">
+            &nbsp;
+        </TD>
+        <TD class="maintext" align="center">
+            <IMG SRC=$IMAGE_MAIN_SYMBOL>
+        </TD>
+        <TD rowspan="3">
+            &nbsp;
+        </TD>
+    </TR>
+    <TR>
+        <TD class="maintext" align="center">
+            <TABLE WIDTH="550" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+                <TR BGCOLOR=$RACE_BG_COLOR>
+                    <TD CLASS="maintext">
+                        <DIV ALIGN="CENTER" CLASS="white">
+                        $TITLE
+                        </DIV>
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+    <TR>
+        <TD class="maintext" align="center">
+            <BR>
+            <TABLE border="0" cellspacing="0" cellpadding="0">
+                <TR>
+                    <TD class="maintext" width="130" valign="top">
+                        $STRING_RANKING<BR>
+                        $STRING_PP<BR>
+                        $STRING_PLANET<BR>
+                        $STRING_POPULATION<BR>
+                        $STRING_CONCENTRATION_MODE
+                    </TD>
+                    <TD class="maintext" valign="top" ALIGN="RIGHT">
+                        $RANKING<BR>
+                        $PRODUCT_POINT<BR>
+                        $PLANET_COUNT<BR>
+                        $POPULATION<BR>
+                        $CONCENTRATION_MODE
+                    </TD>
+                    <TD class="maintext" width="70" valign="top" ALIGN="RIGHT">
+                        &nbsp;
+                    </TD>
+                    <TD class="maintext" width="110" valign="top">
+                        $STRING_POWER<BR>
+                        $STRING_FLEET<BR>
+                        $STRING_SHIP<BR>
+                        $STRING_HONOR<BR>
+                        $STRING_COUNCIL
+                    </TD>
+                    <TD class="maintext" valign="top" ALIGN="RIGHT">
+                        $POWER<BR>
+                        $FLEET<BR>
+                        $SHIP<BR>
+                        $HONOR<BR>
+                        $COUNCIL
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+    <TR>
+        <TD rowspan="9">
+            &nbsp;
+        </TD>
+        <TD class="narrow" align="center" height="18">
+            <HR SIZE="1" NOSHADE ALIGN="CENTER" WIDTH="550">
+        </TD>
+        <TD rowspan="9">
+            &nbsp;
+        </TD>
+    </TR>
+    <TR>
+        <TD class="white" align="center" height="18">
+        <TABLE>
+        <TR>
+          <TD class="white" ALIGN=right>Current Time: </TD>
+          <TD><INPUT TYPE=text NAME=cur_time SIZE=20 VALUE="" STYLE="border:0; background-color:#000000; color:#ffffff" readonly></TD>
+        </TR>
+        <TR>
+          <TD class="white" ALIGN=right>Next Turn: </TD>
+          <TD><INPUT TYPE=text NAME=nex_time SIZE=20 VALUE="" STYLE="border:0; background-color:#000000; color:#ffffff" readonly></TD>
+<!--
+          <TD COLSPAN=2 class="white">$LEFT_TIME</TD>
+-->
+        </TR>
+        </TABLE>
+        </TD>
+    </TR>
+    <TR>
+        <TD class="narrow" align="center" height="18">
+            &nbsp;
+        </TD>
+    </TR>
+    $SYSTEM_ADVISORY
+    $IMPERIAL_HAPPENING
+    <TR>
+        <TD class="maintext">
+            &nbsp;
+        </TD>
+    </TR>
+</TABLE>
+</BODY>
+</HTML>

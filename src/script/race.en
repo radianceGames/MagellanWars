@@ -1,0 +1,388 @@
+# Society: Classism Personalism Totalism
+# Gravity: G(real). 
+# Temperature: K(Kelvin)
+# Tech: Social, Life, Matter, Info, 직접 코드 번호
+# Control : Environment, Growth, Efficiency, Genius, Production,
+#      Facility Cost, Military, Ship Mobility, Commerce, Spy,
+#      Diplomacy, Ship Defense, Ship Attack,
+#      Research(Social, Life, Matter, Info)
+#      -: -    else: +
+# Air: H2, Cl2, CO2, O2, N2, CH4, H2O 순서로 0-5값을 사용 string 구성
+# H2=1, N2=4 ====> 1000400
+# Bonus, Penalty, Device - 나중에 번호로 변경(일단은 설정된 바가 없는
+#			  관계로 문자열)
+# Device: Space Mining Module, Psionic Barrier, 생체 장갑
+# Penalty: PSEUDOHERO
+<Human>
+{
+	Number(1),
+	Description("Though humans have a relatively short life span, the population increase rate of humans is nothing short of astonishing.  As a result, the other species have always been wary of the humans' expansion of power in the universe.  However, even the watchful eyes of the other species cannot easily spot the other strong points of the human species, which lie in the philosophical and social sciences, as well as other literary and cultural developments.  Their never-ending desire to seek the ideal has provided a catalyst not found in other species."),
+	Society("Classism"),
+	<Tech>
+	[
+		Number(1104),
+		Number(1105),
+		Number(1106),
+		Number(1107),
+		Number(1112)
+	],
+	<Home>
+	{	
+		Air("0001400"),
+		Gravity(1),
+		Temperature(300)
+	},
+	<Control>
+	{	
+		Environment(-1),
+		Growth(2),
+		Efficiency(-1),
+		Genius(2),
+		Research Social(3)
+	},
+	<Fleet>
+	{
+		Survival(5)
+	}
+},
+
+<Targoid>
+{
+	Number(2),
+	Description("The Targoid race maintain a totalitarian society, with all of their species originating from one mother body and being controlled by that mother body.  Targoids efficiently produce every type of their race as needed from one mother body through the programming of the DNA of the unborn Targoid embryo.  This system makes it possible to produce any variety of the species, from mouse-sized micro workers to battle creatures over 2 kilometers in length.  Targoid workers are famous for their efficiency in gathering resources and constructing buildings."),
+	Society("Totalism"),
+	<Tech>
+	[
+		Number(1404),
+		Number(1405),
+		Number(1406),
+		Number(1413)
+	],
+	<Home>
+	{	
+		Air("0010310"),
+		Gravity(1.2),
+		Temperature(340)
+	},
+	<Control>
+	{	
+		Growth(2),
+		Production(2),
+		Facility Cost(4),
+		Research(-1)
+	},
+	<Ability>
+	{
+		Ability("Genetic Engineering Specialist"),
+		Ability("Fragile Mind Structure"),
+		Ability("Great Spawning Pool")
+	},
+	<Fleet>
+	{
+		Berserk(5),
+		Survival(-5)
+	}
+},
+
+<Buckaneer>
+{
+	Number(3),
+	Description("A Buckaneer\'s spaceship is his home and center of life.  They spend the majority of their life roaming space and finding fortune through trade (and sometimes piracy.)  Because they are accustomed to this type of gypsy roaming life, their fleets move swiftly and cannot be traced easily.  Buckaneer merchants possess information and contacts throughout the universe, which are indispensable aids to commerce, and thus hold the majority of trade and business in the universe.  It is common to see Buckaneer crafts that have duplicator systems for needed items built into the ship's interior design."),
+	Society("Personalism"),
+	<Tech>
+	[
+		Number(1208),
+		Number(1112)
+	],
+	<Home>
+	{	
+		Air("0200300"),
+		Gravity(0.7),
+		Temperature(270)
+	},
+	<Control>
+	{	
+		Growth(-1),
+		Military(-1),
+		Commerce(3)
+	},
+	<Ability>
+	{
+		Ability("Fast Maneuver"),
+		Ability("Stealth")
+	},
+	<Fleet>
+	{
+		Morale(5),
+		Survival(5)
+	}
+},
+<Tecanoid>
+{
+	Number(4),
+	Description("The Tecanoids sought to find their key to evolution through attaching computers and bionic machinery to their bodies.  As a result of these experiments, the elite forces of their races have obtained extremely strong physical bodies and extraordinary intellect.  On the other hand, the lowest class of their society did not have an opportunity to receive these gifts, and thus became an unstable supporting pillar of the community.  The Tecanoid effort for evolution brought them optimally advanced data processing skills and electronic infiltration technologies, but the species has ultimately sacrificed their humanity for these machines."),
+	Society("Classism"),
+	<Tech>
+	[
+		Number(1204),
+		Number(1205),
+		Number(1206)
+	],
+	<Home>
+	{
+		Air("0021200"),
+		Gravity(1.3),
+		Temperature(240)
+	},
+	<Control>
+	{
+		Environment(2),
+		Spy(2),
+		Research Social(-2),
+		Research Info(4)
+	},
+	<Ability>
+	{
+		Ability("Information Network Specialist"),
+		Ability("Scavenger")
+	},
+	<Fleet>
+	{
+		Morale(5)
+	}
+},
+<Evintos>
+{
+	Number(5),
+	Description("Unlike most of the other races of the galaxy, the Evintos are a non-organic life force whose bodies are composed of silicon and gold.  Their nervous system and metabolisms are also radically different from other inhabitants of the universe.  It is believed that they originate from artificial intelligence creatures created in the far ancient ages of the universe, whose technologies remain primarily lost to the world.  Because of their unusual appearance and makeup, they are often rejected by other species.  They possess a rigid social structure, which makes it hard for technological or social innovations to be implemented.  This structure further adds to their drifting differences between other species.  But these weak points are compensated by their mechanically precise and accurate social structure, which makes for extremely high production and manufacturing within their society."),
+	Society("Totalism"),
+	<Tech>
+	[
+		Number(1204),
+		Number(1205),
+		Number(1206),
+		Number(1306),
+		Number(1307),
+		Number(1308),
+		Number(1309)
+	],
+	<Home>
+	{
+		Air("0000000"),
+		Gravity(0.8),
+		Temperature(300)
+	},
+	<Control>
+	{
+                Production(1),
+		Efficiency(2),
+		Diplomacy(-2),
+		Research(-2)
+	},
+	<Ability>
+	{
+		Ability("No Breath"),
+		Ability("Efficient Investment"),
+		Ability("Downloadable Commander Experience")
+	},
+	<Fleet>
+	{
+		Morale(-5),
+		Berserk(-5)
+	}
+},
+<Agerus>
+{
+	Number(6),
+	Description("Even more odd than the Evintos, the Agerus can only be defined as \"planetary life forms.\"  Many scientists doubt their existence, as they have remained largely secluded and withdrawn, having virtually no communication with other species.  Not much is known about this species, whose origin still remains a mystery.  The galaxy battleships that belong to the Agerus are used primarily for defense, and are actually smaller planet forms, which have evolved from spores from the mother planet.  It is not an easy task to classify and differentiate between the children of the Agerus and naturally occurring small planets."),
+	Society("Totalism"),
+	<Tech>
+	[
+		Number(1404),
+		Number(1405),
+		Number(1406)
+	],
+	<Home>
+	{
+		Air("3000200"),
+		Gravity(1.5),
+		Temperature(370)
+	},
+	<Control>
+	{
+		Military(4),
+#		Ship Defense(4),
+		Commerce(-3),
+		Diplomacy(-3),
+		Research Life(3)
+	},
+	<Ability>
+	{
+		Ability("No Spy"),
+		Ability("Asteroid Management"),
+		Ability("Stealth")
+	},
+	<Fleet>
+	{
+		Berserk(-5),
+		Survival(-10)
+	}
+#	Penalty("PSEUDOHERO")
+#	Device("생체 장갑")
+},
+<Bosalian>
+{
+	Number(7),
+	Description("Bosalians are peace-loving pacifists who hate conflict and battle.  Their noble philosophies and impartiality have settled many a battles between warring races, and their opinions are held in the highest respect by other races.  Though they are pacifists by nature, they are by no means a weak force in the galaxy.  True to their ideology, which states, \"The universe is one with your being, and you are one within the universe,\" Bosalians can freely use psychic powers.  Even races with limited sensory abilities, such as humanoids, can see the brilliance of the psychic aurora emitted by the Bosalians in their attacks."),
+	Society("Personalism"),
+	Empire(75),
+	<Tech>
+	[
+		Number(1419)
+	],
+	<Home>
+	{
+		Air("0001301"),
+		Gravity(2),
+		Temperature(350)
+	},
+	<Control>
+	{
+		Military(-2),
+		Diplomacy(4),
+		Research Life(2),
+		Research Social(2)
+	},
+	<Ability>
+	{
+		Ability("PSI"),
+		Ability("Enhanced PSI"),
+		Ability("Diplomat"),
+		Ability("Trained Mind"),
+		Ability("Pacifist")
+	},
+	<Fleet>
+	{
+		Berserk(-5),
+		Survival(10)
+	}
+},
+<Xeloss>
+{
+	Number(8),
+	Description("Much is said about the fanatical religion of the Xeloss, a species that escaped their home planet during the collapse of the Magellan Universe.  The Xeloss are ruthless, and do not hesitate to murder others under their god's name.  Not only do they attack outsiders with their psychic powers, but also they have aptly shown that the individual will sacrifice his basic instinct for survival for the good of their god.  This has added to their already bloody reputation.  No species wishes to readily meet the Xeloss, and they are absolutely correct in their thoughts."),
+	Society("Totalism"),
+	Empire(20),
+	<Tech>
+	[
+		Number(1419)
+	],
+	<Home>
+	{
+		Air("0110300"),
+		Gravity(2),
+		Temperature(230)
+	},
+	<Control>
+	{
+		Military(2),
+		Diplomacy(-2)
+	},
+	<Ability>
+	{
+		Ability("PSI"),
+		Ability("Fanatic Fleet")
+	},
+	<Fleet>
+	{
+		Morale(-5),
+		Berserk(5),
+		Survival(-5)
+	}
+},
+<Xerusian>
+{
+	Number(9),
+	Description("Xerusians boast an ancient and traditional military tradition.  Though their troops are small in number, they have always remained the utmost elite forces of the galaxy.  In addition, Xerusians have always had great interest in the matter-energy sciences, which are immediately adapted to military weapons and technologies, and have researched these sciences extensively.  The only things that stand between them and the domination of the galaxy are the inefficient workings of their bureaucracy and the excessive amount of energy lost in the internal conflicts within their machinery.  It should be noted that their extensive battle experiences with the Xeloss, has resulted that they are the only race that have a method of stopping the Xeloss psychic attacks."),
+	Society("Classism"),
+	Empire(30),
+	<Tech>
+	[
+		Number(1306),
+		Number(1307),
+		Number(1308),
+		Number(1309),
+		Number(1310),
+		Number(1311),
+		Number(1313),
+		Number(1314)
+	],
+	<Home>
+	{
+		Air("0100400"),
+		Gravity(1.4),
+		Temperature(280)
+	},
+	<Control>
+	{
+		Efficiency(-2),
+		Research Matter(3)
+	},
+	<Ability>
+	{
+		Ability("High Morale"),
+		Ability("Tactical Mastery")
+	},
+	<Fleet>
+	{
+		Morale(-5),
+		Berserk(5)
+	}
+},
+<Xesperados>
+{
+	Number(10),
+	Description("Like the Xeloss or Xerusian, the Xesperados race was a group of military species that escaped the Magellan Galaxy during its collapse.  In their wanderings throughout space, they have been joined by other military species and leaders of rebel races, making the Xesperados an impressive force throughout the galaxy.  The merger of many different species is handicapped by potential problems such as the threat of spies from other races and the complex process of expanding life support capable of sustaining the entire group.  But their open minds and universal acceptance has become a great stimulant to the progress of science, and they are continuing to attract talented researchers of all species."),
+	Society("Personalism"),
+	Empire(30),
+	<Tech>
+	[
+		Number(1204)
+	],
+	<Home>
+	{
+		Air("0000000"),
+		Gravity(1),
+		Temperature(300)
+	},
+	<Control>
+	{
+		Spy(-3),
+		Genius(3),
+		Facility Cost(-3),
+		Research(2)
+	},
+	<Ability>
+	{
+		Ability("No Breath")
+	}
+}
+#<Tarenian>
+#{
+#	Number(11),
+#	Description("이 언제나 편안하고 낙천적인 종족은 매사에 결코 서두르는 법이 없다. 그들은 파워게임에는 관심이 없는 듯 하며, 생존을 위해 많은 자원을 주장하지도 않는다. 많은 종족들은 대체로 타레니언들을 무시하며 서로 간섭하지 않으려 (어짜피 타레니언들이 누군가를 간섭하는 일은 역사에 없다) 한다. 왜냐하면 누군가가 타레니언과 가까이 접근하면 별 이유 없이 만사가 귀찮아지는 분위기에 휩싸여 소위 Tarenize(타레니안화)되기 때문이다. 아마도 이들은 아직 규명되지 않은 종류의 초능력을 갖고 있다고 추측된다."),
+#	Society("Personalism"),
+#	<Home>
+#	{
+#		Air("0001400"),
+#		Gravity(1),
+#		Temperature(300)
+#	},
+#	<Control>
+#	{
+#		Growth(4),
+#		Production(-4),
+#		Ship Mobility(4)
+#	},
+#	Players in war with Tarenian Production(-4): Applied Once
+#}

@@ -1,0 +1,1153 @@
+# Type: Planet, Fixed, Council, Secret
+#       Planet의 경우 실제 가격은 여기 표시된 Cost에 소유한 행성 수를 곱한 것이 됨
+
+
+# Control Model은 race script와 동일. 단, 안 쓰는 것은 있음.
+# Control : Environment, Growth, Efficiency, Genius, Production,
+#      Facility Cost, Military, Commerce, Spy, Diplomacy,
+#      Research(Social, Life, Matter, Info)
+#      -: -    else: +
+
+# Attr : Classism, Totalism, Personalism, Targoid, Human 각각 해당 전용.
+
+# 효과를 정리할 수 없는 Project는 comment out한 상태.
+# 효과:
+#	MilitaryBaseDamageRate(double) - 행성 공략전에서 (double)배만큼 MB 파워 올림
+#	EventRate(int) - 마이너스도 가능. event 발생 확률*(int)퍼센트.
+#	<Defend>
+#		Spy(int) - Spy CM 1 만큼에 해당하는 방어
+#		Raid(int) - (int) 퍼센트만큼 Raid 피해 감소
+#		Novarization(int) - (int) 퍼센트만큼 Novarization 발생 확률(피해?) 감소
+#		<Destroy>
+#		 	Population(int(==percent))  - Elixir Bed. (int) 퍼센트만큼 인구 파괴 효과 감소
+#	<Domain> - 국내에서(방어전이나, 단순한 국내 이동)
+#		<Mine> - 아군 함대
+#			Delay(int) - 이동 시 delay(멀리 갈 때)/int
+#			Speed(double) - Speed*(double)
+#			AR(double) - AR*(double)
+#			DR(double) - DR*(double)
+#		<Enemy> - 적 함대
+#			MoraleMulti(int) - Morale 상승 시에는 상승치/(int) 만큼, 하강 시에는 하강치*(int)만큼 적용
+#
+#
+#위에 따라 정리는 했으나 다른 부분이 안 돼서 추가할 수 없는 Project:
+#	Elixir Bed(Spy)
+#	Transparant Image Control System(Event)
+#
+#추가는 했지만 일부 기능이 빠진 Project:
+#	Galactic Agreement of Free Commerce(Defensive Spy)
+#	Archmage(반란 이벤트 확률 감소: Event 종료 후에 볼 것),
+#	Solar Control System(Novarization: Spy?)
+#	Nova Plant(Novarization 상태가 되어야 하나?)
+#
+#Attribute 관련되는 Project:
+#	Mind Control Center, Saga Archive, Clone Family, Imperial Palace, Symbol of Liberation, The One Unified Mind, Organic Plant, Humanoid Plant, Galactic Liberalism Movement
+#
+#위에 따라 정리해서 Beta에서 전투 끝나면 추가할 수 있을 Project:
+#	Planetary Shield(Fleet/War)
+#	Crimson Eye(Fleet/Battle)
+#	Impregnable Area(Fleet/Battle/War)
+#	Dimension Gate(Fleet)
+#
+#아직도 정리 불가:
+#	Ghost Patrol(Spy 중에서 정보 관련 보호. Spy 종료 후),
+#	Information Network Library(Spy/Empire. 게다가 유일하게 Period가 들어가는 Project라서..)
+#
+
+
+#<Elixir Bed>
+#{
+#	Number(7001),
+#	Description("One of the miracles created through the advance in genetic engineering was the development of a remedy capable of curing all diseases.  This treatment was named \"elixir\" in honor of the legendary medicine.  Cultivation was originally only possible in the laboratory, but as mass production of elixir was made possible in the common household, all existing diseases essentially lost their powers."),
+#	<Prerequisite>
+#	[
+#		Number(1408)
+#	],
+#	Type("Planet"),
+#	<Effect>
+#	{
+#		<Defend>
+#		{
+#			<Destroy>
+#			{
+#				Population(15)
+#			}
+#		}
+#	},
+#	Cost(9000)
+#},
+
+<Earth Elevator>
+{
+	Number(7002),
+	Description("Passing through the entire planet, the Earth Elevator utilizes gravitational energy to move from one end of the planet to the other.  Though its rapid speed makes it difficult for the transportation of live beings, the transportation of objects is greatly simplified, contributing to the increase in efficiency of manufacturing."),
+	<Prerequisite>
+	[
+		Tech(1320)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Production(1)
+	},
+	Cost(35000)
+},
+
+#<Planetary Shield>
+#{
+#	Number(7003),
+#	Description("Much time and effort was spent before a shield large enough to cover the entire planet was created.  Though this planetary shield did not contribute significantly to the planetary defense system, inhabitants of the planet could rest easier with the knowledge that they were protected."),
+#	<Prerequisite>
+#	[
+#		Tech(1323)
+#	],
+#	Type("Planet"),
+#	<Effect>
+#	{
+#		MilitaryBaseDamageRate(1.2),
+#		<Defend>
+#		{
+#			Raid(30)
+#		}
+#	},
+#	Cost(40000)
+#},
+
+<Solar Control System>
+{
+	Number(7004),
+	Description("Long ago, during the expansion of the universe, the technology most needed was the construction of a system to control the characteristics of the solar environment.  As generations progressed, and many sacrifices later, this technology was perfected with the completion of the solar control system.  With the passage of time, a star ages to become a super nova or a white dwarf star, and the surrounding planets also reach their ends.  But the utilization of the solar control system can prevent the aging of a star, as well as making it possible to partially control the environment of surrounding planets that are under the star's influence."),
+	<Prerequisite>
+	[
+		Tech(1321)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+#		<Defend>
+#		{
+#			Novarization(10)
+#		},
+		Environment(1)
+	},
+	Cost(40000)
+},
+
+<Orbital Space Elevator>
+{
+	Number(7005),
+	Description("An incredible amount of energy is required for a spaceship to escape a planet's atmosphere.  This energy can be conserved through constructing and launching space fleets from orbital stations.  The orbital space elevator was used extensively to transport material from the planet's surface to these stations in orbit around the planet."),
+	<Prerequisite>
+	[
+		Tech(1328)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Military(1),
+		Production(1)
+	},
+	Cost(140000)
+},
+
+<Mechanic Bard>
+{
+	Number(7006),
+	Description("Well-constructed words have always been one of the most powerful forces in history.  A bard, who combines this powerful language with another power, music, can be considered to possess the ultimate power.  A mechanic bard is an artificially created bard that remembers all forms and history of poetry and song for every language and species.  The mechanic bard also carries out the task of incorporating all this knowledge to create a new language of song.  The mechanic bard is created with the goal of \"stability.\" Everywhere it goes, it will sing songs that will bring stability to each of the regions.  Wherever a mechanic bard exists, life is stabilized, and advancements are brought about faster than other regions."),
+	<Prerequisite>
+	[
+		Tech(1117)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Growth(1)
+	},
+	Cost(35000)
+},
+
+<Crimson Eye>
+{
+	Number(7007),
+	Description("Crimson Eye. It has been called this for as long as anyone could remember.  A sound ringing from the inside of the head.  A blood-painted world unfolding before your eyes.  Only that.  External influences do not register on the brain, thoughts become confused, and primitive reflexes take control.  Orderly formations of armadas are broken up into disarray, and spaceships lose their sense of direction and wander.  It is a massive destructive force that directly affects the conscious mind of all brains of living matters.  For one who has tasted what hell this can bring, he/she cannot return to the age of innocence again."),
+	<Prerequisite>
+	[
+		Tech(1124)
+	],
+	Type("BM"),
+	<Effect>
+	{
+		Military(1),
+		<Enemy Panic Modifier>
+		{
+			Amount(10),
+			Apply("Absolute")
+		}
+	},
+	Cost(2000000)
+},
+
+<Mind Control Center>
+{
+	Number(7008),
+	Description("This facility is installed per planet, and controls the minds of inhabitants in its own way. The inhabitants strive for completion of the given task without realizing they are controlled. The society is extremely well under control, and the inhabitants would even die for the cause."),
+	<Prerequisite>
+	[
+		Tech(1119),
+		Society("Classism")
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Military(1),
+		Efficiency(1)
+	},
+	Cost(100000)
+},
+
+<Planet Environment Stabilizer>
+{
+	Number(7009),
+	Description("This system is based on the idea that life is present within every matter in the universe. This system also enhances overall environment and adjusts it for the race, but it's different from terra-forming in general. While terra forming physically changes the terrain of the planet, this system works on the lives on the planet, changing the environment and proliferating the race indirectly."),
+	<Prerequisite>
+	[
+		Tech(1421)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Growth(1),
+		Environment(2)
+	},
+	Cost(300000)
+},
+
+<Clone Family>
+{
+	Number(7010),
+	Description("A cluster of clones based on one single organism is called 'Clone Family.' They share the same attributes, outlook and abilities. Grown under the same environment, they manifest their full potential when they are together. They always move together, think together and work together; the whole cluster of clones consider themselves a single entity. Its prowess is unequalled - especially when compared to another organism - but loss of a single clone could well render the whole family useless."),
+	<Prerequisite>
+	[
+		Tech(1120),
+		Society("Totalism")
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Production(2),
+		Facility Cost(2),
+		Genius(-1),
+		Research(-1)
+	},
+	Cost(100000)
+},
+
+<Memory Rewinder>
+{
+	Number(7011),
+	Description("Memories fade away; it's not that the memories are physically erased from the brain, but that it becomes harder to recollect them after a while, once the memory is stored somewhere in the brain. Memory rewinder is a tool that \"replays\" the memories that were once considered 'lost.' Through the help of this device, anybody can replay the necessary memory logged in the brain; and they can be of immense help for many researchers."),
+	<Prerequisite>
+	[
+		Tech(1211)
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Research(1)
+	},
+	Cost(200000)
+},
+
+#<Transparent Image Control System>
+#{
+#	Number(7012),
+#	Description("Many have wondered if one could get interested in something not visible (but not invisible.) This system was designed purely for a pedagogical interest such as this. In a nutshell, it blurrs the 'existence' from the eyes of external influences through spatial conjectures and statistical analysis. Through the use of this system, one could keep events or entities from external detection. However, it was designed for a pedagogical interest, and this leaves much room over its usefulness."),
+#	<Prerequisite>
+#	[
+#		Tech(1217)
+#	],
+#	Type("Fixed"),
+#	<Effect>
+#	{
+#		EventRate(-25)
+#	},
+#	Cost(700000)
+#},
+
+<Mind Passway>
+{
+	Number(7013),
+	Description("There has been many attempts to find the safest method of data transmission. So far, the safest method known to the universe is the mind passway. This method was brought about by merging the psionic power and enciphering of daily transmissions. Barring the limitations due to the distance, it is the safest transmission method."),
+	<Prerequisite>
+	[
+		Tech(1420),
+		Race("Psi")
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Spy(2)
+	},
+	Cost(1500000)
+},
+
+#<Impregnable Area>
+#{
+#	Number(7014),
+#	Description("This device generates a field of invincibility that strengthens all friendly forces. Many aggressors had to withdraw because of this powerful device. Later, this has accelerted competitive research in this area, to cover the whole domain with this field of invincibility."),
+#	<Prerequisite>
+#	[
+#		Tech(1219)
+#	],
+#	Type("Fixed"),
+#	<Effect>
+#	{
+#		<Domain>
+#		{
+#			<Mine>
+#			{
+#				Speed(1.1),
+#				AR(1.1),
+#				DR(1.1)
+#			}
+#		},
+#		MilitaryBaseDamageRate(1.2),
+#		<Defend>
+#		{
+#			Raid(20)
+#		}
+#	},
+#	Cost(2000000)
+#},
+
+<Perfect Secretary>
+{
+	Number(7016),
+	Description("This device is the best 'secretary' an intelligence has ever created. Its overall shape and attributes differs from race to race, but its function is about the same for all. It functions as the translator for all languages. It can summarize the statements from the other party, or vice versa. It can also log all the dialogues in the past, then recall the relevant part in need in times of need."),
+	<Prerequisite>
+	[
+		Tech(1417)
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Spy(1),
+		Commerce(1)
+	},
+	Cost(1000000)
+},
+
+<Dream Maker>
+{
+	Number(7017),
+	Description("This device utilizes the psionic power within the materialistic world. It analyzes a person's will, then absorbs his psionic power to transform that energy and will into a concrete material. Once considered an invaluable machine, it lost its luster in that it takes immense mental control as well as massive resources and energy."),
+	<Prerequisite>
+	[
+		Tech(1424),
+		Race("Psi")
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Genius(2),
+		Production(1),
+		Facility Cost(-1)
+	},
+	Cost(6000000)
+},
+
+<Saga Archive>
+{
+	Number(7018),
+	Description("This archive contains all the heroics, saga and many other memorable events. It is open to public, to allow open research of the war history, legends and hidden history. Installation of this facility has caused, directly and indirectly, the growth of heroes in all generations."),
+	<Prerequisite>
+	[
+		Tech(1121),
+		Society("Personalism")
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Genius(2),
+		Diplomacy(1)
+	},
+	Cost(100000)
+},
+
+<University of Past, Present and Future>
+{
+	Number(7020),
+	Description("Past, present and future - the flow of time and the secret behind. The Space - the meaning hidden behind. They're the primordial source of question that bogged down any intelligence ever since the start of the time. This institute was established to study exclusively the meaning and secrets of our time and space."),
+	<Prerequisite>
+	[
+		Tech(1129)
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Research(2),
+		Diplomacy(2)
+	},
+	Cost(6000000)
+},
+
+<Dimension Gate>
+{
+	Number(7021),
+	Description("'Beyond the hiatus of dimensions' Once considered as a legend, this device has come true as time went by. Dimension Gates generate a complex distortion of time and space, making it possible to travel the points in shorter period of time. Each gate has its unique wavelength, and whoever that knows the unique wavelength can utilize the appropriate dimension gate."),
+	<Prerequisite>
+	[
+		Tech(1423)
+	],
+	Type("BM"),
+	<Effect>
+	{
+		Commerce(1),
+		<Fleet Return Time>
+		{
+		Amount(-30),
+		Apply("Proportional")
+		}
+	},
+	Cost(7000000)
+},
+
+<Fallen Head>
+{
+	Number(7022),
+	Description("This device was called 'Head of Lucifer' once it was first developed. It could exhibit the maximum efficiency under any circumstances, and its abilities were well beyond comparison to other artificial machinaries. To some, it even inspired awe in their heart, and when it was finally committed to the battle, it was named 'Fallen Head.'"),
+	<Prerequisite>
+	[
+		Tech(1130)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Diplomacy(3),
+		Efficiency(2),
+		Commerce(1),
+		Military(2),
+		Growth(-1),
+		Environment(-2)
+	},
+	Cost(20000000)
+},
+
+
+<Ghost Patrol>
+{
+	Number(7023),
+	Description("It was prevalent even before the inception of the Empire to set up a virtual entity on the network then infiltrate the matrix. Those entities would at times remain on the network even after the host self in the real world has been killed. This is referred to as the 'ghost.' Ghost project was formed to protect the information network from the outside attacks by making a patrol team of ghosts from hackers."),
+	<Prerequisite>
+	[
+		Tech(1218)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		spy(1)
+#		Info Net. 보호(spy 관련 방어)
+	},
+	Cost(1000000)
+},
+
+<Nova Plant>
+{
+	Number(7024),
+	Description("This plant is run by the enormous energy released from Nova. Productivity of the system increases by mutiple fold, but the environment suffers, due to the harmful radiation from the Nova. Ships from the outside tends shun from this system, consequently. This in turn results in contraction of inter-planetary commerce. This is an oppressive project that maximizes the productivity at the cost of the inhabitants' well being."),
+	<Prerequisite>
+	[
+		Tech(1327)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Production(3),
+		Environment(-1),
+		Commerce(-1)
+#		Nova 상태일 때만 가능?
+	},
+	Cost(2000000)
+},
+
+<Archmage>
+{
+	Number(7025),
+	Description("This is a cyber warfare game on Matrix. This game is highly addictive too. This game is used to train the establishment of strategy and tactics in military academies. Also, through the training with this game, each individual learns how to work together and exist together; consequently this enhances the cohesion among individuals."),
+	<Prerequisite>
+	[
+		Tech(1213)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Genius(1)
+	},
+	Cost(500000)
+},
+
+<Humanoid Plant>
+{
+	Number(7026),
+	Description("Out of the endless desire toward the throne that only belonged to the deity, humans have eventually created a being that looks same as humans themselves, but possesses much superior talents. This creature, named 'Replicant' has both mental and physical talent that could reach a few hundred fold of human's talent. However, they have a very short life span, and are programmed not to hurt humans. Creation of 'humans without human right' also have waged intense opposition among humans later."),
+	<Prerequisite>
+	[
+		Tech(1425),
+	#Human
+		Race(1)
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Facility Cost(2),
+		Production(2),
+		Diplomacy(-1)
+	},
+	Cost(6000000)
+},
+
+<Thinker Ball>
+{
+	Number(7027),
+	Description("No one knows where the name 'Thinker Ball' originated from. This system works like an Oracle, but its much capricious behavior rendered its nickname 'fairy.' At times this device presents helpful ideas but it consumes massive amount of energy, shutting down the nearby facilities at times."),
+	<Prerequisite>
+	[
+		Tech(1224)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Military(3),
+		Commerce(2),
+		Efficiency(2),
+		Facility Cost(-2)
+	},
+	Cost(20000000)
+},
+
+<AI Bill of Rights>
+{
+	Number(7030),
+	Description("Development of AI has brought up many questions about the rights of the AI, resulting in the declaration of AI Bill of Rights eventually. This at first caused overall agitation in the society, which also raised the cost of maintanence of the society in the course. Especially, this had a significant effect on the military AI's, but in the end, this has contributed in the wholesomeness and individual autonomy in the society."),
+	<Prerequisite>
+	[
+		Tech(1220)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Military(-1),
+		Efficiency(4),
+		Facility Cost(-1)
+	},
+	Cost(2000000)
+},
+
+<Truth Tester>
+{
+	Number(7031),
+	Description("Discovery of Self-evident Language has brought answers to many statements that were once questioned or considered inconclusive. By transforming and manipulating with this self-evident language, anyone could figure out whether the given statement was true or not. This process is called 'Truth Testing.' Implementation of automated truth tester has brought about many change and influence over the society."),
+	<Prerequisite>
+	[
+		Tech(1122)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Research(1),
+		Spy(1),
+		Diplomacy(1)
+	},
+	Cost(2250000)
+},
+
+<Imperial Palace>
+{
+	Number(7032),
+	Description("As the Empire grew in strength, it became necessary to make a place where overall domestic and diplomatic matters could be discussed. The necessity for the Imperial Palace was manisfested, through the need to proclaim the dignity of the Emperor to its domain in beyond. With the Imperial Palace, the diplomats work with higher degree of pride, and the people would support the military with more enthusiasm. But its maintenance is highly costly; it takes a lot to rear the dignity all over the space."),
+	<Prerequisite>
+	[
+		Tech(1126),
+		Society("Classism")
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Diplomacy(2),
+		Military(2),
+		Production(1),
+		Facility Cost(-1)
+	},
+	Cost(3000000)
+},
+
+<Symbol of Liberation>
+{
+	Number(7033),
+	Description("Symbol of Liberation is a monolithic monument, which stands for the aspiration for the liberation of all races in the whole galaxy and beyond. This monument will inspire the people and instill individual autonomy and responsibility, aspiring them for higher ambition. Yet this may turn out to be a setback in that the people may fall a prey to the external manipulation of information."),
+	<Prerequisite>
+	[
+		Tech(1127),
+		Society("Personalism")
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Genius(2),
+		Production(1),
+		Commerce(1),
+		Research(1),
+		Spy(-2)
+	},
+	Cost(3000000)
+},
+
+<The One Unified Mind>
+{
+	Number(7034),
+	Description("You have merged the minds of the race into a new mind. Your own mind and existence have been absorbed into this 'unified mind' and you are satisfied with the race organizing and moving with unified mind. The whole race is working with higher degree of efficiency, but at times you, the overlord, find it cumbersome at times to control the race minion by minion."),
+	<Prerequisite>
+	[
+		Tech(1125),
+		Society("Totalism")
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Production(2),
+		Growth(2),
+		Efficiency(1),
+		Spy(-1),
+		Diplomacy(-1)
+	},
+	Cost(3000000)
+},
+<Organic Plant>
+{
+	Number(7036),
+	Description("Industrial growth has always involved consumption of more energy. The need for energy continuously grew for higher efficiency and more production in less time. Organic plant is the answer scientists have been looking for, as the answer to the current problem. This scientific revolution is made of a live organic entity, and its efficiency is simply unequalled. This living plant is capable of supplying more energy to the industry constantly at less cost."),
+	<Prerequisite>
+	[
+		Tech(1411),
+	#Targoid
+		Race(2)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Growth(1),
+		Production(1)
+	},
+	Cost(30000)
+},
+<Desire Amplifier>
+{
+	Number(7037),
+	Description("Individual development and growth is closely related to the desire toward power and resource. The history is the manisfestation of how the people have fought, lived and betrayed for the power and resources. This device, called 'Desire Amplifier,' amplifies the desire of individuals to the extreme, using that desire as the driving force to move the society. This amplified desire is seen through the thirst for more power and resource, instigating an extreme competition. Such a society grows faster, and produces more resources but it tends to lose its flexibility and overall control of such a society becomes hard. Yet great many of the developing society use this device, for this ensures a fast growth in the early stage."),
+	<Prerequisite>
+	[
+		Tech(1107),
+		Race(1)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Growth(1),
+		Production(1),
+		Efficiency(-1),
+		Research(-1)
+	},
+	Cost(5000)
+},
+<Will of the Righteous>
+{
+	Number(7038),
+	Description("Even before the discovery of religion, it was so easy to deceive yourself by you. With religion, it's a lot easier to deceive yourself by you. This is a kind of the national wide hypnosis. You are never wrong. You cannot be wrong. If something is wrong, It's your opponent's fault. You make for righteousness and your will itself is the will of the Righteous."),
+	<Prerequisite>
+	[
+		Tech(1104),
+		Society("Classism")
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Military(1),
+		Production(1),
+		Commerce(-1),
+		Diplomacy(-1)
+	},
+	Cost(50000)
+},
+
+<Galactic Liberalism Movement>
+{
+	Number(7040),
+	Description("As the pan-galactic liberalism movement starts spreading, everybody starts acting on his own accord. This results in loss of order in major part and decrease in industrial output. Researchers are free to research his area of interest, however, and this results in many magnificent feats. Also, inter-galactic commerce is vitalized through the promotion of free trade."),
+	<Prerequisite>
+	[
+		Tech(1111),
+		Society("Personalism")
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Production(-1),
+		Research(3),
+		Commerce(3)
+	},
+	Cost(100000)
+},
+<Advocacy of Green Round>
+{
+	Number(7041),
+	Description("Under the advocacy, the council declares that it will administer environment-friendly policies, and regulates excess development of the planet. Through the exhaustive research and study of the past and the lost civilizations, these cluster of sages have come to claim that excess consumption of resources and irresponsible production of waste have caused the decline and fall of past civilization. This policy reflects such an opinion. Under this policy, the council makes every effort to preserve the environment, but this also results in impediment to the overall industrial development."),
+	<Prerequisite>
+	[
+		Tech(1114)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Environment(2),
+		Efficiency(1),
+		Facility Cost(-1)
+	},
+	Cost(300000)
+},
+<Neutral Power Declaration>
+{
+	Number(7042),
+	Description("Under such a declaration, the council renounces its military ambitions, and turns to pacifism. The excess resources from the military accelerates the overall development of the society. Also, it facilitates all kinds of intelligence activities, but the lack of military power undermines the voice."),
+	<Prerequisite>
+	[
+		Tech(1128)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Military(-2),
+		Diplomacy(-1),
+		Commerce(2),
+		Production(2),
+		Spy(1),
+		Research(1)
+	},
+	Cost(5000000)
+},
+
+<Galactic Agreement of Free Commerce>
+{
+	Number(7043),
+	Description("Galactic Agreement of Free Commerce, a pan-council agreement contributes in vitalization of inter-council commerces, which in turn promotes commerce from the external sources. Traders travel to the farthest sectors, and all regions overflow with liveliness and energy. At the same time, it becomes harder to regulate informations, and this in turn jeopardizes the information security."),
+	<Prerequisite>
+	[
+		Tech(1112)
+	],
+	Type("Council"),
+	<Effect>
+	{
+#		<Defend>
+#		{
+#			Spy(-1)
+#		},
+		Commerce(2)
+	},
+	Cost(150000)
+},
+
+<Propaganda Entertainment>
+{
+	Number(7045),
+	Description("This project involves putting together the perfect show to inspire your people. It causes them to put thier best effort into all they do and fuels their desire to conquer the enemy. Unfortunately, it also takes up time when they could be doing things, and decreases originality."),
+	<Prerequisite>
+	[
+		Tech(1116)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Military(1),
+		Production(-1),
+		Research(-1),
+		Efficiency(1),
+		Growth(1)
+	},
+	Cost(20000)
+},
+
+<Crusade Headquarters>
+{
+	Number(7046),
+	Description("The need to decrease military costs and increase military production lead to fanatical crusades, or wars in the name of religion. Crusade Headquarters are the places where such divine wars are created and inspire entire populations to give extra resources in the name of their god."),
+	<Prerequisite>
+	[
+		Tech(1115),
+		# For Xeloss
+		Race(8)
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Military(1),
+		<Produce MP Per Turn>
+		{
+			Amount(30000),
+			Apply("Absolute")
+		}
+	},
+	Cost(3000000)
+},
+
+<Galactic University>
+{
+	Number(7047),
+	Description("This institute was established from the need to combine the research of many different species on a galactic basis. The learning and research gains are tremendous but the cost to bring the minds of so many people togethor is hefty and has to be maintained. [Clarification: For each single RP gained from the +75% RP income increase, you lose one 1PP]"),
+	<Prerequisite>
+	[
+		Tech(1214),
+		# For Xesperados
+		Race(10)
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		<Produce RP Per Turn>
+		{
+			Amount(75)
+		},
+		<Consume PP by RP From Effect Per Turn>
+		{
+			Amount(0)
+		}
+	},
+	Cost(5000000)
+},
+
+<Secret of Genetic Code>
+{
+	Number(7101),
+	Description("Genetic code has been handed down from the ancestors for centuries. This means the genetic code pool has been static for the period. Current research has embarked on numerous events, small and large, ever since the claim, by a group of scientists, that there are hidden messages from the ancient civilization in the genetic code. Could it be that those people from the past have left messages in the genetic code? If it is true, what could be the message?"),
+	<Prerequisite>
+	[
+	#Genetic Engineering
+		Tech(1404)
+	],
+	Type("BM"),
+	<Effect>
+	{
+		Growth(2),
+		Genius(2),
+		Research(-1)
+	},
+	Cost(9000)
+},
+
+<Information Network Library>
+{
+#	Number(7019),
+	Number(8000),
+	Description("Superficially, it's an information library that stays on the network. In actuality, this device intercepts informations flowing through the network. The information could be about a cutting-edge information, information about other sectors or the informations about the Empire itself. But at times it could be about a worthless rumors too."),
+	<Prerequisite>
+	[
+		Tech(1222)
+	],
+	Type("BM"),
+	<Effect>
+	{
+		Research(2),
+		Production(2),
+		Diplomacy(-2)
+	},
+	Cost(4000000)
+},
+
+<Human Ending Mk.I>
+{
+	Number(9001),
+	<Prerequisite>
+	[
+	#Ultimate Truth
+		Tech(1131),
+	#Ascension
+		Tech(1426),
+		Planet(30),
+		Cluster(4),
+	#Human
+		Race(1)
+	],
+	Type("Ending"),
+	<Effect>
+	{
+                <Change Production>
+                {
+                        Amount(2000000),
+                        Apply("Absolute")
+                },
+		<Produce RP Per Turn>
+		{
+			Amount(25000),
+			Apply("Absolute")
+		},
+		<Produce MP Per Turn>
+		{
+			Amount(25000),
+			Apply("Absolute")
+		}
+	},
+	Cost(0),
+	Description("Human race has taken many pains for millennia looking for a solution to the construction of Utopia. Finally human race succeeded in developing a computer with transcendental ability. Many questions were thrown at it upon coming out. When it was finally asked for the solution to the ultimate truth, life and space, it gave out the answer 'Forty Two.' (Special thanks to: Douglas Adams, who now travels in other space.)")
+},
+
+<Evintos Ending Mk.I>
+{
+	Number(9002),
+	<Prerequisite>
+	{
+	#Oracle Computing
+		Tech(1225),
+		Cluster(3),
+		Planet(20),
+		CouncilSize(8),
+		<EmpireRelation>
+		{
+			LessOrEqual(20)
+		},
+	#Evintos
+		Race(5)
+	},
+	Type("Ending"),
+	<Effect>
+	{
+		Efficiency(-1),
+		Genius(3)
+	},
+	Cost(0),
+	Description("For a race whose everyday life consisted of seclusion at the outer part of the Empire along with lifeless production and disassembly, your contact with carbon-based life form resulted in a massive load of information. To adapt and compete in this Galaxy, you are mandated to fortify the strength of the race, which originates from the Creators of Evintos. Other than that, there doesn't seem to be much of a chance of survival.")
+},
+<Xesperados Ending Mk.I>
+{
+	Number(9003),
+	<Prerequisite>
+	{
+		TechAll(0),
+		RP(40000),
+		Fleet(25),
+		CouncilSize(4),
+	#Xesperados
+		Race(10)
+	},
+	Type("Ending"),
+	<Effect>
+	{
+		Diplomacy(2),
+		Military(2)
+	},
+	Cost(0),
+	Description("Technological achievement during the past have given your race the confidence, and bought envy from many a race as well. However, there isn't much of a progress recently, with labs that can't publish the research progress. Many scientists worry that current science and technology have hit the plateau finally. Possibly, by the acquisition of the lost results of Trabotulins in the past, this problem can be solved, they hope. You will have to challenge the Empire for this, of course.")
+},
+<Tecanoid Ending Mk.I>
+{
+	Number(9004),
+	<Prerequisite>
+	{
+	#Oracle Computing
+		Tech(1225),
+	#Ultimate Truth
+		Tech(1131),
+	#Fallen Head
+		CouncilProject(7022),
+		Planet(13),
+		<EmpireRelation>
+		{
+			LessOrEqual(10)
+		},
+	#Tecanoid
+		Race(4),
+	},
+	Type("Ending"),
+	<Effect>
+	{
+		Genius(2),
+		Efficiency(2),
+		Diplomacy(-1)
+	},
+	Cost(0),
+	Description("By the ultimate progress of engineering, your race have reached the status of demi god. You are stronger, more intelligent than many other barbarians, and even better yet, you all can sustain your lives practically for eternity. Who more deserves the throne of this Galaxy than you? You carefully start crafting the plans to advance to the throne at Caput Mundi, the Imperial Capital.")
+},
+<Bosalian Ending Mk.I>
+{
+	Number(9005),
+	<Prerequisite>
+	{
+	#Ultimate Truth
+		Tech(1131),
+		NoWarInCouncil(0),
+		ShipPool(200),
+		ConcentrationMode(2),
+	#Bosalian
+		Race(7)
+	},
+	Type("Ending"),
+	<Effect>
+	{
+		Military(3),
+		<Lose Ability>
+		{
+		Ability("Pacifist")
+		}
+	},
+	Cost(0),
+	Description("You finally stop your meditation. You realized that, in this endless pan-galactic chaos, every effort till these days to lead the multitude to the path of truth and out of the wheels of karma was but wasted. To protect the good, and to cast light upon the path to the truth, you must vanquish whoever that stops you.")
+},
+<Xerusian Ending Mk.I>
+{
+	Number(9006),
+	<Prerequisite>
+	{
+	#Permanent Engine
+		Tech(1336),
+	#	HasShip(50),
+	#	HasPower(125000),
+		<Power>
+		{
+			GreaterOrEqual(125000)
+		},
+	#Nova Plant
+		CouncilProject(7024),
+		Planet(15),
+		<Efficiency>
+		{
+			GreaterOrEqual(10)
+		},
+		EmpireRelation(40),
+	#Xerusian
+		Race(9)
+	},
+	Type("Ending"),
+	<Effect>
+	{
+	#Nahodoom Ray Launcher
+#		Device(6308)
+	},
+	Cost(0),
+	Description("3... 2... 1... Fire! Silent, yet excited atmosphere surrounds the scientists, staring down the experiment from their lab afar. Ultra-powerful Energy rays out of the test warship just disposed the target down to molecular level. This weapon, utilizing the Permanent Engine, is named \"Nahodoom\", and will render the futile resistance of the aboriginal creatures in the new world quite hopeless and useless - if they can miniaturize this beast, that is.")
+},
+<Targoid Ending Mk.I>
+{
+	Number(9007),
+	<Prerequisite>
+	{
+	#Cloning
+		Tech(1411),
+	#Thought of God
+		Tech(1130),
+		ConcentrationMode(2),
+		<EmpireRelation>
+		{
+			LessOrEqual(10)
+		},
+		<PopulationIncrease>
+		{
+			Less(250000)
+		},
+	#Targoid
+		Race(2)
+	},
+	Type("Ending"),
+	<Effect>
+	{
+		Military(2)
+	},
+	Cost(0),
+	Description("New Targoids are waiting for their hatching in the hatchery. But this planet is not enough to hatch every component - drones, soldiers or overlords. After some reflection, you decide to carry the hatching eggs to the orbital cryostation. You once believed this space was vast enough for your race... You start recalling the memories of close clusters, and investigating new planet to expand. Soon you order the metamorphosis of warships out of the hatching eggs.")
+},
+<Agerus Ending Mk.I>
+{
+	Number(9008),
+	<Prerequisite>
+	{
+	#Ascension
+		Tech(1426),
+		<Power>
+		{
+			GreaterOrEqual(200000)
+		},
+		<PopulationIncrease>
+		{
+			GreaterOrEqual(10000)
+		},
+		Planet(25),
+		Cluster(3),
+	#Agerus
+		Race(6)
+	},
+	Type("Ending"),
+	<Effect>
+	{
+		Diplomacy(2),
+		Efficiency(2)
+	},
+	Cost(0),
+	Description("While carrying your spore to the new planet, you feel the imminent change within your body. You suddenly feel that what once was your own body structure is now a part of your greater self. Also, you suddenly feel the presence of lower-class Agerus under your command as a part of your greater self too. You have transcended the limit of organism, and became aware of the greater self and unified will.")
+},
+<Buckaneer Ending Mk.I>
+{
+	Number(9009),
+	<Prerequisite>
+	{
+	#Anarchism
+		Tech(1127),
+		Planet(9),
+		Fleet(30),
+	#Military
+		ConcentrationMode(2),
+	#Buckaneer
+		Race(3)
+	},
+	Type("Ending"),
+	<Effect>
+	{
+		Military(2),
+		Commerce(2),
+		Efficiency(-1),
+		Diplomacy(-2),
+		<Gain Ability>
+		{
+			Ability("Stealth Pirate")
+		}
+	},
+	Cost(0),
+	Description("Armed group of so-called 'citizens' came with a few heavy equipments to dismantle the Planetary Administration Building. This is the final assault of Buckaneers, who want to see what we call 'Government' forgotten into the wake of oblivion. After all, who cares about Government?  Time will pass and they will live on as a wandering tribe in the space.")
+},
+<Xeloss Ending Mk.I>
+{
+	Number(9010),
+	<Prerequisite>
+	{
+	#Thought of God
+		Tech(1130),
+	#Fallen Head
+		CouncilProject(7022),
+	#Propaganda Entertainment
+		Project(7045),
+		CouncilSpeaker(0),
+		CouncilSize(6),
+	#Xeloss
+		Race(8)
+	},
+	Type("Ending"),
+	<Effect>
+	{
+		<Gain Ability>
+		{
+			Ability("Enhanced Psi")
+		}
+	},
+	Cost(0),
+	Description("Pan-denominational mass as that of today is not what they could afford in the last few millennia. You've led your people to the Promised Land during the Judgment of Fire, and now you are selected as the Highest Priest. Now you are holding the mass, and everybody around you considers you as the much-prophesied Messiah. They're all solemnly attending the mass. You now pray to the God that Xeloss be blessed with the opportunity to settle down in the Promised Land.")
+}
+
+
+
+
+

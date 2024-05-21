@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+<SCRIPT LANGUAGE=javascript>
+var flag = true;
+
+function allCheck()
+{
+  var i;
+
+  if (flag == true)
+  {
+    for(i=0; i<document.planets.elements.length; i++)
+    {
+      document.planets.elements[i].checked = true;
+      flag = false;
+    }
+  }
+  else if (flag == false)
+  {
+    for(i=0; i<document.planets.elements.length; i++)
+    {
+      document.planets.elements[i].checked = false;
+      flag = true;
+    }
+  }
+}
+</SCRIPT>
+<LINK REL="stylesheet" HREF="/archspace.css">
+<LINK REL="stylesheet" HREF="/cssLib.css">
+<SCRIPT LANGUAGE = "JavaScript">
+<!--
+if (navigator.appName.indexOf('Microsoft') == -1) {
+	document.write('<'+'link rel="stylesheet" href="/mozilla.css" />');
+}
+// -->
+</SCRIPT></head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999" onLoad="MM_preloadImages('$IMAGE_SERVER_URL/image/as_game/bu_helpen.gif'),document.all.INVEST.focus();">
+<table width="610" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td> <table  width=590 border="0" cellspacing="0" cellpadding="0" height="100" align="center">
+        <tr align="center" valign="middle">
+          <td> $ADLINE </td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td align="center"> <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <!--~-------- ROW4 --------~-->
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext"> <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>
+              $RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp; $PRODUCT_POINT&nbsp;&nbsp;&nbsp;&nbsp;
+              $PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp; $NET_POWER </DIV></TD>
+          <!--HELP BUTTON-->
+        </TR>
+        <!--~------ END ROW4 ------~-->
+      </TABLE></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="maintext" align="center"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="$IMAGE_SERVER_URL/image/as_game/domestic/planet_title.gif" width="439" height="41"></td>
+  </tr>
+  <tr>
+    <td align="center" CLASS="maintext">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center" CLASS="maintext"> <TABLE WIDTH="400" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+        <TR>
+          <TD WIDTH="224" CLASS="maintext" ALIGN="RIGHT"> Invested PP Left </TD>
+          <TD WIDTH="13" CLASS="maintext">&nbsp;</TD>
+          <TD WIDTH="123" CLASS="maintext">$INVESTED_PP_LEFT</TD>
+          <TD COLSPAN="3" CLASS="maintext" WIDTH="40">&nbsp;</TD>
+        </TR>
+        <TR>
+          <TD WIDTH="224" CLASS="maintext" ALIGN="RIGHT"> Max PP Usage Per Turn
+          </TD>
+          <TD WIDTH="13" CLASS="maintext">&nbsp;</TD>
+          <TD WIDTH="123" CLASS="maintext">$MAX_USAGE_PER_TURN</TD>
+          <TD COLSPAN="3" CLASS="maintext" WIDTH="40">&nbsp;</TD>
+        </TR><TR><FORM ACTION="planet_invest_pool_result.as" METHOD=POST>
+        <TD CLASS="maintext" HEIGHT="30" WIDTH="224" ALIGN="RIGHT"> Amount to
+          Invest </TD>
+        <TD CLASS="maintext" HEIGHT="30" WIDTH="13">&nbsp;</TD>
+        <TD HEIGHT="30" WIDTH="123"> <INPUT TYPE="text" NAME="INVEST" SIZE="15" CLASS=newInput>
+        </TD>
+        <TD COLSPAN="3" HEIGHT="30" WIDTH="40"><INPUT TYPE=IMAGE SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok.gif" BORDER="0"> </FORM>
+        </TD></TR>
+      </TABLE></td>
+  </tr><FORM name="planets" ACTION="planet_invest_pool_enable_result.as" METHOD=POST>
+   <tr> <TD align="center">
+    $PLANETS
+   </TD></tr>
+
+  <tr>
+    <td align="center" class="maintext"><INPUT TYPE=IMAGE SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok.gif" BORDER="0"></FORM>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="maintext" align="center" height="18">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="maintext" align="center"> <A HREF="domestic.as">$DOMESTIC_MAIN</A>
+      <A HREF="concentration_mode.as" TARGET="contents">$CONCENTRATION_MODE</A>
+      <A HREF="planet_management.as">$PLANET_MANAGEMENT</A> <A HREF="research.as">$RESEARCH</A>
+      <A HREF="project.as" TARGET="contents">$PROJECT</A> <A HREF="whitebook.as" TARGET="contents">$WHITEBOOK</A>
+    </td>
+  </tr>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD> <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD> <CENTER>
+              $ADLINE_BOTTOM </CENTER></TD>
+        </TR>
+      </TABLE></TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+</table>
+
+<SPAN CLASS="main-bold"></SPAN>
+<p>&nbsp;</p>
+		</BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</html>

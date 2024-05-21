@@ -1,0 +1,168 @@
+#ending
+
+<Human Ending Mk.I>
+{
+	Number(9001),
+	<Condition>
+	{
+#Ultimate Truth
+		Tech(1131),
+#University of Past, Present, and Future
+		Project(7020),
+		Planet(10),
+		Cluster(3),
+		CommanderLevel(10)
+	},
+	Project(7201),
+#Human
+	Race(1),
+	Description("이상적인 사회를 구현하기 위해 수천 세대에 걸친 기간의 탐구와 모색이 있었다. 마침내 초월적인 능력을 가진 컴퓨터가 개발되어 궁극의 진리, 삶과 우주, 그 모든 것들에 대한 질문이 입력되었다. 오랜 세월이 지나 컴퓨터가 내놓은 최종적인 해답은 '사십-이'였다.   *이제는 다른 우주로 떠난 Douglas Adams씨에게 특별한 감사의 뜻을 전합니다*")
+},
+<Evintos Ending Mk.I>
+{
+	Number(9002),
+	<Condition>
+	{
+#Oracle Computing
+		Project(1225),
+		Planet(10),
+		Cluster(2),
+		Fleet(20),
+		Council(4),
+	},
+	Project(7202),
+#Evintos
+	Race(5),
+	Description("변방의 고립된 세계 속에서 매일의 생산과 해체를 반복하던 당신의 종족에게 탄소 생명체와의 첫 접촉 이후로 그동안 얻은 정보는 메인시스템에 과부하를 일으킬 정도였다. 그간의 단순한 세계가 아닌 광대한 은하계에 적응하기 위해선, 에빈토스들의 창조자라는 고대인의 기술을 되살려서 종족의 기능을 강화해야만 한다. 당신의 종족에게는 그 이외의 희망이 없어 보인다.")
+},
+<Xesperados Ending Mk.I>
+{
+	Number(9003),
+	<Condition>
+	{
+		TechAll(0),
+		RP(30000),
+		DAequalORless(10),
+		Planet(5),
+	},
+	Project(7203),
+#Xesperados
+	Race(10),
+	Description("그동안의 기술적 성취는 당신의 종족에게 자신감을 갖게 하고, 다른 종족들의 부러움을 살 정도였다. 그러나 최근 몇 년간 각 연구소의 연구실적이 거의 나오지 않고 있다. 기존의 과학이 한계에 부딪힌 것이 아닐까 하는 우려가 여러 석학들로부터 나오고 있다. 고대의 트라보툴린족의 실전된 연구 결과를 얻을 수 있다면 새로운 돌파구를 열 수 있을 가능성이 있다고 그들은 기대하고 있다. 그렇게 하려면 제국 본토로의 접근이 필요하게 될 것이다.")
+},
+<Tecanoid Ending Mk.I>
+{
+	Number(9004),
+	<Condition>
+	{
+#Oracle Computing
+		Tech(1225),
+#Ultimate Truth
+		Tech2(1131),
+		Planet(10),
+		Efficiency(5)
+	},
+	Project(7204),
+#Tecanoid
+	Race(4),
+	Description("궁극의 공학적인 발전으로 당신의 종족은 반신에 가까운 존재가 되었다. 당신들은 다른 미개한 야만인들보다 더욱 강하고 더욱 지적이며 사실상 영원히 생명을 이어나갈 수 있게 되었다. 당신 이외에 은하의 지배 종족이 되기에 합당한 자들이 어디 있겠는가? 당신은 마땅히 있어야 할 자리, 은하계의 중심 카푸트 문디의 정상으로 나아갈 계획을 세우기 시작했다.")
+},
+<Bosalian Ending Mk.I>
+{
+	Number(9005),
+	<Condition>
+	{
+#Ultimate Truth
+		Tech(1131),
+		HaveTitle(0),
+		NoWarInCouncil(0),
+		DAgreater(50)
+	},
+	Project(7205),
+#Bosalian
+	Race(7),
+	Description("당신은 깊은 명상에서 눈을 뜬다. 끝이 나지 않는 우주적인 혼란 속에서 무의미한 윤회를 반복하는 중생들을 진리의 길로 이끌기 위해 했던 지금까지의 모든 노력들은 헛된 것이었음이니. 당신은 우주의 모든 선한 이들을 보호하고 진리로 향하는 길의 불을 밝히기 위해서는 정화의 불길로 악업에 빠진 자들과 그들의 군세를 쳐부수어야만 한다는 것을 깨닫게 된다.")
+},
+<Xerusian Ending Mk.I>
+{
+	Number(9006),
+	<Condition>
+	{
+#Permanent Engine
+		Tech(1336),
+		HaveDoomstar(1),
+#Nova Plant
+		CouncilProject(7024),
+		DA(0)
+	},
+	Project(7206),
+#Xerusian
+	Race(9),
+	Description("3..2..1..발사! 실험에 참가한 과학자들 사이에 조용한 흥분의 기류가 흐른다. 실험함에서 발사한 초고에너지선이 타겟에 명중, 글자그대로 타겟을 물질 이전의 상태로 분해해버린다. 영구기관을 응용한 이 궁극의 병기는 '나호둠'이라고 명명되어 신세계의 원주민들의 저항에 쐐기를 박을 것으로 기대된다. 다만 이 병기의 소형화에 좀 더 진척이 있을 경우에.")
+},
+<Targoid Ending Mk.I>
+{
+	Number(9007),
+	<Condition>
+	{
+#Cloning
+		Tech(1411),
+		ShipPool(1000),
+		PopulationIncreasedLess(250000),
+#Military
+		ConcentrationMode(2)
+	},
+	Project(7207),
+#Targoid
+	Race(2),
+	Description("부화실에서 새로운 타고이드들이 탄생을 기다린다. 그러나 그들을 일꾼, 병사, 혹은 지도자로 부화시키기엔 이 행성에는 공간이 넉넉하지 않다. 당신은 한동안 상황을 고려한 뒤 이번에 산란을 앞둔 알들도 궤도의 냉동 스테이션으로 운반시키도록 지시한다. 한때 우주는 타고이드들을 위해 무한히 넓다고 믿었었는데... 당신은 생명이 이미 존재하는 성단내의 여러 행성계에 대한 기억을 훑으며 종족의 증식에 적합하다고 보고된 행성을 검토하기 시작한다. 그리고 새로운 전투함의 배양을 지시한다.")
+},
+<Agerus Ending Mk.I>
+{
+	Number(9008),
+	<Condition>
+	{
+#Ascension
+		Tech(1426),
+		Planet(20),
+		PopulationIncreasedEqualOrMore(1000000)
+	},
+	Project(7208),
+#Agerus
+	Race(6),
+	Description("최근에 획득한 행성에 포자를 이식하는 도중, 당신은 자신의 존재에 무언가 변화가 오고 있음을 느낀다. 당신 자신의 체조직(body structure?)이 마치 지금까지의 체조직의 일부처럼 느껴지고, 당신이 지시하고 있는 다른 저수준의 Agerus들이 또한 당신의 일부로 느껴진다. 즉, 당신은, 자신이 개체 하나하나보다 한 차원 높은 수준의 통일된 의지의 일부분이 되었다는 자각에 눈을 뜬다")
+},
+<Buckaneer Ending Mk.I>
+{
+	Number(9009),
+	<Condition>
+	{
+#Anarchism
+		Tech(1127),
+		Planet(5),
+		Cluster(2),
+		Fleet(20),
+	},
+	Project(7209),
+#Buckaneer
+	Race(3),
+	Description("무장한 한 무리의 소위 '시민'들이 이 행성의 행정부 청사를 해체하기 위해 몇 대의 중장비를 갖고 몰려온다. 그들은 '정부'라는 것을 역사(우리들이 역사라는 것을 기록한다고 가정한다면)의 뒤안길로 밀어넣고 싶어하는 버캐니어들의 마무리 일격이라고 할 수 있을 것이다. 하지만  정부 따위가 없어진들 무슨 상관인가? 그래도 어쨌든 시계는 돌고 우리들은 우주를 방랑하며 명랑하게 살 것이다.")
+},
+<Xeloss Ending Mk.I>
+{
+	Number(9010),
+	<Condition>
+	{
+#Thought of God
+		Tech(1130),
+#Fallen Head
+		Project(7022),
+		CouncilSpeaker(0),
+		Council(5)
+	},
+	Project(7210),
+#Xeloss
+	Race(8),
+	Description("오늘처럼 범 교파적인 미사가 개최되는 것은 젤로스에게 지난 수천년동안 없었던 일이다. 당신은 불의 심판이 내려질 때, 약속의 땅으로 당신의 부족을 인도했고, 지금은 최고 제사장으로 추대되어 의식를 집전하고 있다. 당신이 바로 경전에 예언된 구세주의 현신이라고 믿어 의심치 않는 각 교파의 장로들과 전사들이 경건하고 엄숙하게 의식에 참석하고 있다. 당신은 젤로스들이 약속의 땅에 어서 정주할 수 있도록 은총을 내려주시길 신에게 기원한다.")
+}
+

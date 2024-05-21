@@ -1,0 +1,196 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/defense.js></SCRIPT>
+<LINK REL="stylesheet" HREF="/archspace.css">
+<LINK REL="stylesheet" HREF="/cssLib.css">
+<SCRIPT LANGUAGE = "JavaScript">
+<!--
+if (navigator.appName.indexOf('Microsoft') == -1) {
+	document.write('<'+'link rel="stylesheet" href="/mozilla.css" />');
+}
+// -->
+</SCRIPT>
+$JS_FLEET_LIST
+
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" text="#999999" link="#999999" vlink="#999999" alink="#999999" onLoad="init(true)">
+
+$JS_FLEET_INFO
+
+<FORM METHOD=post ACTION=defense_plan_special_new_result.as NAME=Fdescription>
+
+$FLEET_INDEX_TO_ID
+
+<TABLE WIDTH="610" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext">
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>$RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp;$PRODUCT_POINT&nbsp;&nbsp;&nbsp;&nbsp;$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;$NET_POWER</DIV>
+          </TD>
+          <!--HELP BUTTON-->
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center"></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" HEIGHT="18"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/fleet/defense_plan_title.gif" WIDTH="439" HEIGHT="41">
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TH ALIGN="center" CLASS="maintext" HEIGHT="25">
+      <TABLE WIDTH="600" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR CLASS="maintext">
+          <TH WIDTH="258"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/fleet/battle_direction.gif" WIDTH="192" HEIGHT="17"></TH>
+          <TH WIDTH="242" ALIGN="LEFT">$STRING_BATTLE_FIELD</TH>
+		  <TH WIDTH="100" ALIGN="RIGHT"><A CLASS=pointer_h onClick='newWindow("/archspace/war/order.html", 580, 175)'>Order Help</A></TH>
+        </TR>
+      </TABLE>
+    </TH>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <TABLE WIDTH="610" BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="200" BORDERCOLOR="#2A2A2A">
+        <TR>
+          <TD><IMG SRC="$IMAGE_SERVER_URL/image/as_game/fleet/battle_back610.gif"></TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+<!--
+  <TR>
+    <TD ALIGN="center">
+      <TABLE WIDTH="560" BORDER="1" CELLSPACING="0" CELLPADDING="0" BORDERCOLOR="#2A2A2A">
+        <TR>
+          <TH CLASS="tabletxt" WIDTH="102" BGCOLOR="#171717" ALIGN="LEFT"> <FONT COLOR="666666">$STRING_ORDER</FONT></TH>
+          <TD COLSPAN="5" CLASS="tabletxt" WIDTH="464">
+            <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+              <TR ALIGN=center>
+                <TD WIDTH=116><SPAN CLASS="tabletxtH" onMouseOver="update(NORMAL)">$STRING_NORMAL</SPAN>&nbsp;&nbsp;</TD>
+                <TD WIDTH=116><SPAN CLASS="tabletxtH" onMouseOver="update(FORMATION)">$STRING_FORMATION</SPAN>&nbsp;&nbsp;</TD>
+                <TD WIDTH=116><SPAN CLASS="tabletxtH" onMouseOver="update(PENETRATE)">$STRING_PENETRATE</SPAN>&nbsp;&nbsp;</TD>
+                <TD WIDTH=116><SPAN CLASS="tabletxtH" onMouseOver="update(FLANK)">$STRING_FLANK&nbsp</SPAN>&nbsp;</TD>
+              </TR>
+              <TR ALIGN=center>
+                <TD WIDTH=116><SPAN CLASS="tabletxtH" onMouseOver="update(RESERVE)">$STRING_RESERVE</SPAN>&nbsp;&nbsp;</TD>
+                <TD WIDTH=116><SPAN CLASS="tabletxtH" onMouseOver="update(ASSAULT)">$STRING_ASSAULT</SPAN>&nbsp;&nbsp;</TD>
+                <TD WIDTH=116><SPAN CLASS="tabletxtH" onMouseOver="update(FREE)">$STRING_FREE&nbsp</SPAN>&nbsp;</TD>
+                <TD WIDTH=116><SPAN CLASS="tabletxtH" onMouseOver="update(STANDGROUND)">$STRING_STAND_GROUND</SPAN></TD>
+              </TR>
+            </TABLE>
+          </TD>
+        </TR>
+        <TR>
+          <TH CLASS="tabletxt" WIDTH="102" ALIGN="LEFT" BGCOLOR="#171717"> <FONT COLOR="#666666">$STRING_DESCRIPTION</FONT></TH>
+          <TD CLASS="tabletxt" COLSPAN="5" ALIGN="LEFT" WIDTH="452"><TEXTAREA COLS=64 ROWS=6 NAME=description STYLE="border:0;background-color:#000000;color:#999999" readonly></TEXTAREA>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+-->
+
+
+  <TR>
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext">
+      <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR VALIGN="bottom">
+          <TD><IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_done1.gif">
+            <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok1.gif" BORDER="0" onSubmit=alert(fleetName);>
+            $RESULT
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" HEIGHT="18">&nbsp;</TD>
+  </TR>
+  <INPUT TYPE=hidden NAME="PLAN_NAME" VALUE="$PLAN_NAME">
+  <INPUT TYPE=hidden NAME="FLEET_NUMBER" VALUE="$FLEET_NUMBER">
+  <INPUT TYPE=hidden NAME="RACE_CONDITION" VALUE="$RACE_CONDITION">
+  <INPUT TYPE=hidden NAME="POWER_MIN" VALUE="$POWER_MIN">
+  <INPUT TYPE=hidden NAME="POWER_MAX" VALUE="$POWER_MAX">
+  <INPUT TYPE=hidden NAME="ATTACK_TYPE_CONDITION" VALUE="$ATTACK_TYPE_CONDITION">
+  <TR>
+    <TD CLASS="maintext" ALIGN="center"> <A HREF="war.as">$WAR_MAIN</A> <A HREF="siege_planet.as">$SIEGE_PLANET</A> <A HREF="blockade.as">$BLOCKADE</A> <A HREF="raid.as">$RAID</A> <A HREF="privateer.as">$PRIVATEER</A> <FONT COLOR="616161">$DEFENSE_PLAN</FONT> <A HREF="battle_report.as">$BATTLE_REPORT</A></TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            <CENTER>
+				$ADLINE_BOTTOM
+            </CENTER>
+            </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+</TABLE>
+
+<DIV ID=order CLASS=order onMouseover=highlight() onMouseout=lowlight() onclick=act()>
+  <DIV CLASS=menuitems NAME=NORMAL>Normal</DIV>
+  <DIV CLASS=menuitems NAME=FORMATION>Formation</DIV>
+  <DIV CLASS=menuitems NAME=PENETRATE>Penetrate</DIV>
+  <DIV CLASS=menuitems NAME=FLANK>Flank</DIV>
+  <DIV CLASS=menuitems NAME=RESERVE>Reserve</DIV>
+  <DIV CLASS=menuitems NAME=ASSAULT>Assault</DIV>
+  <DIV CLASS=menuitems NAME=FREE>Free</DIV>
+  <DIV CLASS=menuitems NAME=STAND_GROUND>Stand Ground</DIV>
+</DIV>
+
+</FORM>
+<P>&nbsp;</P>
+
+<SCRIPT LANGUAGE=javascript>
+  document.body.onclick = hidepopup;
+</SCRIPT>
+</BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</html>
+
+

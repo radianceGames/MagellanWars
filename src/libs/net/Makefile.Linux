@@ -1,0 +1,27 @@
+CC=g++
+CFLAGS=-g -Wall
+LIBDIRS=-L/usr/lib
+LIBS=-static -lstdc++
+INCLUDES=-I/usr/g++ -I/usr/include -I../include -I/usr/include/pth -I/usr/local/include/mysql
+DEFINES=-DDEBUG
+
+VPATH=$(HOME)src/libs/include
+
+HEADERFILES=
+CCFILES=socket.cc server.cc message.cc packet.cc fifo.cc client.cc\
+		server.loop.cc iplist.cc phpsession.cc
+
+CCOBJS=$(CCFILES:.cc=.o)
+
+.cc.o:
+	$(CC) -c $< $(CFLAGS) $(INCLUDES) $(DEFINES)
+
+lib:$(CCOBJS)
+
+
+clean:
+	rm -f *.o 
+
+test: $(CCOBJS) test.cc
+	$(CC) -c test.cc $(CFLAGS) $(INCLUDES) $(DEFINES)
+	$(CC) -o test test.o $(LIBS) $(LIBDIRS) 

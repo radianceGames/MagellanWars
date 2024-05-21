@@ -1,0 +1,847 @@
+# Type: Planet, Fixed, Council, Onetime
+#       Planet의 경우 실제 가격은 여기 표시된 Cost에 소유한 행성 수를 곱한 것이 됨
+
+
+# Control Model은 race script와 동일. 단, 안 쓰는 것은 있음.
+# Control : Environment, Growth, Efficiency, Genius, Production,
+#      Facility Cost, Military, Commerce, Spy, Diplomacy,
+#      Research(Social, Life, Matter, Info)
+#      -: -    else: +
+
+# Attr : Classism, Totalism, Personalism, Targoid, Human 각각 해당 전용.
+
+# 효과를 정리할 수 없는 Project는 comment out한 상태.
+# 효과:
+#	MilitaryBaseDamageRate(double) - 행성 공략전에서 (double)배만큼 MB 파워 올림
+#	EventRate(int) - 마이너스도 가능. event 발생 확률*(int)퍼센트.
+#	<Defend>
+#		Spy(int) - Spy CM 1 만큼에 해당하는 방어
+#		Raid(int) - (int) 퍼센트만큼 Raid 피해 감소
+#		Novarization(int) - (int) 퍼센트만큼 Novarization 발생 확률(피해?) 감소
+#		<Destroy>
+#		 	Population(int(==percent))  - Elixir Bed. (int) 퍼센트만큼 인구 파괴 효과 감소
+#	<Domain> - 국내에서(방어전이나, 단순한 국내 이동)
+#		<Mine> - 아군 함대
+#			Delay(int) - 이동 시 delay(멀리 갈 때)/int
+#			Speed(double) - Speed*(double)
+#			AR(double) - AR*(double)
+#			DR(double) - DR*(double)
+#		<Enemy> - 적 함대
+#			MoraleMulti(int) - Morale 상승 시에는 상승치/(int) 만큼, 하강 시에는 하강치*(int)만큼 적용
+#
+#
+#위에 따라 정리는 했으나 다른 부분이 안 돼서 추가할 수 없는 Project:
+#	Elixir Bed(Spy)
+#	Transparant Image Control System(Event)
+#
+#추가는 했지만 일부 기능이 빠진 Project:
+#	Galactic Agreement of Free Commerce(Defensive Spy)
+#	Archmage(반란 이벤트 확률 감소: Event 종료 후에 볼 것),
+#	Solar Control System(Novarization: Spy?)
+#	Nova Plant(Novarization 상태가 되어야 하나?)
+#
+#Attribute 관련되는 Project:
+#	Mind Control Center, Saga Archive, Clone Family, Imperial Palace, Symbol of Liberation, The One Unified Mind, Organic Plant, Humanoid Plant, Galactic Liberalism Movement, Desire Amplifier
+#
+#위에 따라 정리해서 Beta에서 전투 끝나면 추가할 수 있을 Project:
+#	Planetary Shield(Fleet/War)
+#	Crimson Eye(Fleet/Battle)
+#	Impregnable Area(Fleet/Battle/War)
+#	Dimension Gate(Fleet)
+#
+#아직도 정리 불가:
+#	Ghost Patrol(Spy 중에서 정보 관련 보호. Spy 종료 후),
+#	Information Network Library(Spy/Empire. 게다가 유일하게 Period가 들어가는 Project라서..)
+#
+
+
+#<엘릭서 농원>
+#{
+#	Number(7001),
+#	Description("유전 공학이 이루어낸 기적의 하나가 모든 병을 치유할 수 있는 만병통치약의 발명이다. 이 물질은 전설 속의 약물 이름을 따 엘릭서라 명명되었다. 처음에는 연구실에서만 제조할 수 있었던 엘릭서를 일반 농원에서 대량생산할 수 있게 됨에 따라 실질적으로 물질계에 존재하는 모든 병은 그 힘을 잃어버렸다 해도 과언이 아니다."),
+#	<Prerequisite>
+#	[
+#		Number(1408)
+#	],
+#	Type("Planet"),
+#	<Effect>
+#	{
+#		<Defend>
+#		{
+#			<Destroy>
+#			{
+#				Population(15)
+#			}
+#		}
+#	},
+#	Cost(9000)
+#},
+
+<행성 엘리베이터>
+{
+	Number(7002),
+	Description("행성을 관통하는 엘리베이터는, 중력을 이용하여 큰 힘을 들이지 않고도 행성 반대편을 서로 오갈 수 있다. 가속 때문에 생물체가 이동할 수 있게 하는 것은 좀 힘들지만, 물자의 운송이 매우 단순화되고 편리해져 생산성을 향상시킬 수 있게 된다."),
+	<Prerequisite>
+	[
+		Number(1320)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Production(1)
+	},
+	Cost(35000)
+},
+
+#<행성 방어막>
+#{
+#	Number(7003),
+#	Description("행성 전체를 보호하는 거대한 방어막을 발생시킬 수 있게 되는 데까지는 상당한 시간과 노력이 소모되었다. 그 결과 생성된 방어막으로도 사실상 그렇게까지 눈에 띌 만한 효과는 볼 수 없지만, 주민들은 스스로가 보호받고 있다는 의식 속에서 어느 정도 안정적인 삶을 영위할 수 있게 되었다."),
+#	<Prerequisite>
+#	[
+#		Number(1323)
+#	],
+#	Type("Planet"),
+#	<Effect>
+#	{
+#		MilitaryBaseDamageRate(1.2),
+#		<Defend>
+#		{
+#			Raid(30)
+#		}
+#	},
+#	Cost(40000)
+#},
+
+<항성 제어 시스템>
+{
+	Number(7004),
+	Description("먼 옛날, 개척 시대, 가장 절실히 필요로 했던 것은 바로 우주 환경이 가진 특성을 제어할 수 있는 시스템의 구축이었다. 시대를 거듭하며 수많은 희생을 감수한 끝에, 마침내 손에 넣은 것이 이 완성된 형태로서의 항성 제어 시스템이다. 항성은 시간의 흐름과 함께 노화되어 마침내는 초신성화하거나 백색 왜성이 되면서 주위의 행성들 또한 그 수명을 다하게 되지만, 항성 제어 시스템을 이용하면 이를 방지할 수 있을 뿐만 아니라 항성에 의해 영향을 받는 행성의 환경 또한 어느 정도 제어가 가능해진다."),
+	<Prerequisite>
+	[
+		Number(1321)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+#		<Defend>
+#		{
+#			Novarization(10)
+#		},
+		Environment(1)
+	},
+	Cost(40000)
+},
+
+<궤도 엘리베이터>
+{
+	Number(7005),
+	Description("우주선이 대기권을 벗어나는 데에는 엄청나게 많은 에너지가 소모된다. 궤도 상에서 함선을 건조해 발사하면 이러한 부담을 줄일 수 있다. 궤도 엘리베이터는 행성 궤도 상으로 물체를 올릴 수 있는 엘리베이터로, 궤도 상에 있는 우주 정거장으로 물자를 전송하는 등 유용하게 활용된다."),
+	<Prerequisite>
+	[
+		Number(1328)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Military(1),
+		Production(1)
+	},
+	Cost(140000)
+},
+
+<메카닉 바드>
+{
+	Number(7006),
+	Description("잘 엮어진 언어는 예로부터 가장 강한 힘 중의 하나였다. 여기에 또 다른 힘인 음율을 얹어내는 음유 시인은, 어떻게 보면 최강의 힘을 가진 존재라고도 할 수 있다. 메카닉 바드는 인공적으로 만들어 낸 음유 시인으로, 역사상 존재했던 모든 언어, 모든 종족, 모든 유형의 시와 노래와 역사를 기억하여 이를 새로이 언어로 엮어내는 작업을 수행한다. 메카닉 바드는 \'안정\'을 목표로 만들어지기 때문에 각 지역마다 그곳에 가장 안정을 가져올 수 있는 시를 노래하고, 따라서 메카닉 바드가 존재하는 곳은 생활이 안정되어 더욱 빠르게 발전하게 된다."),
+	<Prerequisite>
+	[
+		Number(1117)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Growth(1)
+	},
+	Cost(35000)
+},
+
+#<심홍안>
+#{
+#	Number(7007),
+#	Description("핏빛 눈동자. 언제부터인가 이것은 그렇게 불리고 있었다. 머릿 속으로 곧바로 울리는 소리. 눈 앞에 떠오르는 것을 진홍색으로 물든 핏빛 세상. 그저 그것 뿐. 외계의 자극은 뇌까지 전달되지 않고, 생각은 혼란되고, 이내 이드가 모든 것을 지배한다. 공황 상태에 빠진 전함 속에서 질서는 찾아볼 수 없고, 함선은 갈 곳을 잃고 방황하게 된다. 의식을 가진 모든 존재의 뇌 속으로 직접 파고드는 파장. 이미지. 파장이 강한 만큼 멀리까지 힘을 미치지는 못 하지만, 심홍안이 보여주는 절대적인 공포를 맛보게 되면 알지 못하던 시절로는 결코 돌아갈 수 없다."),
+#	<Prerequisite>
+#	[
+#		Number(1124)
+#	],
+#	Type("Planet"),
+#	<Effect>
+#	{
+#		<Domain>
+#		{
+#			<Enemy>
+#			{
+#				Morale(2)
+#			}
+#		}
+#	},
+#	Cost(200000)
+#},
+
+#<마인드 컨트롤 센터>
+#{
+#	Number(7008),
+#	Description("이 시설은 각 행성마다 하나씩 설치되어, 독자적인 방식으로 주민들의 정신을 지배한다. 주민들은 자신들이 지배당하는 것조차 깨닫지 못한 채 스스로의 자유 의지라 생각하며 주어진 작업을 행한다. 사회는 극도로 잘 통제되고, 대의 명분을 위해서라면 타오르는 불 속에도 뛰어들 수 있는 병사를 손에 넣을 수 있게 된다."),
+#	<Prerequisite>
+#	[
+#		Number(1119)
+#	],
+#	Type("Planet"),
+#	<Effect>
+#	{
+#		Military(1),
+#		Efficiency(1)
+#	},
+#	Attr("Classism"),
+#	Cost(100000)
+#},
+
+<행성 환경 안정 시스템>
+{
+	Number(7009),
+	Description("행성 환경 안정 시스템은 세상 만물에 모두 생명이 깃들어 있다는 사상에서 시작된 프로젝트이다. 이 시스템은 한 행성의 환경을 그 종족에 적합하게 조절해 주지만, 일반적인 테라포밍과는 다르다. 말하자면 적용되는 단계가 다른 것으로, 행성의 물리적인 환경에 작용하는 것이 아니라 직접적으로 행성 자체의 '생명'에 작용하여 환경을 변화시키고 번식력을 증강시킨다."),
+	<Prerequisite>
+	[
+		Number(1421)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Growth(1),
+		Environment(2)
+	},
+	Cost(300000)
+},
+
+#<클론 패밀리>
+#{
+#	Number(7010),
+#	Description("한 개체를 기반으로 만들어진 일련의 클론들. 같은 외모와 같은 능력을 갖고 같은 환경에서 성장한 이들은, 모두 함께 모여야만 최고의 성능을 발휘한다. 언제나 함께 움직이고, 함께 생각하고, 함께 일하며, 이들은 이러한 집합체로서의 자신들을 '하나'의 개체로 생각한다. 그 능력은 대단히 뛰어나 어떤 단일 개체보다도 훌륭한 성능을 발휘하지만, 일원 중 하나라도 결락되는 순간 나머지 모두가 효용 가치를 잃게 된다."),
+#	<Prerequisite>
+#	[
+#		Number(1120)
+#	],
+#	Type("Planet"),
+#	<Effect>
+#	{
+#		Production(2),
+#		Facility Cost(2),
+#		Genius(-1),
+#		Research(-1)
+#	},
+#	Attr("Totalism"),
+#	Cost(100000)
+#},
+
+<기억 재생 장치>
+{
+	Number(7011),
+	Description("기억은 시간이 지나면 흐려진다. 그러나 그 내용 자체가 지워지는 것은 아니고, 뇌 속의 어딘가에 저장된 상태로 단순히 되살리기가 어려워질 뿐이다. 기억 재생 장치는 잃어버린 기억을 '재생'한다. 뇌 속에 기록된 내용은 원하는 대로 모두 되살려낼 수 있으며, 이러한 자원은 연구 등에 유용하게 활용될 수 있다. 연구자들은 꿈에 그리던 도구를 손에 넣게 된 것이다."),
+	<Prerequisite>
+	[
+		Number(1211)
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Research(1)
+	},
+	Cost(200000)
+},
+
+#<비 가시 이미지 제어 시스템>
+#{
+#	Number(7012),
+#	Description("보이지 않는 것에 관심을 가질 수 있을까? 이 시스템은 순수하게 이러한 학문적인 의구심을 발단으로 고안되었다. 공간 계산과 확률 분석에 의해 존재감이라는 것 자체를 흐리게 해 외부 영향력의 눈에서 벗어나는 방식으로, 좋은 의미에서도 나쁜 의미에서도 '눈에 띄지 않는' 존재가 되도록 할 수 있었다. 그러나 이 시스템은 원래 실험적으로 개발된 것이었기 때문에, 그 실제 효용성에 대해서는 의문이 남는다."),
+#	<Prerequisite>
+#	[
+#		Number(1217)
+#	],
+#	Type("Fixed"),
+#	<Effect>
+#	{
+#		EventRate(-25)
+#	},
+#	Cost(700000)
+#},
+
+<전심>
+{
+	Number(7013),
+	Description("정보 전달에 있어서 가장 안전한 수단은 무엇인가? 그 해답을 찾기 위한 시도가 수없이 행해졌다. 그 결과 나온 것이 '전심(Mind Passway)'이다. 이것은 일상 통신의 암호화와, 초능력에 의한 통신 수단을 결합한 방식으로, 거리 상의 제약만을 제외하면 가장 안전한 통신 수단으로 퍼져 나가게 되었다."),
+	<Prerequisite>
+	[
+		Number(1420)
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Spy(2)
+	},
+	Cost(1500000)
+},
+
+#<난공불락의 영역>
+#{
+#	Number(7014),
+#	Description("부단한 연구 끝에 찾아낸 우주에서의 난공 불락의 영역. 그 필드 내에서는 아군의 모든 능력이 강화되어 철벽과도 같은 방어를 펼칠 수 있다. 마치 신의 힘을 입은 듯한 그 능력에 어쩔 수 없이 물러나는 적군들도 많았다. 영토 전체를 눈에 보이지 않는 철벽의 요새로 만들 수 있는 이 프로젝트로 인해 더욱 더 치열한 연구 경쟁이 벌어지게 되었다."),
+#	<Prerequisite>
+#	[
+#		Number(1219)
+#	],
+#	Type("Fixed"),
+#	<Effect>
+#	{
+#		<Domain>
+#		{
+#			<Mine>
+#			{
+#				Speed(1.1),
+#				AR(1.1),
+#				DR(1.1)
+#			}
+#		},
+#		MilitaryBaseDamageRate(1.2),
+#		<Defend>
+#		{
+#			Raid(20)
+#		}
+#	},
+#	Cost(2000000)
+#},
+
+<무결 비서>
+{
+	Number(7016),
+	Description("지성체가 창조해 낸 최고의 '비서'라 할 수 있는 것이 이 기계 장치이다. 형태는 여러 가지로, 어디에나 부착할 수 있도록 종족에 따라 커스터마이즈되어 있지만, 그 기능은 거의 비슷하다. 세상에 존재하는 모든 종류의 언어를 이해하여 통역관 역할을 수행하고, 그 외에 상대방이 하는 말의 요점을 요약해 간략하게 전달해 주거나, 사용자가 요점만 간략하게 말하면 이를 상대방의 문화에 맞게 멋지게 꾸며 전달해 주기도 한다. 또한 과거 있었던 모든 대화를 기억하여 필요한 때 전달해 주는 역할도 한다."),
+	<Prerequisite>
+	[
+		Number(1417)
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Spy(1),
+		Commerce(1)
+	},
+	Cost(1000000)
+},
+
+<드림 메이커>
+{
+	Number(7017),
+	Description("\"이로써 그대의 꿈은 이루어졌도다.\" 물질계에 작용하는 초능력을 활용하여 제작된 이 기계는, 정신 에너지를 흡수하여 이를 해석한 후 적절한 물질로 변환하는 기능을 갖추고 있다. 생각하는 모든 것을 구체화할 수 있는 이 기계의 능력은 처음엔 대단한 것으로 여겨졌으나, 먼저 적절히 사고(思考)를 제어할 수 있는 능력이 필요하다는 점과 막대한 제작 비용, 그리고 매 가동 시 필요로 하는 엄청난 양의 에너지 때문에 그렇게 자주 사용할 수는 없다."),
+	<Prerequisite>
+	[
+		Number(1424)
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Genius(2),
+		Production(1),
+		Facility Cost(-1)
+	},
+	Cost(6000000)
+},
+
+#<사가 아카이브>
+#{
+#	Number(7018),
+#	Description("영웅담, 사가, 그 외 전해져 내려오는 모든 종류의 위대한 이야기를 보관하고 있는 기념비적인 아카이브이다. 이 시설은 만인에게 개방되어, 역사적인 전력(戰歷) 및 신화, 비사(秘史) 등을 연구할 수 있도록 하였다. 사가 아카이브의 설치로 인해 다양한 분야에서 수많은 영웅들이 새로이 배출될 수 있었다."),
+#	<Prerequisite>
+#	[
+#		Number(1121)
+#	],
+#	Type("Planet"),
+#	<Effect>
+#	{
+#		Genius(1),
+#		Diplomacy(1)
+#	},
+#	Attr("Personalism"),
+#	Cost(100000)
+#},
+
+#<정보 네트워크 도서관>
+#{
+#	Number(7019),
+#	Description("네트워크 상에 위치하는 정보 도서관이라는 것이 이 프로젝트의 표면적인 모습이었다. 그러나 그 실체는 사실 네트워크 상을 흐르는 정보를 중간에서 가로채는 역할이다. 그 내용은 때때로 새로운 기술일 때도 있고, 다른 지역에서 벌어지는 상황에 대한 정보, 때로는 제국 자체에 대한 정보이기도 하다. 그러나 전혀 의미 없는 헛소문을 손에 넣을 때도 있다."),
+#	<Prerequisite>
+#	[
+#		Number(1222)
+#	],
+#	Type("Fixed"),
+#	<Effect>
+#	{
+#		300턴에서 700턴 사이 랜덤 주기. 대상 역시 랜덤(동맹은 제외).
+#               1D4에서 1은 꽝, 2는 commander 획득(남의 commander 꼬시기),
+#                  3은 상태 정보(Spy 등을 통해 얻을 수 있지만 일반적으로는 알 수 없는 상태),
+#		   4는 empire 관계 +20(Degree of Amity가 존재하는 경우. Degree of Malice인 경우에는 꽝)
+#	},
+#	PeriodMinimum(300),
+#	PeriodMaximum(700),
+#	Cost(4000000)
+#},
+
+<과거-현재-미래 대학>
+{
+	Number(7020),
+	Description("과거, 현재, 그리고 미래. 시간의 흐름과 그 속에 감추어진 비밀. 세계. 세계 그 자체가 갖는 의미. 그 모든 것을 배울 수 있는 곳, 그곳이 바로 이곳. 이 안을 헤매이는 자들은 모두 기묘한 고요함을 간직하고 있다. 우주의 의미를 연구하기 위해 설립된 교육 기관이 바로 여기, 과거-현재-미래의 대학인 것이다."),
+	<Prerequisite>
+	[
+		Number(1129)
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Research(2),
+		Diplomacy(2)
+	},
+	Cost(6000000)
+},
+
+#<차원 게이트>
+#{
+#	Number(7021),
+#	Description("차원의 단층을 지나 저 너머로. 제국의 역사 초기에는 전설처럼 입에서 입으로만 전해지던 차원 게이트는 시간이 지남에 따라 현실로 다가오게 되었다. 두 지역에 설치된 차원 게이트 사이에는 복잡한 시공간 왜곡이 발생해, 실제보다 훨씬 짧은 시간 내에 두 게이트 사이를 왕복할 수 있게 된다. 각 차원 게이트는 고유한 파장을 간직하고 있기 때문에, 그 파장을 알 수 있으면 어떠한 게이트로도 나갈 수 있다."),
+#	<Prerequisite>
+#	[
+#		Number(1423)
+#	],
+#	Type("Fixed"),
+#	<Effect>
+#	{
+#               <Domain>
+#		{
+#			<Mine>
+#			{
+#				Delay(2)
+#			}
+#		},
+#		Commerce(1)
+#	},
+#	Cost(7000000)
+#},
+
+<나락의 두뇌>
+{
+	Number(7022),
+	Description("이 시스템이 처음 개발되었을 때, 제국 내의 모든 지성체는 이를 일컬어 신의 곁에 머무르다 추락한 타락 천사, 악마의 두뇌라 불렀다. 어떤 상황에서나 최고의 효율을 발휘할 수 있는 방식을 떠올릴 수 있는 그 능력은 인위적으로 만들어진 기계의 수준을 벗어난 것으로, 일상적인 생명체에게 경외감을 불러 일으키기에 충분한 것이었다. 수 년 후, 실전에 도입된 이 시스템의 정식 명칭은 '나락의 두뇌'로 결정되었다."),
+	<Prerequisite>
+	[
+		Number(1130)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Diplomacy(3),
+		Efficiency(2),
+		Commerce(1),
+		Military(2),
+		Growth(-1),
+		Environment(-2)
+	},
+	Cost(20000000)
+},
+
+
+#<고스트 패트롤>
+#{
+#	Number(7023),
+#	Description("네트워크 상에 자신의 '고스트'를 생성해 직접 매트릭스에 접근하는 방식은 제국이 있기 오래 전부터 이미 널리 퍼져 있었다. 이러한 고스트는 그 본체가 실세계에서 사망한 후에도 여전히 네트워크 상에 남아 배회하는 경우가 많았다. 이러한 고스트 중 지금까지 죽어간 최고의 컴퓨터 전문가들의 것을 모아 패트롤을 구성함으로써, 정보 네트워크를 외부의 공격으로부터 보호하도록 하는 것이 바로 이 프로젝트의 목적이다."),
+#	<Prerequisite>
+#	[
+#		Number(1218)
+#	],
+#	Type("Council"),
+#	<Effect>
+#	{
+#		Info Net. 보호(spy 관련 방어)
+#	},
+#	Cost(1000000)
+#},
+
+<신성 플랜트>
+{
+	Number(7024),
+	Description("신성 플랜트는 항성의 신성화에서 오는 막대한 에너지를 활용하여 동작하는 플랜트이다. 이에 따라 생산성은 엄청나게 향상되지만, 대신 신성화에 의해 행성의 환경은 생활하기에 상당히 나빠지며, 외부에서 접근을 꺼려하기 때문에 교역이 뜸해진다. 생활 환경을 포기하고 생산성만을 극대화하는 압제적 성격을 띤 프로젝트이다."),
+	<Prerequisite>
+	[
+		Number(1327)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Production(3),
+		Environment(-1),
+		Commerce(-1)
+#		Nova 상태일 때만 가능?
+	},
+	Cost(2000000)
+},
+
+<아크메이지>
+{
+	Number(7025),
+	Description("매트릭스 속에서 펼쳐지는 가상 전쟁. 아크메이지는 한 번 손을 대게 되면 빨려들 듯이 휘말려들어 손을 뗄 수 없게 되는 게임이다. 이를 통해 다양한 전략 전술을 개발함으로써 뛰어난 명장이 배출될 가능성이 늘어나며, 수많은 지성체와의 대립과 협력을 통해 단합심을 키움으로써 불만 분자의 수가 줄어들게 된다."),
+	<Prerequisite>
+	[
+		Number(1213)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Genius(1)
+#		반란 이벤트 확률 감소
+	},
+	Cost(500000)
+},
+
+#<휴머노이드 플랜트>
+#{
+#	Number(7026),
+#	Description("신의 위치를 차지하고자 하는 그 끝없는 욕망의 결과로, 인간은 자신들과 완전히 동일한 외형을 갖추고 더욱 뛰어난 능력을 지닌 생명체를 창조해 내었다. 레플리컨트라 명명된 이 존재들은 인간의 수십에서 수백 배에 달하는 신체적/정신적 능력을 갖춘 대신, 매우 수명이 짧고, 인간에게는 결코 위해를 가할 수 없도록 프로그램된다. 그러나 이러한 '인권을 갖추지 못한 인간'의 창조는, 같은 인간 종족 내에서도 격렬한 반발을 불러 일으키는 경우가 많다."),
+#	<Prerequisite>
+#	[
+#		Number(1425)
+#	],
+#	Type("Fixed"),
+#	<Effect>
+#	{
+#		Facility Cost(2),
+#		Production(2),
+#		Diplomacy(-1)
+#	},
+#	Attr("Human"),
+#	Cost(6000000)
+#},
+
+<사색지구>
+{
+	Number(7027),
+	Description("생각하는 공? 누가 이런 장난같은 이름을 붙일 생각을 한 것인지, 지금으로서는 누구도 알지 못한다. 일종의 오라클과 같이 동작하는 이 시스템은, 어딘가 제멋대로인 구석이 있는 탓에 한편에서는 '요정'이라는 별명으로 불리우기도 한다. 여러 상황에서 전반적으로 도움이 되는 가능성을 제시해 주긴 하지만, 가동 시 엄청난 에너지를 소모하기 때문에 다른 시설을 정지시키는 경우도 종종 발생한다."),
+	<Prerequisite>
+	[
+		Number(1224)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Military(3),
+		Commerce(2),
+		Efficiency(2),
+		Facility Cost(-2)
+	},
+	Cost(20000000)
+},
+
+<AI 권리장전>
+{
+	Number(7030),
+	Description("AI의 발달로 그 권리에 대한 문제 제기를 초래하게 되었고, 결국 AI의 귄리에 대한 전반적인 사항을 규정한 AI 권리장전이 선언되었다. 이는 한편으로는 사회의 혼란과 사회 유지와 건설에 더 많은 비용을 초래하였지만, 사회의 건강함과 자율성에 큰 기여를 하게 되었다. 특히, 군에서 사용하던 AI에 많은 파급효과가 있었다."),
+	<Prerequisite>
+	[
+		Number(1220)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Military(-1),
+		Efficiency(4),
+		Facility Cost(-1)
+	},
+	Cost(2000000)
+},
+
+<진리 탐지기>
+{
+	Number(7031),
+	Description("자체 증명 언어의 발견은 그동안 의문시되어 왔던 많은 명제에 대한 해답을 가져다 주었다. 명제를 자체 증명 언어로 옮기고 변형을 거듭하다보면 결국은 참/거짓이 밝혀지게 된다. 이 과정을 진리 탐지라 부르며, 이를 자동으로 시행해주는 진리 탐지기의 도입은 연구 뿐만이 아니라 사회의 많은 부분에 영향을 미치게 되었다."),
+	<Prerequisite>
+	[
+		Number(1122)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Research(1),
+		Spy(1),
+		Diplomacy(1)
+	},
+	Cost(2250000)
+},
+
+#<제국 황궁>
+#{
+#	Number(7032),
+#	Description("제국의 성립은 제국의 국사와 외교를 논의할 적절한 장소에 대한 필요성을 부각시켰다. 제국의 위엄을 제국의 동맹과 적, 그리고 신민들에게 보이고 제국 황제의 존엄성을 세우기에 적절한 규모를 갖기 위해 당신은 제국 황궁의 필요성을 느끼게 되었다. 제국 황궁이 뒤에 있다는 것을 알고 있는 외교관들은 더욱 자신을 갖고 교섭에 임할 것이고, 전 국민은 더 큰 긍지를 가지고 군대를 지원할 것이다. 하지만, 위엄을 세우기 위한 비용은 결코 싸지 않은 법, 제국 황궁으로 인해 많은 지출이 일어나게 되었다."),
+#	<Prerequisite>
+#	[
+#		Number(1126)
+#	],
+#	Type("Fixed"),
+#	<Effect>
+#	{
+#		Diplomacy(2),
+#		Military(2),
+#		Facility Cost(-1)
+#	},
+#	Attr("Classism"),
+#	Cost(3000000)
+#},
+
+#<자유의 상징>
+#{
+#	Number(7033),
+#	Description("자유의 상징이라는 기념비적인 건조물을 통해 전 은하계와 전 종족의 해방을 목표로 하는 드높은 이상을 널리 알리게 되었다. 국민들은 자유의 상징을 보고 이상을 고취시키며 성장해 나가고, 더 많은 자율과 책임 하에 행동하게 될 것이다. 하지만, 자유로운 이상의 고취는 외부의 정보 조작에 취약하게 되는 결과를 낳고 말았다."),
+#	<Prerequisite>
+#	[
+#		Number(1127)
+#	],
+#	Type("Fixed"),
+#	<Effect>
+#	{
+#		Genius(3),
+#		Research(1),
+#		Spy(-1)
+#	},
+#	Attr("Personalism"),
+#	Cost(3000000)
+#},
+
+#<단일 의식체>
+#{
+#	Number(7034),
+#	Description("전 국민의 마음을 하나로 모아 단일화된 새로운 마음을 창조하기에 이르렀다. 이미 스스로의 존재조차 흡수되어 새로운 자아로 태어난 지금, 전 국민의 마음과 몸이 하나로 통합되어 유기적으로 조직/행동하는 것을 느끼고 만족하게 되었다. 그러나 전보다 훨씬 더 열심히 일하고 번식하게 된 반면, 새로운 몸-국민들을 하나하나 제어하는데 약간의 어려움이 있음을 느끼게 되었다."),
+#	<Prerequisite>
+#	[
+#		Number(1125)
+#	],
+#	Type("Fixed"),
+#	<Effect>
+#	{
+#		Production(3),
+#		Growth(2),
+#		Efficiency(-2)
+#	},
+#	Attr("Totalism"),
+#	Cost(3000000)
+#},
+#<유기 플랜트>
+#{
+#	Number(7036),
+#	Description("역사적으로 산업의 발전은 언제나 더 많은 에너지를 필요로 해왔다. 단위 시간 내에 더 높은 효율과 더 많은 생산을 위해 에너지에 대한 요구는 끊임없이 늘어나기만 했다. 유기 플랜트는 이런 산업계의 요구에 대한 과학자들의 선물이다. 세상에 알려진 어떤 기계보다도 높은 효율을 가진 생명체로 구성된 이 살아있는 플랜트는 더 적은 비용으로 더 많은 에너지를 꾸준히 산업계에 공급해 줄 것이다."),
+#	<Prerequisite>
+#	[
+#		Number(1411)
+#	],
+#	Type("Planet"),
+#	<Effect>
+#	{
+#		Growth(1),
+#		Production(1)
+#	},
+#	Attr("Targoid"),
+#	Cost(30000)
+#},
+#<욕망 증폭기>
+#{
+#	Number(7037),
+#	Description("개개인의 발전은 더 많은 자원과 권력에 대한 욕망과 밀접히 결부되어 있다. 인류의 역사도 마찬가지로 각 그룹의 자원에 대한 욕망과 경쟁으로 점철되어 왔다고 할 수 있다. 욕망 증폭기는 사회 내 각 개인의 욕망을 극단적으로 증폭시켜 사회 발전의 원동력으로 삼는다. 증폭된 개인의 욕망은 더 많은 리소스와 권력에 대한 갈구로 나타나며 경쟁심을 극도로 유발시킨다. 이런 사회는 더 빨리 성장하고 더 많은 리소스를 생산해내지만, 유연성이 부족해지고 전체적인 조정 능력이 상실되기 마련이다. 그럼에도 불구하고 많은 사회에서 이 프로젝트를 시행하는 이유는 초기의 빠른 성장을 가능케 해주기 때문이다."),
+#	<Prerequisite>
+#	[
+#		Number(1107)
+#	],
+#	Type("Planet"),
+#	<Effect>
+#	{
+#		Growth(1),
+#		Production(1),
+#		Efficiency(-1),
+#		Research(-1)
+#	},
+#	Attr("Human"),
+#	Cost(5000)
+#},
+#<정의의 힘>
+#{
+#	Number(7038),
+#	Description("Even before the discovery of religion, it was so easy to deceive yourself by you. Even with religion, it's a lot easier to deceive yourself by you. This is a kind of the national wide hypnosis. You are never wrong. You cannot be wrong. If something is wrong, It's your opponent's fault. You make for righteousness and your will itself is the will of the Righteousness."),
+#	<Prerequisite>
+#	[
+#		Number(1104)
+#	],
+#	Type("Fixed"),
+#	<Effect>
+#	{
+#		Military(1),
+#		Production(1),
+#		Commerce(-1),
+#		Diplomacy(-1)
+#	},
+#	Attr("Classism"),
+#	Cost(50000)
+#},
+
+#<은하 자유주의 운동>
+#{
+#	Number(7040),
+#	Description("'평화를 사랑합니다.' '자유를 사랑합니다.' 범 은하적인 자유주의 운동이 시작됨에 따라 모든 이들이 자신들이 원하는 방향으로 달리기 시작한다. 이에 따라 질서가 흐트러지고 영토 내 생산력은 극도로 저하되지만, 연구자들은 자유로운 연구를 진행할 수 있게 되어 빼어난 업적들을 남기기도 하고, 자유 통상이 권장되어 무역이 활성화된다."),
+#	<Prerequisite>
+#	[
+#		Number(1111)
+#	],
+#	Type("Fixed"),
+#	<Effect>
+#	{
+#		Production(-4),
+#		Research(2),
+#		Commerce(2)
+#	},
+#	Attr("Personalism"),
+#	Cost(100000)
+#},
+<녹색 회의 선언>
+{
+	Number(7041),
+	Description("카운슬 전체가 환경 친화 정책을 펼칠 것을 선언하고, 행성의 과도한 개발을 제한한다. 과도한 자원 소모와 무책임한 폐기물 생산 등, 우주 전체가 본래 모습을 잃고 더럽혀져 가는 모습을 지켜보아 온 현명한 자들은, 잃어버린 문명의 연구를 통해 이러한 모든 상황이 과거 문명의 멸망을 가져온 것이라 주장하기도 한다. 이 프로젝트는 그러한 의견을 반영한 것으로 우주 환경을 보호하기 위해 노력하게 되지만, 그에 대한 반작용으로 일반적인 산업 발전은 제약받게 된다."),
+	<Prerequisite>
+	[
+		Number(1114)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Environment(2),
+		Efficiency(1),
+		Facility Cost(-1)
+	},
+	Cost(300000)
+},
+<중립 선언>
+{
+	Number(7042),
+	Description("무기를 버리고 평화주의로 돌아선다. 덕분에 군사 부문에 들어갈 인력이 다른 부문에 주력할 수 있게 되어 사회가 전반적으로 활성화되고 발전이 가속화된다. 또한 어느 곳에나 쉽게 접근할 수 있기 때문에 정보 활동이 쉬워지지만, 상대적으로 군사력이 부족하기 때문에 외부에서의 발언력은 약화된다."),
+	<Prerequisite>
+	[
+		Number(1128)
+	],
+	Type("Council"),
+	<Effect>
+	{
+		Military(-2),
+		Diplomacy(-1),
+		Commerce(2),
+		Production(2),
+		Spy(1),
+		Research(1)
+	},
+	Cost(5000000)
+},
+
+<은하 자유 통상 조약>
+{
+	Number(7043),
+	Description("범(汎) 카운슬 자유 통상 무역 협정은 카운슬 멤버 간의 통상 무역 활성화에 크게 기여하게 되며, 결과적으로는 외부에서의 무역 또한 활성화되는 결과를 가져온다. 우주 구석구석 모든 지역에 각각 교역 상인이 오가고 각 지역마다 활기가 넘친다. 그런 한편 이에 따라 온갖 정보가 모이고 흘러 나가게 됨으로써, 정보의 보안이 상당히 어려워지게 된다."),
+	<Prerequisite>
+	[
+		Number(1112)
+	],
+	Type("Council"),
+	<Effect>
+	{
+#		<Defend>
+#		{
+#			Spy(-1)
+#		},
+		Commerce(2)
+	},
+	Cost(150000)
+},
+
+<Propaganda Entertainment>
+{
+	Number(7045),
+	Description("This project involves putting together the perfect show to inspire your people. It causes them to put thier best effort into all they do and fuels their desire to conquer the enemy. Unfortunately, it also takes up time when they could be doing things, and decreases originality."),
+	<Prerequisite>
+	[
+		Number(1116)
+	],
+	Type("Planet"),
+	<Effect>
+	{
+		Military(1),
+		Production(-1),
+		Research(-1),
+		Efficiency(1),
+		Growth(1)
+	},
+	Cost(20000)
+},
+
+<Crusade Headquarters>
+{
+	Number(7046),
+	Description("None"),
+	<Prerequisite>
+	[
+		Number(1115)
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		Military(1),
+		<Produce MP Per Turn>
+		{
+			Amount(10000),
+			Apply("Absolute")
+		}
+	},
+	<Race>
+	{
+		# For Xeloss
+		Race(8)
+	},
+	Cost(3000000)
+},
+
+<Galatic University>
+{
+	Number(7047),
+	Description("None"),
+	<Prerequisite>
+	[
+		Number(1214)
+	],
+	Type("Fixed"),
+	<Effect>
+	{
+		<Produce RP Per Turn>
+		{
+			Amount(10000),
+			Apply("Absolute")
+		},
+		<Consume PP Per Turn>
+		{
+			Amount(10000),
+			Type("Absolute")
+		}
+	},
+	<Race>
+	{
+		# For Xesperados
+		Race(10)
+	},
+	Cost(5000000)
+}

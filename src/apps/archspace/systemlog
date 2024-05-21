@@ -1,0 +1,5 @@
+Jul 31 17:38:15 2005 :: Cannot read configuration file /etc/archspace/archspace.config
+
+Jul 31 17:38:15 2005 :: ERROR : Could not initialize CApplication
+Jul 31 17:38:15 2005 :: Cannot start archspace server!
+Jul 31 17:38:15 2005 :: wait status 8

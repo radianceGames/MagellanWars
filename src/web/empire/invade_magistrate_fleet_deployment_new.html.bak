@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/defense.js></SCRIPT>
+<LINK REL="stylesheet" HREF="/archspace.css">
+<LINK REL="stylesheet" HREF="/cssLib.css">
+<SCRIPT LANGUAGE = "JavaScript">
+<!-- 
+if (navigator.appName.indexOf('Microsoft') == -1) {
+	document.write('<'+'link rel="stylesheet" href="/mozilla.css" />');
+}
+// -->
+</SCRIPT>
+$JS_FLEET_LIST
+
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999" onLoad=init(false)>
+<FORM ACTION=invade_magistrate_result.as METHOD=post NAME=Fdescription>
+
+$JS_FLEET_INFO
+
+<INPUT TYPE=hidden NAME=FLEET_NUMBER VALUE=$FLEET_NUMBER>
+$FLEET_INDEX_TO_ID
+
+<TABLE WIDTH="610" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR> 
+    <TD> 
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle"> 
+          <TD>
+            $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center"> 
+      <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <TR BGCOLOR=$RACE_BG_COLOR> 
+          <TD CLASS="maintext"> 
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>$RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp;$PRODUCT_POINT
+              &nbsp;&nbsp;&nbsp;&nbsp;$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;$POPULATION
+              </DIV>
+          </TD>
+          <!--HELP BUTTON-->
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> 
+    <TD> 
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD CLASS="maintext" ALIGN="center"></TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center" HEIGHT="18"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/empire/invade_empire_title.gif">
+    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center"> 
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR> 
+    <TH ALIGN="center" CLASS="maintext" HEIGHT="25"> 
+      <TABLE WIDTH="600" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR CLASS="maintext"> 
+          <TH WIDTH="258"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/fleet/battle_direction.gif" WIDTH="192" HEIGHT="17"></TH>
+          <TH WIDTH="342" ALIGN="LEFT">Battle Field </TH>
+        </TR>
+      </TABLE>
+    </TH>
+  </TR>
+  <TR> 
+    <TD ALIGN="center"> 
+      <TABLE WIDTH="600" BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="200" BORDERCOLOR="#2A2A2A">
+        <TR> 
+          <TD><IMG SRC="$IMAGE_SERVER_URL/image/as_game/fleet/battle_back610.gif"></TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center" CLASS="maintext">If you press the button below, <BR>
+      your fleets will go into battle and will not return until the mission is 
+      complete. <BR>
+      The order is irrevocable once you give the command. <BR>
+      <BR>
+      If you are really ready, send them to the battle ground. </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  $RESULT
+  <TR> 
+    <TD ALIGN="center"> 
+      <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR VALIGN="bottom">
+          <TD><IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_done1.gif"> <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok1.gif"  BORDER="0"><A HREF="war.as"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_cancel.gif" WIDTH="61" HEIGHT="44" BORDER="0"></TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> 
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR> 
+    <TD CLASS="maintext" ALIGN="center">
+      <A HREF="empire_diplomacy.as" TARGET="contents">$EMPIRE_DIPLOMACY</a>
+      <A HREF="bribe.as" TARGET="contents">$BRIBE</a>
+      <A HREF="request_boon.as" TARGET="contents">$REQUEST_BOON</a>
+      <A HREF="request_mediation.as" TARGET="contents">$REQUEST_MEDIATION</a>
+      <FONT COLOR="#616161">$INVADE_EMPIRE</FONT>
+    </TD>
+  </TR>
+  <TR> 
+    <TD>&nbsp;</TD>
+  </TR> 
+  <TR> 
+    <TD> 
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle"> 
+          <TD>
+            <CENTER>
+				$ADLINE_BOTTOM
+            </CENTER>
+            </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> 
+    <TD>&nbsp;</TD>
+  </TR>
+</TABLE>
+
+<DIV ID=order CLASS=order onMouseover=highlight() onMouseout=lowlight() onclick=act()>
+  <DIV CLASS=menuitems NAME=NORMAL>Normal</DIV>
+  <DIV CLASS=menuitems NAME=FORMATION>Formation</DIV>
+  <DIV CLASS=menuitems NAME=PENETRATE>Penetrate</DIV>
+  <DIV CLASS=menuitems NAME=FLANK>Flank</DIV>
+  <DIV CLASS=menuitems NAME=RESERVE>Reserve</DIV>
+  <DIV CLASS=menuitems NAME=ASSAULT>Assault</DIV>
+  <DIV CLASS=menuitems NAME=FREE>Free</DIV>
+  <DIV CLASS=menuitems NAME=STAND_GROUND>Stand Ground</DIV>
+</DIV>
+
+</FORM>
+<P>&nbsp;</P>
+
+<SCRIPT LANGUAGE=javascript>
+  document.body.onclick = hidepopup;
+</SCRIPT>
+</body>
+</html>

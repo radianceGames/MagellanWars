@@ -1,0 +1,210 @@
+# Name: The name of missions
+# Difficulty: 난이도. %값.
+# Cost: PP
+# Prerequisite: Prerequisite
+# Type: ACPT(Acceptable), ORDN(Ordinary), HOST(Hostile), ATRO(Atrocious)
+
+# Version: 해당 Spy의 이전 버전이 무엇인가를 표시(고유번호로)
+
+
+<General Information Gathering>
+{
+	Number(8001),
+	Description("The goal of this mission is to collect general information. You can easily conduct number of operations such as the collection of basic statistics or analysis of the status overall without creating any disturbance. This level of information gathering is often considered common and innocuous, thus it rarely becomes a target of anti-espionage organizations."),
+	Difficulty(0),
+	Cost(1000000),
+	<Prerequisite>
+	[
+	],
+	Type("ACPT")
+},
+<Detailed Information Gathering>
+{
+	Number(8002),
+	Description("Processing is what makes the collected information useful. By analyzing large amount of information and extracting useful ones out of the mass, the processed data becomes readily useful."),
+	Difficulty(0),
+	Cost(50000000),
+	<Prerequisite>
+	[
+		Number(1210)
+	],
+	Type("ACPT")
+},
+<Steal Secret Info>
+{
+	Number(8003),
+	Description("This operation focuses on information that are usually hard to obtain by ordinary means. It involves many different methods and means to obtain such classified information, and risky choices are employed at times as well. It can cause diplomatic disturbances, should the operation fail and go detected - rarely it becomes an issue for an elongated period, however."),
+	Difficulty(200),
+	Cost(100000000),
+	<Prerequisite>
+	[
+		Number(1116)
+	],
+	Type("ACPT")
+},
+<Computer Virus Infiltration>
+{
+	Number(8004),
+	Description("This operation involves infiltrating hostile computer virus in the enemy computer network system. It will bring about huge damage, should it succeed."),
+	Difficulty(50),
+	Cost(50000000),
+	<Prerequisite>
+	[
+		Number(1212)
+	],
+	Type("ORDN")
+},
+<Devastating Network Worm>
+{
+	Number(8005),
+	Description("This operation involves infiltrating devastating network worm in enemy network system. If the target network system has inferior Information Network Ecosystem than yours, this worm can cripple the system overall and cause chronic damage as well."),
+	Difficulty(150),
+	Cost(100000000),
+	<Prerequisite>
+	[
+		Number(1222)
+	],
+	Type("HOST")
+},
+<Sabotage>
+{
+	Number(8006),
+	Description("Your spy will incite sabotage in the industries of the target. Upon success, the enemy will have to spend massive resource only to build up the lost industries, during which the loss of productive force is crippling."),
+	Difficulty(100),
+	Cost(30000000),
+	<Prerequisite>
+	[
+	],
+	Type("HOST")
+},
+<Incite Riot>
+{
+	Number(8007),
+	Description("Your spy will attempt a powerful psi attack upon the population of target planet. With this psi attack, your spy will cause chaos and disturbance. Upon success, this will inflict heavier damage than Sabotage Operation. The real beauty of this operation is that you are manipulating your enemy to attack the very same one."),
+	Difficulty(140),
+	Cost(700000000),
+	<Prerequisite>
+	[
+		Number(1414)
+	],
+	Type("HOST")
+},
+<Steal Common Technology>
+{
+	Number(8008),
+	Description("This operation is a low level one through which you obtain more common technology that you do not currently possess. This won't be easy but it's one of the operations that focuses on fortifying yourself than undermining others."),
+	Difficulty(100),
+	Cost(65000000),
+	<Prerequisite>
+	[
+		Number(1211)
+	],
+	Type("ACPT")
+},
+<Steal Important Technology>
+{
+	Number(8016),
+	Description("This operation focuses on stealing the cutting-edge technology that you don't currently own."),
+	Difficulty(150),
+	Cost(250000000),
+	<Prerequisite>
+	[
+		Number(1220)
+	],
+	Type("ORDN")
+},
+<Steal Secret Technology>
+{
+	Number(8017),
+	Description("Vastly more difficult and profitable than it's lower level counter-parts, this is the highest level operation available for stealing enemy technologies unknown to your own empire."),
+	Difficulty(200),
+	Cost(2000000000),
+	<Prerequisite>
+	[
+		Race(4),
+		Number(1224)
+	],
+	Type("HOST")
+},
+<Artificial Disease>
+{
+	Number(8009),
+	Description("Your spy will spread the new microbe secretly developed by your toxicologists. This will inflict crippling damage to any planet, and it is one of the most effective methods to devastate enemy. When it is detected, however, the employment of such tactic along with the development of such microbe will cause severe diplomatic problem. For this reason, this weapon should be reserved to for the last resort."),
+	Difficulty(100),
+	Cost(100000),
+	<Prerequisite>
+	[
+		Number(1416)
+	],
+	Type("ATRO")
+},
+<Red death>
+{
+	Number(8010),
+	Description("This is by far the most damaging microbe ever created. This already deadly artificial germ has been cultured in the harshest environment for accelerated evolution. The end product far out-damages the Artificial Disease. This can effectively neutralize any major planet, inflicting deadly damage."),
+	Difficulty(150),
+	Cost(200000000),
+	<Prerequisite>
+	[
+		Number(1418)
+	],
+	Type("ATRO")
+},
+<Strike Base>
+{
+	Number(8011),
+	Description("You attempt to destroy or neutralize the enemy military base by infiltrating saboteur or commandos. Usually this operation precedes full-scale planetary invasion. Even with such a low success ratio, this is one of the most attractive means available due to the high cost-efficiency."),
+	Difficulty(150),
+	Cost(70000000),
+	<Prerequisite>
+	[
+	],
+	Type("HOST")
+},
+<Meteor Strike>
+{
+	Number(8012),
+	Description("You deflect one of the asteroids out of the orbit, and cause that asteroid to crash on enemy planet. This method is relatively safe, especially for a devastating attack as this. Still, many planets have planetary defense system on respective orbits, which will intercept the free-falling meteor. This attack will prove but futile against well defended planet for this reason."),
+	Difficulty(50),
+	Cost(20000000),
+	<Prerequisite>
+	[
+		Number(1316)
+	],
+	Type("HOST")
+},
+<EMP Storm>
+{
+	Number(8013),
+	Description("You send out a satelite equipped with an anti-matter warhead, which can cause massive EMP storm on the ionosphere of the target planet. Upon the explosion of the warhead, every electronic device breaks down for a certain period of time, practically paralyzing the whole planet for the duration."),
+	Difficulty(200),
+	Cost(100000000),
+	<Prerequisite>
+	[
+		Number(1322)
+	],
+	Type("HOST")
+},
+<Stellar Bombardment>
+{
+	Number(8014),
+	Description("This is Meteor Strike on a larger scale. This massive attack can send a crippling blow to a planet with weak defensive measures. Even the best-defended planet will have hard time defending against the number of asteroids dashing at them full speed ahead."),
+	Difficulty(150),
+	Cost(300000000),
+	<Prerequisite>
+	[
+		Number(1323)
+	],
+	Type("HOST")
+},
+<Assassination>
+{
+	Number(8015),
+	Description("You send out an agent to assassinate important figure in the enemy planet. As an old adage has it, an army of lions led by a lamb never defeats an army of lambs led by a lion. Such is the power of leadership, and disposing a capable leader can be more devastating than decimating the whole fleet of battleships."),
+	Difficulty(200),
+	Cost(50000000),
+	<Prerequisite>
+	[
+	],
+	Type("HOST")
+}

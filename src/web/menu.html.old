@@ -1,0 +1,220 @@
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<script type="text/javascript" language="JavaScript" src="/subMenu2.js"></script>
+<script language="JavaScript">
+<!-- 
+if ((navigator.appName.indexOf('Opera') != -1)||(navigator.appName.indexOf('Microsoft') != -1)) {
+	document.write('<'+'link rel="stylesheet" href="/subMenu2.css" />');
+}
+// -->
+</SCRIPT>
+<link rel="stylesheet" href="/archspace.css">
+<script language="javascript">
+<!-- 
+if (navigator.appName.indexOf('Microsoft') == -1) {
+	document.write('<'+'link rel="stylesheet" href="/mozilla.css" />');
+}
+// -->
+</script>
+</head>
+
+<body bgcolor="#000000" background=$BG_IMAGE marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+
+<img src="$IMAGE_SERVER_URL/image/as_game/menu_main.gif">
+
+<div id="divCont">
+
+<!-- MAIN -->
+<div id="divTop1" class="clTop">
+  <!--
+  <a href="#" onClick="menu(0); return false" onFocus="this.blur()"><img src=$IMAGE_SERVER_URL/image/as_game/blank.gif NAME=imgA0 BORDER=0></a>
+  -->
+<img src=$IMAGE_SERVER_URL/image/as_game/minus.gif>
+<a href="main.as" target="contents" class=topmenu onFocus="this.blur()">$STRING_MAIN</a><br>
+<!-- MAIN SUB -->
+<div id="divSub1" class="clSub">
+<!-- &nbsp;<a href="#">-</a><br> -->
+</div>
+</div>
+
+<!-- =============================================================================== -->
+
+<!-- DOMESTIC -->
+<div id="divTop2" class="clTop">
+  <a href="#" onClick="menu(1); return false" onFocus="this.blur()"><img src=$IMAGE_SERVER_URL/image/as_game/plus.gif NAME=imgA1 BORDER=0></a>
+  <a href="/archspace/domestic/domestic.as" target="contents" class=topmenu onFocus="this.blur()">$STRING_DOMESTIC</a><br>
+<!-- DOMESTIC SUB -->
+<div id="divSub2" class="clSub">
+&nbsp;<a href="domestic/concentration_mode.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_CONCENTRATION_MODE</a><br>
+&nbsp;<a href="domestic/planet_management.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_PLANET_MANAGEMENT</a><br>
+&nbsp;<a href="domestic/research.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_RESEARCH</a><br>
+&nbsp;<a href="domestic/project.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_PROJECT</a><br>
+&nbsp;<a href="domestic/whitebook.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_WHITEBOOK</a><br>
+</div>
+</div>
+
+<!-- =============================================================================== -->
+
+<!-- DIPLOMACY -->
+<div id="divTop3" class="clTop">
+  <a href="#" onClick="menu(2); return false" onFocus="this.blur()"><img src=$IMAGE_SERVER_URL/image/as_game/plus.gif NAME=imgA2 BORDER=0></a>
+  <a href="/archspace/diplomacy/diplomacy.as" target="contents" class=topmenu onFocus="this.blur()">$STRING_DIPLOMACY</a><br>
+<!-- DIPLOMACY SUB -->
+<div id="divSub3" class="clSub">
+&nbsp;<a href="diplomacy/diplomacy_status_list.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_DIPLOMACY_STATUS_LIST</a><br>
+&nbsp;<a href="diplomacy/read_diplomatic_message.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_READ_MESSAGE</a><br>
+&nbsp;<a href="diplomacy/send_diplomatic_message.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_SEND_MESSAGE</a><br>
+&nbsp;<a href="diplomacy/inspect_other_player.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_INSPECT_OTHER_PLAYER</a><br>
+&nbsp;<a href="diplomacy/spy.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_SPECIAL_OPERATION</a><br>
+</div>
+</div>
+
+<!-- =============================================================================== -->
+
+<!-- EMPIRE DIPLOMACY -->
+<div id="divTop4" class="clTop">
+  <a href="#" onClick="menu(3); return false" onFocus="this.blur()"><img src=$IMAGE_SERVER_URL/image/as_game/plus.gif NAME=imgA3 BORDER=0></a>
+  <a href="/archspace/empire/empire_diplomacy.as" target="contents" class=topmenu onFocus="this.blur()">$STRING_EMPIRE_DIPL_</a><br>
+<!-- EMPIRE DIPLOMACY SUB -->
+<div id="divSub4" class="clSub">
+&nbsp;<a href="/archspace/empire/bribe.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_BRIBE</a><br>
+&nbsp;<a href="/archspace/empire/request_boon.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_REQUEST_BOON</a><br>
+&nbsp;<a href="/archspace/empire/request_mediation.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_REQUEST_MEDIATION</a><br>
+&nbsp;<a href="/archspace/empire/invade_empire.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_INVADE_EMPIRE</a><br>
+</div>
+</div>
+
+<!-- =============================================================================== -->
+
+<!-- FLEET -->
+<div id="divTop5" class="clTop">
+  <a href="#" onClick="menu(4); return false" onFocus="this.blur()"><img src=$IMAGE_SERVER_URL/image/as_game/plus.gif NAME=imgA4 BORDER=0></a>
+  <a href="/archspace/fleet/fleet.as" target="contents" class=topmenu onFocus="this.blur()">$STRING_FLEET</a><br>
+<!-- FLEET SUB -->
+<div id="divSub5" class="clSub">
+&nbsp;<a href="fleet/ship_design.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_SHIP_DESIGN</a><br>
+&nbsp;<a href="fleet/ship_building.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_SHIP_BUILDING</a><br>
+&nbsp;<a href="fleet/fleet_commander.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_FLEET_COMMANDER</a><br>
+&nbsp;<a href="fleet/ship_pool.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_SHIP_POOL</a><br>
+&nbsp;<a href="fleet/form_new_fleet.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_FORM_A_NEW_FLEET</a><br>
+&nbsp;<a href="fleet/reassignment.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_REASSIGNMENT</a><br>
+&nbsp;<a href="fleet/expedition.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_EXPEDITION</a><br>
+&nbsp;<a href="fleet/mission.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_MISSION</a><br>
+&nbsp;<a href="fleet/recall.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_RECALL</a><br>
+&nbsp;<a href="fleet/disband.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_DISBAND</a><br>
+</div>
+</div>
+
+<!-- =============================================================================== -->
+
+<!-- WAR -->
+<div id="divTop6" class="clTop">
+  <a href="#" onClick="menu(5); return false" onFocus="this.blur()"><img src=$IMAGE_SERVER_URL/image/as_game/plus.gif NAME=imgA5 BORDER=0></a>
+  <a href="/archspace/war/war.as" target="contents" class=topmenu onFocus="this.blur()">$STRING_WAR</a><br>
+<!-- WAR SUB -->
+<div id="divSub6" class="clSub">
+&nbsp;<a href="war/siege_planet.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_SIEGE_PLANET</a><br>
+&nbsp;<a href="war/blockade.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_BLOCKADE</a><br>
+&nbsp;<a href="war/raid.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_RAID</a><br>
+&nbsp;<a href="war/privateer.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_PRIVATEER</a><br>
+&nbsp;<a href="war/defense_plan.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_DEFENSE_PLAN</a><br>
+&nbsp;<a href="war/battle_report.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_BATTLE_REPORT</a>
+</div>
+</div>
+
+<!-- =============================================================================== -->
+
+<!-- COUNCIL -->
+<div id="divTop7" class="clTop">
+  <a href="#" onClick="menu(6); return false" onFocus="this.blur()"><img src=$IMAGE_SERVER_URL/image/as_game/plus.gif NAME=imgA6 BORDER=0></a>
+  <a href="/archspace/council/council.as" target="contents" class=topmenu onFocus="this.blur()">$STRING_COUNCIL</a><br>
+<!-- COUNCIL SUB -->
+<div id="divSub7" class="clSub">
+&nbsp;<a href="council/council_vote.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_COUNCIL_VOTE</a><br>
+&nbsp;<a href="council/admission_request.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_ADMISSION_REQUEST</a><br>
+&nbsp;<a href="council/independence_declaration.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_INDEPENDENCE_DECLARATION</a><br>
+&nbsp;<a href="council/donation.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_DONATION</a><br>
+&nbsp;<a href="council/speaker_menu.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_SPEAKER_MENU</a><br>
+</div>
+</div>
+
+<!-- =============================================================================== -->
+
+<!-- INFO -->
+<div id="divTop8" class="clTop">
+  <a href="#" onClick="menu(7); return false" onFocus="this.blur()"><img src=$IMAGE_SERVER_URL/image/as_game/plus.gif NAME=imgA7 BORDER=0></a>
+  <a href="/archspace/info/info.as" target="contents" class=topmenu onFocus="this.blur()">$STRING_INFO</a><br>
+<!-- INFO SUB -->
+<div id="divSub8" class="clSub">
+&nbsp;<a href="info/clusters.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_CLUSTERS</a><br>
+&nbsp;<a href="info/rank_player_overall.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_RANKING</a><br>
+</div>
+</div>
+
+<!-- BLACK MARKET -->
+<div id="divTop9" class="clTop">
+  <a href="#" onClick="menu(8); return false" onFocus="this.blur()"><img src=$IMAGE_SERVER_URL/image/as_game/plus.gif NAME=imgA8 BORDER=0></a>
+  <a href="/archspace/black_market/black_market.as" target="contents" class=topmenu onFocus="this.blur()">$STRING_BLACK_MARKET</a><br>
+<!-- INFO SUB -->
+<div id="divSub9" class="clSub">
+&nbsp;<a href="black_market/tech_deck.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_THE_TECH_DECK</a><br>
+&nbsp;<a href="black_market/fleet_deck.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_THE_FLEET_DECK</a><br>
+&nbsp;<a href="black_market/officers_lounge.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_OFFICER_S_LOUNGE</a><br>
+&nbsp;<a href="black_market/rare_goods.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_RARE_GOODS_OFFICE</a><br>
+&nbsp;<a href="black_market/leasers_office.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_LEASER_S_OFFICE</a><br>
+</div>
+</div>
+
+<!-- =============================================================================== -->
+
+<!-- FORUM -->
+<div id="divTop10" class="clTop">
+  <a href="#" onClick="menu(9); return false" onFocus="this.blur()"><img src=$IMAGE_SERVER_URL/image/as_game/plus.gif NAME=imgA9 BORDER=0></a>
+  <a href="$FORUM_URL" target="contents" class=topmenu onFocus="this.blur()">$STRING_FORUM</a><br>
+<!-- FORUM SUB -->
+<div id="divSub10" class="clSub">
+&nbsp;<a href="/CouncilForum/index.php3" target="contents" class="submenu" onFocus="this.blur()">$STRING_COUNCIL_FORUM</a>
+</div><br>
+</div>
+
+<!-- =============================================================================== -->
+
+<!-- HELP -->
+<div id="divTop11" class="clTop">
+  <a href="#" onClick="menu(10); return false" onFocus="this.blur()"><img src=$IMAGE_SERVER_URL/image/as_game/plus.gif NAME=imgA10 BORDER=0></a>
+  <!--<a href="" target="contents" class=topmenu onFocus="this.blur()">--><SPAN class=topmenu>$STRING_HELP</SPAN><!--</a>--><br>
+<!-- HELP SUB -->
+<div id="divSub11" class="clSub">
+&nbsp;<a href="/encyclopedia/game/encyclopedia.html" target="contents" class="submenu" onFocus="this.blur()">$STRING_ENCYCLOPEDIA</a><br>
+<!--$STRING_ADMIN-->
+&nbsp;<a href="retire.as" target="contents" class="submenu" onFocus="this.blur()">$STRING_RETIRE</a>
+</div><br>
+</div>
+
+<!-- =============================================================================== -->
+
+<!-- ETC -->
+<div id="divTop12" class="clTop">
+<!--
+  <img src=$IMAGE_SERVER_URL/image/as_game/minus.gif>
+  <a href="/temp.html" target="contents" class=topmenu onFocus="this.blur()">GRAPHIC MENU</a><br>
+  -->
+<div id="divSub12" class="clSub">
+</div>
+</div>
+
+<div id="divTop13" class="clTop">
+  <img src=$IMAGE_SERVER_URL/image/as_game/minus.gif>
+  <a href="/game_logout.phtml" target="_parent" class=topmenu onFocus="this.blur()">LOGOUT</a><br>
+<div id="divSub13" class="clSub">
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

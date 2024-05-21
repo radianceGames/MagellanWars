@@ -1,0 +1,147 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<script language="JavaScript">
+<!--
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<LINK REL="stylesheet" HREF="/archspace.css">
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999" onLoad="MM_preloadImages('http:://$IMAGE_SERVER_URL/image/as_game/bu_helpen.gif')">
+<TABLE WIDTH="610" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD COLSPAN="3">
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+		  $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ROWSPAN="2" ALIGN="center" COLSPAN="3">
+      <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext">
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>&nbsp;&nbsp;&nbsp;&nbsp;$PRODUCT_POINT&nbsp;&nbsp;&nbsp;&nbsp;$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;$NET_POWER</DIV>
+          </TD>
+          <!--HELP BUTTON-->
+        </TR>
+        <!-- test end --> <!--~------ END ROW4 ------~-->
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> </TR>
+  <TR>
+    <TD COLSPAN="3">
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center" COLSPAN="3"></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" HEIGHT="18" COLSPAN="3"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/black_market/tech_deck_title.gif">
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" COLSPAN="3">
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" COLSPAN="3">&nbsp; </TD>
+  </TR>
+  <FORM METHOD=post ACTION=tech_deck_bid_result.as>
+  <TR>
+  <TD class="maintext">
+  $TECH_DETAIL
+  </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" COLSPAN="3">&nbsp; </TD>
+  </TR>
+  <TR>
+  <TD ALIGN="center" class=maintext>$STRING_CURRENT_BID : $CURRENT_BID</TD>
+  </TR>
+  <TR>
+  <TD ALIGN="center" class=maintext>$STRING_YOUR_BID : $YOUR_BID</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" COLSPAN="3">&nbsp; </TD>
+  </TR>
+  <TR VALIGN="bottom">
+  <TD ALIGN="center">
+  <INPUT TYPE=hidden NAME="TECH_ITEM_ID" VALUE=$TECH_ITEM_ID>
+  <INPUT TYPE=hidden NAME="BID_PRICE" VALUE=$BID_PRICE>
+  <IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_done1.gif" WIDTH="149" HEIGHT="93">
+  <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok1.gif" BORDER=0>
+  <A HREF="tech_deck.as" BORDER=0><IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_cancel.gif" BORDER=0></A>
+  </TD>
+  </TR>
+  </FORM>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center" COLSPAN="3">&nbsp; </TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center">
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" COLSPAN="3">
+      <FONT COLOR="616161">$THE_TECH_DECK</FONT>
+      <A HREF="fleet_deck.as">$THE_FLEET_DECK</A>
+      <A HREF="officers_lounge.as">$OFFICER_S_LOUNGE</A>
+      <A HREF="rare_goods.as">$RARE_GOODS_OFFICE</A>
+      <A HREF="leasers_office.as">$LEASER_S_OFFICE</A>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            <CENTER>
+				$ADLINE_BOTTOM
+            </CENTER>
+            </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+</TABLE>
+<P>&nbsp;</P></BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</html>

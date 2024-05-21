@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.unnamed1 {  font-family: "Arial", "Helvetica"; font-size: 9pt; color: #CCCC99}
+-->
+</style>
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/subMenu.js></SCRIPT>
+<LINK REL="stylesheet" HREF="/subMenu.css">
+</head>
+
+<body bgcolor="#000000" class="unnamed1" style="margin:0;" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('http://image.archspace.co.kr/image/as_game/buhome_concenten.gif','http://image.archspace.co.kr/image/as_game/buhome_planeten.gif','http://image.archspace.co.kr/image/as_game/buhome_researchen.gif','http://image.archspace.co.kr/image/as_game/buhome_projecten.gif','http://image.archspace.co.kr/image/as_game/buhome_whiteen.gif','http://image.archspace.co.kr/image/as_game/budiplo_offeren.gif','http://image.archspace.co.kr/image/as_game/budiplo_decen.gif','http://image.archspace.co.kr/image/as_game/budiplo_messageen.gif','http://image.archspace.co.kr/image/as_game/budiplo_transen.gif','http://image.archspace.co.kr/image/as_game/bucouncil_councilen.gif','http://image.archspace.co.kr/image/as_game/bucouncil_admien.gif','http://image.archspace.co.kr/image/as_game/bucouncil_createen.gif','http://image.archspace.co.kr/image/as_game/bucouncil_donationen.gif','http://image.archspace.co.kr/image/as_game/budiplo_breaken.gif','http://image.archspace.co.kr/image/as_game/bucouncil_speakeren.gif','http://image.archspace.co.kr/image/as_game/logouten.gif','http://image.archspace.co.kr/image/as_game/textmenuen.gif')" BACKGROUND=$BG_IMAGE>
+<!-- MAIN --> 
+<p><img src="http://image.archspace.co.kr/image/as_game/menu_main.gif" width="141" height="99"><br>
+  <a href="main.as" target="contents"><img src="http://image.archspace.co.kr/image/as_game/bumain.gif" width="145" height="20" border="0"></a><br>
+
+<!-- DOMESTIC -->
+  <A HREF="#" onClick="return subMenu('title1')" onfocus="this.blur()"><IMG SRC=http://image.archspace.co.kr/image/as_game/buhomeaffair.gif width="145" height="20" BORDER=0></A><BR>
+  <SPAN ID="title1">
+  <a href="domestic/concentration_mode.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','http://image.archspace.co.kr/image/as_game/buhome_concenten.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/buhome_concent.gif" width="145" height="13" border="0" name="Image1"></a><br>
+  <a href="domestic/planet_management.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','http://image.archspace.co.kr/image/as_game/buhome_planeten.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/buhome_planet.gif" border="0" name="Image2"></a><br>
+  <a href="domestic/research.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','http://image.archspace.co.kr/image/as_game/buhome_researchen.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/buhome_research.gif" border="0" name="Image3"></a><br>
+  <a href="domestic/project.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','http://image.archspace.co.kr/image/as_game/buhome_projecten.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/buhome_project.gif" border="0" name="Image4"></a><br>
+  <a href="domestic/whitebook.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','http://image.archspace.co.kr/image/as_game/buhome_whiteen.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/buhome_white.gif" border="0" name="Image5"></a><br>
+  </SPAN>
+
+<!-- DIPLOMACY -->
+  <A HREF="#" onClick="return subMenu('title2')" onfocus="this.blur()"><IMG SRC=http://image.archspace.co.kr/image/as_game/budiplomacy.gif width="145" height="20" BORDER=0></A><BR>
+  <SPAN ID="title2">
+  <a href="diplomacy/offer_pact.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','http://image.archspace.co.kr/image/as_game/budiplo_offeren.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/budiplo_offer.gif" border="0" name="Image6"></a><br>
+  <a href="diplomacy/break_pact.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','http://image.archspace.co.kr/image/as_game/budiplo_breaken.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/budiplo_break.gif" border="0" name="Image7"></a><br>
+  <a href="diplomacy/declare_war.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','http://image.archspace.co.kr/image/as_game/budiplo_decen.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/budiplo_dec.gif" width="145" height="13" border="0" name="Image8"></a><br>
+  <a href="diplomacy/message.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','http://image.archspace.co.kr/image/as_game/budiplo_messageen.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/budiplo_message.gif" border="0" name="Image9"></a><br>
+  <a href="diplomacy/transfer.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','http://image.archspace.co.kr/image/as_game/budiplo_transen.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/budiplo_trans.gif" border="0" name="Image10"></a><br>
+  </SPAN>
+  
+<!-- COUNCIL -->
+  <A HREF="council/council.as" onClick="return subMenu('title3')" onfocus="this.blur()"><IMG SRC=http://image.archspace.co.kr/image/as_game/bucouncil.gif width="145" height="20" BORDER=0></A><BR>
+  <SPAN ID="title3">
+  <a href="council/council_vote.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','http://image.archspace.co.kr/image/as_game/bucouncil_councilen.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/bucouncil_council.gif" border="0" name="Image11" ></a><br>
+  <a href="council/admission_request.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','http://image.archspace.co.kr/image/as_game/bucouncil_admien.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/bucouncil_admi.gif" border="0" name="Image12"></a><br>
+  <a href="council/independence_declaration.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','http://image.archspace.co.kr/image/as_game/bucouncil_createen.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/bucouncil_create.gif" border="0" name="Image13"></a><br>
+  <a href="council/donation.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','http://image.archspace.co.kr/image/as_game/bucouncil_donationen.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/bucouncil_donation.gif" border="0" name="Image14" ></a><br>
+  <a href="council/speaker_menu.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','http://image.archspace.co.kr/image/as_game/bucouncil_speakeren.gif',1)" target="contents"><img src="http://image.archspace.co.kr/image/as_game/bucouncil_speaker.gif" border="0" name="Image15"></a><br>
+  </SPAN>
+  <!-- BLACK MARKET -->
+  <img src="http://image.archspace.co.kr/image/as_game/bublackmarket.gif" ><br>
+  <!-- FORUM -->
+  <img src="http://image.archspace.co.kr/image/as_game/buforum.gif" ><br>
+  <br>
+
+<!-- HELP -->
+  <img src="http://image.archspace.co.kr/image/as_game/buhelp.gif"><br>
+  <br>
+  <a href="/debug.as" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','http://image.archspace.co.kr/image/as_game/logouten.gif',1);MM_swapImage('Image17','','http://image.archspace.co.kr/image/as_game/textmenuen.gif',1)"><img src="http://image.archspace.co.kr/image/as_game/logout.gif"  border="0" name="Image16"><br>
+  <img src="http://image.archspace.co.kr/image/as_game/textmenu.gif" width="145" height="13" name="Image17" border="0"> 
+  </a> </p>
+</body>
+</html>

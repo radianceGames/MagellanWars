@@ -1,0 +1,1689 @@
+<제국 토너먼트>
+{
+	Number(1000),
+	<Type>
+	[
+		Type("Galactic"),
+		Type("Imperial")
+	],
+	Description("황제가 토너먼트의 시작을 선포했습니다. 참가하고 싶은 지도자는 누구나 선수진을 구성하여 참가시킬 수 있습니다. 위험하고, 죽을 수도 있지만 우승할 경우에는 엄청난 부와 명예를 거머쥐게 됩니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	Duration(48)
+},
+<제국의 숙청>
+{
+	Number(1001),
+	<Type>
+	[
+		Type("Galactic"),
+		Type("Imperial")
+	],
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	Description("제국은 제국의 체제에 반하는 모든 적들을 숙청하기로 결정하고, 그들의 현상금을 공표 했습니다. 이동안 이들 반역자들의 범죄 기록을 심사하고, 이들을 지명 수배하기 시작합니다.")
+},
+<황제의 의심>
+{
+	Number(1002),
+	<Type>
+	[
+		Type("Galactic"),
+		Type("Imperial")
+	],
+	Description("어떤 이유로 황제는 신민들을 수상쩍게 여깁니다. 한동안 이들 모두를 의심합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	Duration(168)
+},
+<황제의 신뢰>
+{
+	Number(1003),
+	<Type>
+	[
+		Type("Galactic"),
+		Type("Imperial")
+	],
+	Description("어떤 이유로 인해 황제의 신민들에 대한 신뢰에 변화가 옵니다. 한동안 황제는 이들 신민들에 대해 절대적인 신뢰를 보입니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	Duration(168)
+},
+<행정관 교체>
+{
+	Number(1100),
+	<Type>
+	[
+		Type("Magistrate"),
+		Type("Cluster")
+	],
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	Description("제국은 당신의 성단이 새로운 행정관을 필요하다고 결정하고, 교체할 행정관을 파견합니다..")
+},
+<행정관의 암살>
+{
+	Number(1101),
+	<Type>
+	[
+		Type("Magistrate"),
+		Type("Cluster")
+	],
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	Description("행정관이 암살되었으나 범죄자에 대한 신원 파악은 이뤄지지 않고 있습니다. 제국에서는 새 행정관을 보냅니다.         아직까지도 범죄자 집단에 대한 정보가 포착되지 않아서 새 행정관은 심각한 피해망상증에 시달립니다.")
+},
+<초신성>
+{
+	Number(1102),
+	<Type>
+	[
+		Type("Cluster")
+	],
+	Description("성단에 있는 항성 중 하나가 초신성이 됩니다. 이 폭발의 파급효과는 온 성단에 미칩니다.  성단 내의 행성들에는 방사선이 증가하는 등 여러 무서운 문제가 대두됩니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	DurationMin(120),
+	DurationMax(240)
+},
+<훌륭한 레스토랑 체인 개업>
+{
+	Number(1103),
+	<Type>
+	[
+		Type("Cluster")
+	],
+	Description("새 레스토랑 체인이 개업해서, 사람들이 전에는 경험하지 못한 음식을 판매하기 시작합니다. 그 음식은 모든 이들에게 사랑받습니다. 가끔씩 귀환 중이던 함대도 그 음식을 즐기기 위해서 여정에도 없이 멈추곤 합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	Duration(168)
+},
+<성단 내의 평화를 위한 요구>
+{
+	Number(1104),
+	<Type>
+	[
+		Type("Cluster")
+	],
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	Description("모든 사람들이 평화를 부르짖기 시작했습니다. 그들의 요구가 충족되지 않으면 모든 생산은 중단될 것입니다.")
+},
+<해탈 실패>
+{
+	Number(1105),
+	<Type>
+	[
+		Type("Cluster")
+	],
+	Description("이웃 성단에서 해탈을 시도하다가 엄청난 실수를 저지릅니다. 이들은 해탈의 원리도 모르면서 함부로 이를 시도하다가 엄청난 양의 에너지를 그들의 은하로 유입시킵니다. 이 엄청난 에너지는 그들의 은하에서 옆은하로 퍼져나갑니다. 당신의 은하에도 상당한 양의 에너지가 유입됩니다. 이것때문에 여러가지 안좋은 효과가 나타납니다. 우주는 매우 불안정해서 함선이 다닐 수가 없고, 행성의 환경또한 매우 살기 어렵게 바뀝니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	Duration(24)
+},
+<성계내 모함>
+{
+	Number(1106),
+	<Type>
+	[
+		Type("Cluster")
+	],
+	Description("당신의 성계에 최근 충격적인 고소가 들어옵니다. 평의회 XXXX에서 황제의 목숨을 노리는 계획을 세웠다고 고소되었습니다. 성단 내 다른 모든 평의회는 황제의 편에 가담할 수도 있고, 고소된 평의회의 편에 가담할 수도 있습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	Duration(48)
+},
+<젊은이들 사이의 열광적인 대유행>
+{
+	Number(1107),
+	<Type>
+	[
+		Type("Cluster")
+	],
+	Description("성단의 젊은이들이 모두 새로운 인터액티브 게임에 사로잡히게 됩니다. 로고가 새겨진 물건을 몹시 가지고 싶어하며 그런 물건을 구하지 못할 땐 거의 발작을 일으킵니다. 이 유행 때문에 다른 곳에 필요한 자원을 그 게임에 관련된 상품을 만드는데 허비하게 됩니다. 그저 이 유행이 빨리 지나가길 바랄 따름입니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	DurationMin(72),
+	DurationMax(168),
+},
+<과학적 재난>
+{
+	Number(1200),
+	<Type>
+	[
+		Type("Major")
+	],
+	Description("일단의 과학자 무리들이 물질을 복제하는 하는 방법을 발견했다고 확신하고 행성의 자원을 증가시키는 실험을 합니다. 불행히도 그들은 틀렸고, 그들의 실험으로 행성은 엄청난 재난을 입게 됩니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	<EffectList>
+	[
+		<Change Planet Resource>
+		{
+			Arg1(-2)
+		}
+	]
+},
+<궤도 재편성>
+{
+	Number(1201),
+	<Type>
+	[
+		Type("Major"),
+		Type("Answer")
+	],
+	Description("본 적이 없는 종으로 이뤄진 일단의 무리가 당신께 와서는 서비스의 댓가로 요금을 청구합니다. 이들과 많은 토론을 거친 끝에 이들이 궤도 수정 마스터 출신이라는 것을 당신은 알게 됩니다. 서비스 대금으로 그들은  3M PP만을 청구하겠다고 결정합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			Answer("Yes"),
+			Arg1(-3000000)
+		},
+		<Switch Planet Order>
+		{
+			Answer("Yes")
+		}
+	]
+},
+<군대의 반란 시도>
+{
+	Number(1202),
+	<Type>
+	[
+		Type("Major")
+	],
+	Description("당신이 소유한 행성중 하나에서 행성 주둔 군대가 행성탈취를 시도합니다. 반란을 진압하려면 중요한 자원을 반란군 진압에 투입해야만 합니다.."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<Effect List>
+	[
+		<Set Fleet Mission>
+		{
+			Arg1(8),
+			Arg2(7200)
+		},
+		<Set Fleet Mission>
+		{
+			Arg1(8),
+			Arg2(7200)
+		},
+		<Set Fleet Mission>
+		{
+			Arg1(8),
+			Arg2(7200)
+		},
+		<Set Fleet Mission>
+		{
+			Arg1(8),
+			Arg2(7200)
+		}
+	]
+},
+<왕위 계승 기도>
+{
+	Number(1203),
+	<Type>
+	[
+		Type("Major")
+	],
+	Description("당신의 행성 중 한 곳에서 폭동을 시도했습니다!!"),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Lose Planet>
+		{
+			BeginOnly("Yes")
+		}
+	]
+},
+<선창에서 사보타주 발생>
+{
+	Number(1204),
+	<Type>
+	[
+		Type("Major")
+	],
+	Description("어떤 연유로 함선 보관 선창에서 사보타주가 일어났습니다. 선창에 있던 모든 함선들이 폭발에 희생되었습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	<EffectList>
+	[
+		<Destroy All Docked Ship>
+		{
+			BeginOnly("Yes")
+		}
+	]
+},
+<깡패 아게루스의 등장>
+{
+	Number(1205),
+	<Type>
+	[
+		Type("Major")
+	],
+	Description("방랑 중인 아게루스가 당신의 항성계 근처로 이동해 왔습니다. 이 아게루스는 상당히 공격적으로 지역 내 기득권을 장악하기 시작합니다. 이따금 행성을 차지하기 위해서 당신까지도 공격합니다. 물론, 당신이 그들에게 승리를 거두면 이는 당신의 제국이 확장하는 계기가 될 수도 있습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/ancient.gif>"),
+	<EffectList>
+	[
+		<Win and Gain Planet>
+		{
+			Target(6),
+			Arg1(400),
+			Arg2(1)
+		}
+	]
+},
+<종족의 기억상실증>
+{
+	Number(1206),
+	<Type>
+	[
+		Type("Major")
+	],
+	Description("우주 방사능 폭풍이 지나갔을 때, 당신은 이 폭풍이 그다지 큰 피해를 입히지 않았다고 생각했습니다. 사실은 당신은 심각한 건망증에 시달리게 되었으며 상당한 양의 기억도 잃게 되었습니다. 그러나 이 모든걸 잊었기 때문에 그다지 많이 피해를 입었다는 생각을 하지 못하게 되었습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	<EffectList>
+	[
+		<Lose Tech>
+		{
+		},
+		<Lose Project>
+		{
+		}
+	]
+},
+<거대한 운석과 충돌>
+{
+	Number(1207),
+	<Type>
+	[
+		Type("Major")
+	],
+	Description("거대한 운석이 당신의 항성계로 향하는 것을 발견했습니다. 그러나 이것을 발견했을 땐 파괴하기에는 너무 늦었습니다. 이 충돌로 인해 당신의 행성에선 엄청난 인구와 인프라 등 막대한 피해를 입습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	<EffectList>
+	[
+		<Planet Lost Building>
+		{
+			Apply("Proportional"),
+			Arg1(-50),
+			Arg2(-1)
+		},
+		<Change Planet Population>
+		{
+			Apply("Proportional"),
+			Arg1(-30)
+		}
+	]
+
+},
+<시공 연속체의 구멍>
+{
+	Number(1208),
+	<Type>
+	[
+		Type("Major")
+	],
+	Description("당신의 항성계가 이 구멍 속으로 빨려 들어갔다가, 알 수 없는 시간대로 나오게 됩니다. 당신의 항성계에 보일만한 변화가 없지만, 제국은 약간 달라진 것을 발견합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/ancient.gif>"),
+	Duration(2),
+	<EffectList>
+	[
+		<Skip Turn>
+		{
+			Duration(1)
+		}
+	]
+},
+<정부 붕괴>
+{
+	Number(1209),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Human Only")
+	],
+	Description("혁명에 의해서 정부가 전복되었습니다. 잠시 동안 사는 것이 상당히 힘들어집니다. 사람들이 어느정도 지나면서 적응을 함에 따라 모든 일이 어느정도 나아집니다 - 최소한 그 순간만이라고 할 지라도."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	DurationMin(192),
+	DurationMax(312),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(-4),
+			Duration(72)
+		},
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(-4),
+			Duration(72)
+		},
+		<Change Control Model>
+		{
+			Target(10),
+			Arg1(-4),
+			Duration(72)
+		},
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(2)
+		},
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(2)
+		},
+		<Change Control Model>
+		{
+			Target(10),
+			Arg1(2)
+		}
+	]
+},
+<행성 분실/재발견>
+{
+	Number(1210),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Targoid Only")
+	],
+	Description("모체의지가 연구 행성에 너무 많은 자유를 허락한 결과, 이들 연구 행성에서 연락을 끊고 스스로 지내기 시작합니다. 어느정도 지나서 다시 이 행성을 찾았을 때 모체의지는 그 연구행성에서 찾아낸 새로운 지식과 자원들을 다 모체의지에 편입시킵니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	Duration(96),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			BeginOnly("Yes"),
+			Arg1(10000000)
+		},
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(2)
+		}
+	]
+},
+<환상>
+{
+	Number(1211),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Xeloss Only")
+	],
+	Description("당신의 고위 정치가 중 한 명이 환상을 봅니다. 그는 이 비전으로 국민들을 고무시키고, 국민들은 어느동안은 매우 열심히 일하게 됩니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	Duration(168),
+	<EffectList>
+	[
+		<Change All Commander Ability>
+		{
+			Target(0),
+			Arg1(2),
+		},
+		<Change All Commander Ability>
+		{
+			Target(1),
+			Arg1(2),
+		},
+		<Change All Commander Ability>
+		{
+			Target(2),
+			Arg1(2),
+		},
+		<Change All Commander Ability>
+		{
+			Target(3),
+			Arg1(2),
+		},
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(2)
+		}
+	]
+},
+<새 종족의 합류>
+{
+	Number(1212),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Xesperados Only")
+	],
+	Description("M-13의 붕괴에서 살아남은 다른 일단의 종족이 당신에게 합류합니다. 그들은 새 기술과 새로운 사고방식 등을 가져옵니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	Duration(168),
+	<EffectList>
+	[
+		<Gain Tech>
+		{
+			BeginOnly("Yes"),
+		},
+		<Change All Commander Ability>
+		{
+			Target(10),
+			Arg1(-10),
+		},
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(2)
+		}
+	]
+},
+<살아있는 소행성대 발견>
+{
+	Number(1213),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Agerus Only")
+	],
+	Description("방랑중에 당신은 무리를 떠난 어린 아게루스와 조우합니다. 당신은 그들을 자신의 지휘하에 당신의 함대에 합류 시킵니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/ancient.gif>"),
+	<EffectList>
+	[
+		<Gain Fleet>
+		{
+			Target(7),
+			Arg1(400),
+			Arg2(3)
+		},
+		<Gain Fleet>
+		{
+			Target(7),
+			Arg1(400),
+			Arg2(3)
+		}
+	]
+},
+<성공적 에빈토스 침투>
+{
+	Number(1214),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Tecanoid Only")
+	],
+	Description("당신의 스파이가 에빈토스에 성공적으로 침투하여, 순수한 기계 생물로의 진화에 대한 지식을 찾기 시작했습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	Duration(168),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(5)
+		},
+		<Change Control Model>
+		{
+			Target(7),
+			Arg1(5)
+		}
+	]
+},
+<유명한 해적의 몸값>
+{
+	Number(1215),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Buckaneer Only")
+	],
+	Description("당신은 운이 좋아 적합한 시기에 적합한 장소에 있게 됩니다. 당신은 유명한 해적의 몸값을 치러주는데, 이 해적은 보답으로 당신을 위해 일하기로 합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			Arg1(-200000)
+		},
+		<Gain Commander>
+		{
+			Target(15)
+		}
+	]
+},
+<방해공작 발견>
+{
+	Number(1216),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Bosalian Only")
+	],
+	Description("일단의 과학자들이 몇 백년 동안을 연구한 뒤, 예전에 당신의 국민이 해탈에 실패한 이유는 다른 종족으로부터 방해공작이 있었기 때문이라는 증거를 찾았다고 확신하고 있습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	DurationMin(168),
+	DurationMax(336),
+	<EffectList>
+	[
+		<Change All Commander Ability>
+		{
+			Target(0),
+			Arg1(5),
+		},
+		<Change All Commander Ability>
+		{
+			Target(1),
+			Arg1(5),
+		},
+		<Change All Commander Ability>
+		{
+			Target(2),
+			Arg1(5),
+		},
+		<Change All Commander Ability>
+		{
+			Target(3),
+			Arg1(5),
+		}
+	]
+},
+<과거의 메모리 코어의 발견>
+{
+	Number(1217),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Evintos Only")
+	],
+	Description("잃어버린 콜로니에서 제작된 오래된 메모리 코어를 발견하게 됩니다. 이 코어에는 과거 세대의 지식이 담겨 있습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	DurationMin(72),
+	DurationMax(120),
+	<EffectList>
+	[
+		<Gain Secret Project>
+		{
+			BeginOnly("Yes")
+		},
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(-1)
+		}
+	]
+},
+<천재 전략가 양성>
+{
+	Number(1218),
+	<Type>
+	[
+		Type("Racial"),
+		Type("Xerusian Only")
+	],
+	Description("군사 대학에서 천년에 한 명 겨우 태어난다는 천재적인 전략가를 양성해 냈습니다. 이 사람은 군사 학계 최고의 최고의 교수가 됩니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	DurationMin(72),
+	DurationMax(120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(8),
+			Arg1(7)
+		}
+	]
+},
+<황제의 여행>
+{
+	Number(1219),
+	<Type>
+	[
+		Type("System"),
+		Type("Empire")
+	],
+	Description("황제가 당신의 성계를 여행하겠다고 통보해 왔습니다. 황제는 또한 당신이 매우 부유하다고 생각하여 당신에게 조공을 역시 요구해 왔습니다. 또한 황제는 그의 경호 함대를 데리고 왔습니다. 그들은 황제가 이 지역에 있는 동안 당신을 지켜줄 것입니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/ancient.gif>"),
+	DurationMin(24),
+	DurationMax(48),
+	<EffectList>
+	[
+		<Guarded by Imperial Fleet>
+		{
+		}
+	]
+},
+<법정 소환>
+{
+	Number(1220),
+	<Type>
+	[
+		Type("System"),
+		Type("Empire"),
+		Type("Answer"),
+	],
+	Description("법정에 소환되었습니다. 참석한다면, 대단한 영광이 될 수 있겠지만, 문제라면 국민들은 당신의 지휘 없이는 그다지 일을 잘 하지 못합니다. 이 점때문에 이 법정의 소환을 거부할 수 있지만 그럴 경우 제국의 노여움을 사게 될 것은 자명한 일입니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/ancient.gif>"),
+	Duration(24),
+	<EffectList>
+	[
+		<Invasion From Empire>
+		{
+			Answer("No"),
+			Chance(30),
+			BeginOnly("Yes"),
+			Arg1(300),
+			Arg2(5)
+		},
+		<Change Empire Relation>
+		{
+			Answer("Yes"),
+			BeginOnly("Yes"),
+			Arg1(10),
+		},
+		<Change Control Model>
+		{
+			Answer("Yes"),
+			Target(7),
+			Arg1(-2)
+		}
+	]
+},
+<황제의 조사관>
+{
+	Number(1221),
+	<Type>
+	[
+		Type("System"),
+		Type("Empire"),
+	],
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	Description("제국에서 행정관이 정확한 보고서를 보냈는지를 심사하기 위해서 조사관을 파견했습니다. 그는 당신의 충성심을 제국에 보고했고, 제국은 행정관이 정확하게 보고서를 작성했다고 판결을 내립니다." )
+},
+<황제의 조사관>
+{
+	Number(1222),
+	<Type>
+	[
+		Type("System"),
+		Type("Empire"),
+	],
+	Description("제국이 행정관이 정확한 보고서를 보냈는지 결정하기 위해서 조사관을 파견했습니다. 그는 당신의 충성심을 제국에 보고했고, 제국은 행정관이 당신을 험담하고 있었음을 밝혀냅니다." ),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			Arg1(1000000),
+			BeginOnly("Yes")
+		}
+	]
+},
+<황제의 조사관>
+{
+	Number(1223),
+	<Type>
+	[
+		Type("System"),
+		Type("Empire"),
+	],
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	Description("제국이 행정관이 정확한 보고서를 보냈는지 결정하기 위해서 조사관을 파견했습니다. 그는 당신의 충성심을 제국에 보고했고, 제국은 행정관이 당신같은 악한에게도 너무 잘 해주고 있었다고 결론을 짓습니다." ),
+	<EffectList>
+	[
+		<Change Empire Relation>
+		{
+			Arg1(-50)
+		}
+	]
+},
+<영웅적인 구조작업>
+{
+	Number(1224),
+	<Type>
+	[
+		Type("System"),
+		Type("Magistrate"),
+	],
+	Description("당신의 사령관 중 하나가 유괴된 행정관의 아이를 구하는데 성공했습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	<EffectList>
+	[
+		<Change Empire Relation>
+		{
+			Arg1(30)
+		},
+		<Commander Level Up>
+		{
+			Arg1(1)
+		}
+	]
+},
+<황제의 선물>
+{
+	Number(1225),
+	<Type>
+	[
+		Type("System"),
+		Type("Magistrate"),
+	],
+	Description("황제나 행정관이 당신이 선물을 받을 가치가 있다고 생각하여 당신에게 포상을 수여했습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	<EffectList>
+	[
+		<Grant Boon>
+		{
+		}
+	]
+},
+<제국 징수>
+{
+	Number(1226),
+	<Type>
+	[
+		Type("System"),
+		Type("Magistrate"),
+	],
+	Description("황제는 행정관의 함대를 개량하기로 결정했습니다. 그 일환으로 그는 모든 성계에서 징병을 실시했습니다. 당신의 성계에서는 사령관을 징발했습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	<EffectList>
+	[
+		<Lose Commander>
+		{
+			Apply("Proportional"),
+			Arg1(25)
+		}
+	]
+},
+<인구 폭발>
+{
+	Number(1227),
+	<Type>
+	[
+		Type("System"),
+	],
+	Description("행성 한곳에서 급작스럽게 인구가 엄청나게 증가합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	Duration(72),
+	<EffectList>
+	[
+		<Change Planet Control Model>
+		{
+			Arg1(1),
+			Arg2(5)
+		}
+	]
+},
+<노동자의 열정>
+{
+	Number(1228),
+	<Type>
+	[
+		Type("System"),
+	],
+	Description("노동자들이 갑자기 무언가에 감명을 받고-누구도 무엇인지 확신하지 못하지만- 매우 늦게까지 일하기 시작합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	Duration(72),
+	<EffectList>
+	[
+		<Change Planet Control Model>
+		{
+			Arg1(3),
+			Arg2(5)
+		}
+	]
+},
+<새 자원 발견>
+{
+	Number(1229),
+	<Type>
+	[
+		Type("System"),
+	],
+	Description("사람들이 행성의 주요 자원이 거의 고갈되었다고 생각하게 되었을 때, 과학자들이 거대한 양의 다른 유용한 자원을 발견합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/ancient.gif>"),
+	<EffectList>
+	[
+		<Change Planet Resource>
+		{
+			Arg1(1)
+		}
+	]
+},
+<무서운 유행성 질병>
+{
+	Number(1230),
+	<Type>
+	[
+		Type("System"),
+		Type("Immune to Agerus")
+	],
+	Description("통치령 내의 행성 중 한 곳에 운석이 떨어졌는데 이 운석에는 무서운 바이러스의 DNA가 들어 있습니다. 이 바이러스는 무서운 유행병을 전염시켜 인구가 큰 폭으로 줄어들게 됩니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/ancient.gif>"),
+	Duration(72),
+	<EffectList>
+	[
+		<Change Planet Population>
+		{
+			BeginOnly("Yes"),
+			Apply("Proportional"),
+			Arg1(-33)
+		},
+		<Change Planet Control Model>
+		{
+			Arg1(1),
+			Arg2(-7)
+		}
+	]
+},
+<지각 변동으로 인한 자연 재해>
+{
+	Number(1231),
+	<Type>
+	[
+		Type("System"),
+		Type("Immune to Agerus")
+	],
+	Description("주요 도시 중 한 곳에서 지각 변동의 발생으로 인해 지진과 소규모의 화산 폭발이 일어납니다. 과학자들이 이때 적시에 경고를 하여 시민들을 대피시키는 데는 성공하지만, 건물은 큰 피해를 입습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	<EffectList>
+	[
+		<Planet Lost Building>
+		{
+			Apply("Proportional"),
+			Arg1(-20),
+			Arg2(-1)
+		}
+	]
+},
+<괴상한 기후>
+{
+	Number(1232),
+	<Type>
+	[
+		Type("System"),
+		Type("Immune to Agerus")
+	],
+	Description("행성 중 한 곳에서 토네이도와 허리케인 같은 대형 폭풍이 일어납니다. 그 결과 건물도 얼마정도 무너지고, 사상자가 꽤 나오며, 생산도 감소합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	DurationMin(1),
+	DurationMax(3),
+	<EffectList>
+	[
+		<Change Planet Population>
+		{
+			Apply("Proportional"),
+			Arg1(-2),
+		},
+		<Change Planet Control Model>
+		{
+			Arg1(3),
+			Arg2(-2),
+		},
+		<Planet Lost Building>
+		{
+			Apply("Proportional"),
+			Arg1(-2),
+			Arg2(-1)
+		}
+	]
+},
+<급진적인 테러리스트>
+{
+	Number(1233),
+	<Type>
+	[
+		Type("System"),
+		Type("Immune to Agerus")
+	],
+	Description("이들 급진적 테러리스트들은 심지어는 생존을 위해서라도, 환경을 변화시키는 것은 죄악이라고 결정했습니다. 그들의 자연 환경에 대한 헌신을 입증하기 위해서  그들은 중력 조절 센터를 폭파합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Lose Planet Gravity Control>
+		{
+		}
+	]
+},
+<아게루스 유충의 창궐>
+{
+	Number(1234),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("성계가 작은 아게루스의 유충으로 가득 차게 되었습니다. 이들은 아직은 아게루스라고 부르기에는 너무 작지만 기생할 적당한 소행성대를 찾고 있습니다. 그들은 우주선의 통행에 방해가 되고, 그들의 단단한 몸체는 빈번히 우주선 방어막에 피해를 줍니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	Duration(24),
+	<EffectList>
+	[
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(15),
+			Arg2(-20),
+		}
+	]
+},
+<성간 먼지 구름>
+{
+	Number(1235),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("자의를 가지고 움직이는 듯 한 매우 작은 미립자의 성운이 당신의 성계를 채웁니다. 이 성운 속에서 빔을 쏘면 빔이 산란되어 버립니다. "),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	DurationMin(24),
+	DurationMax(48),
+	<EffectList>
+	[
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(19),
+			Arg2(-20),
+		}
+	]
+},
+<차별 반대 데모>
+{
+	Number(1236),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("일단의 무리들이 공평한 처우를 요구하고 나섰습니다. 그들은 수주일간 불평을 늘어놓고, 당신은 결국 그들의 요구를 들어줍니다. 당신은 그들이 다른 신민들과 똑같은 처우를 받도록 배려를 해주지만, 오히려 얼마 지나지 않아 이들은 일에 싫증을 느끼고 일을 그만 둡니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	DurationMin(120),
+	DurationMax(168),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(3)
+		}
+	]
+},
+<일시적인 웜홀>
+{
+	Number(1237),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("일시적인 웜홀이 발견되었습니다. 현재 보유한 기술로, 당신은 원하는 곳에 웜홀을 열 수 있습니다. 이는 타 행성을 공격하러 가는 함대이 이동시간을 줄여주는 효과가 있습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	DurationMin(120),
+	DurationMax(168),
+	<EffectList>
+	[
+		<Change Your Fleet Return Time>
+		{
+			Arg1(-50)
+		}
+	]
+},
+<우스운 구식 게임>
+{
+	Number(1238),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("'웹' 시절에 유행하던 '울트라 위자드'라고 불리던 오래된 게임이 발견됩니다. 처음에 이것은 국민의 사기 진작에 많은 도움을 주는 듯 하지만, 시간이 조금 지나자 당신의 사령관들 모두가 이 게임에 빠져있는 것을 발견하게 됩니다. 이들은 '스트래킹'이라는 이 게임 내 전투를 필승으로 이끄는 새 전술을 연구하기 시작합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	DurationMin(120),
+	DurationMax(168),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(3)
+		},
+		<Change All Commander Ability>
+		{
+			Target(11),
+			Arg1(1)
+		}
+	]
+},
+<정신나간 초능력 거인>
+{
+	Number(1239),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("성계 어딘가에서, 엄청난 초능력을 가진 누군가 아니면 무언가가 미쳤습니다. 그는 한동안 모든 정신적 파장으로 쉬지 않고 방송을 합니다. 이것은 성계 내에서 모든 초능력 공격의 효과를 감소시킵니다. 그리고 그는 '도라'라고 알려진 것에 대해 계속 되풀이하여 말하고 있습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	DurationMin(48),
+	DurationMax(72),
+	<EffectList>
+	[
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(32),
+			Arg2(25)
+		}
+	]
+},
+<탄소 구름>
+{
+	Number(1240),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("어느 날 거대한 흑운이 성계로 흘러 들어옵니다. 이 흑운을 통과한 모든 함선의 선체에는 다량의 탄소 침전물이 쌓이게 됩니다. 함선들은 이것때문에 속도가 크게 줄어들지만, 이 탄소 코팅은 폭발력을 흡수하기 때문에 탄도 무기류의 효과를 떨어뜨립니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	DurationMin(48),
+	DurationMax(72),
+	<EffectList>
+	[
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(57),
+			Arg2(-20)
+		},
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(5),
+			Arg2(-10)
+		},
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(6),
+			Arg2(-10)
+		}
+	]
+},
+<태양광 차단>
+{
+	Number(1241),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("어느 날 갑자기 태양이 사라진 듯 온 세계가 어두워집니다. 과학자들이 그 이유를 연구했을 때, 그들은 태양을 향해서 자신을 내던지는 수억의 작은 생명체를 발견합니다. 과학자들은 이틀 정도 지나면 다시 태양광이 행성에 도달할 것이라고 추측합니다. 그 동안, 행성에서 살아가는 이들은 저장되어 있는 에너지로 살아갑니다. 사실, 태양 광선의 차단으로 은하가 매우 잘 보인다는 장점도 있습니다.  "),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	DurationMin(48),
+	DurationMax(72),
+	<EffectList>
+	[
+		<Change Ship Ability on Planet>
+		{
+			Apply("Proportional"),
+			Arg1(20),
+			Arg2(10)
+		}
+	]
+},
+<산업용 나나이트의 고장>
+{
+	Number(1242),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("나나이트들은 원래는 폐기물을 줄이기 위해서 만들어졌습니다. 그러나 어딘가 그들의 프로그램이 잘못되었습니다. 이들은 공장에서 생산된 물품의 결함을 찾아 보완하기는 커녕, 제대로 생산된 물품까지도 못쓰게 만들어 버립니다. 그 결과 엄청난 양의 쓰레기가 만들어 집니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	DurationMin(48),
+	DurationMax(72),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(7),
+			Arg1(-2)
+		}
+	]
+},
+<잘못된 실험>
+{
+	Number(1243),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("과학자들이 뇌가 작동하는 법을 연구하는 중이었는데 그 과정에서 그들은 엄청난 실수를 해버렸습니다. 그들은 우연히 그들의 뇌에 너무 많은 X-선을 방사했습니다. 이때문에 국가의 연구역량이 대폭 약화되어 새로 과학자들을 초빙해야 하는 사태에 직면하게 됩니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	DurationMin(120),
+	DurationMax(168),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(-5)
+		}
+	]
+},
+<폭력유희>
+{
+	Number(1244),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("행성들의 젊은이들이 새로운 매우 폭력적인 오락을 즐기기 시작했습니다. 그 결과 사고도 많이 발생하고, 무엇보다 많은 젊은이들이 교육을 무시하기 시작합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	DurationMin(120),
+	DurationMax(168),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(-3)
+		},
+		<Change Control Model>
+		{
+			Target(1),
+			Arg1(-3)
+		},
+		<Change Control Model>
+		{
+			Target(4),
+			Arg1(2)
+		}
+	]
+},
+<종교 혁명>
+{
+	Number(1245),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("성계 내의 종교가 최근의 사건에 의해서 크게 변화하였습니다. 얼마동안 사람들은 매우 좋은 기분이 되어서, 그들의 행성과 그 주변의 문제들을 무시한 채 살아가기 시작합니다. 그러나 이는 국민들이 그들이 지닌 문제의 원인을 다른 항성계의 탓으로 돌리기 시작했기 때문입니다. "),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	DurationMin(24),
+	DurationMax(168),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(0),
+			Arg1(3)
+		},
+		<Change Control Model>
+		{
+			Target(9),
+			Arg1(-3)
+		}
+	]
+},
+<대중의 광기>
+{
+	Number(1246),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("어떤 외계 종족이 자신들 사이에 침투해 있다고 국민들은 확신하게 됩니다. 사람들은 모든 것을 의심의 눈초리로 보기 시작하며, 더 이상 서로를 신뢰하지 않습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	DurationMin(72),
+	DurationMax(120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(-3)
+		},
+		<Change Control Model>
+		{
+			Target(9),
+			Arg1(-3)
+		}
+	]
+},
+<컴퓨터 바이러스>
+{
+	Number(1247),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("중추 컴퓨터 시스템이 지각능력이 있는 AI에 의해 오염되었습다. 이 AI는 당신의 개발 속도를 엄청나게 저하시킵니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	DurationMin(72),
+	DurationMax(120),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(-3)
+		}
+	]
+},
+<새 기술발견>
+{
+	Number(1248),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("당신의 정찰 우주선이 제국 안에서 일찌기 존재했던 유물을 발견해서, 이 물건을 회수하기로 결정하고 이것을 가지고 귀환합니다. 이 유물을 연구하던 도중, 과학자들은 컴퓨터 안에서 유용한 정보를 발견합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	<EffectList>
+	[
+		<Gain Tech>
+		{
+		}
+	]
+},
+<부유한 상인의 뇌물>
+{
+	Number(1249),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("부유한 무역왕이 당신의 행성들과 통상을 시작하기를 요청해 왔습니다. 그 댓가로 그는 당신에게 300k pp를 기부하여 지역 경제에 도움을 주겠다고 제안했습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			Arg1(300000),
+			BeginOnly("Yes")
+		}
+	]
+},
+<무역 항로에 해적 출현>
+{
+	Number(1250),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("성계 안에서 해적이 발견되었습니다. 정찰선이 무역항로에서 배회하고 있는 해적의 무리를 발견한 것입니다. 그들을 재빨리 해치우고, 당신은 그들을 처단한 댓가로 500k의 상금을 받게 됩니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			Arg1(500000)
+		}
+	]
+},
+<무역 항로에 해적 출현>
+{
+	Number(1251),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("성계 안에서 해적이 발견되었습니다. 무역 항로를 통행하는 함선들은 모두 해적들에게 습격받습니다. 이에 영향을 받는 성계에 있는 모든 행성의 교역은 감소합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	Duration(24),
+	<EffectList>
+	[
+		<Change Control Model>
+		{
+			Target(6),
+			Arg1(-4)
+		}
+	]
+},
+<슈퍼 사령관의 원조>
+{
+	Number(1252),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("방랑중인 유능한 사령관이 당신의 대의를 위해서 당신의 진영에 귀순합니다. "),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Gain Commander>
+		{
+			Target(13)
+		}
+	]
+},
+<암살>
+{
+	Number(1253),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("당신의 현재 현역중인 사령관이 한명 암살된다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Lose Commander>
+		{
+			Apply("Absolute"),
+			Arg1(1)
+		}
+	]
+},
+<사보타주>
+{
+	Number(1254),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("함대 중 하나에서 사보타주가 일어났습니다. 함대에 배치되었던 모든 함선이 손상을 입어서 수리가 필요합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	<EffectList>
+	[
+		<Damage Fleet>
+		{
+			Apply("Proportional"),
+			Arg1(25)
+		}
+	]
+},
+<고대 문명 발견>
+{
+	Number(1255),
+	<Type>
+	[
+		Type("System"),
+		Type("Immune to Agerus")
+	],
+	Description("고고학자들이 통치령 내 어느 행성에서 고도로 발달되었던 문명의 잔재를 발견했습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/ancient.gif>"),
+	Duration(24),
+	<EffectList>
+	[
+		<Gain Tech>
+		{
+			BeginOnly("Yes")
+		},
+		<Change Control Model>
+		{
+			Target(2),
+			Arg1(2)
+		}
+	]
+},
+<실리콘 곤충떼>
+{
+	Number(1256),
+	<Type>
+	[
+		Type("System")
+	],
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/ancient.gif>"),
+	Description("어느 날 이 곤충떼가 야음을 틈타 행성으로 날아옵니다. 처음엔 당신은 그들이 입힐 데미지를 걱정합니다. 곧 당신은 그들이 쓰레기만 먹는다는 것을 깨닫습니다. 몇 주가 지난 후에 그들이 떠날때 쯤이면 행성 안에서는 매우 커다란 변화가 일어나 있을 것입니다."),
+	<EffectList>
+	[
+		<Change Planet Resource>
+		{
+			Arg1(1)
+		}
+	]
+},
+<자유교역 수호자에 추대되다>
+{
+	Number(1257),
+	<Type>
+	[
+		Type("System"),
+		Type("Immune to Agerus"),
+		Type("Answer")
+	],
+	Description("은하 교역 길드에 의해서 당신은 자유 교역의 수호자로 선출되었습니다. 상인들에게 1,000,000 PP를 지불하면 그 타이틀을 붙일 수 있습니다"),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			Arg1(-1000000),
+			Answer("Yes"),
+			BeginOnly("Yes")
+		}
+	]
+},
+<자유교역 수호자에 추대되다>
+{
+	Number(1258),
+	<Type>
+	[
+		Type("System"),
+		Type("Immune to Agerus"),
+		Type("Answer")
+	],
+	Description("은하 교역 길드에 의해서 당신은 자유 교역의 수호자로 선출되었습니다. 상인들에게 1,000,000 PP를 지불하면 그 타이틀을 붙일 수 있습니다"),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	Duration(24),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			Arg1(-1000000),
+			Answer("Yes"),
+			BeginOnly("Yes")
+		},
+		<Change Control Model>
+		{
+			Target(6),
+			Arg1(5)
+		},
+		<Change Honor>
+		{
+			Arg1(10),
+			BeginOnly("Yes")
+		}
+	]
+},
+<비밀 정보원의 정보 제공>
+{
+	Number(1259),
+	<Type>
+	[
+		Type("System"),
+		Type("Answer")
+	],
+	Description("정보 업자가 백만PP의 비용으로 적에 대한 정보를 제공해 왔습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			Answer("Yes"),
+			Arg1(-1000000)
+		},
+		<Change Honor>
+		{
+			Answer("Yes"),
+			Arg1(-10)
+		},
+		<Show Player>
+		{
+		}
+	]
+},
+<평의회의 선전 포고 종용>
+{
+	Number(1260),
+	<Type>
+	[
+		Type("System"),
+		Type("Council")
+	],
+	Description("평의회 내의 국민들이 폭동을 일으킵니다. 그들은 적에게 전면전을 선언하라고 압력을 가하기 시작합니다. 평의회의 의장으로서, 당신은 전면전을 선언 할 수 밖에 없습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/demonstration.gif>"),
+	<EffectList>
+	[
+		<Council Declare Total War>
+		{
+		}
+	]
+},
+<몰락한 은하의 침입>
+{
+	Number(1261),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("G-13의 생존자들의 무명의 함대가 새로 나타나 성계를 침략합니다. 이들을 물리치지 못하면 멸망할 수도 있습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	<EffectList>
+	[
+		<Win or Lose Planet>
+		{
+			Target(9),
+			Arg1(600),
+			Arg2(3)
+		}
+	]
+},
+<해탈한 자들의 속삭임>
+{
+	Number(1262),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("어딘가로부터, 해탈한 자들의 속삭임이 국민들의 마음속으로 전해지고 있습니다. 국민 중에서 그 속삭임을 이해하는 사람은 없지만, 또한 그 목소리가 어디서 오는지 아는 이도 없습니다. 그 효과는 하지만 치명적입니다; 모든 사람들이 몽상에 잠기기 시작하고, 그 결과 생산력은 급격히 떨어집니다. 함대 역시 게으름을 피우기 시작합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	Duration(6),
+	<EffectList>
+	[
+		<Gain Tech>
+		{
+			BeginOnly("Yes"),
+			Chance(25)
+		},
+		<Change Control Model>
+		{
+			Target(3),
+			Arg1(-5)
+		},
+		<Change Control Model>
+		{
+			Target(4),
+			Arg1(-5)
+		}
+	]
+},
+<정보 발송 오류>
+{
+	Number(1263),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("당신의 메인 조정 시스템에 지독한 고장이 일어납니다. 다행히 국가 전체가 마비상태에 이르기 전에 이를 찾아 내긴 했지만 상당한 피해를 입게 됩니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/plot.gif>"),
+	Duration(3),
+	<EffectList>
+	[
+		<Change Concentration Mode>
+		{
+		}
+	]
+},
+<지독한 모함>
+{
+	Number(1264),
+	<Type>
+	[
+		Type("System"),
+		Type("Magistrate")
+	],
+	Description("신원 미상의 집단에서 당신이 행정관을 제국에 중상모략했다는 터무니 없는 소문을 퍼뜨리고 다닙니다. 행정관은 그들의 농간에 넘어갔고 당신은 행정관에게 미움을 받기 시작합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Change Empire Relation>
+		{
+			Arg1(-15)
+		}
+	]
+},
+<지독한 모함>
+{
+	Number(1265),
+	<Type>
+	[
+		Type("System"),
+		Type("Magistrate")
+	],
+	Description("신원 미상의 집단에서 당신이 행정관을 제국에 중상모략했다는 터무니 없는 소문을 퍼뜨리고 다닙니다. 그러나 행정관은 오히려 당신을 신뢰합니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Change Empire Relation>
+		{
+			Arg1(5)
+		}
+	]
+},
+<사령관의 배반>
+{
+	Number(1266),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("사령관 중 한 명이 진급에서 뒤처지는 것을 견디다 못해 따르는 자들과 함께 떠났습니다. 그는 함선 한 척과 약간의 돈을 훔쳐 성계를 떠났습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Lose Commander>
+		{
+			Apply("Absolute"),
+			Arg1(1)
+		}
+	]
+},
+<유능한 제독의 망명>
+{
+	Number(1267),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("적들 중 하나가 국민을 화나게 만듭니다. 이런 혼란스러운 상황을 틈타 그의 사령관 중 한명이 당신의 대열로 귀순하여 오고자 합니다. 약간의 돈을 쓰면 그를 구 체제에서 구출할 수 있습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/meeting.gif>"),
+	<EffectList>
+	[
+		<Change Production>
+		{
+			Arg1(-50000),
+			BeginOnly("Yes")
+		},
+		<Recruit Enemy Commander>
+		{
+		}
+	]
+},
+<에너지 흡혈생물>
+{
+	Number(1268),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("이 기묘한 생물이 함대중 하나에 달라붙어서 함선의 에너지를 소모시킵니다. 이 기묘한 생물은 죽기 전에 승선한 모든 승무원을 죽입니다. 불행히도 거기에는 사령관도 일부 포함되어 있습니다."),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/explosion.gif>"),
+	<EffectList>
+	[
+		<Kill Commander and Disband Fleet>
+		{
+		}
+	]
+},
+<고고학적 발견>
+{
+	Number(1269),
+	<Type>
+	[
+		Type("System")
+	],
+	Description("어느 날 일단의 과학자 무리들이 기묘한 장치를 발굴했습니다. 이를 매우 열심히 연구한 후에야 그것이 무엇인지를 겨우 파악합니다. 그 장치는 이 행성의 중력을 완화시키는데 도움을 주는 장치입니다. "),
+	Image("<IMG SRC=http://image.archspace.co.kr/image/as_game/event/ancient.gif>"),
+	<EffectList>
+	[
+		<Gain Planet Gravity Control>
+		{
+		}
+	]
+}
+
+
+

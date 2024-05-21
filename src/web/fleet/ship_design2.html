@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<link rel="stylesheet" href="/archspace.css">
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999" onLoad="MM_preloadImages('$IMAGE_SERVER_URL/image/as_game/bu_helpen.gif')">
+<TABLE WIDTH=609 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+  <TR>
+    <TD>
+      <TABLE WIDTH=590 BORDER=0 CELLSPACING=0 CELLPADDING=0 HEIGHT=100 BGCOLOR=#000000 ALIGN=center>
+        <TR ALIGN=center VALIGN=middle>
+          <TD>
+            $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN=center>
+      <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext">
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>$RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp;$PRODUCT_POINT
+              &nbsp;&nbsp;&nbsp;&nbsp;$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;$NET_POWER
+            </DIV>
+          </TD>
+          <!--HELP BUTTON-->
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <P>&nbsp; </P>
+    </TD>
+  </TR>
+  <TR>
+    <TD CLASS=maintext ALIGN=center></TD>
+  </TR>
+  <TR>
+    <TD ALIGN=center>
+      <P><IMG SRC="$IMAGE_SERVER_URL/image/as_game/fleet/ship_design_title.gif" WIDTH="439" HEIGHT="41">
+      </P>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN=center>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN=center>
+      <FORM METHOD=post ACTION=ship_design_confirm.as>
+      <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR>
+          <TD CLASS="maintext" WIDTH="74" VALIGN="top"><FONT COLOR="#666666">$STRING_NAME</FONT></TD>
+          <TD CLASS="maintext" VALIGN="top" COLSPAN="4">$NAME</TD>
+        </TR>
+        <TR>
+          <TD CLASS="maintext" WIDTH="74" VALIGN="top"><FONT COLOR="#666666">$STRING_SIZE<BR>
+            $STRING_COMPUTER</TD>
+          <TD CLASS="maintext" VALIGN="top" WIDTH="125">$SIZE<BR>
+            $COMPUTER</TD>
+          <TD CLASS="maintext" WIDTH="20" VALIGN="top" ALIGN="RIGHT">&nbsp;</TD>
+          <TD CLASS="maintext" WIDTH="58" VALIGN="top"><FONT COLOR="#666666">$STRING_ENGINE<BR>
+            $STRING_SHIELD</FONT></TD>
+          <TD CLASS="maintext" VALIGN="top" WIDTH="140">$ENGINE<BR>
+            $SHIELD</TD>
+          </TD>
+        </TR>
+      </TABLE>
+      <TABLE WIDTH="367" BORDER="0" CELLSPACING="10" CELLPADDING="0">
+        <TR>
+          <TD CLASS="tabletxt" WIDTH="75">&nbsp;$STRING_ARMOR</TD>
+          <TD COLSPAN="3" CLASS="tabletxt" WIDTH="262">
+            $ARMOR
+          </TD>
+        </TR>
+        <TR>
+          <TD CLASS="tabletxt" WIDTH="75">&nbsp;</TD>
+          <TD COLSPAN="3" CLASS="tabletxt" WIDTH="262" ALIGN="RIGHT">$SPACE_SLOT
+          </TD>
+        </TR>
+        $WEAPON_LIST
+        <TR>
+          <TD CLASS="tabletxt" WIDTH="75">&nbsp;</TD>
+          <TD COLSPAN="3" CLASS="tabletxt" WIDTH="262">&nbsp;</TD>
+        </TR>
+        $DEVICE_LIST
+		<TR ALIGN="CENTER" VALIGN="BOTTOM">
+          <TD CLASS="tabletxt" COLSPAN="4" HEIGHT="20"><INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok.gif" BORDER=0></TD>
+        </TR>
+      </TABLE>
+      </FORM>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN="CENTER">
+    <TD>
+      <TABLE WIDTH="550" BORDER="0" CELLSPACING="0" CELLPADDING="0" BORDERCOLOR="#2A2A2A">
+        <TR ALIGN="CENTER" VALIGN="TOP">
+          <TH CLASS="tabletxt" COLSPAN="4" HEIGHT="25">$STRING_PREVIOUS_DESIGN
+          </TH>
+        </TR>
+      </TABLE>
+      $CLASS_INFORMATION
+    </TD>
+  </TR>
+  <TR>
+    <TD> </TD>
+  </TR>
+  <TR>
+    <TD ALIGN=center>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN=center CLASS="maintext">
+      <A HREF="fleet.as">$FLEET_MAIN</A> <FONT COLOR="616161">$SHIP_DESIGN</FONT> <A HREF="ship_building.as">$SHIP_BUILDING</A> <A HREF="fleet_commander.as">$FLEET_COMMANDER</A> <A HREF="ship_pool.as">$SHIP_POOL</A> <BR> <A HREF="form_new_fleet.as">$FORM_NEW_FLEET</A> <A HREF="reassignment.as">$REASSIGNMENT</A> <A HREF="expedition.as">$EXPEDITION</A> <A HREF="mission.as">$MISSION</A> <A HREF="recall.as">$RECALL</A> <A HREF="disband.as">$DISBAND</A>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            <CENTER>
+				$ADLINE_BOTTOM
+            </CENTER>
+            </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+</TABLE>
+<P>&nbsp;</P>
+</BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</html>

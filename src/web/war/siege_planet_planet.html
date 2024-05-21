@@ -1,0 +1,183 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+<SCRIPT LANGUAGE=javascript>
+function siege()
+{
+  var planet = document.siegePlanet.PLANET_ID.options[document.siegePlanet.PLANET_ID.selectedIndex].value;
+
+  $JS_PLANET_INFO
+}
+</SCRIPT>
+<LINK REL="stylesheet" HREF="/archspace.css">
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999" onLoad="MM_preloadImages('$IMAGE_SERVER_URL/image/as_game/bu_helpen.gif')">
+<FORM ACTION=siege_planet_result.as METHOD=post NAME=siegePlanet>
+<TABLE WIDTH="610" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext">
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>$RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp;$PRODUCT_POINT
+              &nbsp;&nbsp;&nbsp;&nbsp;$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;$NET_POWER
+              </DIV>
+          </TD>
+          <!--HELP BUTTON-->
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center"></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" HEIGHT="18"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/war/siege_planet_title.gif" WIDTH="439" HEIGHT="41">
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <TABLE WIDTH="450" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR ALIGN="CENTER">
+          <TD COLSPAN="6" CLASS="tabletxt">$ATTACKING_PLAYER_MESSAGE</TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext">$SELECT_PLANET_MESSAGE</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext" HEIGHT="30">
+      $BORDER_PLANET_SELECT
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext">&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+    <!-- Dynamic Pulldown Begin -->
+      <TABLE WIDTH="550" BORDER="1" CELLSPACING="0" CELLPADDING="0" BORDERCOLOR="#2A2A2A">
+        <TR>
+          <TD CLASS="tabletxt" WIDTH="137" BGCOLOR="#171717" HEIGHT="20">&nbsp;$PLANET_WITH_ORDER</TD>
+          <TD COLSPAN="3" CLASS="tabletxt" WIDTH="407" HEIGHT="20">&nbsp;<IMG SRC="$PLANET_IMAGE" WIDTH="17" HEIGHT="17" ALIGN="TOP">&nbsp;
+          <INPUT TYPE=text SIZE=15 NAME=home VALUE="$PLANET_NAME" STYLE="border:0;background-color:#000000;color:#999999" readonly></TD>
+        </TR>
+        <TR ALIGN="CENTER">
+          <TD CLASS="tabletxt" COLSPAN="4">
+            <TABLE WIDTH="480" CELLSPACING="0" CELLPADDING="0">
+              <TR>
+                <TD CLASS="tabletxt" WIDTH="114" ALIGN="RIGHT">$STRING_POPULATION&nbsp;:</TD>
+                <TD CLASS="tabletxt" WIDTH="142">&nbsp;
+                <INPUT TYPE=text SIZE=10 VALUE="$NET_POWER" NAME=population STYLE="border:0;background-color:#000000;color:#999999" readonly></TD>
+                <TD ALIGN="RIGHT" CLASS="tabletxt" WIDTH="96">$STRING_SIZE&nbsp;:</TD>
+                <TD CLASS="tabletxt" WIDTH="126">&nbsp;
+                <INPUT TYPE=text SIZE=10 VALUE="$SIZE" NAME=size STYLE="border:0;background-color:#000000;color:#999999" readonly></TD>
+              </TR>
+              <TR>
+                <TD CLASS="tabletxt" WIDTH="114" ALIGN="RIGHT">$STRING_ATTRIBUTE&nbsp;:</TD>
+                <TD CLASS="tabletxt" WIDTH="142">&nbsp;
+                <INPUT TYPE=text SIZE=18 VALUE="$ATTRIBUTE" NAME=attribute STYLE="border:0;background-color:#000000;color:#999999" readonly></TD>
+                <TD ALIGN="RIGHT" CLASS="tabletxt" WIDTH="96">$STRING_RESOURCE&nbsp;:</TD>
+                <TD CLASS="tabletxt" WIDTH="126">&nbsp;
+                <INPUT TYPE=text SIZE=10 VALUE="$RESOURCE" NAME=resource STYLE="border:0;background-color:#000000;color:#999999" readonly></TD>
+              </TR>
+              <TR>
+                <TD CLASS="tabletxt" WIDTH="114" ALIGN="RIGHT">&nbsp; </TD>
+                <TD COLSPAN="3" CLASS="tabletxt">&nbsp;</TD>
+              </TR>
+              <TR>
+                <TD CLASS="tabletxt" WIDTH="114" ALIGN="RIGHT">$STRING_BUILDINGS&nbsp;:</TD>
+                <TD COLSPAN="3" CLASS="tabletxt">&nbsp;&nbsp;
+                <INPUT TYPE=text SIZE=50 VALUE="$BUILDING" NAME=building STYLE="border:0;background-color:#000000;color:#999999" readonly></TD>
+              </TR>
+            </TABLE>
+          </TD>
+        </TR>
+      </TABLE>
+    <!-- Dynamic Pulldown End -->
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <INPUT TYPE=hidden NAME="FLEET_NUMBER" VALUE="$FLEET_NUMBER">
+  <INPUT TYPE=hidden NAME="TARGET_PLAYER_ID" VALLUE="$TARGET_PLAYER_ID">
+  $DEPLOY_INFO
+  <TR>
+    <TD ALIGN="center">
+	  <TABLE>
+        <TR>
+          <TD>
+            <INPUT TYPE=hidden NAME="MODE" VALUE="OK">
+            <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_attack.gif" BORDER="0"></FORM>
+          </TD>
+          <TD>&nbsp;&nbsp;</TD>
+          <TD>
+            <FORM ACTION="siege_planet_result.as" METHOD=post>
+              <INPUT TYPE=hidden NAME="MODE" VALUE="CANCEL">
+              <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_cancel1.gif" WIDTH="61" HEIGHT="11">
+            </FORM>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center"> <A HREF="war.as">$WAR_MAIN</A> <FONT COLOR="616161">$SIEGE_PLANET</FONT> <A HREF="blockade.as">$BLOCKADE</A> <A HREF="raid.as">$RAID</A> <A HREF="privateer.as">$PRIVATEER</A> <A HREF="defense_plan.as">$DEFENSE_PLAN</A> <A HREF="battle_report.as">$BATTLE_REPORT</A></TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            <CENTER>
+				$ADLINE_BOTTOM
+            </CENTER>
+            </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+</TABLE>
+</FORM>
+<P>&nbsp;</P>
+</BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</html>

@@ -1,0 +1,22 @@
+CC=g++
+CFLAGS=-g -Wall
+LIBDIRS=-L/usr/local/lib
+LIBS=-static -lstdc++ 
+INCLUDES=-I/usr/include/g++ -I/usr/include -I/usr/local/include/mysql -I../include -I/usr/include/pth
+DEFINES=-DDEBUG -DLINUX
+
+VPATH=$(HOME)src/libs/include
+
+HEADERFILES=
+CCFILES= key.cc crypt.conn.cc
+
+CCOBJS=$(CCFILES:.cc=.o)
+
+.cc.o:
+	$(CC) -c $< $(CFLAGS) $(INCLUDES) $(DEFINES)
+
+lib:$(CCOBJS)
+
+
+clean:
+	rm -f *.o 

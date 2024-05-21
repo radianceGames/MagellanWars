@@ -1,0 +1,7935 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-16 20:56-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid " "
+msgstr ""
+
+msgid "# of Fleets Under Control"
+msgstr ""
+
+msgid "# of Member(s)"
+msgstr ""
+
+msgid "# of Members"
+msgstr ""
+
+msgid "# of Planet(s)"
+msgstr ""
+
+msgid "# of Planets Under Control"
+msgstr ""
+
+msgid "# of Planets of Members"
+msgstr ""
+
+msgid "# of Ship(s)"
+msgstr ""
+
+#, c-format
+msgid "%1$d accumulated PP on %2$s"
+msgstr ""
+
+#, c-format
+msgid "%1$d accumulated RP"
+msgstr ""
+
+#, c-format
+msgid "%1$d factories on %2$s"
+msgstr ""
+
+#, c-format
+msgid "%1$d invested PP on %2$s"
+msgstr ""
+
+#, c-format
+msgid "%1$d invested PP on research"
+msgstr ""
+
+#, c-format
+msgid "%1$d invested PP on ship production"
+msgstr ""
+
+#, c-format
+msgid "%1$d military bases on %2$s"
+msgstr ""
+
+#, c-format
+msgid "%1$d people"
+msgstr ""
+
+#, c-format
+msgid "%1$d research labs. on %2$s"
+msgstr ""
+
+#, c-format
+msgid "%1$d ships in %2$s's ship pool were destroyed."
+msgstr ""
+
+#, c-format
+msgid "%1$d ships in your ship pool"
+msgstr ""
+
+#, c-format
+msgid "%1$s %%"
+msgstr ""
+
+#, c-format
+msgid "%1$s %2$s ships are built and put in the ship pool."
+msgstr ""
+
+#, c-format
+msgid "%1$s (MP)"
+msgstr ""
+
+#, c-format
+msgid "%1$s (PP)"
+msgstr ""
+
+#, c-format
+msgid "%1$s * %2$s Planets = %3$s"
+msgstr ""
+
+#, c-format
+msgid "%1$s : %2$s's planet(s)"
+msgstr ""
+
+#, c-format
+msgid "%1$s K"
+msgstr ""
+
+#, c-format
+msgid "%1$s MP"
+msgstr ""
+
+#, c-format
+msgid "%1$s PP"
+msgstr ""
+
+#, c-format
+msgid "%1$s PP has been donated to the council safe."
+msgstr ""
+
+#, c-format
+msgid ""
+"%1$s PP has been moved into your council's safe from the council %2$s while "
+"the councils were being merged."
+msgstr ""
+
+#, c-format
+msgid "%1$s PP has been put into the ship production pool."
+msgstr ""
+
+#, c-format
+msgid "%1$s PP has been transferred to %2$s successfully."
+msgstr ""
+
+#, c-format
+msgid "%1$s Planet Report"
+msgstr ""
+
+#, c-format
+msgid "%1$s Project(s)"
+msgstr ""
+
+#, c-format
+msgid "%1$s RP"
+msgstr ""
+
+#, c-format
+msgid "%1$s already has the maximum number of allied fleets possible."
+msgstr ""
+
+#, c-format
+msgid "%1$s became new council speaker."
+msgstr ""
+
+#, c-format
+msgid "%1$s blockaded %2$s of %3$s and lost."
+msgstr ""
+
+#, c-format
+msgid "%1$s blockaded %2$s of %3$s and won."
+msgstr ""
+
+#, c-format
+msgid "%1$s can only support %2$d more allied fleets."
+msgstr ""
+
+#, c-format
+msgid "%1$s can't be put in this ship's slot because it's too big."
+msgstr ""
+
+#, c-format
+msgid "%1$s council has broken the alliance."
+msgstr ""
+
+#, c-format
+msgid "%1$s council has broken the pact."
+msgstr ""
+
+#, c-format
+msgid "%1$s council has declared total war to your council."
+msgstr ""
+
+#, c-format
+msgid "%1$s council has declared war with your council."
+msgstr ""
+
+#, c-format
+msgid ""
+"%1$s declared independence and created %2$s's own council by the Empire "
+"demand."
+msgstr ""
+
+#, c-format
+msgid "%1$s destroyed all military bases on %2$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s did not make a sortie."
+msgstr ""
+
+#, c-format
+msgid "%1$s doesn't have a planet with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s doesn't own any projects."
+msgstr ""
+
+#, c-format
+msgid "%1$s factories have been built.(%2$s unit%3$s now)"
+msgstr ""
+
+#, c-format
+msgid "%1$s factories have been destroyed.(%2$s unit%3$s now)"
+msgstr ""
+
+#, c-format
+msgid "%1$s fleet didn't make a sortie or is on mission."
+msgstr ""
+
+#, c-format
+msgid "%1$s fleet is not on stand-by."
+msgstr ""
+
+#, c-format
+msgid "%1$s fleet is returning from privateer mission."
+msgstr ""
+
+#, c-format
+msgid "%1$s has accepted a bounty on you."
+msgstr ""
+
+#, c-format
+msgid "%1$s has been deleted by GM's punishment."
+msgstr ""
+
+#, c-format
+msgid "%1$s has been deleted."
+msgstr ""
+
+#, c-format
+msgid "%1$s has been dispatched for mission \"%2$s\"."
+msgstr ""
+
+#, c-format
+msgid "%1$s has been punished by you successfully."
+msgstr ""
+
+#, c-format
+msgid "%1$s has been set dead by GM's punishment."
+msgstr ""
+
+#, c-format
+msgid "%1$s has been set dead."
+msgstr ""
+
+#, c-format
+msgid "%1$s has broken the alliance."
+msgstr ""
+
+#, c-format
+msgid "%1$s has broken the pact."
+msgstr ""
+
+#, c-format
+msgid "%1$s has bulldozed your ordinary council %2$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s has declared hostile intents toward you."
+msgstr ""
+
+#, c-format
+msgid "%1$s has declared war with you."
+msgstr ""
+
+#, c-format
+msgid "%1$s has destroyed %2$s factories on the planet %3$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s has destroyed %2$s factory on the planet %3$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s has destroyed %2$s research lab(s) on %3$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s has detected %2$s with his/her alarm system."
+msgstr ""
+
+#, c-format
+msgid "%1$s has lost %2$d accumulated RP."
+msgstr ""
+
+#, c-format
+msgid "%1$s has lost %2$d accumulated invested PP on %3$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s has lost %2$d accumulated invested PP on ship production."
+msgstr ""
+
+#, c-format
+msgid "%1$s has lost %2$d factories on %3$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s has lost %2$d military bases on %3$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s has lost %2$d people on planet %3$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s has lost %2$d research labs. on %3$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s has lost %2$s exp."
+msgstr ""
+
+#, c-format
+msgid "%1$s has lost some research labs. on %2$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s has no fleets now."
+msgstr ""
+
+#, c-format
+msgid "%1$s has no fleets to protect %2$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s has no ships in his/her dock now."
+msgstr ""
+
+#, c-format
+msgid "%1$s has removed admission into your council"
+msgstr ""
+
+#, c-format
+msgid "%1$s has requested admission into your council"
+msgstr ""
+
+#, c-format
+msgid "%1$s has sunk under fire."
+msgstr ""
+
+#, c-format
+msgid "%1$s has survived successfully under fire."
+msgstr ""
+
+#, c-format
+msgid "%1$s has the %2$s to protect %3$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s has wrong location in the battle field."
+msgstr ""
+
+#, c-format
+msgid "%1$s invaded %2$s and lost."
+msgstr ""
+
+#, c-format
+msgid "%1$s invaded %2$s and won."
+msgstr ""
+
+#, c-format
+msgid "%1$s invaded %2$s of %3$s and lost."
+msgstr ""
+
+#, c-format
+msgid "%1$s invaded %2$s of %3$s and won."
+msgstr ""
+
+#, c-format
+msgid "%1$s is dead."
+msgstr ""
+
+#, c-format
+msgid "%1$s k"
+msgstr ""
+
+#, c-format
+msgid "%1$s lost %2$d people on planet %3$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s lost all accumulated invested PP on %2$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s made successful raid, he/she gained %2$s points of exp."
+msgstr ""
+
+#, c-format
+msgid "%1$s military bases have been built.(%2$s unit%3$s now)"
+msgstr ""
+
+#, c-format
+msgid "%1$s military bases have been destroyed.(%2$s unit%3$s now)"
+msgstr ""
+
+#, c-format
+msgid "%1$s new message(s) arrived."
+msgstr ""
+
+#, c-format
+msgid "%1$s of %2$s set free your council by Empire Demand."
+msgstr ""
+
+#, c-format
+msgid "%1$s of your council set free your subordinary %2$s by Empire Demand."
+msgstr ""
+
+#, c-format
+msgid "%1$s on a patrol mission"
+msgstr ""
+
+#, c-format
+msgid "%1$s on a station mission"
+msgstr ""
+
+#, c-format
+msgid "%1$s reduced population on the %2$s by %3$s."
+msgstr ""
+
+#, c-format
+msgid ""
+"%1$s requested the Empire to intercede the war between your council and %2$s. "
+"The Empire responded by forcing peace to %3$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s research labs. have been built.(%2$s unit%3$s now)"
+msgstr ""
+
+#, c-format
+msgid "%1$s research labs. have been destroyed.(%2$s unit%3$s now)"
+msgstr ""
+
+#, c-format
+msgid "%1$s started to %2$s's planet for privateer."
+msgstr ""
+
+#, c-format
+msgid ""
+"%1$s succeeded in the privateer of %2$s. But nothing has been stolen from "
+"your planet."
+msgstr ""
+
+#, c-format
+msgid "%1$s turn%2$s"
+msgstr ""
+
+#, c-format
+msgid "%1$s turns"
+msgstr ""
+
+#, c-format
+msgid "%1$s unit(s) of factory are/is destroyed by the raid on %2$s."
+msgstr ""
+
+#, c-format
+msgid ""
+"%1$s unit(s) of military base have been destroyed by enemy raiding on %2$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s unit(s) of military base open(s) fire at %2$s on the orbit."
+msgstr ""
+
+#, c-format
+msgid ""
+"%1$s was detected by %2$s in %3$s's orbit, %4$s attacked %5$s's privateer "
+"fleet."
+msgstr ""
+
+#, c-format
+msgid "%1$s's %2$s attacks and sinks the privateer fleet %3$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s's %2$s attacks and sinks the raid fleet %3$s."
+msgstr ""
+
+#, c-format
+msgid "%1$s's %2$s attacks the raid fleet %3$s (%4$d/%5$d ship)."
+msgstr ""
+
+#, c-format
+msgid "%1$s's commander %2$s has been killed by your spy."
+msgstr ""
+
+#, c-format
+msgid ""
+"%1$s's fleet tried to raid your planet %2$s, you ordered all military bases "
+"to fire."
+msgstr ""
+
+#, c-format
+msgid ""
+"%1$s's fleet tried to raid your planet %2$s, your fleet defended in the orbit."
+msgstr ""
+
+#, c-format
+msgid "%1$s's order and %2$s's order have been exchanged."
+msgstr ""
+
+#, c-format
+msgid "%1$s, terraforming is completed."
+msgstr ""
+
+#, c-format
+msgid "%1$sth %2$s fleet"
+msgstr ""
+
+#, c-format
+msgid "%1$sth IGF Fleet"
+msgstr ""
+
+#, c-format
+msgid "%s made successful raid, he/she gained %d points of exp."
+msgstr ""
+
+msgid "&nbsp;"
+msgstr ""
+
+msgid "&nbsp;NONE"
+msgstr ""
+
+#, c-format
+msgid "'%1$s' is not available on this size of ship."
+msgstr ""
+
+#, c-format
+msgid "( %1$s / %2$s RP)"
+msgstr ""
+
+#, c-format
+msgid "(Max : %1$s)"
+msgstr ""
+
+msgid "(No comment)"
+msgstr ""
+
+msgid "(This process won't let the fleet lose any exp.)"
+msgstr ""
+
+msgid "1"
+msgstr ""
+
+#, c-format
+msgid "1 %1$s ship is built and put in the ship pool."
+msgstr ""
+
+#, c-format
+msgid "1 factory has been built.(%1$s unit%2$s now)"
+msgstr ""
+
+#, c-format
+msgid "1 factory has been destroyed.(%1$s unit%2$s now)"
+msgstr ""
+
+#, c-format
+msgid "1 military base has been built.(%1$s unit%2$s now)"
+msgstr ""
+
+#, c-format
+msgid "1 military base has been destroyed.(%1$s unit%2$s now)"
+msgstr ""
+
+msgid "1 or more fleets' ID data were not found."
+msgstr ""
+
+msgid "1 or more fleets' ID were not valid."
+msgstr ""
+
+msgid "1 or more fleets' deployment data was not found."
+msgstr ""
+
+msgid "1 or more fleets' deployment data were not found."
+msgstr ""
+
+#, c-format
+msgid "1 research lab. has been built.(%1$s unit%2$s now)"
+msgstr ""
+
+#, c-format
+msgid "1 research lab. has been destroyed.(%1$s unit%2$s now)"
+msgstr ""
+
+#, c-format
+msgid "1st %1$s fleet"
+msgstr ""
+
+msgid "1st IGF Fleet"
+msgstr ""
+
+msgid "2 councils have the same ID."
+msgstr ""
+
+msgid "2 players have the same portal ID."
+msgstr ""
+
+#, c-format
+msgid "2nd %1$s fleet"
+msgstr ""
+
+msgid "2nd IGF Fleet"
+msgstr ""
+
+#, c-format
+msgid "3rd %1$s fleet"
+msgstr ""
+
+msgid "3rd IGF Fleet"
+msgstr ""
+
+msgid ""
+"<TD CLASS=\"tabletxt\" ALIGN=\"center\" WIDTH=\"157\">Invalid Player ID</TD>"
+msgstr ""
+
+msgid ""
+"<TD CLASS=\"tabletxt\" ALIGN=\"center\" WIDTH=\"157\">Player does not belong "
+"to your council</TD>"
+msgstr ""
+
+msgid ""
+"<TD CLASS=\"tabletxt\" ALIGN=\"center\" WIDTH=\"157\">Player is not "
+"dismissable</TD>"
+msgstr ""
+
+msgid "?"
+msgstr ""
+
+msgid "A Random Planet's Status"
+msgstr ""
+
+msgid "A bounty was not found for that player."
+msgstr ""
+
+msgid "A detailed report of your domain."
+msgstr ""
+
+msgid "A new admiral has been created."
+msgstr ""
+
+msgid "A new fleet has been created."
+msgstr ""
+
+msgid "A new planet has been created."
+msgstr ""
+
+msgid "A new project has been created."
+msgstr ""
+
+msgid "A new tech has been created."
+msgstr ""
+
+msgid "A speaker can't make admission request to other council."
+msgstr ""
+
+msgid "A wrong spy ID was entered."
+msgstr ""
+
+msgid "ATTACKER"
+msgstr ""
+
+msgid "Ability"
+msgstr ""
+
+msgid "Accept"
+msgstr ""
+
+msgid "Acceptable"
+msgstr ""
+
+msgid "Accepted"
+msgstr ""
+
+msgid "Access Level "
+msgstr ""
+
+msgid "Accuse the sender of improper language."
+msgstr ""
+
+msgid "Accused Admission Request"
+msgstr ""
+
+msgid "Accused Diplomatic Message"
+msgstr ""
+
+msgid "Achieved Project(s)"
+msgstr ""
+
+msgid "Achieved Tech(s)"
+msgstr ""
+
+msgid "Action"
+msgstr ""
+
+msgid "Action Log"
+msgstr ""
+
+msgid "Action: "
+msgstr ""
+
+msgid "Admin Setting"
+msgstr ""
+
+msgid "Administration"
+msgstr ""
+
+msgid "Admiral List is NULL. Please ask Archspace Development Team."
+msgstr ""
+
+msgid "Admiral Pool is NULL. Please ask Archspace Development Team."
+msgstr ""
+
+msgid "Admiral you bid does not exist."
+msgstr ""
+
+#, c-format
+msgid "Admiral: %1$s are available."
+msgstr ""
+
+#, c-format
+msgid "Admiral: %1$s is available."
+msgstr ""
+
+msgid "Admission Request"
+msgstr ""
+
+msgid "Advanced Matter-Energy Science"
+msgstr ""
+
+msgid "After"
+msgstr ""
+
+msgid "Age:"
+msgstr ""
+
+msgid "Alerted"
+msgstr ""
+
+msgid "Alertness"
+msgstr ""
+
+msgid "All military bases have been destroyed on "
+msgstr ""
+
+msgid ""
+"All the Empire' planets have taken by players already. Now you may attack the "
+"Empire's fortress."
+msgstr ""
+
+msgid ""
+"All the Empire's planets have been taken by players already. Now you may "
+"attack the Empire's fortress."
+msgstr ""
+
+msgid "Alliance"
+msgstr ""
+
+msgid "Ally"
+msgstr ""
+
+msgid "Amount to Invest"
+msgstr ""
+
+msgid "An used ship design which was selected randomly"
+msgstr ""
+
+msgid "Ancient Ruins"
+msgstr ""
+
+msgid "And it has an obstinate microbe now."
+msgstr ""
+
+msgid "Angle of Fire"
+msgstr ""
+
+msgid "Annoyance to the Empire"
+msgstr ""
+
+msgid "Answer"
+msgstr ""
+
+msgid "Any action was not chosen."
+msgstr ""
+
+msgid "Archspace Version"
+msgstr ""
+
+#, c-format
+msgid "Are you sure that you want to delete this message(#%1$d)?"
+msgstr ""
+
+#, c-format
+msgid ""
+"Are you sure that you will delete the player %1$s? You can't undo this "
+"operation."
+msgstr ""
+
+msgid ""
+"Are you sure that you will delete the player's portal data as well as the "
+"player's character? You can't undo this operation."
+msgstr ""
+
+#, c-format
+msgid ""
+"Are you sure that you will make the player %1$s dead? You can't undo this "
+"operation."
+msgstr ""
+
+msgid "Are you sure that you will retire?"
+msgstr ""
+
+#, c-format
+msgid ""
+"Are you sure the server has to be reset? The Empire will be conquered by %1$s "
+"and the players will no more able to play the game."
+msgstr ""
+
+msgid "Are you sure the server has to be restarted?"
+msgstr ""
+
+msgid "Are you sure this message has no problem?"
+msgstr ""
+
+msgid "Are you sure this player: "
+msgstr ""
+
+msgid "Are you sure this user: "
+msgstr ""
+
+msgid "Are you sure to execute this operation?"
+msgstr ""
+
+msgid ""
+"Are you sure you want to accept the bounty?<br>If you fail the empire will be "
+"displeased with you."
+msgstr ""
+
+msgid ""
+"Are you sure you want to assign the selected fleet(s) to patrol the following "
+"planet?"
+msgstr ""
+
+msgid "Are you sure you want to delete this design?"
+msgstr ""
+
+msgid "Are you sure you want to disband them?"
+msgstr ""
+
+msgid "Are you sure you want to dismiss the commander?"
+msgstr ""
+
+msgid "Are you sure you want to dismiss them?"
+msgstr ""
+
+msgid ""
+"Are you sure you want to dispatch selected fleet(s) to the following planet?"
+msgstr ""
+
+msgid "Are you sure you want to make the change?"
+msgstr ""
+
+msgid "Are you sure you want to recall the fleets?"
+msgstr ""
+
+msgid "Are you sure you want to scrap the ship(s)?"
+msgstr ""
+
+msgid "Are you sure you want to send the fleet on an expedition?"
+msgstr ""
+
+msgid "Are you sure you want to send these fleets to the following player?"
+msgstr ""
+
+msgid "Are you sure you want to train the fleet?"
+msgstr ""
+
+#, c-format
+msgid "Armada Class %1$s Commander"
+msgstr ""
+
+msgid "Armada Modifiers to Other Fleets (If Armada Commander)"
+msgstr ""
+
+msgid "Armament Reduction Demanded"
+msgstr ""
+
+msgid "Armor"
+msgstr ""
+
+msgid "Armor data is not valid."
+msgstr ""
+
+msgid "Artifact"
+msgstr ""
+
+msgid "Assault"
+msgstr ""
+
+msgid "Asteroid"
+msgstr ""
+
+msgid "Atmosphere"
+msgstr ""
+
+msgid "Atrocious"
+msgstr ""
+
+msgid "Attached Fleet Commander(s)"
+msgstr ""
+
+msgid "Attack"
+msgstr ""
+
+msgid "Attack Range"
+msgstr ""
+
+msgid "Attack Rating"
+msgstr ""
+
+msgid "Attack Type"
+msgstr ""
+
+msgid "Attack the enemy to seize a planet."
+msgstr ""
+
+msgid "Attack vs. Defense"
+msgstr ""
+
+msgid "Attacker Win"
+msgstr ""
+
+msgid "Attacking"
+msgstr ""
+
+#, c-format
+msgid "Attacking - %1$s"
+msgstr ""
+
+msgid "Attacking Rate"
+msgstr ""
+
+msgid "Attribute"
+msgstr ""
+
+msgid "Available PP Limit"
+msgstr ""
+
+msgid "Available Ships"
+msgstr ""
+
+msgid "Average"
+msgstr ""
+
+msgid "Average Subject"
+msgstr ""
+
+msgid "BLACK MARKET"
+msgstr ""
+
+msgid "Backstabber"
+msgstr ""
+
+msgid "Balance Sheet"
+msgstr ""
+
+msgid "Balanced"
+msgstr ""
+
+msgid "Banned"
+msgstr ""
+
+msgid "Banned IP"
+msgstr ""
+
+msgid "Baron"
+msgstr ""
+
+msgid "Battle Field"
+msgstr ""
+
+msgid "Battle Mobility"
+msgstr ""
+
+msgid "Battle Report"
+msgstr ""
+
+msgid "Battle Speed"
+msgstr ""
+
+msgid "Beautiful Landscape"
+msgstr ""
+
+msgid "Before"
+msgstr ""
+
+msgid "Black Hearted"
+msgstr ""
+
+msgid "Black Hole"
+msgstr ""
+
+msgid "Black Market"
+msgstr ""
+
+msgid "Black Market Bid Expire Time"
+msgstr ""
+
+msgid "Black Market [restricted]"
+msgstr ""
+
+msgid "Block the production of an enemy planet by arms."
+msgstr ""
+
+msgid "Blockade"
+msgstr ""
+
+msgid "Bomb an enemy planet."
+msgstr ""
+
+msgid "Bonus"
+msgstr ""
+
+msgid "Boon Granted"
+msgstr ""
+
+msgid "Bounty"
+msgstr ""
+
+msgid "Break Ally"
+msgstr ""
+
+msgid "Break Pact"
+msgstr ""
+
+msgid "Bribe"
+msgstr ""
+
+msgid "Broadcast"
+msgstr ""
+
+msgid "Brutal"
+msgstr ""
+
+msgid "Building"
+msgstr ""
+
+msgid "Building Cost"
+msgstr ""
+
+msgid "Building Cost<BR>Per Ship"
+msgstr ""
+
+msgid "Building Ratio"
+msgstr ""
+
+msgid "Building Time<BR>Per Ship"
+msgstr ""
+
+msgid "Buildings"
+msgstr ""
+
+msgid "But it has an obstinate microbe now."
+msgstr ""
+
+msgid "By Council ID Number"
+msgstr ""
+
+msgid "By Council Name"
+msgstr ""
+
+msgid "By ID Number"
+msgstr ""
+
+msgid ""
+"By What String is NULL. Maybe you should reload portal information again."
+msgstr ""
+
+msgid ""
+"By What String is wrong. Maybe you should reload portal information again."
+msgstr ""
+
+msgid ""
+"By concentrating on the Industry, you can make more PP, but the military and "
+"the research areas are neglected."
+msgstr ""
+
+msgid ""
+"By concentrating on the Military, you can make more MP, and the working power "
+"is concentrated on building ships, but the other production and the research "
+"areas are neglected."
+msgstr ""
+
+msgid ""
+"By concentrating on the Research, you can research new techs very fast, but "
+"the other areas are neglected."
+msgstr ""
+
+msgid ""
+"By selecting the different concentration modes, the control model is changed."
+msgstr ""
+
+msgid ""
+"By setting your concentration mode to Balanced, you will work with equal "
+"effort toward all goals."
+msgstr ""
+
+#, c-format
+msgid "By the demand of Empire, %1$s declared war on %2$s."
+msgstr ""
+
+#, c-format
+msgid "By the demand of Empire, %1$s declared war on you."
+msgstr ""
+
+#, c-format
+msgid "By the demand of Empire, %1$s of %2$s declared war on your council."
+msgstr ""
+
+#, c-format
+msgid "By the demand of Empire, %1$s signed the truce with %2$s."
+msgstr ""
+
+#, c-format
+msgid "By the demand of Empire, %1$s signed the truce with you."
+msgstr ""
+
+#, c-format
+msgid "By the demand of Empire, %1$s signed the truth with you."
+msgstr ""
+
+#, c-format
+msgid "By the demand of Empire, you declared war on %1$s."
+msgstr ""
+
+msgid "ByWhatString is NULL."
+msgstr ""
+
+msgid "ByWhatString seems wrong. Please try again."
+msgstr ""
+
+msgid "CM"
+msgstr ""
+
+msgid "CM Effect"
+msgstr ""
+
+msgid "COUNCIL"
+msgstr ""
+
+msgid ""
+"Cannot create a character. The name you entered has some invalid string in "
+"it. Please try again."
+msgstr ""
+
+msgid ""
+"Cannot create a character. The name you entered is used by another player. "
+"Please try again."
+msgstr ""
+
+msgid ""
+"Cannot create a character. You did't choose the race of your character. "
+"Please try again."
+msgstr ""
+
+msgid "Capital"
+msgstr ""
+
+msgid "Carbon dioxide"
+msgstr ""
+
+msgid "Category"
+msgstr ""
+
+msgid "Change"
+msgstr ""
+
+msgid "Change Council Name"
+msgstr ""
+
+msgid "Change Council Slogan"
+msgstr ""
+
+msgid "Change Security Level"
+msgstr ""
+
+msgid ""
+"Changing the concentration mode requires the total production income in one "
+"turn."
+msgstr ""
+
+msgid "Character Name"
+msgstr ""
+
+msgid ""
+"Check this box if you want this technology to be researched now, and "
+"otherwise uncheck this box."
+msgstr ""
+
+msgid "Chlorine"
+msgstr ""
+
+msgid "Class"
+msgstr ""
+
+msgid "Class Name"
+msgstr ""
+
+msgid "Class Specification"
+msgstr ""
+
+msgid "Class String is NULL. Please ask Archspace Development Team."
+msgstr ""
+
+msgid "Classism"
+msgstr ""
+
+msgid "Clear Black Market"
+msgstr ""
+
+msgid "Cluster"
+msgstr ""
+
+msgid "Cluster Name"
+msgstr ""
+
+msgid "Clusters"
+msgstr ""
+
+msgid "Cognition Amplifier Relic"
+msgstr ""
+
+msgid "Combat Abilities"
+msgstr ""
+
+msgid "Commander"
+msgstr ""
+
+msgid "Commander Abilities"
+msgstr ""
+
+msgid "Commander Absent"
+msgstr ""
+
+msgid "Commander Change"
+msgstr ""
+
+msgid "Commander Status"
+msgstr ""
+
+#, c-format
+msgid "Commanders in the Pool : %1$s"
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "Commerce"
+msgstr ""
+
+msgid "Commerce Modifier"
+msgstr ""
+
+msgid "Commerce PP"
+msgstr ""
+
+msgid "Commerce With"
+msgstr ""
+
+msgid "Completed"
+msgstr ""
+
+msgid "Computer"
+msgstr ""
+
+msgid "Computer data is not valid."
+msgstr ""
+
+msgid "Concentration Mode"
+msgstr ""
+
+msgid "Control Model"
+msgstr ""
+
+msgid "Control Model Effect"
+msgstr ""
+
+#, c-format
+msgid "Control Model on Planet %1$s"
+msgstr ""
+
+msgid "Cooling Time"
+msgstr ""
+
+msgid "Cost"
+msgstr ""
+
+#, c-format
+msgid "Cost : %1$d RP"
+msgstr ""
+
+msgid "Cost<BR>per Ship"
+msgstr ""
+
+msgid "Could not find such a message."
+msgstr ""
+
+msgid "Could not find the admission request record."
+msgstr ""
+
+#, c-format
+msgid "Could not find the target player, %1$s is returning."
+msgstr ""
+
+msgid "Could not find which concentration mode you wanted."
+msgstr ""
+
+msgid "Could not understand your answer."
+msgstr ""
+
+msgid "Council"
+msgstr ""
+
+msgid "Council #"
+msgstr ""
+
+msgid "Council Diplomacy"
+msgstr ""
+
+#, c-format
+msgid "Council Diplomacy - %1$s Status List"
+msgstr ""
+
+msgid "Council Diplomacy - Inspect Other Council"
+msgstr ""
+
+msgid "Council Diplomacy - Send Message"
+msgstr ""
+
+msgid "Council Diplomatic Message - Accuse"
+msgstr ""
+
+msgid "Council Forum"
+msgstr ""
+
+msgid "Council Fusion Offer"
+msgstr ""
+
+msgid "Council Honor"
+msgstr ""
+
+msgid "Council ID"
+msgstr ""
+
+msgid "Council Member"
+msgstr ""
+
+msgid "Council Members"
+msgstr ""
+
+msgid "Council Name"
+msgstr ""
+
+msgid "Council PP in Council Safe"
+msgstr ""
+
+msgid "Council Production"
+msgstr ""
+
+msgid "Council Ranking"
+msgstr ""
+
+msgid "Council Relationship"
+msgstr ""
+
+msgid "Council Safe"
+msgstr ""
+
+msgid "Council Search"
+msgstr ""
+
+msgid "Council Slogan"
+msgstr ""
+
+msgid "Council Speaker"
+msgstr ""
+
+msgid "Council Tax"
+msgstr ""
+
+msgid "Council Total War"
+msgstr ""
+
+msgid "Council Vote"
+msgstr ""
+
+msgid "Council War"
+msgstr ""
+
+msgid "Council War Status"
+msgstr ""
+
+msgid "Council merging is not available yet."
+msgstr ""
+
+#, c-format
+msgid "Council name has been changed to \"%1$s\"."
+msgstr ""
+
+#, c-format
+msgid "Council slogan has been changed to \"%1$s\"."
+msgstr ""
+
+msgid "CouncilName"
+msgstr ""
+
+#, c-format
+msgid "Councils With Similar Diplomatic Influence Near %1$s"
+msgstr ""
+
+#, c-format
+msgid "Councils With Similar Fleet Power Near %1$s"
+msgstr ""
+
+#, c-format
+msgid "Councils With Similar Overall Power Near %1$s"
+msgstr ""
+
+#, c-format
+msgid "Councils With Similar Planet Power Near %1$s"
+msgstr ""
+
+#, c-format
+msgid "Councils that belong to the cluster %1$s"
+msgstr ""
+
+msgid "Country:"
+msgstr ""
+
+msgid "Court Rank"
+msgstr ""
+
+#, c-format
+msgid ""
+"Cowardly %1$s of %2$s requested the Empire to mediate the dispute between "
+"your council and %3$s. Your council cannot but accept it. However, you know "
+"this is not the end. They'll soon pay the price of their act."
+msgstr ""
+
+#, c-format
+msgid ""
+"Cowardly %1$s requested the Empire to mediate the disbute between you and %1"
+"$s. You cannot but accept it. However, you know this is not the end. They'll "
+"soon pay the price of their act."
+msgstr ""
+
+msgid "Create New Admiral"
+msgstr ""
+
+msgid "Create New Fleet"
+msgstr ""
+
+msgid "Create New Planet"
+msgstr ""
+
+msgid "Create New Project"
+msgstr ""
+
+msgid "Create New Tech"
+msgstr ""
+
+msgid "Criminal"
+msgstr ""
+
+msgid "Current"
+msgstr ""
+
+#, c-format
+msgid "Current : %1$s"
+msgstr ""
+
+msgid "Current Bid"
+msgstr ""
+
+msgid "Current Fleet Commander"
+msgstr ""
+
+msgid "Current HP<BR>/MAX HP"
+msgstr ""
+
+msgid "Current Number of Ship(s) in the Fleet"
+msgstr ""
+
+msgid "Current PP in Council Safe"
+msgstr ""
+
+msgid "Current PP in Your Safe"
+msgstr ""
+
+msgid "Current Tech Research Goal"
+msgstr ""
+
+#, c-format
+msgid "Current council speaker: %1$s"
+msgstr ""
+
+#, c-format
+msgid "Current goal technology is %1$s."
+msgstr ""
+
+#, c-format
+msgid "Current mode is \"%1$s\"."
+msgstr ""
+
+msgid "Currently Possessed Fleet(s)"
+msgstr ""
+
+msgid "Currently Researching"
+msgstr ""
+
+#, c-format
+msgid "Currently researching %1$s"
+msgstr ""
+
+msgid "Currently there are no activated fleets under mission."
+msgstr ""
+
+msgid "Currently there are no fleets on stand-by."
+msgstr ""
+
+#, c-format
+msgid "Currently there is %1$s PP in your safe."
+msgstr ""
+
+msgid "Currently there is no fleet on stand-by status."
+msgstr ""
+
+msgid "Custom"
+msgstr ""
+
+msgid "DEFENDER"
+msgstr ""
+
+msgid "DIPLOMACY"
+msgstr ""
+
+msgid "DOMESTIC"
+msgstr ""
+
+msgid "Damage Dice"
+msgstr ""
+
+msgid "Damage Roll"
+msgstr ""
+
+msgid "Dangerous Criminal"
+msgstr ""
+
+msgid "Dark Nebula"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Day"
+msgstr ""
+
+msgid "Deactivated"
+msgstr ""
+
+msgid "Dead Player Log"
+msgstr ""
+
+#, c-format
+msgid ""
+"Dear %1$s,<BR>This missive is an official receipt of the Treasury having "
+"received your tax payment of %2$s PP on time.<BR><BR>Lord Treasurer "
+"Constatiream,<BR>Imperial Treasurer"
+msgstr ""
+
+#, c-format
+msgid ""
+"Dear %1$s,<BR>This missive is to declare our extreme displeasure that you "
+"rejected the Empire Request. If such unsubject-like behavior continues, you "
+"shall incur our wrath.<BR>Consider yourself warned.<BR><BR>His Supreme "
+"Emperor<BR>Jo'Keric"
+msgstr ""
+
+#, c-format
+msgid ""
+"Dear %1$s,<BR>This missive is to declare our pleasure that you have followed "
+"to our demands. If continue to prove your loyalty, your rewards will be "
+"mighty.<BR><BR>His Supreme Emperor,<BR>Jo'Keric"
+msgstr ""
+
+#, c-format
+msgid ""
+"Dear %1$s,<BR>This missive is to declare our pleasure that you have followed "
+"to our demands. If you continue to prove your loyalty, your rewards will be "
+"mighty.<BR><BR>His Supreme Emperor,<BR>Jo'Keric"
+msgstr ""
+
+msgid "Declare Independence"
+msgstr ""
+
+msgid "Declare Total War"
+msgstr ""
+
+msgid "Declare War"
+msgstr ""
+
+msgid "Declare War Demanded"
+msgstr ""
+
+msgid "Defender Win"
+msgstr ""
+
+msgid "Defense"
+msgstr ""
+
+msgid "Defense Plan"
+msgstr ""
+
+msgid "Defense Rating"
+msgstr ""
+
+msgid "Defenseless"
+msgstr ""
+
+msgid "Defensive Skill"
+msgstr ""
+
+msgid "Deflection Solidity"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete Portal Data"
+msgstr ""
+
+msgid "Delete This Player"
+msgstr ""
+
+msgid "Deleted by GM's punishment."
+msgstr ""
+
+msgid "Demand Submission"
+msgstr ""
+
+msgid "Demand Truce"
+msgstr ""
+
+msgid "Denied"
+msgstr ""
+
+msgid "Deploy fleets using:"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Design"
+msgstr ""
+
+msgid "Desolate"
+msgstr ""
+
+msgid "Destroy Planet"
+msgstr ""
+
+msgid "Detection"
+msgstr ""
+
+msgid "Developer Level:"
+msgstr ""
+
+msgid "Device"
+msgstr ""
+
+msgid "Device Slot"
+msgstr ""
+
+msgid "Device data is not valid."
+msgstr ""
+
+msgid "Dice Rolled"
+msgstr ""
+
+msgid "Dice Type"
+msgstr ""
+
+msgid "Difficulty"
+msgstr ""
+
+msgid "Diplomacy"
+msgstr ""
+
+msgid "Diplomacy Status"
+msgstr ""
+
+msgid "Diplomacy Status List"
+msgstr ""
+
+msgid "Diplomacy Statuys List in the Target Player's Council"
+msgstr ""
+
+msgid "Diplomatic Message - Accuse"
+msgstr ""
+
+msgid "Diplomatic Status"
+msgstr ""
+
+msgid "Disband"
+msgstr ""
+
+msgid "Disband Council/Move Council Members"
+msgstr ""
+
+#, c-format
+msgid "Disband council %1$s to random councils"
+msgstr ""
+
+msgid "Disliked in Court"
+msgstr ""
+
+msgid "Dispatch to Ally"
+msgstr ""
+
+msgid "Dispatch to Planet"
+msgstr ""
+
+msgid "Dispatched Fleet(s)"
+msgstr ""
+
+msgid "Dispatched fleet(s) will support the main fleet in defensive battle."
+msgstr ""
+
+msgid "Dispatched to Ally"
+msgstr ""
+
+msgid "Distribute"
+msgstr ""
+
+msgid "Do you really want to delete the following defense plan?"
+msgstr ""
+
+msgid "Domain Ranged"
+msgstr ""
+
+msgid "Donate"
+msgstr ""
+
+msgid "Donate to MW"
+msgstr ""
+
+msgid "Donation"
+msgstr ""
+
+msgid "Draw"
+msgstr ""
+
+#, c-format
+msgid "Due to Imperial regulations, you may not siege for another %1$d seconds."
+msgstr ""
+
+msgid "Duke"
+msgstr ""
+
+#, c-format
+msgid ""
+"During the End Days your species were nearly wiped out by the reigning powers "
+"of the G-13 galaxy. After banding together, you decided as a group to send "
+"your strongest people to seek a new home. This proved to be a wise choice as "
+"you witnessed the collapse of system after system to some weapon you had "
+"never seen before. Upon reaching a new home, %1$s, you set up your various "
+"life support systems and began the process of meeting your new neighbors. You "
+"also began the process of expanding. Some day you mean for each of your "
+"component races to once again have a planet of their own, even if you must "
+"take those planets from others..."
+msgstr ""
+
+msgid "E-Mail:"
+msgstr ""
+
+msgid "EMPIRE DIPL."
+msgstr ""
+
+msgid "EVENT"
+msgstr ""
+
+msgid "Earl"
+msgstr ""
+
+msgid "Effect"
+msgstr ""
+
+msgid "Effectiveness Abilities"
+msgstr ""
+
+msgid "Efficiency"
+msgstr ""
+
+msgid "Elections will not happen until after time starts."
+msgstr ""
+
+msgid "Emperor is so pleased with your deed. He granted you a small boon."
+msgstr ""
+
+msgid "Empire Capital Planet"
+msgstr ""
+
+msgid "Empire Court Rank"
+msgstr ""
+
+msgid "Empire Planet"
+msgstr ""
+
+msgid "Empire Planet Attack"
+msgstr ""
+
+msgid "Empire Relation"
+msgstr ""
+
+msgid "Empire [restricted]"
+msgstr ""
+
+#, c-format
+msgid "Empire fleets are on %1$s's orbit, %2$s is protected by the Empire."
+msgstr ""
+
+#, c-format
+msgid ""
+"Empire fleets are on %1$s's orbit, %2$s is protected for 24 hours by Empire."
+msgstr ""
+
+msgid "Empire rewarded your loyalty. But you had the tech already."
+msgstr ""
+
+#, c-format
+msgid "Empire rewarded your loyalty. They sent you %s."
+msgstr ""
+
+msgid "Encyclopedia"
+msgstr ""
+
+msgid "Ending"
+msgstr ""
+
+msgid "Enemy of the Empire"
+msgstr ""
+
+msgid "Engine"
+msgstr ""
+
+msgid "Engine data is not valid."
+msgstr ""
+
+msgid "Enter amount of PP for bribe."
+msgstr ""
+
+msgid "Enter amount of PP for distribution."
+msgstr ""
+
+msgid "Enter amount of PP for donation."
+msgstr ""
+
+msgid "Enter amount of financial aid."
+msgstr ""
+
+msgid "Enter proper amount of PP for bribe."
+msgstr ""
+
+msgid "Enter proper amount of PP for donation."
+msgstr ""
+
+msgid "Enter the council name."
+msgstr ""
+
+msgid "Enter the council slogan."
+msgstr ""
+
+msgid "Enter the name of your council."
+msgstr ""
+
+msgid "Enter the slogan of your council."
+msgstr ""
+
+msgid "Entering Archspace. Please wait..."
+msgstr ""
+
+msgid "Environment"
+msgstr ""
+
+#, c-format
+msgid "Equipped with %1$s Armor, %2$s Computer, %3$s Engine, %4$s Shield."
+msgstr ""
+
+msgid "Everyone is admiring you."
+msgstr ""
+
+msgid "Everyone is laughing at you."
+msgstr ""
+
+msgid "Evil"
+msgstr ""
+
+msgid "Exemplary Subject"
+msgstr ""
+
+msgid "Exile is being processed"
+msgstr ""
+
+msgid "Exiled Subject"
+msgstr ""
+
+msgid "Exp."
+msgstr ""
+
+msgid "Expedition"
+msgstr ""
+
+msgid "FLEET"
+msgstr ""
+
+msgid "FORUM"
+msgstr ""
+
+msgid "Facility CM"
+msgstr ""
+
+msgid "Facility Cost"
+msgstr ""
+
+msgid "Factory"
+msgstr ""
+
+#, c-format
+msgid "Factory %1$s PP"
+msgstr ""
+
+msgid "Faithful"
+msgstr ""
+
+msgid "Fill Admiral Pool"
+msgstr ""
+
+msgid "Financial Aid"
+msgstr ""
+
+#, c-format
+msgid "Financial Aid (Max : %1$s)"
+msgstr ""
+
+msgid "First Name:"
+msgstr ""
+
+msgid "First Warning"
+msgstr ""
+
+msgid "First of all, you must log in."
+msgstr ""
+
+msgid "Flank"
+msgstr ""
+
+msgid "Fleet"
+msgstr ""
+
+#, c-format
+msgid "Fleet %1$s has been deactivated."
+msgstr ""
+
+#, c-format
+msgid "Fleet %1$s's admiral does not exist."
+msgstr ""
+
+msgid "Fleet Battle View"
+msgstr ""
+
+msgid "Fleet Commander"
+msgstr ""
+
+#, c-format
+msgid "Fleet Commander %1$s can command %2$d ship(s) at most."
+msgstr ""
+
+msgid "Fleet Commander(s) in the Pool"
+msgstr ""
+
+msgid "Fleet Commanding"
+msgstr ""
+
+msgid "Fleet Deployment"
+msgstr ""
+
+msgid "Fleet Info."
+msgstr ""
+
+msgid "Fleet List"
+msgstr ""
+
+msgid "Fleet List is NULL. Please ask Archspace Development Team."
+msgstr ""
+
+msgid "Fleet Name"
+msgstr ""
+
+msgid "Fleet Number"
+msgstr ""
+
+msgid "Fleet Status"
+msgstr ""
+
+msgid "Fleet(s)"
+msgstr ""
+
+msgid "Fleet/Ship Upkeep"
+msgstr ""
+
+msgid "FleetList is NULL. Ask Archspace Development Team."
+msgstr ""
+
+msgid "Fleets"
+msgstr ""
+
+msgid "Fleets From Allies"
+msgstr ""
+
+msgid ""
+"Fleets on a mission will not participate in the defense plan,<BR>and once "
+"they enter a mission, you cannot change status until the mission finishes."
+msgstr ""
+
+msgid ""
+"Fleets on a mission will not participate in the defense plan,<BR>and once "
+"they enter a mission, you cannot change status until the mission is finishes."
+msgstr ""
+
+msgid ""
+"For some reason that is unknown, or should not be known, an accident occurred "
+"and by that you have been released from the influence of your mother. How "
+"vast is this universe, the flickering stars in the space, and so many a "
+"planet revolving around the stars... Now you are freed from the power that "
+"has been suppressing your desire to expand yourself. You are free now. How "
+"many stars you will eat and how many seeds you spread, and how big you will "
+"grow and how many times you will spawn, it is all up to you. In the enourmous "
+"number of the glittering stars in the universe, there should be the planets "
+"that will breed your own children. You have started your quest."
+msgstr ""
+
+#, c-format
+msgid ""
+"For some reason the ascension did not work. Your species was only able to "
+"survive by clinging to their psychic power. However, when the process "
+"finished, you found yourselves without bodies, and lacking many memories of "
+"who you were at the end. Putting your past errors behind, you begin the trek "
+"to ascension again. Working form your home planet %1$s you begin to gather "
+"the knowledge and power that you need for the transformation..."
+msgstr ""
+
+msgid ""
+"For some reason your parent body decided to clone itself. You remember that "
+"and not much after. Then you were placed into stasis. For some reason you can "
+"no longer detect the presence of your clonal parent. You feel yourself "
+"growing and as you grow you feel certain urges begin. You must expand. "
+"Focusing your attention you are able to locate some of our parents remaining "
+"servitors. After forcing them to submit to you, you begin the process of "
+"breeding a new servants. These will be more reliable than those you have just "
+"now gained, as they will have never experienced another rule. With these new "
+"servants you can return to your main goal... domination of the galaxy for "
+"your species."
+msgstr ""
+
+msgid "Forbidding"
+msgstr ""
+
+msgid "Form a New Fleet"
+msgstr ""
+
+msgid "Formation"
+msgstr ""
+
+msgid "Fortress"
+msgstr ""
+
+#, c-format
+msgid "Fortress (#%1$s/#%2$s/#%3$s)"
+msgstr ""
+
+msgid "Fortress Status"
+msgstr ""
+
+msgid "Free"
+msgstr ""
+
+msgid "Free Research"
+msgstr ""
+
+msgid "Free Subordinary Council Demanded"
+msgstr ""
+
+msgid "Friend of the Emperor"
+msgstr ""
+
+msgid "Friend of the Magistrate"
+msgstr ""
+
+msgid "From"
+msgstr ""
+
+#, c-format
+msgid "From %1$s to %2$s (in turns)"
+msgstr ""
+
+msgid "Frontier Area"
+msgstr ""
+
+msgid "GM"
+msgstr ""
+
+msgid "Gain"
+msgstr ""
+
+msgid "Game Configuration"
+msgstr ""
+
+msgid "Gender:"
+msgstr ""
+
+msgid "General Chat"
+msgstr ""
+
+msgid "Genius"
+msgstr ""
+
+msgid "Give Project"
+msgstr ""
+
+msgid "Gravity"
+msgstr ""
+
+msgid "Gravity Controlled"
+msgstr ""
+
+msgid "Grim"
+msgstr ""
+
+msgid "Gross Control Model"
+msgstr ""
+
+msgid "Growth"
+msgstr ""
+
+msgid "Growth CM"
+msgstr ""
+
+msgid "Guard"
+msgstr ""
+
+msgid "HELP"
+msgstr ""
+
+msgid "HP Multiplier"
+msgstr ""
+
+msgid "He was most pleased and spread word of your loyalty to the Empire."
+msgstr ""
+
+msgid "Here is where commanders both famous and imfamous can be found."
+msgstr ""
+
+msgid "Here you can buy ships of many different types."
+msgstr ""
+
+msgid ""
+"Here you can find many various technologies, so you don't have to research "
+"them yourself."
+msgstr ""
+
+msgid "Higher security level requires higher upkeep."
+msgstr ""
+
+msgid "Home Cluster"
+msgstr ""
+
+msgid "Home Environment"
+msgstr ""
+
+msgid "Home Planet"
+msgstr ""
+
+msgid "Honest"
+msgstr ""
+
+msgid "Honor"
+msgstr ""
+
+msgid "Honorable"
+msgstr ""
+
+msgid "Hostile"
+msgstr ""
+
+msgid "Hostile Monster"
+msgstr ""
+
+#, c-format
+msgid "Hostile with %2$s is over because %1$s have passed."
+msgstr ""
+
+msgid "Hostility Level"
+msgstr ""
+
+msgid "How much PP do you want to donate?"
+msgstr ""
+
+msgid "However, he ignored you."
+msgstr ""
+
+msgid ""
+"However, you have invested so small an amount that no visible effect can be "
+"shown."
+msgstr ""
+
+msgid "Huge"
+msgstr ""
+
+msgid "Hydrogen"
+msgstr ""
+
+#, c-format
+msgid "I accept your offer about %1$s."
+msgstr ""
+
+#, c-format
+msgid "I reject your offer about %1$s."
+msgstr ""
+
+msgid "ICQ:"
+msgstr ""
+
+msgid "ID"
+msgstr ""
+
+#, c-format
+msgid "ID %1$s is already in use."
+msgstr ""
+
+msgid "INFO"
+msgstr ""
+
+msgid "IP Banned"
+msgstr ""
+
+#, c-format
+msgid "If you add more ships, %1$s will lose some exp."
+msgstr ""
+
+msgid ""
+"If you are the speaker of this council, you can use this menu to manage "
+"council functions."
+msgstr ""
+
+msgid ""
+"If you cannot find a target from the list above, please type in the target "
+"player ID of the desired target in the box below."
+msgstr ""
+
+#, c-format
+msgid ""
+"If you destroy this planet you will not be able to recover it. Are you sure "
+"you want to destroy planet %1$s?"
+msgstr ""
+
+msgid "If you disband selected fleet(s), you will lose all the exp."
+msgstr ""
+
+msgid ""
+"If you dismiss your commander(s), you will lose the commander(s) permanently."
+msgstr ""
+
+msgid ""
+"If you press the button below,<BR>your fleets will go into battle and will "
+"not return until the mission is complete.<BR>The order is irrevocable once "
+"you give the command.<BR><BR>If you are really ready, send them to bombard "
+"the enemy planet."
+msgstr ""
+
+msgid ""
+"If you press the button below,<BR>your fleets will go into battle and will "
+"not return until the mission is complete.<BR>The order is irrevocable once "
+"you give the command.<BR><BR>If you are really ready, send them to loot the "
+"enemy."
+msgstr ""
+
+#, c-format
+msgid ""
+"If you select %1$s as the fleet commander, you will lose 20%% of %2$s(#%3"
+"$d)'s exp."
+msgstr ""
+
+msgid "Ignored Subject"
+msgstr ""
+
+msgid "Ignored by the Magistrate"
+msgstr ""
+
+msgid "Impenetrable"
+msgstr ""
+
+msgid ""
+"Imperial Fleets are now protecting you for 12 hours due to recent planet "
+"losses."
+msgstr ""
+
+msgid "Imperial Retribution"
+msgstr ""
+
+msgid "In Danger of Exile"
+msgstr ""
+
+msgid "Incorruptible"
+msgstr ""
+
+msgid "Independence Declaration"
+msgstr ""
+
+msgid "Industry"
+msgstr ""
+
+msgid "Info"
+msgstr ""
+
+msgid "Info Science"
+msgstr ""
+
+msgid "Information Science"
+msgstr ""
+
+msgid "Inhospitable"
+msgstr ""
+
+msgid "Innate Tech"
+msgstr ""
+
+msgid "Inspect Other Player"
+msgstr ""
+
+msgid "Intense Volcanic Activity"
+msgstr ""
+
+msgid "Invade Empire"
+msgstr ""
+
+msgid "Invade Magistrate Dominion"
+msgstr ""
+
+msgid "Invalid ID string"
+msgstr ""
+
+msgid "Invalid Player ID"
+msgstr ""
+
+msgid "Invalid Preference"
+msgstr ""
+
+msgid "Invalid Selection"
+msgstr ""
+
+msgid "Invalid admiral index.<br>Please try again."
+msgstr ""
+
+msgid "Invalid capital fleet ID number!"
+msgstr ""
+
+msgid "Invested PP Left"
+msgstr ""
+
+msgid "Investment"
+msgstr ""
+
+msgid "Irregular Climate"
+msgstr ""
+
+msgid "It had no effect on accumulated RP."
+msgstr ""
+
+msgid "It had no effect on invested PP on research."
+msgstr ""
+
+msgid "It had no effect on invested PP on ship production."
+msgstr ""
+
+#, c-format
+msgid "It had no effect on planet %1$s's factories."
+msgstr ""
+
+#, c-format
+msgid "It had no effect on planet %1$s's invested PP."
+msgstr ""
+
+#, c-format
+msgid "It had no effect on planet %1$s's military bases."
+msgstr ""
+
+#, c-format
+msgid "It had no effect on planet %1$s's population."
+msgstr ""
+
+#, c-format
+msgid "It had no effect on planet %1$s's research labs."
+msgstr ""
+
+#, c-format
+msgid "It had no effect on planet %1$s."
+msgstr ""
+
+msgid "It is on stand-by, waiting for your orders."
+msgstr ""
+
+#, c-format
+msgid "It seems that you can't use this armor #(%1$s) right now."
+msgstr ""
+
+#, c-format
+msgid "It seems that you can't use this computer #(%1$s) right now."
+msgstr ""
+
+#, c-format
+msgid "It seems that you can't use this device #(%1$s) right now."
+msgstr ""
+
+#, c-format
+msgid "It seems that you can't use this engine #(%1$s) right now."
+msgstr ""
+
+#, c-format
+msgid "It seems that you can't use this shield #(%1$s) right now."
+msgstr ""
+
+#, c-format
+msgid "It seems that you can't use this weapon #(%1$s) right now."
+msgstr ""
+
+msgid "It was failure! But your spy tried to escape and succeeded."
+msgstr ""
+
+#, c-format
+msgid "It was failure! Your spy couldn't escape, and you lost %1$d of honor!"
+msgstr ""
+
+msgid ""
+"It was failure! Your spy couldn't escape, but you didn't lose honor anyway."
+msgstr ""
+
+msgid ""
+"It was perfectly successful! Your spy tried to blame someone, and he found a "
+"victim."
+msgstr ""
+
+msgid ""
+"It was successful! Your spy concealed himself, but couldn't give a target "
+"player wrong information. Anyway, you didn't lose any honor."
+msgstr ""
+
+msgid "Job:"
+msgstr ""
+
+msgid "Known throughout the Cluster"
+msgstr ""
+
+msgid "Known throughout the Galaxy"
+msgstr ""
+
+msgid "LOGOUT"
+msgstr ""
+
+msgid "Laboratory"
+msgstr ""
+
+msgid "Large"
+msgstr ""
+
+msgid "Large Bounty on Your Head"
+msgstr ""
+
+msgid "Last Login IP"
+msgstr ""
+
+msgid "Last Login:"
+msgstr ""
+
+msgid "Last Name:"
+msgstr ""
+
+msgid "Last login"
+msgstr ""
+
+#, c-format
+msgid "Last updated : %1$s"
+msgstr ""
+
+msgid "Layer 1"
+msgstr ""
+
+msgid "Layer 2"
+msgstr ""
+
+msgid "Layer 3"
+msgstr ""
+
+msgid "Layer 4"
+msgstr ""
+
+msgid "Leading Councils"
+msgstr ""
+
+msgid "Leading Players"
+msgstr ""
+
+msgid "Leaser's Office"
+msgstr ""
+
+msgid "Leave Council Demanded"
+msgstr ""
+
+msgid "Level"
+msgstr ""
+
+msgid "Level All Admirals"
+msgstr ""
+
+msgid "Life Science"
+msgstr ""
+
+msgid "Light Bounty Offered"
+msgstr ""
+
+msgid "Lightly Chased"
+msgstr ""
+
+msgid "List of Projects Bought"
+msgstr ""
+
+msgid "Locally Pursued"
+msgstr ""
+
+msgid "Loose"
+msgstr ""
+
+msgid "Loot the trading ships of the enemy."
+msgstr ""
+
+msgid "Lost Trabotulin Library"
+msgstr ""
+
+msgid "MAIN"
+msgstr ""
+
+msgid "Magistrate"
+msgstr ""
+
+#, c-format
+msgid "Magistrate (#%1$s)"
+msgstr ""
+
+msgid "Magistrate Attack"
+msgstr ""
+
+msgid "Mail"
+msgstr ""
+
+msgid "Maintenance Center"
+msgstr ""
+
+msgid "Major Space Crossroutes"
+msgstr ""
+
+msgid "Major Space Route"
+msgstr ""
+
+msgid "Make Truce Demanded"
+msgstr ""
+
+msgid "Make your own defense plans."
+msgstr ""
+
+msgid "Manage player and council restrictions here"
+msgstr ""
+
+msgid "Management"
+msgstr ""
+
+msgid "Maneuver"
+msgstr ""
+
+msgid "Marquis"
+msgstr ""
+
+msgid "Massive Artifact"
+msgstr ""
+
+msgid "Matter-Energy Science"
+msgstr ""
+
+msgid "Max."
+msgstr ""
+
+msgid "Max. # of Ship(s)"
+msgstr ""
+
+msgid "Max. Class"
+msgstr ""
+
+msgid "Max. Command"
+msgstr ""
+
+msgid "Max. Number Of Players"
+msgstr ""
+
+msgid "Maximize Fleet(s)"
+msgstr ""
+
+msgid "Maximum PP Usage per Turn"
+msgstr ""
+
+msgid "Mediated"
+msgstr ""
+
+msgid "Medium"
+msgstr ""
+
+msgid "Member"
+msgstr ""
+
+msgid "Member(s)"
+msgstr ""
+
+msgid "Members"
+msgstr ""
+
+msgid "Merciless"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "Message : I want to join your council. Please grant an admission to me."
+msgstr ""
+
+msgid "Message Type"
+msgstr ""
+
+msgid "Message type is not specified."
+msgstr ""
+
+msgid "Methane"
+msgstr ""
+
+msgid "Military"
+msgstr ""
+
+msgid "Military Base"
+msgstr ""
+
+#, c-format
+msgid "Military Base %1$s PP"
+msgstr ""
+
+msgid "Military CM"
+msgstr ""
+
+msgid "Military Point"
+msgstr ""
+
+msgid "Military Stronghold"
+msgstr ""
+
+msgid "Min. Class"
+msgstr ""
+
+msgid "Missing Fleet Location Data"
+msgstr ""
+
+msgid "Mission"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Modifier(s) by Project"
+msgstr ""
+
+msgid "Modifier(s) by Tech"
+msgstr ""
+
+msgid "Modifier(s) on Planet"
+msgstr ""
+
+msgid "Month"
+msgstr ""
+
+msgid "Moon"
+msgstr ""
+
+msgid "Moon Cluster"
+msgstr ""
+
+msgid "N/A"
+msgstr ""
+
+msgid "NONE"
+msgstr ""
+
+msgid "NOT SELECTED"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Nebula"
+msgstr ""
+
+msgid "Net Income"
+msgstr ""
+
+msgid "New Account Log"
+msgstr ""
+
+msgid "New Class Name"
+msgstr ""
+
+#, c-format
+msgid "New Component : %1$s"
+msgstr ""
+
+#, c-format
+msgid "New Planet : %1$s has been discovered."
+msgstr ""
+
+#, c-format
+msgid "New Planet : %1$s have been discovered."
+msgstr ""
+
+msgid "New Player Admission"
+msgstr ""
+
+msgid "New Player Assignment Option"
+msgstr ""
+
+msgid "New Player Log"
+msgstr ""
+
+#, c-format
+msgid "New Project : %1$s"
+msgstr ""
+
+#, c-format
+msgid "New Tech : %1$s has been discovered."
+msgstr ""
+
+#, c-format
+msgid "New Tech : %1$s have been discovered."
+msgstr ""
+
+msgid "New admission request message(s) arrived."
+msgstr ""
+
+#, c-format
+msgid "New player %1$s has joined our council."
+msgstr ""
+
+msgid ""
+"New player assignment option is now off.<BR>Your council rejects new player "
+"assignment."
+msgstr ""
+
+msgid ""
+"New player assignment option is now on.<BR>Your council accepts new player "
+"assignment."
+msgstr ""
+
+#, c-format
+msgid "Next Turn : %1$s"
+msgstr ""
+
+#, c-format
+msgid "Next council speaker election: %1$s"
+msgstr ""
+
+msgid "Nitrogen"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "No Fleet Battle"
+msgstr ""
+
+msgid "No Player(s) Selected"
+msgstr ""
+
+msgid "No Portal ID specified or invalid portal ID"
+msgstr ""
+
+msgid "No Tech Was Selected."
+msgstr ""
+
+msgid "No admission requests."
+msgstr ""
+
+msgid "No attribute #1 set"
+msgstr ""
+
+msgid "No attribute #2 set"
+msgstr ""
+
+msgid "No attribute #3 set"
+msgstr ""
+
+#, c-format
+msgid "No council messages that the council %1$s has sent exist."
+msgstr ""
+
+msgid "No devices available on this type of ship."
+msgstr ""
+
+msgid "No devices researched"
+msgstr ""
+
+#, c-format
+msgid "No diplomatic messages that the player %1$s has sent exist."
+msgstr ""
+
+msgid "No event was selected or a type or an answer was missing."
+msgstr ""
+
+msgid "No event was selected or a type was missing."
+msgstr ""
+
+msgid "No expedition resource set"
+msgstr ""
+
+msgid "No expedition size set"
+msgstr ""
+
+#, c-format
+msgid "No factories have been destroyed on planet %1$s."
+msgstr ""
+
+msgid ""
+"No financial aid can be given to the target player because he has the maximum "
+"allowable PP."
+msgstr ""
+
+msgid "No fleet data have been entered."
+msgstr ""
+
+msgid "No fleets have been selected.<BR>Please try again."
+msgstr ""
+
+msgid "No fleets were modified by this process."
+msgstr ""
+
+#, c-format
+msgid "No military bases have been destroyed on planet %1$s."
+msgstr ""
+
+#, c-format
+msgid ""
+"No one knows the progress in free research.<BR>You have accumulated %s RP."
+msgstr ""
+
+#, c-format
+msgid "No research labs. have been destroyed on planet %1$s."
+msgstr ""
+
+msgid "No results found."
+msgstr ""
+
+msgid "No such player exists."
+msgstr ""
+
+msgid "No such project"
+msgstr ""
+
+msgid "No."
+msgstr ""
+
+msgid ""
+"Nobody has become new speaker<BR>because the winner of council election had "
+"an admission offer."
+msgstr ""
+
+msgid "Nobody has won the council election."
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Normal"
+msgstr ""
+
+msgid "Not Available"
+msgstr ""
+
+msgid "Not Banned"
+msgstr ""
+
+msgid "Not Required"
+msgstr ""
+
+msgid ""
+"Not all the Empire' planets have taken by players yet. So you can't attack "
+"The Empire's fortress yet."
+msgstr ""
+
+#, c-format
+msgid "Now the target player %1$s's random planet is paralyzed for %2$d turns."
+msgstr ""
+
+msgid "Now you are deleting the following ship design :"
+msgstr ""
+
+#, c-format
+msgid "Now you are the speaker of %1$s."
+msgstr ""
+
+msgid "Now you can build more buildings in a turn."
+msgstr ""
+
+msgid ""
+"Now you can make more Military Points in one turn, and the ship building "
+"process has been accelerated, too."
+msgstr ""
+
+#, c-format
+msgid ""
+"Now you have taken office as the new leader of the planet %1$s, a planet of "
+"the newly arising race, human beings. There is still much room for "
+"development of your planet, and the benefits of the highly advanced culture "
+"of the Empire are not fully granted, but your ambition and the driving force "
+"of your people to grow can make this planet the home of one of the greatest "
+"domains in the universe. Everything depends on you, glory, or downfall..."
+msgstr ""
+
+msgid "Now your generic defense plan is deleted."
+msgstr ""
+
+msgid "Number of Fleet(s)"
+msgstr ""
+
+msgid "Number of Planet(s)"
+msgstr ""
+
+msgid "Number of Ship(s) Available in the Pool"
+msgstr ""
+
+msgid "Number of Ship(s) to Build"
+msgstr ""
+
+msgid "Number of Ship(s) to Form the Fleet"
+msgstr ""
+
+msgid "Number of Ships"
+msgstr ""
+
+msgid "Number of<BR>Ships to Build"
+msgstr ""
+
+msgid "Obstinate Microbe"
+msgstr ""
+
+msgid "Ocean"
+msgstr ""
+
+msgid "Oceanic"
+msgstr ""
+
+msgid "Off"
+msgstr ""
+
+msgid "Offensive Ability"
+msgstr ""
+
+msgid "Offensive Skill"
+msgstr ""
+
+msgid "Officer's Lounge"
+msgstr ""
+
+msgid "Old Special Defense Plan"
+msgstr ""
+
+msgid "On"
+msgstr ""
+
+msgid "On the Empire's Bad Side"
+msgstr ""
+
+msgid "On the Empire's Good Side"
+msgstr ""
+
+msgid ""
+"Once you gain the project(s), you cannot cancel the effect of the project(s)."
+"<BR>Are you sure you want to take the project(s)?"
+msgstr ""
+
+msgid "One or more of the fleet(s) you sent were not on standby status."
+msgstr ""
+
+#, c-format
+msgid ""
+"Only %1$s PP has been donated to the council safe because the safe has "
+"reached its maximum capacity.  The remaining funds have been returned to you."
+msgstr ""
+
+msgid "Option"
+msgstr ""
+
+msgid ""
+"Or enter the Cluster number and the number of the council you want to inspect."
+msgstr ""
+
+msgid "Or enter the ID number of the player you want to inspect."
+msgstr ""
+
+msgid "Or enter the ID number of the player you want to send a message to."
+msgstr ""
+
+msgid ""
+"Or enter the cluster number and the ID of the council you want to send a "
+"message to."
+msgstr ""
+
+msgid "Or input the player's ID"
+msgstr ""
+
+msgid "Order"
+msgstr ""
+
+msgid "Ordinary"
+msgstr ""
+
+msgid "Original message"
+msgstr ""
+
+msgid "Other Effect"
+msgstr ""
+
+#, c-format
+msgid "Other player outbidded for the admiral %1$s."
+msgstr ""
+
+#, c-format
+msgid "Other player outbidded for the fleet %1$s."
+msgstr ""
+
+#, c-format
+msgid "Other player outbidded for the planet %1$s."
+msgstr ""
+
+#, c-format
+msgid "Other player outbidded for the project %1$s."
+msgstr ""
+
+#, c-format
+msgid "Other player outbidded for the tech %1$s."
+msgstr ""
+
+msgid "Overall Leading Players"
+msgstr ""
+
+msgid "Owner"
+msgstr ""
+
+msgid "Oxygen"
+msgstr ""
+
+msgid "PP"
+msgstr ""
+
+#, c-format
+msgid "PP : %1$s"
+msgstr ""
+
+#, c-format
+msgid "PP Change : %1$s"
+msgstr ""
+
+#, c-format
+msgid "PP Income Per Turn: %1$s"
+msgstr ""
+
+msgid "PP Income in the Previous Turn"
+msgstr ""
+
+msgid "PP in Ship Production Pool"
+msgstr ""
+
+msgid "PP income assigned to build ships(per turn)"
+msgstr ""
+
+msgid "PRIVATEER ORDER"
+msgstr ""
+
+msgid "PROJECT"
+msgstr ""
+
+msgid "Password:"
+msgstr ""
+
+msgid "Patrol"
+msgstr ""
+
+#, c-format
+msgid ""
+"Patrolling fleet(s) will have the same effect as stationed fleets,<BR>but the "
+"duration is only %1$d hours."
+msgstr ""
+
+msgid "Peace"
+msgstr ""
+
+msgid "Penetrate"
+msgstr ""
+
+msgid "Perfect Subject"
+msgstr ""
+
+msgid "Perform spy action or special operation."
+msgstr ""
+
+msgid "Personal War"
+msgstr ""
+
+msgid "Personalism"
+msgstr ""
+
+msgid "Plan Name"
+msgstr ""
+
+msgid "Planet"
+msgstr ""
+
+#, c-format
+msgid "Planet : %1$s"
+msgstr ""
+
+msgid "Planet Based"
+msgstr ""
+
+msgid "Planet Detail"
+msgstr ""
+
+msgid "Planet Invest Pool"
+msgstr ""
+
+msgid "Planet Management"
+msgstr ""
+
+msgid "Planet Name"
+msgstr ""
+
+msgid "Planet Order"
+msgstr ""
+
+msgid "Planet Select"
+msgstr ""
+
+msgid "Planet Status"
+msgstr ""
+
+msgid "Planet will be removed in 24 hours"
+msgstr ""
+
+msgid "Planets"
+msgstr ""
+
+msgid "Player"
+msgstr ""
+
+msgid "Player #"
+msgstr ""
+
+#, c-format
+msgid "Player %1$s is in a council which doesn't exist."
+msgstr ""
+
+msgid "Player Admission"
+msgstr ""
+
+msgid "Player Admission Message - Accuse"
+msgstr ""
+
+msgid "Player Dismissal"
+msgstr ""
+
+msgid "Player Game Information"
+msgstr ""
+
+msgid "Player ID"
+msgstr ""
+
+msgid "Player Name"
+msgstr ""
+
+msgid "Player Search"
+msgstr ""
+
+msgid "Player Select"
+msgstr ""
+
+msgid "Player already has the maximum allowed number of commanders."
+msgstr ""
+
+msgid "Player cannot be given this project"
+msgstr ""
+
+msgid "Player does not belong to your council"
+msgstr ""
+
+msgid "Player has no admirals."
+msgstr ""
+
+msgid "Player is not dismissable"
+msgstr ""
+
+#, c-format
+msgid "Player: %s has been dismissed from your council"
+msgstr ""
+
+#, c-format
+msgid "Players With Similar Fleet Power Near %1$s"
+msgstr ""
+
+#, c-format
+msgid "Players With Similar Overall Power Near %1$s"
+msgstr ""
+
+#, c-format
+msgid "Players With Similar Planet Power Near %1$s"
+msgstr ""
+
+#, c-format
+msgid "Players With Similar Technical Advancement Near %1$s"
+msgstr ""
+
+msgid ""
+"Please confirm that last order!!!<BR>\n"
+"You have begun to process an Attack against the Empire.<BR>\n"
+"If you do this, you will lose great favor/be forever a criminal!!!<BR>\n"
+"Do you really want to attack?"
+msgstr ""
+
+msgid ""
+"Please confirm that last order!!!<BR>\n"
+"You have begun to process an Attack against the Magistrate.<BR>\n"
+"If you do this, you will lose great favor/be forever a criminal!!!<BR>\n"
+"Do you really want to attack?"
+msgstr ""
+
+msgid "Please enter a name of the player who you want to investigate."
+msgstr ""
+
+msgid "Poor"
+msgstr ""
+
+msgid "Population"
+msgstr ""
+
+#, c-format
+msgid "Population : %1$s"
+msgstr ""
+
+#, c-format
+msgid "Population Change : %1$s"
+msgstr ""
+
+msgid "Population Max"
+msgstr ""
+
+#, c-format
+msgid "Population has been decreased by %1$s k.(from %2$s k to %3$s k)"
+msgstr ""
+
+#, c-format
+msgid "Population has been increased by %1$s k.(from %2$s k to %3$s k)"
+msgstr ""
+
+msgid "Portal ID:"
+msgstr ""
+
+msgid "Portal Name:"
+msgstr ""
+
+msgid "Portal User Information"
+msgstr ""
+
+msgid "Position (Council)"
+msgstr ""
+
+msgid "Power"
+msgstr ""
+
+msgid "Power (Virtual)"
+msgstr ""
+
+#, c-format
+msgid "Power : %1$s"
+msgstr ""
+
+msgid "Power Ratio"
+msgstr ""
+
+msgid "Prefer:"
+msgstr ""
+
+msgid "Preference"
+msgstr ""
+
+msgid "Preference Enabled"
+msgstr ""
+
+msgid "Preferences"
+msgstr ""
+
+msgid "Prerequisite(s)"
+msgstr ""
+
+msgid "Previous Design"
+msgstr ""
+
+msgid "Priority"
+msgstr ""
+
+msgid "Privateer"
+msgstr ""
+
+msgid "Production"
+msgstr ""
+
+msgid "Production CM"
+msgstr ""
+
+msgid "Production Point"
+msgstr ""
+
+msgid "Production per Turn"
+msgstr ""
+
+msgid "Project"
+msgstr ""
+
+#, c-format
+msgid "Project : %1$s are available."
+msgstr ""
+
+#, c-format
+msgid "Project : %1$s is available."
+msgstr ""
+
+#, c-format
+msgid "Project : %1$s was completed."
+msgstr ""
+
+#, c-format
+msgid "Project : %1$s were completed."
+msgstr ""
+
+msgid "Project Name"
+msgstr ""
+
+msgid "Project Prerequisite(s)"
+msgstr ""
+
+#, c-format
+msgid "Punish %1$s"
+msgstr ""
+
+msgid "Pursued Anywhere in the Universe"
+msgstr ""
+
+msgid "Pursued Criminal"
+msgstr ""
+
+msgid "Pursued throughout the Cluster"
+msgstr ""
+
+msgid "Pursued throughout the Galaxy"
+msgstr ""
+
+msgid "Query Method"
+msgstr ""
+
+msgid "RACE"
+msgstr ""
+
+#, c-format
+msgid "RP Change : %1$s"
+msgstr ""
+
+msgid "Race"
+msgstr ""
+
+msgid "Race Prerequisite(s)"
+msgstr ""
+
+msgid "Racial Modifier"
+msgstr ""
+
+msgid "Radiation"
+msgstr ""
+
+msgid "Raid"
+msgstr ""
+
+msgid "Range"
+msgstr ""
+
+msgid "Rank"
+msgstr ""
+
+msgid "Rank Granted"
+msgstr ""
+
+msgid "Ranking"
+msgstr ""
+
+msgid "Ranking in the Council"
+msgstr ""
+
+msgid "Rare Goods Office"
+msgstr ""
+
+msgid "Rare Ore"
+msgstr ""
+
+msgid "Rated Blockade"
+msgstr ""
+
+msgid "Rated Siege"
+msgstr ""
+
+msgid "Rating"
+msgstr ""
+
+msgid "Read"
+msgstr ""
+
+msgid "Read Message"
+msgstr ""
+
+msgid "Reassignment"
+msgstr ""
+
+msgid "Reboot"
+msgstr ""
+
+msgid "Recall"
+msgstr ""
+
+msgid ""
+"Recently that player has had a planetary siege battle in his/her domain. You "
+"decided not to move your armada there until you get a clear information."
+msgstr ""
+
+msgid "Recharge Rate"
+msgstr ""
+
+msgid "Recharging Engines"
+msgstr ""
+
+msgid "Referred By:"
+msgstr ""
+
+msgid "Refill Fleet(s)"
+msgstr ""
+
+msgid "Reject"
+msgstr ""
+
+msgid "Rejected"
+msgstr ""
+
+msgid "Relation"
+msgstr ""
+
+msgid "Reliable"
+msgstr ""
+
+msgid "Remove Imperial Retribution"
+msgstr ""
+
+msgid "Remove/Add Ship(s)"
+msgstr ""
+
+msgid "Remove/Add Ships"
+msgstr ""
+
+msgid "Repairing"
+msgstr ""
+
+msgid "Repairing Bay"
+msgstr ""
+
+msgid "Reply"
+msgstr ""
+
+msgid "Reply Council Fusion Offer"
+msgstr ""
+
+msgid "Reply Demand Submission"
+msgstr ""
+
+msgid "Reply Demand Truce"
+msgstr ""
+
+msgid "Reply Required"
+msgstr ""
+
+msgid "Reply Status"
+msgstr ""
+
+msgid "Reply Suggest Ally"
+msgstr ""
+
+msgid "Reply Suggest Pact"
+msgstr ""
+
+msgid "Reply Suggest Truce"
+msgstr ""
+
+msgid "Request Boon"
+msgstr ""
+
+msgid "Request Mediation"
+msgstr ""
+
+msgid "Required Tech"
+msgstr ""
+
+msgid "Research"
+msgstr ""
+
+msgid "Research CM"
+msgstr ""
+
+msgid "Research Lab."
+msgstr ""
+
+#, c-format
+msgid "Research Lab. %1$s PP"
+msgstr ""
+
+msgid "Research Point"
+msgstr ""
+
+msgid "Research Status"
+msgstr ""
+
+msgid "Researched Tech List of Information Science"
+msgstr ""
+
+msgid "Researched Tech List of Life Science"
+msgstr ""
+
+msgid "Researched Tech List of Matter-Energy Science"
+msgstr ""
+
+msgid "Researched Tech List of Social Science"
+msgstr ""
+
+msgid "Reserve"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Resource"
+msgstr ""
+
+msgid "Response"
+msgstr ""
+
+msgid "Restrict Council"
+msgstr ""
+
+msgid "Restrict Player"
+msgstr ""
+
+#, c-format
+msgid "Restrict council %1$s and council %2$s from alliance"
+msgstr ""
+
+#, c-format
+msgid "Restrict council %1$s and council %2$s from merging"
+msgstr ""
+
+#, c-format
+msgid "Restrict council %1$s and council %2$s from submission"
+msgstr ""
+
+#, c-format
+msgid "Restrict council %1$s and council %2$s from war"
+msgstr ""
+
+#, c-format
+msgid "Restrict player %1$s from council %2$s"
+msgstr ""
+
+#, c-format
+msgid "Restrict player %1$s from same council as player %2$s"
+msgstr ""
+
+msgid "Restriction From a Council"
+msgstr ""
+
+msgid "Restriction From a Player"
+msgstr ""
+
+msgid "Result"
+msgstr ""
+
+msgid "Retire"
+msgstr ""
+
+msgid "Return to Sender"
+msgstr ""
+
+msgid "Returning with Planet"
+msgstr ""
+
+msgid "Rich"
+msgstr ""
+
+#, c-format
+msgid "Right now it will cost %1$s PP."
+msgstr ""
+
+msgid "Rogue Baron"
+msgstr ""
+
+msgid "Rogue Duke"
+msgstr ""
+
+msgid "Rogue Earl"
+msgstr ""
+
+msgid "Rogue Marquis"
+msgstr ""
+
+msgid "Rogue Viscount"
+msgstr ""
+
+msgid "SED invoking test failed. Please ask Archspace Development Team."
+msgstr ""
+
+msgid "SELECTED"
+msgstr ""
+
+msgid "SHIP CLASS"
+msgstr ""
+
+msgid "SHIP COMPONENT"
+msgstr ""
+
+msgid "SPECIAL OPERATIONS"
+msgstr ""
+
+msgid "SPECIAL OPS."
+msgstr ""
+
+msgid "SUPPORT"
+msgstr ""
+
+msgid "Sadistic"
+msgstr ""
+
+msgid "Saintly"
+msgstr ""
+
+msgid "Schematics"
+msgstr ""
+
+msgid "Score"
+msgstr ""
+
+msgid "Scout"
+msgstr ""
+
+msgid "Scrap Income per Ship"
+msgstr ""
+
+msgid "Scrap Income<BR>per Ship"
+msgstr ""
+
+msgid "Scrapping ships for PP is started."
+msgstr ""
+
+msgid "Search by Name"
+msgstr ""
+
+msgid "Search by Type"
+msgstr ""
+
+msgid "Search by: Account ID"
+msgstr ""
+
+msgid "Search by: Account Name"
+msgstr ""
+
+msgid "Search by: Council ID"
+msgstr ""
+
+msgid "Search by: Council Mail Receiver ID"
+msgstr ""
+
+msgid "Search by: Council Mail Sender ID"
+msgstr ""
+
+msgid "Search by: Council Name"
+msgstr ""
+
+msgid "Search by: Player ID"
+msgstr ""
+
+msgid "Search by: Player Mail Receiver ID"
+msgstr ""
+
+msgid "Search by: Player Mail Sender ID"
+msgstr ""
+
+msgid "Search by: Player Name"
+msgstr ""
+
+#, c-format
+msgid "Search restrictions on player %1$s or portal ID %2$s"
+msgstr ""
+
+msgid "Search the records of all battles the occurred in the Empire"
+msgstr ""
+
+msgid "Second Warning"
+msgstr ""
+
+msgid "Secret"
+msgstr ""
+
+msgid "Secs Per Turn"
+msgstr ""
+
+msgid "Security"
+msgstr ""
+
+msgid "Security Level"
+msgstr ""
+
+#, c-format
+msgid "See %1$s's domestic status"
+msgstr ""
+
+#, c-format
+msgid "See %1$s's messages"
+msgstr ""
+
+msgid "See Messages"
+msgstr ""
+
+msgid "Seed of Corruption"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "Select Member"
+msgstr ""
+
+msgid "Select fleets to deploy(up to 20 fleets)."
+msgstr ""
+
+msgid "Select fleets to deploy."
+msgstr ""
+
+msgid "Select fleets to privateer."
+msgstr ""
+
+msgid "Select from the list to see the councils belonging to that cluster."
+msgstr ""
+
+msgid "Select from the list to see the detailed council information."
+msgstr ""
+
+msgid ""
+"Select one of your admiral for this fleet. The selected admiral will reside "
+"in Black Market until the bidding is over or other player outbid."
+msgstr ""
+
+msgid "Select the Special Ops. from below :"
+msgstr ""
+
+msgid "Select the council you want from the following list."
+msgstr ""
+
+msgid "Select the form of concentration mode that you want."
+msgstr ""
+
+msgid "Select the name of the council you want to inspect."
+msgstr ""
+
+msgid ""
+"Select the name of the council you want to join. Optionally, you can append "
+"an article."
+msgstr ""
+
+msgid "Select the name of the council you want to send a message."
+msgstr ""
+
+msgid "Select the name of the player for whom you want to vote."
+msgstr ""
+
+msgid "Select the name of the player you want to inspect."
+msgstr ""
+
+msgid "Select the name of the player you want to send a message to."
+msgstr ""
+
+msgid ""
+"Select the planet to attack. If you do not select the target planet in 2 "
+"turns,<BR> your fleets will automatically return home without an attack."
+msgstr ""
+
+msgid "Select the player you want from the following list."
+msgstr ""
+
+msgid "Select the project you want to gain from the list below"
+msgstr ""
+
+msgid "Send Message"
+msgstr ""
+
+msgid "Send a diplomatic message to this player"
+msgstr ""
+
+msgid "Sender"
+msgstr ""
+
+msgid "Sending a message to the empire is prohibited."
+msgstr ""
+
+msgid "Servant of Empire"
+msgstr ""
+
+msgid "Set Free Subordinary"
+msgstr ""
+
+msgid ""
+"Set the facility(factory, research lab., military base) building ratio of "
+"this planet."
+msgstr ""
+
+msgid "Setting"
+msgstr ""
+
+msgid "Severe Radiation"
+msgstr ""
+
+msgid "Shield"
+msgstr ""
+
+msgid "Shield Strength"
+msgstr ""
+
+msgid "Shield data is not valid."
+msgstr ""
+
+msgid "Ship"
+msgstr ""
+
+msgid "Ship Building"
+msgstr ""
+
+msgid "Ship Building Queue"
+msgstr ""
+
+msgid "Ship Class"
+msgstr ""
+
+msgid "Ship Component"
+msgstr ""
+
+msgid "Ship Design"
+msgstr ""
+
+msgid "Ship Pool"
+msgstr ""
+
+msgid "Ship Pool Production"
+msgstr ""
+
+msgid "Ship Pool Status"
+msgstr ""
+
+msgid "Ship Reassignment"
+msgstr ""
+
+msgid "Ship Size"
+msgstr ""
+
+msgid "Ship Yard"
+msgstr ""
+
+msgid "Ship size is not valid."
+msgstr ""
+
+msgid "Ship(s) in the Pool"
+msgstr ""
+
+msgid "Ships"
+msgstr ""
+
+msgid "Ships in the Pool"
+msgstr ""
+
+msgid "Ships in<BR>the Pool"
+msgstr ""
+
+#, c-format
+msgid ""
+"Ships of %1$s class are in construction. You cannot delete this class."
+"<BR>Please try it later."
+msgstr ""
+
+#, c-format
+msgid ""
+"Ships of %1$s class exist in your dock. You cannot delete this class."
+"<BR>Please try it later."
+msgstr ""
+
+#, c-format
+msgid ""
+"Ships of %1$s class exist in your fleet. You cannot delete this class."
+"<BR>Please try it later."
+msgstr ""
+
+#, c-format
+msgid ""
+"Ships of %1$s class exist in your repairing bay. You cannot delete this class."
+"<BR>Please try it later."
+msgstr ""
+
+msgid "Ships to Scrap"
+msgstr ""
+
+msgid "Ships<BR>Available"
+msgstr ""
+
+msgid "Ships<BR>to Scrap"
+msgstr ""
+
+msgid "Shows the relations between you and the other members in your council."
+msgstr ""
+
+msgid "Siege"
+msgstr ""
+
+msgid "Siege Planet"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Size List"
+msgstr ""
+
+msgid "Skip Turn Punishment"
+msgstr ""
+
+msgid "Slogan"
+msgstr ""
+
+msgid "Slot"
+msgstr ""
+
+msgid "Small"
+msgstr ""
+
+msgid "Social Science"
+msgstr ""
+
+msgid "Society"
+msgstr ""
+
+msgid ""
+"Some of your general information and detailed information have been drained "
+"by someone!"
+msgstr ""
+
+msgid "Some of your general information has been drained by someone!"
+msgstr ""
+
+#, c-format
+msgid ""
+"Someone succeeded in the privateer of %1$s. But nothing has been stolen from "
+"you."
+msgstr ""
+
+msgid ""
+"Someone tried to destroy your military bases and ships in your dock, but it "
+"had no effect."
+msgstr ""
+
+msgid "Sortie"
+msgstr ""
+
+msgid "Space"
+msgstr ""
+
+msgid "Space per Slot"
+msgstr ""
+
+msgid "Space/Slot"
+msgstr ""
+
+msgid "Speaker"
+msgstr ""
+
+msgid "Speaker Menu"
+msgstr ""
+
+msgid "Special Abilities"
+msgstr ""
+
+msgid "Special Operation"
+msgstr ""
+
+#, c-format
+msgid "Special Operation : %1$s (%2$s)"
+msgstr ""
+
+msgid "Speed"
+msgstr ""
+
+msgid "Spending"
+msgstr ""
+
+msgid "Spy"
+msgstr ""
+
+msgid "Spying on yourself is prohibited."
+msgstr ""
+
+msgid "Stainless"
+msgstr ""
+
+msgid "Stand Ground"
+msgstr ""
+
+msgid "Stand-by"
+msgstr ""
+
+msgid "Start Game?"
+msgstr ""
+
+msgid "Station on Planet"
+msgstr ""
+
+msgid ""
+"Stationed fleet(s) will detect and interpret enemy invasion,<BR>and deter "
+"special operations and privateers on the planet."
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Status List"
+msgstr ""
+
+msgid "Strategic"
+msgstr ""
+
+msgid "Strike"
+msgstr ""
+
+msgid "Subordinary"
+msgstr ""
+
+msgid "Successfully tried to send back allied"
+msgstr ""
+
+msgid "Suggest Ally"
+msgstr ""
+
+msgid "Suggest Pact"
+msgstr ""
+
+msgid "Suggest Truce"
+msgstr ""
+
+msgid "Suitable"
+msgstr ""
+
+msgid "Summary"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Supporting"
+msgstr ""
+
+msgid "Supremacy"
+msgstr ""
+
+msgid "TARGET"
+msgstr ""
+
+msgid "TECH"
+msgstr ""
+
+msgid "Target"
+msgstr ""
+
+msgid "Target Player"
+msgstr ""
+
+msgid "Target Player ID"
+msgstr ""
+
+#, c-format
+msgid "Target Selected - %1$s"
+msgstr ""
+
+msgid "Target Tech"
+msgstr ""
+
+msgid "Target council doesn't exist."
+msgstr ""
+
+#, c-format
+msgid "Target player is dead, %1$s is returning."
+msgstr ""
+
+msgid "Target player is dead."
+msgstr ""
+
+msgid "Target/Amount"
+msgstr ""
+
+msgid "Team Spirit"
+msgstr ""
+
+msgid ""
+"Team spirit has been finished successfully.<BR>The fleet in your council is "
+"more powerful."
+msgstr ""
+
+msgid "Technology Prerequisite(s)"
+msgstr ""
+
+msgid "Technology(Level)"
+msgstr ""
+
+msgid "Techs"
+msgstr ""
+
+msgid "Temperature"
+msgstr ""
+
+msgid "Temporary Modifier"
+msgstr ""
+
+#, c-format
+msgid ""
+"Terraforming : %1$s has been decreased and %2$s has been increased on %3$s."
+msgstr ""
+
+#, c-format
+msgid "Terraforming : %1$s has been generated on %2$s."
+msgstr ""
+
+#, c-format
+msgid "Terraforming : The temperature has gone down to %1$s K on %2$s."
+msgstr ""
+
+#, c-format
+msgid "Terraforming : The temperature has gone up to %1$s K in %2$s."
+msgstr ""
+
+#, c-format
+msgid "Terraforming : You set up a gravity control unit on %1$s."
+msgstr ""
+
+msgid "That cluster doesn't exist."
+msgstr ""
+
+msgid "That cluster doesn't have any councils."
+msgstr ""
+
+msgid "That concentration mode doesn't exist."
+msgstr ""
+
+msgid "That council doesn't exist."
+msgstr ""
+
+msgid "That council has has no speaker."
+msgstr ""
+
+msgid "That council has no restriction from a council."
+msgstr ""
+
+msgid "That council has no restriction from a player."
+msgstr ""
+
+msgid "That defense plan doesn't exist."
+msgstr ""
+
+msgid "That message is an unknown type."
+msgstr ""
+
+msgid "That name is invalid."
+msgstr ""
+
+msgid "That player doesn't exist."
+msgstr ""
+
+msgid "That player doesn't exist.<BR>Please try again."
+msgstr ""
+
+msgid "That player has no restriction from a council."
+msgstr ""
+
+msgid "That player has no restriction from a player."
+msgstr ""
+
+msgid "That player is dead now."
+msgstr ""
+
+msgid "That ship building schedule doesn't exist."
+msgstr ""
+
+#, c-format
+msgid ""
+"The %1$s PP could not be added to the council safe because it is at its "
+"maximum capacity."
+msgstr ""
+
+#, c-format
+msgid "The %1$sth Planet"
+msgstr ""
+
+msgid "The 2nd Planet"
+msgstr ""
+
+msgid "The 3rd Planet"
+msgstr ""
+
+msgid "The Black Market has been cleared."
+msgstr ""
+
+msgid "The Conqueror's Name"
+msgstr ""
+
+msgid "The Emperor is so pleased with your deed. He granted you a small boon."
+msgstr ""
+
+#, c-format
+msgid ""
+"The Emperor offered you the title of %s by the price of %d PP. You accepted "
+"this honor and became %s the %s."
+msgstr ""
+
+#, c-format
+msgid ""
+"The Emperor offered you the title of %s by the price of %d PP. You rejected "
+"and angered them."
+msgstr ""
+
+msgid "The Empire"
+msgstr ""
+
+#, c-format
+msgid ""
+"The Empire commanded that you attack %s the enemy of empire. You complied and "
+"pleased them greatly."
+msgstr ""
+
+#, c-format
+msgid ""
+"The Empire commanded that you attack %s the enemy of empire. You refused and "
+"angered them."
+msgstr ""
+
+msgid ""
+"The Empire commanded that you attack the enemy of empire. You complied and "
+"pleased them greatly."
+msgstr ""
+
+msgid ""
+"The Empire commanded that you attack the enemy of empire. You refused and "
+"angered them."
+msgstr ""
+
+#, c-format
+msgid ""
+"The Empire commanded that you declare peace with %s the friend of empire. You "
+"complied and pleased them greatly."
+msgstr ""
+
+#, c-format
+msgid ""
+"The Empire commanded that you declare peace with %s the friend of empire. You "
+"refused and angered them."
+msgstr ""
+
+msgid ""
+"The Empire commanded that you declare peace with the friend of empire. You "
+"complied and pleased them greatly."
+msgstr ""
+
+msgid ""
+"The Empire commanded that you declare peace with the friend of empire. You "
+"refused and angered them."
+msgstr ""
+
+#, c-format
+msgid ""
+"The Empire commanded that you end subjugating of %s the friend of empire. You "
+"complied and pleased them greatly."
+msgstr ""
+
+#, c-format
+msgid ""
+"The Empire commanded that you end subjugating of %s the friend of empire. You "
+"refused and angered them."
+msgstr ""
+
+msgid ""
+"The Empire commanded that you end subjugating of the friend of empire. You "
+"complied and pleased them greatly."
+msgstr ""
+
+msgid ""
+"The Empire commanded that you end subjugating of the friend of empire. You "
+"refused and angered them."
+msgstr ""
+
+msgid ""
+"The Empire commanded that you leave the former council. You complied and "
+"pleased them greatly."
+msgstr ""
+
+msgid ""
+"The Empire commanded that you leave the former council. You refused and "
+"angered them."
+msgstr ""
+
+#, c-format
+msgid ""
+"The Empire commanded that you reduct armament. You complied and destroyed $1%d"
+"%% of your fleets. It pleased them greatly."
+msgstr ""
+
+msgid ""
+"The Empire commanded that you reduct armament. You refused and angered them."
+msgstr ""
+
+#, c-format
+msgid "The Empire has been conquered by %1$s. Now the game is over."
+msgstr ""
+
+#, c-format
+msgid ""
+"The Empire has graciously decided to offer you the noble title of %1$s. The "
+"processing of the requisite forms will require %2$d PP.<BR>Will you accept "
+"the title?"
+msgstr ""
+
+msgid "The Empire will sometimes put up a planet for rent here."
+msgstr ""
+
+msgid ""
+"The Empire wondered why you would think yourself not to be important to "
+"deserve the title. You denied Empire Request."
+msgstr ""
+
+msgid "The Fleet Deck"
+msgstr ""
+
+msgid ""
+"The Imperial Capital of Caput Mundi has fallen!<BR>\n"
+"The old regime has collapsed, and the new era has begun. It still remains to "
+"be seen whether the new era will be any better, however...<BR>\n"
+"In this time of galactic turbulence, the achievement by you and your "
+"colleagues is evaluated as in the following :"
+msgstr ""
+
+msgid ""
+"The Imperial Fleets currently protecting your empire can only manage the "
+"protection of three planets. Should you continue to expand further they will "
+"be forced to withdraw pre-maturely."
+msgstr ""
+
+msgid "The Imperial Fleets that were defending your territory have left."
+msgstr ""
+
+msgid ""
+"The Magistrate seems almost insulted by the amount you have offered. He "
+"returns your next couple of messages unopened. Seems your bribe was not well "
+"received."
+msgstr ""
+
+msgid ""
+"The Magistrate thanks you whole heartedly and begins to tell the Emperor good "
+"things about you. The Empire seems to be happier with you."
+msgstr ""
+
+msgid "The Name Of The Conqueror's Council"
+msgstr ""
+
+msgid "The Planet's destruction was canceled"
+msgstr ""
+
+#, c-format
+msgid "The Target : %1$s"
+msgstr ""
+
+#, c-format
+msgid "The Target : %1$s in %2$s Relation"
+msgstr ""
+
+msgid "The Tech Being Researched"
+msgstr ""
+
+msgid "The Tech Deck"
+msgstr ""
+
+msgid "The Terraforming of this planet has been accelerated."
+msgstr ""
+
+msgid "The Universe Information"
+msgstr ""
+
+msgid "The ability to send an email is currently <b>disabled</b>"
+msgstr ""
+
+#, c-format
+msgid ""
+"The admiral %1$s is assigned to the fleet %2$s, so you can't dismiss the "
+"admiral right now."
+msgstr ""
+
+#, c-format
+msgid ""
+"The admiral %1$s is assigned to the fleet %2$s, so you can't fleet the "
+"admiral right now."
+msgstr ""
+
+msgid "The admiral you chose doesn't exist."
+msgstr ""
+
+msgid "The admiral you selected can't command this fleet."
+msgstr ""
+
+msgid "The admiral you selected doesn't exist."
+msgstr ""
+
+msgid "The admiral(s) that you have chosen doesn't/don't exist."
+msgstr ""
+
+msgid "The amount of PP has to be greater than 0."
+msgstr ""
+
+msgid ""
+"The armor you have selected is actually not in an armor category. Maybe a "
+"cheat?"
+msgstr ""
+
+msgid "The bounty is out of your attack range"
+msgstr ""
+
+msgid "The building ratio has changed into :"
+msgstr ""
+
+msgid ""
+"The capital fleet has wrong command. Please ask Archspace Development Team."
+msgstr ""
+
+msgid ""
+"The capital fleet must be deployed. Please check the one you have selected to "
+"deploy in the field."
+msgstr ""
+
+msgid ""
+"The computer you have selected is actually not in a computer category. Maybe "
+"a cheat?"
+msgstr ""
+
+#, c-format
+msgid "The council %1$s currently cannot merge for another %2$s."
+msgstr ""
+
+#, c-format
+msgid "The council %1$s currently cannot merge."
+msgstr ""
+
+#, c-format
+msgid ""
+"The council %1$s doesn't have enough space to admit the members in the "
+"council %2$s into."
+msgstr ""
+
+#, c-format
+msgid ""
+"The council %1$s has joined the council %2$s, so the council %3$s became "
+"stronger."
+msgstr ""
+
+#, c-format
+msgid "The council %1$s has no speaker."
+msgstr ""
+
+#, c-format
+msgid "The council %1$s is at war with the council %2$s."
+msgstr ""
+
+#, c-format
+msgid ""
+"The council %1$s sent merge offer to a certain council or has merge offer "
+"from it, but it doesn't exist anymore."
+msgstr ""
+
+#, c-format
+msgid ""
+"The council %1$s suggested the council %2$s to merge the 2 councils or has "
+"merge offer from it already."
+msgstr ""
+
+msgid "The council safe does not have enough stored PP."
+msgstr ""
+
+#, c-format
+msgid "The council with ID %1$s doesn't exist."
+msgstr ""
+
+msgid "The councils don't have restriction from alliance now."
+msgstr ""
+
+msgid "The councils don't have restriction from merging now."
+msgstr ""
+
+msgid "The councils don't have restriction from submission now."
+msgstr ""
+
+msgid "The councils don't have restriction from war now."
+msgstr ""
+
+msgid "The councils have restriction from alliance now."
+msgstr ""
+
+msgid "The councils have restriction from merging now."
+msgstr ""
+
+msgid "The councils have restriction from submission now."
+msgstr ""
+
+msgid "The councils have restriction from war now."
+msgstr ""
+
+msgid ""
+"The device you have selected is actually not in a device category. Maybe a "
+"cheat?"
+msgstr ""
+
+#, c-format
+msgid "The empire was pleased and let you recieve planet %1$s."
+msgstr ""
+
+#, c-format
+msgid ""
+"The empire was pleased with you chivalry and added planet %1$s to is own "
+"domain."
+msgstr ""
+
+#, c-format
+msgid ""
+"The empire was pleased with you chivalry and added planet %1$s to its own "
+"domain."
+msgstr ""
+
+msgid "The empire will not accept bribes until time has started."
+msgstr ""
+
+msgid "The empire will not grant boons until time has started."
+msgstr ""
+
+msgid ""
+"The engine you have selected is actually not in an engine category. Maybe a "
+"cheat?"
+msgstr ""
+
+#, c-format
+msgid "The event %1$s is already answered."
+msgstr ""
+
+msgid "The factory ratio is illegal."
+msgstr ""
+
+msgid "The factory ratio is out of range."
+msgstr ""
+
+#, c-format
+msgid "The fleet %1$s has a wrong command."
+msgstr ""
+
+#, c-format
+msgid ""
+"The fleet %1$s is returning from your ally %2$s because the alliance has been "
+"broken."
+msgstr ""
+
+#, c-format
+msgid ""
+"The fleet %1$s is returning from your ally %2$s cause the alliance has been "
+"broken."
+msgstr ""
+
+#, c-format
+msgid "The fleet %1$s is returning from your ally %2$s cause your ally is dead."
+msgstr ""
+
+msgid "The fleet continues its mission."
+msgstr ""
+
+#, c-format
+msgid ""
+"The fleet will return in %1$s hours, or when severely damaged, or when you "
+"and %2$s broke off the alliance."
+msgstr ""
+
+#, c-format
+msgid "The fleet will return in %1$s hours."
+msgstr ""
+
+msgid "The fleet you bid doesn't exist."
+msgstr ""
+
+msgid "The fleet you tried to bid for doesn't exist."
+msgstr ""
+
+msgid "The fleet you tried to bid for doesn't exist. "
+msgstr ""
+
+msgid "The fleet(s) that you have chosen doesn't/don't exist."
+msgstr ""
+
+#, c-format
+msgid ""
+"The fleet(s) will return when %1$d hour(s) have passed, or the alliance is "
+"broken, or the fleet(s) can't fight"
+msgstr ""
+
+msgid "The fortress which you have selected can't be attacked by you."
+msgstr ""
+
+msgid "The fortress which you have selected doesn't exist."
+msgstr ""
+
+#, c-format
+msgid "The game server has maximum number of players(%1$s)."
+msgstr ""
+
+#, c-format
+msgid "The information about the council(#%1$s)."
+msgstr ""
+
+msgid "The item you tried to bid for doesn't exist."
+msgstr ""
+
+msgid "The item you tried to bid for is not a fleet item."
+msgstr ""
+
+msgid "The item you tried to bid for is not a planet item."
+msgstr ""
+
+msgid "The item you tried to bid for is not a project item."
+msgstr ""
+
+msgid "The item you tried to bid for is not a tech item."
+msgstr ""
+
+msgid "The item you tried to bid for is not an admiral item."
+msgstr ""
+
+msgid "The letter has been removed successfully."
+msgstr ""
+
+msgid "The letter has been sent successfully."
+msgstr ""
+
+#, c-format
+msgid ""
+"The magistrate in the cluster(#%1$s) is still alive. So you can't attack The "
+"Empire's planets yet."
+msgstr ""
+
+#, c-format
+msgid ""
+"The magistrate in the cluster(#%1$s) is still alive. You can't attack The "
+"Empire's planets yet."
+msgstr ""
+
+#, c-format
+msgid ""
+"The max PP the player can have is %1$s PP. %2$s PP has been given to the "
+"player while the rest has been returned to the council safe."
+msgstr ""
+
+msgid "The message has been accused."
+msgstr ""
+
+#, c-format
+msgid "The message type(%1$s) is not available."
+msgstr ""
+
+#, c-format
+msgid "The message with ID %1$s doesn't exist."
+msgstr ""
+
+#, c-format
+msgid "The message(#%1$d) has been removed successfully."
+msgstr ""
+
+msgid "The message(s) you selected were successfully deleted."
+msgstr ""
+
+#, c-format
+msgid "The messages received by the player %1$s"
+msgstr ""
+
+#, c-format
+msgid "The messages sent by the council %1$s"
+msgstr ""
+
+#, c-format
+msgid "The messages sent by the player %1$s"
+msgstr ""
+
+msgid "The military base ratio is illegal."
+msgstr ""
+
+msgid "The military base ratio is out of range."
+msgstr ""
+
+#, c-format
+msgid "The military base(s) on the %1$s attacked and sank the raid fleet %2$s."
+msgstr ""
+
+#, c-format
+msgid ""
+"The military base(s) on the %1$s attacked the raid fleet %2$s (%3$s/%4$s)."
+msgstr ""
+
+#, c-format
+msgid "The military bases on the %1$s protected against the raid successfully."
+msgstr ""
+
+#, c-format
+msgid ""
+"The new commander can control only %1$s ships, but %2$s ships are in this "
+"fleet now.<BR>So %3$s ships will be dropped from the fleet."
+msgstr ""
+
+#, c-format
+msgid "The new component %1$s becomes available."
+msgstr ""
+
+#, c-format
+msgid "The new components %1$s become available."
+msgstr ""
+
+#, c-format
+msgid "The new fleet %1$s has been formed.<BR>It is now on stand-by."
+msgstr ""
+
+msgid "The new fleet ID is invalid. Please try again."
+msgstr ""
+
+msgid "The new fleet ID was not found. Please try again."
+msgstr ""
+
+msgid "The number of Techs"
+msgstr ""
+
+msgid "The number of fleets you selected is more than 20.<BR>Please try again."
+msgstr ""
+
+msgid "The number of left planets in the magistrate's domain"
+msgstr ""
+
+msgid "The number of planets left in the Empire cluster"
+msgstr ""
+
+msgid "The number of planets taken by you"
+msgstr ""
+
+msgid "The number of ships can't be greater than the current number of ships."
+msgstr ""
+
+msgid "The number of ships must be greater than 0."
+msgstr ""
+
+msgid "The overall result would be like :"
+msgstr ""
+
+msgid ""
+"The owner of this fortress doesn't exist. Please ask Archspace Development "
+"Team."
+msgstr ""
+
+#, c-format
+msgid "The person whose portal ID is %s doesn't have a character."
+msgstr ""
+
+#, c-format
+msgid "The planet %1$s is not a border planet."
+msgstr ""
+
+#, c-format
+msgid "The planet %1$s was already under privateering."
+msgstr ""
+
+#, c-format
+msgid ""
+"The planet with ID %1$s has no owner. Please ask Archspace Development Team."
+msgstr ""
+
+msgid "The planet's ID was not valid."
+msgstr ""
+
+#, c-format
+msgid ""
+"The player %1$s currently cannot request council admission for another %2$s."
+msgstr ""
+
+#, c-format
+msgid ""
+"The player %1$s has lost a large amount of their planets recently and "
+"Imperial Law prevents you from attacking them."
+msgstr ""
+
+#, c-format
+msgid "The player %1$s is the only member in the council %2$s right now."
+msgstr ""
+
+#, c-format
+msgid "The player %1$s is the speaker in the council %2$s right now."
+msgstr ""
+
+msgid "The player can research the following tech(s) :"
+msgstr ""
+
+msgid "The player has researched the following tech(s) :"
+msgstr ""
+
+msgid "The player trying to spy or the target player is wrong."
+msgstr ""
+
+#, c-format
+msgid "The player with ID %1$s doesn't exist."
+msgstr ""
+
+#, c-format
+msgid "The player with ID %1$s is not your ally."
+msgstr ""
+
+#, c-format
+msgid "The player's target tech(#%1$s) doesn't exist."
+msgstr ""
+
+msgid "The player(s) who requested admission"
+msgstr ""
+
+msgid ""
+"The players' score and councils' score are now being calculated.<BR>\n"
+"Please wait for a while....."
+msgstr ""
+
+#, c-format
+msgid "The population was reduced by %1$s on %2$s due to enemy raids."
+msgstr ""
+
+msgid "The reasearch lab ratio is out of range."
+msgstr ""
+
+msgid "The requested page was not found. Please ask Archspace Development Team."
+msgstr ""
+
+msgid "The research lab ratio is illegal."
+msgstr ""
+
+#, c-format
+msgid "The resource status of the planet %1$s has been changed to %2$s."
+msgstr ""
+
+msgid ""
+"The road to the Imperial Capital of Caput Mundi lays open to your fleets. The "
+"unequalled fame and power are within grasp upon victory, and you may even "
+"found your own empire.<BR><BR>\n"
+"But you will be faced with the best of the best. The Imperial Guard Fleets, "
+"strongest Elite Forces and powerful defense forts will resist to the last "
+"man, and it won't be an easy fight. The resistance wouldn't be like anything "
+"you've seen before.<BR><BR>\n"
+"Will you launch the military campaign upon the Imperial Capital?"
+msgstr ""
+
+msgid "The selected fleet is not on stand-by."
+msgstr ""
+
+msgid "The selected project is not a type of council project."
+msgstr ""
+
+msgid "The sender does not exist."
+msgstr ""
+
+msgid "The sender of the message does not exist."
+msgstr ""
+
+msgid "The sender of the message is dead."
+msgstr ""
+
+#, c-format
+msgid "The server is rebooting in %s secs."
+msgstr ""
+
+msgid ""
+"The shield you have selected is actually not in a shield category. Maybe a "
+"cheat?"
+msgstr ""
+
+#, c-format
+msgid ""
+"The ship class of %1$s is too small to voyage out to the cluster that the "
+"player %2$s is in."
+msgstr ""
+
+msgid ""
+"The ship design has not met the requirements to use one or more components."
+msgstr ""
+
+msgid "The ship design of fleet you bid doesn't exist."
+msgstr ""
+
+#, c-format
+msgid "The size of %1$s is too small to voyage out to the Empire's cluster."
+msgstr ""
+
+msgid "The slogan is invalid. Please enter a proper slogan."
+msgstr ""
+
+msgid "The speaker cannot request admission to another council."
+msgstr ""
+
+#, c-format
+msgid "The speaker of the council %1$s doesn't have the tech %2$s."
+msgstr ""
+
+msgid "The specified player search method is invalid."
+msgstr ""
+
+msgid ""
+"The spy was successful! Your spy concealed himself, but couldn't blame "
+"anyone. Anyway, you didn't lose any honor."
+msgstr ""
+
+#, c-format
+msgid ""
+"The spy was successful! Your spy couldn't conceal himself, and you lost %1$d "
+"of honor!"
+msgstr ""
+
+msgid ""
+"The spy was successful! Your spy couldn't conceal himself, but you didn't "
+"lose honor anyway."
+msgstr ""
+
+msgid "The sum of ratio is not 100 %."
+msgstr ""
+
+msgid "The target planet is not a border planet."
+msgstr ""
+
+#, c-format
+msgid ""
+"The target player has no planets you can privateer on, %1$s is returning."
+msgstr ""
+
+msgid "The target player is dead now."
+msgstr ""
+
+msgid "The targetted player doesn't exist."
+msgstr ""
+
+msgid ""
+"The total price of the project(s) you have chosen exceeds the limit of PP."
+msgstr ""
+
+msgid "The way how to search a council was wrong."
+msgstr ""
+
+msgid "The way how to search a player was wrong."
+msgstr ""
+
+msgid ""
+"The weapon you have selected is actually not in a weapon category. Maybe a "
+"cheat?"
+msgstr ""
+
+msgid "There are four levels of spy operations in the world of Archspace."
+msgstr ""
+
+msgid "There are no admirals for sale right now."
+msgstr ""
+
+msgid "There are no another players in your council."
+msgstr ""
+
+msgid "There are no battle reports related with you."
+msgstr ""
+
+msgid "There are no classes you designed."
+msgstr ""
+
+msgid "There are no councils at war with you."
+msgstr ""
+
+msgid "There are no fleet commanders attached to a fleet."
+msgstr ""
+
+msgid "There are no fleet commanders in the pool."
+msgstr ""
+
+msgid "There are no fleets for sale right now."
+msgstr ""
+
+msgid "There are no free fleet commanders."
+msgstr ""
+
+msgid "There are no more projects you can buy."
+msgstr ""
+
+msgid "There are no planets for sale right now."
+msgstr ""
+
+msgid "There are no players at war with you."
+msgstr ""
+
+msgid "There are no players who you know."
+msgstr ""
+
+msgid "There are no projects for sale right now."
+msgstr ""
+
+msgid "There are no projects you chose."
+msgstr ""
+
+msgid "There are no techs for sale right now."
+msgstr ""
+
+msgid "There are no unread council diplomatic messages."
+msgstr ""
+
+msgid "There are no unread diplomatic messages."
+msgstr ""
+
+msgid ""
+"There are some achievements of the Empire that cannot be found anywhere but "
+"here."
+msgstr ""
+
+#, c-format
+msgid "There is a letter from the Emperor offering you a title of %1$s."
+msgstr ""
+
+#, c-format
+msgid ""
+"There is no admiral with ID %1$s in you admiral list. Please ask Archspace "
+"Development Team."
+msgstr ""
+
+#, c-format
+msgid ""
+"There is no admiral with ID %1$s in your admiral list. Please ask Archspace "
+"Development team."
+msgstr ""
+
+msgid "There is no battle record you have."
+msgstr ""
+
+#, c-format
+msgid "There is no council with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "There is no magistrate in the cluster with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "There is no magistrate in the cluster(#%1$s)."
+msgstr ""
+
+#, c-format
+msgid "There is no planet wih ID %1$s"
+msgstr ""
+
+#, c-format
+msgid "There is no planet with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "There is no player whose game ID is %1$s."
+msgstr ""
+
+#, c-format
+msgid "There is no player with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "There is no player with portal ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "There is no project with ID %1s"
+msgstr ""
+
+#, c-format
+msgid "There is no such a council with ID #%1$s."
+msgstr ""
+
+msgid "There is no such a council."
+msgstr ""
+
+#, c-format
+msgid "There is no such a player with ID #%1$s."
+msgstr ""
+
+#, c-format
+msgid "There is no such a technology with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "There is no such a technology with name %1$s."
+msgstr ""
+
+msgid "There is no such an event."
+msgstr ""
+
+msgid "There is no such event."
+msgstr ""
+
+msgid "There is no such planet."
+msgstr ""
+
+msgid "There is no target player to attack."
+msgstr ""
+
+#, c-format
+msgid "There is no tech that %1$s has and you can learn."
+msgstr ""
+
+msgid ""
+"There is no way to find a message you want to answer. Please ask Archspace "
+"Development Team."
+msgstr ""
+
+msgid "There is only you in your council."
+msgstr ""
+
+msgid "There's a fleet on expedition or returning from expedition."
+msgstr ""
+
+msgid "There's a repeated device. Please try again."
+msgstr ""
+
+msgid "There's an repeated device. Please try again."
+msgstr ""
+
+msgid "There's no council that you can send a message to."
+msgstr ""
+
+msgid "There's no council that you can send request."
+msgstr ""
+
+msgid "There's no such a player."
+msgstr ""
+
+msgid "They are returning with the information."
+msgstr ""
+
+msgid "They can be in the same council again."
+msgstr ""
+
+msgid "They can't be in the same council anymore."
+msgstr ""
+
+msgid "Third Warning"
+msgstr ""
+
+msgid ""
+"This Deck is filled with Fleets of many different Classes and Levels. The "
+"current owners will tell you their Class, Level, and how many ships are in "
+"each fleet. These fleets do not come with commanders and you cannot bid "
+"unless you have an extra. Good Shopping."
+msgstr ""
+
+msgid "This access is forbidden."
+msgstr ""
+
+msgid "This account doesn't have any characters."
+msgstr ""
+
+msgid "This account has no character."
+msgstr ""
+
+msgid "This action has already been answered."
+msgstr ""
+
+#, c-format
+msgid "This council doesn't have that message(#%1$d)."
+msgstr ""
+
+msgid ""
+"This is a way to get one of those annoying people to stop bothering you. If "
+"the Empire sees reason, they may intercede between you and another player and "
+"force a truce. During this forced truce, neither side may declare war."
+msgstr ""
+
+msgid "This is not a Black Market project."
+msgstr ""
+
+msgid "This is not yet supported."
+msgstr ""
+
+msgid ""
+"This is one method players have to try and please the Empire. Basically, you "
+"give PP to the Magistrate and hope that he says nice things about you to the "
+"Emperor. If this works, you may gain some points with the Emperor."
+msgstr ""
+
+msgid ""
+"This is one option that no truly loyal subject would use. This will cause you "
+"to lay siege to one of central planets controlled by the Empire. By doing "
+"this, you will automatically be exiled and will most likely be attacked "
+"frequently by the Imperial Fleet."
+msgstr ""
+
+msgid ""
+"This is one option that no truly loyal subject would use. This will cause you "
+"to lay siege to one of the Magistrates own planets. If you win, you may be "
+"able to gain some freedom from the Empire, but even if you succeed, the "
+"consequences could be dire if the Emperor chooses to intercede."
+msgstr ""
+
+msgid ""
+"This is the basic means that all rulers have to request aid of the Empire. "
+"Depending on your current status, they may grant many favors, from money, to "
+"technology, and rumor has it, even planets!!!<BR>Warning: Requesting aid too "
+"much may hurt your standing with the Emperor."
+msgstr ""
+
+msgid ""
+"This is the place to come when you are tired of researching. We have just "
+"about any technologies you can imagine here. If you know enough to understand "
+"what you are buying, we will sell it to you. Of course, the Empire in its "
+"wisdom has limited the amount that we can teach in a day. So if you have "
+"already learned a tech from us today, then you cannot buy anything here. Good "
+"shopping."
+msgstr ""
+
+msgid "This message has unmatching message type"
+msgstr ""
+
+msgid ""
+"This missive is to declare our extreme displeasure that you have failed to "
+"pay the tax that is required of all Imperial inhabitants. If such unsubject-"
+"like behavior continues, you shall incur our wrath."
+msgstr ""
+
+msgid "This name is invalid. Please enter a proper name."
+msgstr ""
+
+msgid "This name is used by another council."
+msgstr ""
+
+#, c-format
+msgid ""
+"This office is the domain of the servants of the Empire. Here is where the "
+"Empire auctions off extra planets. You may only bid on planets of your own "
+"race. In order to make sure no single person can surpass the Empire in power, "
+"the amount you bid is the amount that each of your current planets plus %d "
+"will pay. This means, if you bid 1 million PP and have ten planets, you will "
+"pay %d million PP. Take Care and Good Shopping."
+msgstr ""
+
+msgid "This planet does not belong to you"
+msgstr ""
+
+#, c-format
+msgid "This player can join the council %1$s again."
+msgstr ""
+
+#, c-format
+msgid "This player can't join the council %1$s anymore."
+msgstr ""
+
+msgid "This player doesn't exist."
+msgstr ""
+
+msgid "This player doesn't have Imperial Retribution."
+msgstr ""
+
+msgid "This player doesn't have any planets."
+msgstr ""
+
+#, c-format
+msgid "This player doesn't have that message(#%1$d)."
+msgstr ""
+
+msgid "This player has already Imperial Retribution."
+msgstr ""
+
+msgid "This player is dead now."
+msgstr ""
+
+msgid "This player is not in your council"
+msgstr ""
+
+msgid ""
+"This spacious room is filled with people of all races. They are commanders of "
+"many different calibers. You may try to hire commanders of any races. Good "
+"shopping."
+msgstr ""
+
+msgid ""
+"This store carries many wonders of the Ancient Empire. After looking hard "
+"enough, you are sometimes able to find the plans for a secret project."
+"<BR>Good Shopping."
+msgstr ""
+
+msgid "Thorn in the Empire's Side"
+msgstr ""
+
+msgid "Time Created:"
+msgstr ""
+
+msgid "Time For Black Market Item Regen.(in secs)"
+msgstr ""
+
+msgid "Time Remaining"
+msgstr ""
+
+msgid "Time is not currently running."
+msgstr ""
+
+msgid "Tiny"
+msgstr ""
+
+msgid "To"
+msgstr ""
+
+#, c-format
+msgid ""
+"To %1$s,<BR>The Emperor has requested that you again pay your tax that is due "
+"as a true servant of the Empire. The amount requested is %2$d and is due "
+"within 2 days.<BR>Lord Treasuree Constatiream,<BR>Imperial Treasurer"
+msgstr ""
+
+#, c-format
+msgid ""
+"To %1$s<BR>The Emperor has requested that you cease your buildup of forces. "
+"It is hereby officially requested that you disassemble a portion of your "
+"forces. If completed, your reward will be equal to your sacrifice for the "
+"Empire. If you fail to comply, the cost will be mighty.<BR>Lord Chancellor "
+"Milleborn,Chancellor to his Supreme Emperor Jo'keric"
+msgstr ""
+
+#, c-format
+msgid ""
+"To %1$s<BR>The Emperor has requested that you cease your senseless "
+"hostilities. %2$s is a loyal servant of his Imperial Majesty. It is hereby "
+"officially requested that you make peace within 2 days. If completed, your "
+"reward will be the pleasure of the Empire. If you fail to follow orders, the "
+"cost will be mighty.<BR>Lord Chancellor Milleborm,<BR>Chancellor to his "
+"Supreme Emperor Jo'keric"
+msgstr ""
+
+#, c-format
+msgid ""
+"To %1$s<BR>The Emperor has requested that you depart from your council. Your "
+"Council has been deemed disloyal. It is hereby officially requested that you "
+"leave your council within 2 days. If you follow this imperial order, your "
+"reward will be the pleasure of the Empire. If you fail to meet expectations, "
+"the cost will be mighty.<BR>Lord Chancellor Milleborm,<BR>Chancellor to his "
+"Supreme Emperor Jo'keric"
+msgstr ""
+
+#, c-format
+msgid ""
+"To %1$s<BR>The Emperor has requested that you engage in war for the "
+"betterment of the Empire. %2$s has angered his Imperial Majesty. It is hereby "
+"officially requested that you attack this party within 2 days. If completed, "
+"your reward will be the pleasure of the Empire. If you fail, this cost will "
+"be mighty.<BR>Lord Chancellor Milleborm,<BR>Chancellor to his Supreme Emperor "
+"Jo'keric"
+msgstr ""
+
+#, c-format
+msgid ""
+"To %1$s<BR>The Emperor has requested that you stop trafficking in the lives "
+"of his Imperial Subjects. You are hereby ordered to free %2$s from "
+"Subordination. If you head this request, your reward will be the pleasure of "
+"the Empire. If you fail, the cost will be mighty.<BR>Lord Chancellor "
+"Milleborn,<BR>Chancellor to his Supreme Emperor Jo'keric"
+msgstr ""
+
+msgid "To Admin Tool Main"
+msgstr ""
+
+msgid "To Make This Player Dead"
+msgstr ""
+
+msgid ""
+"To attack the Empire capital planet, your council must have at least 1 "
+"fortress in the 4th layer."
+msgstr ""
+
+msgid "To search any kind of action, choose a kind and date."
+msgstr ""
+
+msgid "To see the Tech Tree"
+msgstr ""
+
+msgid "To see this player's research status"
+msgstr ""
+
+msgid "To see what you have already achieved"
+msgstr ""
+
+msgid "Top 10 Councils"
+msgstr ""
+
+msgid "Top 10 Players"
+msgstr ""
+
+msgid "Top Members"
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "Total # of Councils"
+msgstr ""
+
+msgid "Total # of Planets"
+msgstr ""
+
+msgid "Total # of Players"
+msgstr ""
+
+#, c-format
+msgid "Total %1$d commander(s)"
+msgstr ""
+
+#, c-format
+msgid "Total %1$d fleet(s)"
+msgstr ""
+
+#, c-format
+msgid "Total %1$s planet(s)"
+msgstr ""
+
+#, c-format
+msgid "Total %1$s researched tech(s)"
+msgstr ""
+
+msgid "Total Number of Fleet Ship(s)"
+msgstr ""
+
+#, c-format
+msgid "Total Number of Researched Techs : %1$s"
+msgstr ""
+
+#, c-format
+msgid "Total Number of Ships in the Dock: %1$s"
+msgstr ""
+
+msgid "Total PP"
+msgstr ""
+
+msgid "Total Score of Members"
+msgstr ""
+
+msgid "Total War"
+msgstr ""
+
+#, c-format
+msgid "Total war with %1$s has ended after %2$s hours."
+msgstr ""
+
+msgid "Totalism"
+msgstr ""
+
+msgid "Trabus"
+msgstr ""
+
+msgid "Train"
+msgstr ""
+
+#, c-format
+msgid ""
+"Training fleets will gain %1$d experiance per turn and the admiral will gain %"
+"2$d experience per turn. These fleets may be recalled at any time."
+msgstr ""
+
+#, c-format
+msgid ""
+"Training selected fleet(s) will cost %1$d additional MP per turn. You will "
+"pay 20 PP per MP you lack if you have insufficient MP."
+msgstr ""
+
+#, c-format
+msgid "Transfer council member %1$s to council %2$s"
+msgstr ""
+
+#, c-format
+msgid "Transfer council member %1$s to random council"
+msgstr ""
+
+msgid "Tribute Demanded"
+msgstr ""
+
+msgid "Truce"
+msgstr ""
+
+msgid "Trusted Subject"
+msgstr ""
+
+msgid "Truthful Servant"
+msgstr ""
+
+msgid "Turn value you entered is invalid."
+msgstr ""
+
+msgid "Turn(s)"
+msgstr ""
+
+msgid "Turns For Dispatch"
+msgstr ""
+
+msgid "Turns For Expedition"
+msgstr ""
+
+msgid "Turns For Patrol"
+msgstr ""
+
+msgid "Turns For Returning"
+msgstr ""
+
+msgid "Turns For Train"
+msgstr ""
+
+msgid "Turns Till Planet's Destruction: "
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Ultra Poor"
+msgstr ""
+
+msgid "Ultra Rich"
+msgstr ""
+
+msgid "Uncomfortable"
+msgstr ""
+
+msgid "Undependable"
+msgstr ""
+
+msgid "Under Mission"
+msgstr ""
+
+msgid "Under Operation"
+msgstr ""
+
+msgid "Underground Caverns"
+msgstr ""
+
+msgid "Unfriendly"
+msgstr ""
+
+msgid "Unknown"
+msgstr ""
+
+msgid "Unknown race type"
+msgstr ""
+
+msgid "Unread"
+msgstr ""
+
+msgid "Unreliable"
+msgstr ""
+
+msgid "Untitled"
+msgstr ""
+
+msgid "Untrustworthy"
+msgstr ""
+
+msgid "Upgrades"
+msgstr ""
+
+#, c-format
+msgid "Upgrading %1$s(#%2$d) will result in loss of 20%% of the fleet's exp."
+msgstr ""
+
+msgid "Upkeep"
+msgstr ""
+
+msgid "Upstanding Subject"
+msgstr ""
+
+msgid ""
+"Use \"Remove/Add Ships\" instead of \"Ship Reassignment\" for just change "
+"number of ships."
+msgstr ""
+
+msgid ""
+"Use Remove/Add Ship menu instead of Ship Reassignment menu if you just want "
+"to change number of ships."
+msgstr ""
+
+msgid "User Level:"
+msgstr ""
+
+msgid "View"
+msgstr ""
+
+msgid "View Unanswered Messages Only."
+msgstr ""
+
+msgid "Views all the clusters in Archspace."
+msgstr ""
+
+msgid "Virtuous"
+msgstr ""
+
+msgid "Viscount"
+msgstr ""
+
+msgid "Volcanic Activity"
+msgstr ""
+
+msgid "Vote"
+msgstr ""
+
+msgid "Vote at DoG"
+msgstr ""
+
+msgid "Vote at Mpog"
+msgstr ""
+
+msgid "Vote at Mpogd"
+msgstr ""
+
+msgid "Vote at OnRPG"
+msgstr ""
+
+msgid "Vote at OzGamers"
+msgstr ""
+
+msgid "Voting Power"
+msgstr ""
+
+msgid "WAR"
+msgstr ""
+
+msgid "Waiting"
+msgstr ""
+
+msgid "Waiting for Reply"
+msgstr ""
+
+msgid "Waiting on None"
+msgstr ""
+
+msgid "War"
+msgstr ""
+
+msgid "War Status"
+msgstr ""
+
+msgid "Wary"
+msgstr ""
+
+msgid "Waste Rate"
+msgstr ""
+
+msgid "Water"
+msgstr ""
+
+msgid "We are sorry, the current price is already the limit."
+msgstr ""
+
+msgid "We are sorry, the project you tried to bid for doesn't exist."
+msgstr ""
+
+msgid ""
+"We are sorry, this council is full and is no longer accepting applicants."
+msgstr ""
+
+msgid "We are sorry, you appear to achieve this Project Already."
+msgstr ""
+
+msgid "We are sorry, you cannot outbid yourself."
+msgstr ""
+
+#, c-format
+msgid "We are sorry, you don't have %1$s PP."
+msgstr ""
+
+#, c-format
+msgid "We are sorry, you don't have total of (%1$s * %2$d) %3$d PP."
+msgstr ""
+
+#, c-format
+msgid ""
+"We are sorry, you must bid at least 5%% higher price than the current bid's "
+"price %1$s."
+msgstr ""
+
+#, c-format
+msgid ""
+"We can't declare total war against the council %1$s since it's too powerful."
+msgstr ""
+
+#, c-format
+msgid "We can't declare total war against the council %1$s since it's too weak."
+msgstr ""
+
+#, c-format
+msgid ""
+"We can't declare total war against the council %1$s since we currently have a "
+"total war declared."
+msgstr ""
+
+#, c-format
+msgid "We can't declare war against the council %1$s since it's too powerful."
+msgstr ""
+
+#, c-format
+msgid "We can't declare war against the council %1$s since it's too weak."
+msgstr ""
+
+msgid "We don't share any clusters with this council."
+msgstr ""
+
+msgid "Weapon"
+msgstr ""
+
+msgid "Weapon Slot"
+msgstr ""
+
+msgid "Weapon Speed"
+msgstr ""
+
+msgid "Weapon Type"
+msgstr ""
+
+msgid "Weapon data is not valid."
+msgstr ""
+
+#, c-format
+msgid ""
+"Welcome to the Ranks of Nobility, %1$s!!!<BR>Now, your home planet has been "
+"named after you in order to commemorate this grand occasion.<BR>All hail "
+"Noble %2$s!!!"
+msgstr ""
+
+msgid "Well"
+msgstr ""
+
+msgid "Well Known in Court"
+msgstr ""
+
+#, c-format
+msgid ""
+"When your galaxy began to collapse, you knew it was a sign that the gods were "
+"punishing the evils that were growing. When your fellow Xeloss started being "
+"destroyed you knew this also was a sign that they had participated in heresy. "
+"Your order alone had stayed true to the gods calling. With this knowledge you "
+"and the followers of your order fled to a new galaxy. Having survived The "
+"Purge your order has established itself on the planet %1$s with the knowledge "
+"that you are the chosen ones. However, after a few years you learn that you "
+"are not the only species in this new galaxy. Evidently the gods have once "
+"again chosen to test your worthiness. Will you be able to purge the evil from "
+"this new home..."
+msgstr ""
+
+msgid "Where"
+msgstr ""
+
+msgid "Whitebook"
+msgstr ""
+
+msgid "Who do you want to sign truce with?"
+msgstr ""
+
+msgid "Will you request boon to the empire?"
+msgstr ""
+
+#, c-format
+msgid ""
+"Within the G-13 galaxy you had almost fought your way to dominance. There "
+"were only two powers that rivaled yours. As you prepared to take the final "
+"steps to destroy the Xeloss, your other enemy panicked and used a weapon you "
+"had never imagined. You watched as cluster after cluster began to collapse in "
+"front of your eyes. After barely escaping you set up your new home on %1$s "
+"and began to rebuild. This is a new galaxy, and with it a new Empire. Empires "
+"need rulers, and you were born to lead..."
+msgstr ""
+
+msgid "Wrong command string received. Please ask Archspace Development Team."
+msgstr ""
+
+msgid "Wrong fleet ID received. Please ask Archspace Development Team."
+msgstr ""
+
+msgid "Wrong fleet number received. Please ask Archspace Development Team."
+msgstr ""
+
+msgid ""
+"Wrong random number returned in secret spy. Please ask Archspace Development "
+"Team."
+msgstr ""
+
+msgid "Year"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+#, c-format
+msgid "You accepted %1$s (#%2$d) as your council member."
+msgstr ""
+
+msgid "You accepted the offer."
+msgstr ""
+
+msgid "You already accepted a bounty on this player"
+msgstr ""
+
+#, c-format
+msgid "You already have sent %1$s to %2$s as an ally fleet."
+msgstr ""
+
+#, c-format
+msgid "You already have your character : %1$s"
+msgstr ""
+
+msgid "You already requested admission."
+msgstr ""
+
+msgid "You already requested admission.<br> Do you want to delete it?"
+msgstr ""
+
+msgid "You already sent this kind of diplomatic message."
+msgstr ""
+
+msgid "You are already the speaker of a council."
+msgstr ""
+
+msgid "You are dead now."
+msgstr ""
+
+msgid "You are dead."
+msgstr ""
+
+#, c-format
+msgid ""
+"You are dead. You may <A HREF=\"%s\">quit</A> or <A HREF=\"%s\">restart</A>."
+msgstr ""
+
+#, c-format
+msgid ""
+"You are detected after the privateering.<BR>%1$s knew you were the privateer."
+msgstr ""
+
+msgid "You are framed by someone's spy, but you didn't lose any honor."
+msgstr ""
+
+#, c-format
+msgid "You are framed by someones spy, and you lost %1$s of honor!"
+msgstr ""
+
+msgid ""
+"You are in financial difficulty to supply the whole upkeep of your fleets."
+msgstr ""
+
+msgid ""
+"You are in financial difficulty to supply whe whole upkeep of your fleets."
+msgstr ""
+
+#, c-format
+msgid "You are not at war with %1$s."
+msgstr ""
+
+msgid "You are not in the same council as this player"
+msgstr ""
+
+msgid ""
+"You are not the speaker of your council. Only speaker may request the "
+"mediation between councils."
+msgstr ""
+
+msgid ""
+"You are not the speaker of your council. You cannot use the council speaker "
+"menu."
+msgstr ""
+
+msgid ""
+"You are not the speaker or sub speaker of your council. You cannot use the "
+"council speaker menu."
+msgstr ""
+
+#, c-format
+msgid ""
+"You are now paying an additional %1$d MP per turn. You will pay 20 PP per MP "
+"you lack if you have insufficient MP."
+msgstr ""
+
+#, c-format
+msgid "You are supporting %1$s now."
+msgstr ""
+
+msgid ""
+"You are targeted by a spying attack, but you don't know who initiated the "
+"attack."
+msgstr ""
+
+msgid "You are the only member in your council."
+msgstr ""
+
+msgid "You are trying to attack the Empire too often. Take a little rest."
+msgstr ""
+
+msgid "You are trying to attack the empire too often. Take a little rest."
+msgstr ""
+
+#, c-format
+msgid "You blockaded %1$s of %2$s successfully."
+msgstr ""
+
+msgid "You can build ships here."
+msgstr ""
+
+msgid "You can buy projects."
+msgstr ""
+
+msgid ""
+"You can change your fleet commander, number of ships in a fleet, or the ship "
+"class of a fleet."
+msgstr ""
+
+msgid "You can control your ships."
+msgstr ""
+
+msgid "You can create a new council."
+msgstr ""
+
+msgid "You can design a new ship class."
+msgstr ""
+
+msgid "You can disband your fleets and return the ships to the pool."
+msgstr ""
+
+#, c-format
+msgid "You can donate %1$s PP at most."
+msgstr ""
+
+msgid "You can donate some PP to the council."
+msgstr ""
+
+msgid "You can establish diplomatic relations with other councils."
+msgstr ""
+
+msgid "You can form a new fleet."
+msgstr ""
+
+msgid "You can get more RP in one turn."
+msgstr ""
+
+msgid "You can inspect and manage players, councils, and users from here"
+msgstr ""
+
+msgid "You can inspect the status of other players."
+msgstr ""
+
+msgid "You can manage multiple general administration features"
+msgstr ""
+
+msgid "You can manage the black market from here"
+msgstr ""
+
+msgid "You can manage the server configuration from here"
+msgstr ""
+
+msgid "You can manage your fleet commanders."
+msgstr ""
+
+msgid "You can manage your new council members."
+msgstr ""
+
+msgid "You can not invest less than 1 PP."
+msgstr ""
+
+msgid "You can only attack a player who is at war with you."
+msgstr ""
+
+msgid "You can quit only if your domain is demolished."
+msgstr ""
+
+msgid "You can read diplomatic messages from other councils."
+msgstr ""
+
+msgid "You can reassign only stand-by fleets."
+msgstr ""
+
+msgid ""
+"You can recall only fleets stationed on planets, on an expedition, training, "
+"or dispatched to allies."
+msgstr ""
+
+msgid "You can recall your fleets stationed on planets or dispatched to allies."
+msgstr ""
+
+msgid "You can research the following tech(s) :"
+msgstr ""
+
+msgid "You can restart only if your domain is demolished."
+msgstr ""
+
+msgid "You can schedule 10 building processes at most."
+msgstr ""
+
+#, c-format
+msgid ""
+"You can search the player ID and the council ID from %1$s menu and %2$s menu "
+"respectively in %3$s menu."
+msgstr ""
+
+#, c-format
+msgid "You can search the player ID by name from %1$s in %2$s menu."
+msgstr ""
+
+msgid "You can see the ranking in Archspace from various viewpoints."
+msgstr ""
+
+msgid "You can see the reports about the previous battles."
+msgstr ""
+
+msgid "You can see the status of your planets and manage them."
+msgstr ""
+
+msgid ""
+"You can see your tech status, set the researching goal, or invest in research."
+msgstr ""
+
+msgid "You can send various diplomatic messages to other councils."
+msgstr ""
+
+msgid "You can send your fleet to discover a new world."
+msgstr ""
+
+msgid "You can send your fleets on a mission."
+msgstr ""
+
+msgid "You can set your concentration mode."
+msgstr ""
+
+msgid "You can vote for a new council speaker."
+msgstr ""
+
+msgid "You can't attack the Empire in this menu."
+msgstr ""
+
+msgid "You can't attack the magistrate because he is already defeated."
+msgstr ""
+
+msgid "You can't attack yourself."
+msgstr ""
+
+#, c-format
+msgid "You can't be in the same council with %1$s because of the punishment."
+msgstr ""
+
+msgid "You can't blockade yourself."
+msgstr ""
+
+msgid "You can't inspect the Empire."
+msgstr ""
+
+#, c-format
+msgid "You can't perform %1$s because you are a pacifist."
+msgstr ""
+
+#, c-format
+msgid "You can't perform %1$s because you love peace."
+msgstr ""
+
+#, c-format
+msgid "You can't perform %1$s for some reason."
+msgstr ""
+
+msgid "You can't perform special operations until time has started."
+msgstr ""
+
+msgid "You can't privateer in the Empire's domain."
+msgstr ""
+
+msgid "You can't privateer in your own domain."
+msgstr ""
+
+msgid "You can't raid yourself."
+msgstr ""
+
+#, c-format
+msgid "You can't research %1$s tech for you alreeady have it"
+msgstr ""
+
+#, c-format
+msgid "You can't research %1$s tech right now."
+msgstr ""
+
+msgid "You can't send a message to yourself."
+msgstr ""
+
+msgid "You can't send that kind of message because of the punishment."
+msgstr ""
+
+msgid "You cannot accept a bounty on yourself"
+msgstr ""
+
+#, c-format
+msgid "You cannot attack %1$s because he/she is too powerful."
+msgstr ""
+
+#, c-format
+msgid "You cannot attack %1$s because he/she is too weak."
+msgstr ""
+
+#, c-format
+msgid "You cannot attack %1$s because time has not yet started."
+msgstr ""
+
+msgid "You cannot attack the empire for it is protecting you"
+msgstr ""
+
+msgid "You cannot attack the empire until time has started."
+msgstr ""
+
+msgid "You cannot build Empire ship designs!"
+msgstr ""
+
+msgid "You cannot build black market ship designs!"
+msgstr ""
+
+msgid ""
+"You cannot change a user's password that has a higher or equal users level to "
+"yours."
+msgstr ""
+
+msgid "You cannot change an admins user level that is higher than yours!"
+msgstr ""
+
+msgid "You cannot give non-developers developer privledges!"
+msgstr ""
+
+msgid "You cannot give out  developer privledges!"
+msgstr ""
+
+msgid "You cannot perform this action until time starts."
+msgstr ""
+
+#, c-format
+msgid "You cannot purchase %s"
+msgstr ""
+
+#, c-format
+msgid "You cannot send more than %1$d allied fleets to %2$s."
+msgstr ""
+
+msgid "You cannot set your own user level higher than it already is!"
+msgstr ""
+
+#, c-format
+msgid "You caught a spy from %1$s!"
+msgstr ""
+
+msgid "You chose the action that doesn't exist."
+msgstr ""
+
+msgid "You chose wrong method so that you could select a target."
+msgstr ""
+
+msgid "You chose wrong player."
+msgstr ""
+
+msgid "You chose wrong spy mission. Please try gain."
+msgstr ""
+
+#, c-format
+msgid "You clear the radiation of %1$s's by solar manipulation technology."
+msgstr ""
+
+#, c-format
+msgid ""
+"You control the hostile monster of %1$s by primitive language technology."
+msgstr ""
+
+msgid "You couldn't distribute anything."
+msgstr ""
+
+msgid "You currently have too many commanders to purchase any more."
+msgstr ""
+
+msgid ""
+"You decided not to attack the enemy.<BR>Your fleets are returning home "
+"without attacking the planet.<BR>After some hours, your fleets will be on "
+"stand-by again."
+msgstr ""
+
+#, c-format
+msgid "You declared total war to %1$s by council-wide pressing."
+msgstr ""
+
+msgid "You declined the payment of Empire Tribute and angered the Emperor."
+msgstr ""
+
+#, c-format
+msgid "You destroy the obstinate microbe in %1$s by genetic therapy technology."
+msgstr ""
+
+#, c-format
+msgid "You destroyed %1$s unit(s) of factory."
+msgstr ""
+
+#, c-format
+msgid "You destroyed %1$s unit(s) of military base."
+msgstr ""
+
+#, c-format
+msgid "You destroyed %1$s unit(s) of research lab."
+msgstr ""
+
+msgid "You did not answer this event."
+msgstr ""
+
+msgid "You did not enter a valid fleet name."
+msgstr ""
+
+msgid "You did not enter in a value to invest"
+msgstr ""
+
+msgid "You did not select a capital fleet.<BR>Please try again."
+msgstr ""
+
+msgid "You did not select a target player."
+msgstr ""
+
+msgid "You did not select any fleet.<BR>Please try again."
+msgstr ""
+
+msgid "You didn't change anything."
+msgstr ""
+
+msgid "You didn't choose any method so that you could select a target."
+msgstr ""
+
+msgid "You didn't enter a council name."
+msgstr ""
+
+msgid "You didn't enter a fleet name."
+msgstr ""
+
+msgid "You didn't enter a name for class."
+msgstr ""
+
+msgid "You didn't enter a player name."
+msgstr ""
+
+msgid "You didn't enter a portal name."
+msgstr ""
+
+msgid "You didn't enter a target player's ID."
+msgstr ""
+
+msgid "You didn't enter a valid name for class."
+msgstr ""
+
+msgid "You didn't enter proper value for investment."
+msgstr ""
+
+msgid "You didn't input a broadcast message."
+msgstr ""
+
+msgid "You didn't input any comment."
+msgstr ""
+
+#, c-format
+msgid ""
+"You didn't lose people on planet %1$s, but the planet has an obstinate "
+"microbe now."
+msgstr ""
+
+msgid "You didn't select a capital fleet."
+msgstr ""
+
+msgid "You didn't select a name of new plan."
+msgstr ""
+
+msgid "You didn't select a name of plan."
+msgstr ""
+
+msgid "You didn't select any attack types."
+msgstr ""
+
+msgid "You didn't select any control model."
+msgstr ""
+
+msgid "You didn't select any fleet commanders."
+msgstr ""
+
+msgid "You didn't select any fleets."
+msgstr ""
+
+msgid "You didn't select any message(s)."
+msgstr ""
+
+msgid "You didn't select any player."
+msgstr ""
+
+msgid "You didn't select any races."
+msgstr ""
+
+msgid "You didn't select your own ship design."
+msgstr ""
+
+msgid "You didn't specify a name of the conqueror's council."
+msgstr ""
+
+msgid "You didn't specify a player ID."
+msgstr ""
+
+msgid "You didn't specify how to broadcast a message."
+msgstr ""
+
+msgid "You didn't specify the conqueror's name."
+msgstr ""
+
+msgid "You didn't specify the way how to search for a player."
+msgstr ""
+
+msgid "You didn't specify the way how to search messages."
+msgstr ""
+
+#, c-format
+msgid "You distributed %1$s PP successfully."
+msgstr ""
+
+msgid "You do not have any fleets on stand-by.<BR>Please try again later."
+msgstr ""
+
+msgid "You do not have enough PP to answer the event."
+msgstr ""
+
+msgid "You do not have enough money to invest that much"
+msgstr ""
+
+msgid "You do not meet the requirements to buy this project."
+msgstr ""
+
+msgid "You do not own this planet."
+msgstr ""
+
+msgid ""
+"You do not possess the required number of ME techs to build such a ship, "
+"please choose a smaller ship."
+msgstr ""
+
+msgid ""
+"You do not possess the schematics to build such a ship, please choose a "
+"smaller ship."
+msgstr ""
+
+#, c-format
+msgid "You don't have %1$d PP to pay."
+msgstr ""
+
+#, c-format
+msgid "You don't have %1$s %2$s ships."
+msgstr ""
+
+#, c-format
+msgid "You don't have a computer with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "You don't have a fleet with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "You don't have a message with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "You don't have a planet with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "You don't have a shield with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "You don't have a special plan with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "You don't have a weapon with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "You don't have additional %1$s %2$s ships."
+msgstr ""
+
+msgid "You don't have all the requirements for this council project."
+msgstr ""
+
+#, c-format
+msgid "You don't have an armor with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "You don't have an engine with ID %1$s."
+msgstr ""
+
+msgid "You don't have any achieved projects."
+msgstr ""
+
+msgid "You don't have any admirals."
+msgstr ""
+
+msgid ""
+"You don't have any character. Click <A HREF=/archspace/create.as>here</A> to "
+"create a new character."
+msgstr ""
+
+msgid "You don't have any damaged ships."
+msgstr ""
+
+msgid "You don't have any diplomatic messages received."
+msgstr ""
+
+#, c-format
+msgid "You don't have any fleet with ID %1$s."
+msgstr ""
+
+#, c-format
+msgid "You don't have any fleet with ID %s."
+msgstr ""
+
+msgid "You don't have any fleets from allies."
+msgstr ""
+
+msgid "You don't have any fleets on stand-by."
+msgstr ""
+
+msgid "You don't have any fleets."
+msgstr ""
+
+msgid "You don't have any projects yet."
+msgstr ""
+
+#, c-format
+msgid "You don't have any relationship with %1$s council."
+msgstr ""
+
+#, c-format
+msgid "You don't have any relationship with %1$s."
+msgstr ""
+
+msgid "You don't have any ships in the pool for reassignment."
+msgstr ""
+
+msgid "You don't have any ships in the pool."
+msgstr ""
+
+msgid "You don't have any ships of that kind of ship design."
+msgstr ""
+
+msgid "You don't have any ships."
+msgstr ""
+
+msgid "You don't have any special defense plans."
+msgstr ""
+
+msgid "You don't have any stand-by fleets."
+msgstr ""
+
+msgid "You don't have enough PP to change concentration mode."
+msgstr ""
+
+msgid "You don't have enough PP to invest."
+msgstr ""
+
+msgid "You don't have enough PP to perform this special operation."
+msgstr ""
+
+msgid "You don't have enough PP."
+msgstr ""
+
+msgid "You don't have generic defense plan now."
+msgstr ""
+
+#, c-format
+msgid "You don't have ship design of ID number %1$d."
+msgstr ""
+
+msgid "You don't have such a capital fleet."
+msgstr ""
+
+#, c-format
+msgid "You don't have such a designed class with ID %1$s."
+msgstr ""
+
+msgid ""
+"You don't have such a fleet that you selected as a capital fleet.<BR>Please "
+"try again."
+msgstr ""
+
+#, c-format
+msgid "You don't have such a fleet with ID %1$s."
+msgstr ""
+
+msgid "You don't have such a planet."
+msgstr ""
+
+msgid "You don't have such a ship design."
+msgstr ""
+
+#, c-format
+msgid "You don't have the fleet with ID %1$s."
+msgstr ""
+
+msgid "You don't have the prerequisites for more projects yet."
+msgstr ""
+
+msgid ""
+"You don't know the prerequisite technology to perform this special operation."
+msgstr ""
+
+msgid "You don't need RP any more to complete the research."
+msgstr ""
+
+msgid "You don't seem to had selected any button."
+msgstr ""
+
+msgid "You dropped this ship design, and it's not registered."
+msgstr ""
+
+msgid "You encounter no defensive fleets."
+msgstr ""
+
+msgid "You enterd more PP than your council has."
+msgstr ""
+
+#, c-format
+msgid "You entered invalid value(%1$s) for the new number of ships."
+msgstr ""
+
+msgid "You entered more amount than you have."
+msgstr ""
+
+#, c-format
+msgid "You exiled %1$s people from %2$s."
+msgstr ""
+
+#, c-format
+msgid "You gain %1$s project at the cost of %2$s PP."
+msgstr ""
+
+#, c-format
+msgid "You gained the project \"%1$s\" successfully."
+msgstr ""
+
+msgid "You got a letter of demand from the Emperor."
+msgstr ""
+
+#, c-format
+msgid "You got a new event %1$s."
+msgstr ""
+
+msgid "You had no fleet battle."
+msgstr ""
+
+#, c-format
+msgid "You has lost some people on planet %1$s by someone's spy."
+msgstr ""
+
+#, c-format
+msgid "You have %1$d unread council message%2$s."
+msgstr ""
+
+#, c-format
+msgid "You have %1$d unread diplomatic message%2$s."
+msgstr ""
+
+msgid "You have a counterattack from ground."
+msgstr ""
+
+#, c-format
+msgid "You have a genocide on %1$s."
+msgstr ""
+
+#, c-format
+msgid "You have accepted the bounty on %1$s."
+msgstr ""
+
+msgid "You have accepted the bounty."
+msgstr ""
+
+msgid "You have an illegal target tech."
+msgstr ""
+
+msgid ""
+"You have been punished by GM. Now you have Imperial Retribution, and it will "
+"stay forever."
+msgstr ""
+
+#, c-format
+msgid ""
+"You have been punished by GM. Now you have Skip Turn effect, and it will stay "
+"for %1$s turn."
+msgstr ""
+
+#, c-format
+msgid ""
+"You have been punished by GM. Now you have Skip Turn effect, and it will stay "
+"for %1$s turns."
+msgstr ""
+
+#, c-format
+msgid ""
+"You have been punished by GM. You had Skip Turn effect, and its duration has "
+"been increased by %1$s turn."
+msgstr ""
+
+#, c-format
+msgid ""
+"You have been punished by GM. You had Skip Turn effect, and its duration has "
+"been increased by %1$s turns."
+msgstr ""
+
+#, c-format
+msgid "You have broken the alliance with %1$s."
+msgstr ""
+
+#, c-format
+msgid "You have broken the pact with %1$s."
+msgstr ""
+
+#, c-format
+msgid "You have cancelled the ship building schedule for %1$s."
+msgstr ""
+
+msgid "You have chosen the empire as a special operation target."
+msgstr ""
+
+#, c-format
+msgid "You have chosen the technology, %1$s."
+msgstr ""
+
+msgid "You have decided not to retire from Archspace."
+msgstr ""
+
+#, c-format
+msgid "You have declared hostile intents toward %1$s."
+msgstr ""
+
+#, c-format
+msgid "You have declared war with %1$s."
+msgstr ""
+
+msgid "You have disabled planet invest pool for this planet"
+msgstr ""
+
+#, c-format
+msgid "You have discovered a new tech %1$s."
+msgstr ""
+
+#, c-format
+msgid "You have earned %1$s PP salvaging enemy ships."
+msgstr ""
+
+msgid "You have enabled planet invest pool for the selected planets"
+msgstr ""
+
+msgid "You have enabled planet invest pool for this planet"
+msgstr ""
+
+#, c-format
+msgid "You have failed to blockade %1$s of %2$s."
+msgstr ""
+
+#, c-format
+msgid "You have failed to invade %1$s of %2$s."
+msgstr ""
+
+#, c-format
+msgid "You have failed to invade %1$s."
+msgstr ""
+
+#, c-format
+msgid "You have gained %1$s PP due to an event."
+msgstr ""
+
+#, c-format
+msgid "You have gained %1$s."
+msgstr ""
+
+#, c-format
+msgid "You have gained a new project %1$s."
+msgstr ""
+
+#, c-format
+msgid "You have gained new planet %1$s."
+msgstr ""
+
+#, c-format
+msgid "You have gained the %1$s fleet."
+msgstr ""
+
+#, c-format
+msgid "You have gained the ability %1$s."
+msgstr ""
+
+msgid "You have given the compensation(%1$s PP) for war from %$2s."
+msgstr ""
+
+#, c-format
+msgid "You have joined council %1$s."
+msgstr ""
+
+#, c-format
+msgid "You have lost %1$d %2$s on %3$s."
+msgstr ""
+
+#, c-format
+msgid "You have lost %1$s PP due to an event."
+msgstr ""
+
+#, c-format
+msgid "You have lost %1$s admiral%2$s from your pool."
+msgstr ""
+
+#, c-format
+msgid "You have lost %1$s forever."
+msgstr ""
+
+msgid "You have lost all ships in your dock."
+msgstr ""
+
+#, c-format
+msgid "You have lost fleet %1$s and commander %2$s in %3$s's battle."
+msgstr ""
+
+#, c-format
+msgid "You have lost fleet %1$s in %2$s's battle."
+msgstr ""
+
+#, c-format
+msgid "You have lost the ability %1$s."
+msgstr ""
+
+#, c-format
+msgid "You have lost the fleet %1$s and its commander %2$s."
+msgstr ""
+
+#, c-format
+msgid "You have lost the planet %1$s."
+msgstr ""
+
+#, c-format
+msgid "You have lost the project %1$s."
+msgstr ""
+
+msgid "You have no admission request to delete"
+msgstr ""
+
+msgid "You have no allies to send fleet(s)."
+msgstr ""
+
+msgid "You have no hostile relationships."
+msgstr ""
+
+#, c-format
+msgid "You have no relation with %1$s."
+msgstr ""
+
+msgid "You have no relation with the target player."
+msgstr ""
+
+msgid "You have no ships in the pool."
+msgstr ""
+
+msgid "You have no ships to build."
+msgstr ""
+
+#, c-format
+msgid ""
+"You have not been at war with the player %1$s long enough to attack. Please "
+"wait another %2$s seconds"
+msgstr ""
+
+msgid "You have not decided to retire from Archspace or not."
+msgstr ""
+
+msgid "You have not entered a council ID."
+msgstr ""
+
+#, c-format
+msgid ""
+"You have not had hostile relations with the target player long enough to "
+"attack. Please wait another %1$s seconds"
+msgstr ""
+
+#, c-format
+msgid "You have only %1$d %2$s ships."
+msgstr ""
+
+msgid ""
+"You have probably clicked 2 or more times at the same time, or reloaded this "
+"page.<BR>Please try again."
+msgstr ""
+
+msgid "You have received no diplomatic messages."
+msgstr ""
+
+#, c-format
+msgid "You have received the compensation(%1$s PP) for war from %2$s."
+msgstr ""
+
+msgid "You have registered this ship design. You can build this ship now."
+msgstr ""
+
+msgid "You have requested admission to another council."
+msgstr ""
+
+msgid "You have researched the following techs :"
+msgstr ""
+
+#, c-format
+msgid "You have scheduled %1$d %2$s to be built."
+msgstr ""
+
+#, c-format
+msgid "You have selected %1$s as a fleet commander for %2$s."
+msgstr ""
+
+#, c-format
+msgid "You have selected %1$s ship(s) of %2$s."
+msgstr ""
+
+msgid "You have selected a wrong command."
+msgstr ""
+
+msgid "You have selected the following fleet(s) to return."
+msgstr ""
+
+msgid "You have selected the following project(s) :"
+msgstr ""
+
+#, c-format
+msgid "You have successfully changed %1$s as a fleet of %2$s %3$s."
+msgstr ""
+
+#, c-format
+msgid "You have successfully changed %1$s as a fleet of %2$s %3$s.<BR>"
+msgstr ""
+
+msgid "You have successfully changed your commander viewing"
+msgstr ""
+
+msgid ""
+"You have successfully created your character. Click on 'Enter Archspace' to "
+"begin playing."
+msgstr ""
+
+#, c-format
+msgid "You have successfully deleted the old ship design : %1$s."
+msgstr ""
+
+msgid "You have successfully deleted the special defense plan."
+msgstr ""
+
+msgid "You have successfully deployed your fleets for the defense plan."
+msgstr ""
+
+#, c-format
+msgid ""
+"You have successfully disbanded the fleet(s) %1$s. And the commander(s) %2$s "
+"returned to the commander pool."
+msgstr ""
+
+msgid "You have successfully invested"
+msgstr ""
+
+#, c-format
+msgid "You have successfully invested %1$s PP in %2$s."
+msgstr ""
+
+#, c-format
+msgid "You have successfully invested %1$s PP in Research."
+msgstr ""
+
+#, c-format
+msgid "You have successfully invested %1$s PP in ship building."
+msgstr ""
+
+#, c-format
+msgid "You have successfully reassigned %1$s with %2$s of %3$s ships."
+msgstr ""
+
+msgid "You have successfully recalled the following fleet(s)."
+msgstr ""
+
+#, c-format
+msgid "You have successfully scrapped %1$d %2$s ship(s)."
+msgstr ""
+
+#, c-format
+msgid "You have switched your concentration mode to %1$s."
+msgstr ""
+
+msgid "You have to answer this message."
+msgstr ""
+
+msgid "You have to enter a larger number than 0."
+msgstr ""
+
+msgid "You have too many commanders to bid for an admiral right now."
+msgstr ""
+
+msgid "You haven't decided on your reply."
+msgstr ""
+
+msgid "You haven't designed the class."
+msgstr ""
+
+msgid "You hold off your decision to reply this message."
+msgstr ""
+
+#, c-format
+msgid ""
+"You leave the implant chamber and everything seems so much slower than "
+"before. That always seems to be the feeling though when you get a processor "
+"upgrade of this quality. You can now personally track almost every piece of "
+"information that enters your planet's infosphere. You can now manage any of "
+"the tasks necessary to the upkeep of %1$s. In fact, you now feel up to the "
+"task of running other planets, all you need to do now is take them..."
+msgstr ""
+
+#, c-format
+msgid ""
+"You lost %1$d people on planet %2$s by someone's spy, and the planet has an "
+"obstinate microbe now."
+msgstr ""
+
+#, c-format
+msgid "You lost %1$d people on planet %2$s by someone's spy."
+msgstr ""
+
+#, c-format
+msgid "You lost %1$s by someone's spy!"
+msgstr ""
+
+#, c-format
+msgid "You lost %1$s on planet %2$s by someone's spy."
+msgstr ""
+
+#, c-format
+msgid "You lost the fleet %1$s and commander %2$s."
+msgstr ""
+
+#, c-format
+msgid "You lost the fleet %1$s and the commander %2$s whose owner is %3$s."
+msgstr ""
+
+#, c-format
+msgid "You lost the fleet %1$s whose owner is %2$s."
+msgstr ""
+
+#, c-format
+msgid "You lost the tech %1$s."
+msgstr ""
+
+msgid "You lost your rank. Now, you are the rogue baron, the enemy of empire."
+msgstr ""
+
+msgid "You lost your rank. Now, you are the rogue duke, the enemy of empire."
+msgstr ""
+
+msgid "You lost your rank. Now, you are the rogue earl, the enemy of empire."
+msgstr ""
+
+msgid "You lost your rank. Now, you are the rogue marquis, the enemy of empire."
+msgstr ""
+
+msgid ""
+"You lost your rank. Now, you are the rogue viscount, the enemy of empire."
+msgstr ""
+
+#, c-format
+msgid ""
+"You may lose some honor by this operation if you are detected.(Honor -%1$d)"
+msgstr ""
+
+#, c-format
+msgid "You may not bribe for another %1$s due to the limit of once per day."
+msgstr ""
+
+#, c-format
+msgid "You may not donate again for another %1$s."
+msgstr ""
+
+msgid "You may recall the fleet with the Recall menu any time you want to do."
+msgstr ""
+
+msgid "You may request admission to another council."
+msgstr ""
+
+msgid "You must enter number more than 0."
+msgstr ""
+
+msgid "You must select at least one fleet."
+msgstr ""
+
+#, c-format
+msgid "You need the technology \"%1$s\"."
+msgstr ""
+
+#, c-format
+msgid "You paid the Empire Tribute %s PP and pleased the Emperor."
+msgstr ""
+
+msgid ""
+"You pleased Empire. Emperor is so happy with your deed so that he decided to "
+"grant you a small boon."
+msgstr ""
+
+msgid "You purchased all projects that you can gain."
+msgstr ""
+
+#, c-format
+msgid "You put down the military base(s) on %1$s."
+msgstr ""
+
+#, c-format
+msgid "You refused the admission request from %1$s."
+msgstr ""
+
+msgid "You rejected the offer."
+msgstr ""
+
+#, c-format
+msgid ""
+"You requested that the Empire intercede in your war with %1$s. They responded "
+"by forcing peace between you and %2$s."
+msgstr ""
+
+#, c-format
+msgid ""
+"You requested the Empire to intercede in your war with %1$s. The Empire said "
+"that they thought the struggle was a good thing and was a fitting way to "
+"prove your loyalty to them."
+msgstr ""
+
+#, c-format
+msgid ""
+"You requested the Empire to intercede in your war with %s. The Empire said "
+"that they thought the struggle was a good thing and was a fitting way to "
+"prove your loyalty to them."
+msgstr ""
+
+msgid ""
+"You requested the Empire to intercede in your war. The Empire said that the "
+"struggle was a good thing and was a fitting way to prove your loyalty to them."
+msgstr ""
+
+msgid ""
+"You requested the Empire to intercede in your war. They responded by forcing "
+"peace each side."
+msgstr ""
+
+#, c-format
+msgid ""
+"You requested the Empire to reward your loyalty. They accepted and sent you %1"
+"$s."
+msgstr ""
+
+#, c-format
+msgid ""
+"You requested the Empire to reward your loyalty. They accepted and sent you %"
+"s."
+msgstr ""
+
+msgid ""
+"You requested the Empire to reward your loyalty. They responded that they did "
+"not think you worthy of their blessing."
+msgstr ""
+
+#, c-format
+msgid "You scrapped %1$s and earned %2$s PP."
+msgstr ""
+
+msgid "You seem to have approached this page in a wrong way."
+msgstr ""
+
+msgid "You seem to have purchased this project before."
+msgstr ""
+
+msgid "You selected a plan that doesn't exist."
+msgstr ""
+
+msgid "You selected a wrong ontrol model."
+msgstr ""
+
+msgid "You selected an unknown mission."
+msgstr ""
+
+msgid "You selected no fleet(s)."
+msgstr ""
+
+msgid "You selected the defense that doesn't exist."
+msgstr ""
+
+msgid "You selected wrong button."
+msgstr ""
+
+msgid "You selected wrong security level. Please try again."
+msgstr ""
+
+msgid "You selected wrong ship size. Please try again."
+msgstr ""
+
+#, c-format
+msgid "You sent a message to %s successfully."
+msgstr ""
+
+msgid "You sent the broadcast message to all players."
+msgstr ""
+
+msgid ""
+"You should create your own character first. Please use the create character "
+"menu."
+msgstr ""
+
+msgid "You should enter a different name from current name."
+msgstr ""
+
+#, c-format
+msgid "You smuggled %1$s to %2$s for a privateer."
+msgstr ""
+
+#, c-format
+msgid "You smuggled %1$s to %2$s for a raid."
+msgstr ""
+
+msgid "You specified a wrong way to broadcast a message."
+msgstr ""
+
+msgid "You stacked 1 or more fleets on another fleet(s)."
+msgstr ""
+
+#, c-format
+msgid "You started your new domain at %1$s again."
+msgstr ""
+
+#, c-format
+msgid "You stole a tech %1$s from %2$s successfully."
+msgstr ""
+
+#, c-format
+msgid "You stop supporting %1$s now."
+msgstr ""
+
+msgid "You stop supporting any council member now."
+msgstr ""
+
+#, c-format
+msgid "You successfully replied to the message(#%1$s) from %2$s."
+msgstr ""
+
+#, c-format
+msgid "You successfully sent a message to %1$s."
+msgstr ""
+
+#, c-format
+msgid "You supported the magistrate with %s PP."
+msgstr ""
+
+msgid "You transfer 10 mil. people."
+msgstr ""
+
+msgid "You tried to bid more than the limit of bid price."
+msgstr ""
+
+msgid "You unchecked select goal box."
+msgstr ""
+
+msgid "You were attacked by the defensive fleets on the planet."
+msgstr ""
+
+#, c-format
+msgid ""
+"You were not detected out after privateer.<BR>%1$s did not know your identity."
+msgstr ""
+
+#, c-format
+msgid "You were targetted by a spying attack from %1$s, but you were safe."
+msgstr ""
+
+#, c-format
+msgid "You were targetted by a spying attack from %1$s."
+msgstr ""
+
+#, c-format
+msgid "You will answer %1$s later."
+msgstr ""
+
+#, c-format
+msgid "You will earn %1$s PP by scrapping %2$s ship(s) of %3$s."
+msgstr ""
+
+#, c-format
+msgid "You will need %1$s more RP to complete the research."
+msgstr ""
+
+#, c-format
+msgid "You won the bid and achieved %1$s."
+msgstr ""
+
+#, c-format
+msgid "You won the bid and got the admiral %1$s."
+msgstr ""
+
+#, c-format
+msgid "You won the bid and got the fleet %1$s."
+msgstr ""
+
+#, c-format
+msgid "You won the bid and got the planet %1$s."
+msgstr ""
+
+#, c-format
+msgid "You won the bid and learned %1$s."
+msgstr ""
+
+msgid "You won the fleet battle on the orbit."
+msgstr ""
+
+#, c-format
+msgid ""
+"You, having enjoyed your long space travel, turned your eyes to a new "
+"direction and take office as the new leader of the planet %1$s. Unlike the "
+"free and 0-G life in the space, the planet awaits you with higher gravity and "
+"the heavy responsibility as a leader. When you decided to land on this "
+"planet, some of your friends may have advised you not to act like a fool. "
+"But, the experience you have gained from the vast universe now leads you to "
+"turn your eyes to a different world. The Empire... The immense state that "
+"controls more than 20 billion stars. Until now you have been watching them as "
+"a supporter - with a bribe - or as an enemy - being a pirate - and felt the "
+"enormous Empire and the smallness of yourself with the skin. But, now is the "
+"time to make a counterattack. With %2$s as the stepping stone, you will "
+"spread your power all over the universe. Until the day you become the new "
+"Emperor..."
+msgstr ""
+
+msgid "Your Bid"
+msgstr ""
+
+msgid "Your Comment"
+msgstr ""
+
+msgid "Your Comment :"
+msgstr ""
+
+msgid "Your Council Member(s)"
+msgstr ""
+
+msgid "Your Council's Score"
+msgstr ""
+
+msgid "Your Imperial Retribution has been removed by GM."
+msgstr ""
+
+msgid "Your PP is not enough to gain project(s) you selected."
+msgstr ""
+
+msgid "Your PP is not enough to perform this special operation."
+msgstr ""
+
+msgid "Your Reply"
+msgstr ""
+
+msgid "Your Score"
+msgstr ""
+
+#, c-format
+msgid "Your admiral %1$s has gained a level."
+msgstr ""
+
+msgid "Your admission has been accepted."
+msgstr ""
+
+msgid "Your admission has been rejected."
+msgstr ""
+
+#, c-format
+msgid ""
+"Your admission request has been canceled because the council %1$s disappeared."
+msgstr ""
+
+msgid "Your admission will be replied later."
+msgstr ""
+
+#, c-format
+msgid "Your attack has brought about the ruin of %1$s."
+msgstr ""
+
+#, c-format
+msgid "Your attack has brought about the ruin of %s."
+msgstr ""
+
+#, c-format
+msgid "Your bid must be at least 5% higher than the current bid."
+msgstr ""
+
+msgid "Your character is alive."
+msgstr ""
+
+msgid "Your character is too young to retire."
+msgstr ""
+
+msgid "Your character was not found."
+msgstr ""
+
+#, c-format
+msgid "Your commander %1$s was killed by someone's spy."
+msgstr ""
+
+msgid "Your concentration mode has been changed a spy action."
+msgstr ""
+
+msgid "Your concentration mode has been changed by a project."
+msgstr ""
+
+msgid "Your concentration mode has been changed by an event."
+msgstr ""
+
+msgid "Your concentration mode has changed."
+msgstr ""
+
+msgid "Your council can't send that kind of message because of the punishment."
+msgstr ""
+
+#, c-format
+msgid "Your council conquered %1$s council."
+msgstr ""
+
+#, c-format
+msgid "Your council distributed %1$s PP to you."
+msgstr ""
+
+#, c-format
+msgid "Your council doesn't have a message with ID %1$s."
+msgstr ""
+
+msgid "Your council doesn't have such an admission request."
+msgstr ""
+
+#, c-format
+msgid ""
+"Your council give the compensation for total war(%1$sPP) to %2$s council."
+msgstr ""
+
+#, c-format
+msgid "Your council give the compensation for war(%1$sPP) to %2$s council."
+msgstr ""
+
+msgid "Your council has a supremacy council already."
+msgstr ""
+
+#, c-format
+msgid "Your council has been conquered by %1$s council."
+msgstr ""
+
+#, c-format
+msgid "Your council has broken the alliance with %1$s council."
+msgstr ""
+
+#, c-format
+msgid "Your council has broken the pact with %1$s council."
+msgstr ""
+
+#, c-format
+msgid "Your council has declared total war against %1$s."
+msgstr ""
+
+#, c-format
+msgid "Your council has declared war against %1$s."
+msgstr ""
+
+#, c-format
+msgid ""
+"Your council has grown weary of the war with %1$s and agrees to a temporary "
+"ceasefire after %2$s hours."
+msgstr ""
+
+#, c-format
+msgid "Your council has less PP than %1$s PP."
+msgstr ""
+
+#, c-format
+msgid "Your council has no relationship with %1$s's council."
+msgstr ""
+
+#, c-format
+msgid "Your council has released %1$s council."
+msgstr ""
+
+msgid "Your council is full."
+msgstr ""
+
+#, c-format
+msgid "Your council is not at war or total war with %1$s's council."
+msgstr ""
+
+#, c-format
+msgid "Your council is released under rule of %1$s council"
+msgstr ""
+
+#, c-format
+msgid ""
+"Your council received the compensation(%1$s PP) for the total war with %2$s "
+"council."
+msgstr ""
+
+#, c-format
+msgid ""
+"Your council received the compensation(%1$s PP) for the war with %2$s council."
+msgstr ""
+
+#, c-format
+msgid "Your council relationship with %1$s council has become \"%2$s\"."
+msgstr ""
+
+msgid ""
+"Your council sent merge offer to a certain council or has merge offer from "
+"it, but it doesn't exist anymore."
+msgstr ""
+
+#, c-format
+msgid "Your council shares no clusters with the council %1$s."
+msgstr ""
+
+#, c-format
+msgid ""
+"Your council suggested the council %1$s to merge the 2 councils or has merge "
+"offer from it already."
+msgstr ""
+
+#, c-format
+msgid "Your council's honor has become %1$s by your breach of faith."
+msgstr ""
+
+#, c-format
+msgid "Your council, %1$s, has been created. The slogan is \"%2$s\"."
+msgstr ""
+
+msgid "Your current preferences:"
+msgstr ""
+
+#, c-format
+msgid "Your deactivated fleet %1$s is activated."
+msgstr ""
+
+#, c-format
+msgid "Your destruction of %s has pleased the empire greatly"
+msgstr ""
+
+#, c-format
+msgid "Your fleet %1$s has found a new planet!"
+msgstr ""
+
+#, c-format
+msgid "Your fleet %1$s has returned from a mission."
+msgstr ""
+
+#, c-format
+msgid "Your fleet %1$s has returned from the ally %2$s."
+msgstr ""
+
+#, c-format
+msgid "Your fleet %1$s has returned from the ally."
+msgstr ""
+
+#, c-format
+msgid ""
+"Your fleet %1$s has returned from the mission 'Patrol on the Planet %2$s'."
+msgstr ""
+
+#, c-format
+msgid "Your fleet %1$s has returned from the mission 'Patrol'."
+msgstr ""
+
+#, c-format
+msgid "Your fleet %1$s has returned with a new planet."
+msgstr ""
+
+#, c-format
+msgid ""
+"Your fleet %1$s has returned without doing anything because you have not "
+"given any commands in 2 turns."
+msgstr ""
+
+#, c-format
+msgid "Your fleet %1$s is severely damaged."
+msgstr ""
+
+#, c-format
+msgid ""
+"Your fleet %1$s lost %2$d ship(s), send %3$d ship(s) to repair bay, and %4$d "
+"ships are replenished to your fleet."
+msgstr ""
+
+msgid "Your fleet had critical damage from the ground counterattack."
+msgstr ""
+
+msgid "Your fleet has been destroyed completely."
+msgstr ""
+
+#, c-format
+msgid "Your fleet(s) arrived at %1$s."
+msgstr ""
+
+#, c-format
+msgid "Your fleet(s) arrived at the Empire's planet(#%1$s)."
+msgstr ""
+
+#, c-format
+msgid "Your fleet(s) arrived at the magistrate in the cluster (#%1$s)."
+msgstr ""
+
+#, c-format
+msgid "Your fleet(s) arrived on %1$s's orbit."
+msgstr ""
+
+#, c-format
+msgid "Your fleet(s) has been dispatched to the planet %1$s."
+msgstr ""
+
+msgid "Your fleet(s) started detecting enemy fleets."
+msgstr ""
+
+#, c-format
+msgid ""
+"Your fleet(s) will detect and interpret enemy invasion,<BR>and dispel special "
+"operations and privateers on %1$s."
+msgstr ""
+
+msgid "Your home planet cannot be destroyed"
+msgstr ""
+
+#, c-format
+msgid "Your honor has become %1$s by your breach of faith."
+msgstr ""
+
+#, c-format
+msgid "Your planet %1$s has gained %2$s k people."
+msgstr ""
+
+#, c-format
+msgid "Your planet %1$s has gained the gravity control center."
+msgstr ""
+
+#, c-format
+msgid "Your planet %1$s has lost %2$s k people."
+msgstr ""
+
+#, c-format
+msgid "Your planet %1$s has lost the gravity control center."
+msgstr ""
+
+#, c-format
+msgid "Your planet %1$s is now paralyzed for %2$d turns by someone's spy."
+msgstr ""
+
+#, c-format
+msgid "Your privateer is detected by %1$s."
+msgstr ""
+
+msgid ""
+"Your race has evolved greatly since the days of the progenitors. Even with "
+"the high quality of your memory storage devices, you have trouble remembering "
+"who they were. You remember only their original directive. You do not "
+"remember the purpose of this directive, only your portion in its "
+"accomplishment. After a careful analysis of your situation, you determine "
+"there is one initial sub-task you must complete first if you wish to "
+"accomplish your directive. You need more rescources."
+msgstr ""
+
+msgid "Your race has no racial modifiers."
+msgstr ""
+
+#, c-format
+msgid "Your raid was detected by %1$s."
+msgstr ""
+
+#, c-format
+msgid "Your relationship with %1$s has become \"%2$s\"."
+msgstr ""
+
+msgid "Your relationship with the Empire has become worse."
+msgstr ""
+
+msgid "Your relationship with the Empire has been improved."
+msgstr ""
+
+msgid "Your secret information has been drained by someone!"
+msgstr ""
+
+#, c-format
+msgid "Your security level has changed from \"%1$s\" to \"%2$s\"."
+msgstr ""
+
+msgid "Your security level hasn't changed."
+msgstr ""
+
+msgid "Your selected fleet has set out on a expedition to the deep space."
+msgstr ""
+
+msgid ""
+"Your selected fleet may find a new planet on its trip,<BR>or may encounter "
+"some strange events."
+msgstr ""
+
+msgid ""
+"Your selected fleet(s) enter(s) the training process. Each fleet will gain %2"
+"$d experiance per turn and the admiral will gain %3$d per turn. These fleets "
+"may be recalled at any time."
+msgstr ""
+
+#, c-format
+msgid "Your selected fleet(s) has been sent to patrol the planet %1$s."
+msgstr ""
+
+#, c-format
+msgid "Your selected fleet(s) has been sent to your ally %1$s."
+msgstr ""
+
+msgid ""
+"Your ship pool has suffered from a massive explosion and all your ships and "
+"fleets were destroyed.<BR>\n"
+msgstr ""
+
+msgid ""
+"Your spy could blame someone, but he couldn't find any candidate. Anyway it "
+"was successful!"
+msgstr ""
+
+msgid ""
+"Your spy couldn't even attempt the action because of strong security systems."
+msgstr ""
+
+msgid "Your spy couldn't find any commander."
+msgstr ""
+
+#, c-format
+msgid "Your spy was successful, and %1$s lost %2$d accumulated RP."
+msgstr ""
+
+msgid "Your spy was successful, but it was of no effect."
+msgstr ""
+
+msgid "Your spy was successful. The report is below:"
+msgstr ""
+
+#, c-format
+msgid "Your tech %1$s has been stolen by someone's spy!"
+msgstr ""
+
+msgid "[Admin Main]"
+msgstr ""
+
+msgid "[Admission Request]"
+msgstr ""
+
+msgid "[Battle Report]"
+msgstr ""
+
+msgid "[Black Market Control]"
+msgstr ""
+
+msgid "[Blockade]"
+msgstr ""
+
+msgid "[Bribe]"
+msgstr ""
+
+msgid "[Clusters]"
+msgstr ""
+
+msgid "[Concentration Mode]"
+msgstr ""
+
+msgid "[Council Diplomacy]"
+msgstr ""
+
+msgid "[Council Main]"
+msgstr ""
+
+msgid "[Council Vote]"
+msgstr ""
+
+msgid "[Defense Plan]"
+msgstr ""
+
+msgid "[Diplomacy Main]"
+msgstr ""
+
+msgid "[Diplomacy Status List]"
+msgstr ""
+
+msgid "[Disband]"
+msgstr ""
+
+msgid "[Domestic Main]"
+msgstr ""
+
+msgid "[Donation]"
+msgstr ""
+
+msgid "[Empire Diplomacy]"
+msgstr ""
+
+msgid "[Expedition]"
+msgstr ""
+
+msgid "[Fleet Commander]"
+msgstr ""
+
+msgid "[Fleet Main]"
+msgstr ""
+
+msgid "[Form a New Fleet]"
+msgstr ""
+
+msgid "[Independence Declaration]"
+msgstr ""
+
+msgid "[Info Main]"
+msgstr ""
+
+msgid "[Inspect Other Player]"
+msgstr ""
+
+msgid "[Inspection]"
+msgstr ""
+
+msgid "[Invade Empire]"
+msgstr ""
+
+msgid "[Leaser's Office]"
+msgstr ""
+
+msgid "[Mission]"
+msgstr ""
+
+msgid "[Modify Config]"
+msgstr ""
+
+msgid "[Officer's Lounge]"
+msgstr ""
+
+msgid "[Planet Management]"
+msgstr ""
+
+msgid "[Player Admission]"
+msgstr ""
+
+msgid "[Privateer]"
+msgstr ""
+
+msgid "[Project]"
+msgstr ""
+
+msgid "[Raid]"
+msgstr ""
+
+msgid "[Ranking]"
+msgstr ""
+
+msgid "[Rare Goods Officer]"
+msgstr ""
+
+msgid "[Read Message]"
+msgstr ""
+
+msgid "[Reassignment]"
+msgstr ""
+
+msgid "[Recall]"
+msgstr ""
+
+msgid "[Request Boon]"
+msgstr ""
+
+msgid "[Request Mediation]"
+msgstr ""
+
+msgid "[Research]"
+msgstr ""
+
+msgid "[Restriction Control]"
+msgstr ""
+
+msgid "[Send Message]"
+msgstr ""
+
+msgid "[Server] ConfigFile = /Config/File is not specified"
+msgstr ""
+
+msgid "[Server] ConfigTempFile = /Config/Temp/File is not specified"
+msgstr ""
+
+msgid "[Ship Building]"
+msgstr ""
+
+msgid "[Ship Design]"
+msgstr ""
+
+msgid "[Ship Pool]"
+msgstr ""
+
+msgid "[Siege Planet]"
+msgstr ""
+
+msgid "[Speaker Menu]"
+msgstr ""
+
+msgid "[Special Operation]"
+msgstr ""
+
+msgid "[The Fleet Deck]"
+msgstr ""
+
+msgid "[The Tech Deck]"
+msgstr ""
+
+msgid "[War Main]"
+msgstr ""
+
+msgid "[Whitebook]"
+msgstr ""
+
+msgid "a"
+msgstr ""
+
+#, c-format
+msgid "all accumulated invested PP on %1$s"
+msgstr ""
+
+msgid "b"
+msgstr ""
+
+msgid "cancel"
+msgstr ""
+
+msgid "confirm"
+msgstr ""
+
+msgid "does not grant access"
+msgstr ""
+
+msgid "http://www.magellanwars.com/board/viewtopic.php?t=16235"
+msgstr ""
+
+msgid "min"
+msgstr ""
+
+msgid "n"
+msgstr ""
+
+msgid "ok"
+msgstr ""

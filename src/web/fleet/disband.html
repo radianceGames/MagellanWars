@@ -1,0 +1,140 @@
+<HTML>
+
+
+<!--~=========================== DOCUMENT HEADER ===========================~-->
+<HEAD>
+    <TITLE>*********ARCHSPACE************</TITLE>
+    <META http-equiv=Content-Type content="text/html; $CHAR_SET">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+<LINK REL="stylesheet" HREF="/archspace.css">
+<SCRIPT LANGUAGE=javascript>
+var flag = true;
+
+function allCheck()
+{
+  var i;
+
+  if (flag == true)
+  {
+    for(i=0; i<document.fleet.elements.length; i++)
+    {
+      document.fleet.elements[i].checked = true;
+      flag = false;
+    }
+  }
+  else if (flag == false)
+  {
+    for(i=0; i<document.fleet.elements.length; i++)
+    {
+      document.fleet.elements[i].checked = false;
+      flag = true;
+    }
+  }
+}
+</SCRIPT>
+</HEAD>
+<!--~========================= END DOCUMENT HEADER =========================~-->
+
+
+
+<BODY bgcolor=#000000 style=margin:0; marginwidth=0 marginheight=0 link=#999999 vlink=#999999 alink=#999999 onLoad="MM_preloadImages('$IMAGE_SERVER_URL/image/as_game/bu_helpen.gif')">
+
+
+<FORM name=fleet method=post action=/archspace/fleet/disband_confirm.as>
+<TABLE width=610 border=0 cellspacing=0 cellpadding=0>
+  <TR>
+    <TD>
+      <TABLE width=590 border=0 cellspacing=0 cellpadding=0 height=100 bgcolor=#000000 align=center>
+        <TR align=center valign=middle>
+          <TD>
+            $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD rowspan=2 align=center>
+      <TABLE width=550 border=0 cellspacing=0 cellpadding=0>
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext">
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG src=$SMALL_RACE_IMAGE align=absmiddle> $RACE_NAME &nbsp;&nbsp;&nbsp;&nbsp; $PRODUCT_POINT
+              &nbsp;&nbsp;&nbsp;&nbsp; $PLANET_COUNT &nbsp;&nbsp;&nbsp;&nbsp; $NET_POWER
+            </DIV>
+          </TD>
+          <!--HELP BUTTON-->
+         </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR> </TR>
+  <TR>
+    <TD>
+      <P>&nbsp; </P>
+    </TD>
+  </TR>
+  <TR>
+    <TD class=maintext align=center></TD>
+  </TR>
+  <TR>
+    <TD align=center height=18> <IMG SRC="$IMAGE_SERVER_URL/image/as_game/fleet/disband_title.gif"></TD>
+  </TR>
+  <TR>
+    <TD align=center>
+      <P>&nbsp; </P>
+    </TD>
+  </TR>
+  <TR>
+    <TH align=center CLASS="maintext" HEIGHT="25">$STRING_FLEET_STATUS</TH>
+  </TR>
+  <TR>
+    <TD align=center CLASS="maintext">
+      $FLEETS
+    </TD>
+  </TR>
+  <TR>
+    <TD align=center>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD align=center>
+      <INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_disband.gif" WIDTH=68 HEIGHT=11 BORDER=0>
+    </TD>
+  </TR>
+  <TR>
+    <TD align=center>
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN=center CLASS="maintext">
+      <A HREF="fleet.as">$FLEET_MAIN</A> <A HREF="ship_design.as">$SHIP_DESIGN</A> <A HREF="ship_building.as">$SHIP_BUILDING</A> <A HREF="fleet_commander.as">$FLEET_COMMANDER</A> <A HREF="ship_pool.as">$SHIP_POOL</A> <BR> <A HREF="form_new_fleet.as">$FORM_NEW_FLEET</A> <A HREF="reassignment.as">$REASSIGNMENT</A> <A HREF="expedition.as">$EXPEDITION</A> <A HREF="mission.as">$MISSION</A> <A HREF="recall.as">$RECALL</A> <FONT COLOR="616161">$DISBAND</FONT>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            <CENTER>
+				$ADLINE_BOTTOM
+            </CENTER>
+            </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+</TABLE>
+</FORM>
+
+<P>&nbsp;</P>
+</BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</HTML>

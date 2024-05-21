@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>*********ARCHSPACE************</title>
+<meta http-equiv="Content-Type" content="text/html; $CHAR_SET">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<SCRIPT TYPE="text/javascript" LANGUAGE=javascript SRC=/jsLib.js></SCRIPT>
+<LINK REL="stylesheet" HREF="/archspace.css">
+</head>
+
+<body bgcolor="#000000" style="margin:0;" marginwidth="0" marginheight="0" link="#999999" vlink="#999999" alink="#999999" onLoad="MM_preloadImages('$IMAGE_SERVER_URL/image/as_game/bu_helpen.gif')">
+<TABLE WIDTH="610" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            $ADLINE
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <TABLE WIDTH=550 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+        <TR BGCOLOR=$RACE_BG_COLOR>
+          <TD CLASS="maintext">
+            <DIV ALIGN="CENTER" CLASS="white"> <IMG SRC=$SMALL_RACE_IMAGE ALIGN=absmiddle>$RACE_NAME&nbsp;&nbsp;&nbsp;&nbsp;$PRODUCT_POINT
+              &nbsp;&nbsp;&nbsp;&nbsp;$PLANET_COUNT&nbsp;&nbsp;&nbsp;&nbsp;$NET_POWER
+            </DIV>
+          </TD>
+          <!--HELP BUTTON-->
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center"></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" HEIGHT="18"><IMG SRC="$IMAGE_SERVER_URL/image/as_game/fleet/defense_plan_title.gif" WIDTH="439" HEIGHT="41">
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <FORM METHOD=post ACTION=defense_plan_generic_deployment.as>
+  <TR>
+    <TD ALIGN="center" class="maintext">
+  	$PREFERENCE_PREFIX <SELECT NAME=CHANGE_PREF>
+  	$SELECT_OPTIONS
+  	</SELECT>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      <P>&nbsp;</P>
+    </TD>
+  </TR>
+  <TR>
+    <TH ALIGN="center" CLASS="maintext" HEIGHT="25">$SELECT_FLEET_MESSAGE</TH>
+  </TR>
+  <TR>
+    <TD ALIGN="center">
+      $FLEET_LIST
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center"> </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center">&nbsp; </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="center" CLASS="maintext">
+      <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+        <TR VALIGN="bottom">
+          <TD><IMG SRC="$IMAGE_SERVER_URL/image/as_game/bu_done1.gif"><INPUT TYPE=image SRC="$IMAGE_SERVER_URL/image/as_game/bu_ok1.gif" WIDTH="49" HEIGHT="44" BORDER="0"></TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  </FORM>
+  <TR>
+    <TD ALIGN="center" HEIGHT="18">&nbsp; </TD>
+  </TR>
+  <TR>
+    <TD CLASS="maintext" ALIGN="center"> <A HREF="war.as">$WAR_MAIN</A> <A HREF="siege_planet.as">$SIEGE_PLANET</A> <A HREF="blockade.as">$BLOCKADE</A> <A HREF="raid.as">$RAID</A> <A HREF="privateer.as">$PRIVATEER</A> <FONT COLOR="616161">$DEFENSE_PLAN</FONT> <A HREF="battle_report.as">$BATTLE_REPORT</A></TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE  WIDTH=590 BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="100" BGCOLOR="#000000" ALIGN="center">
+        <TR ALIGN="center" VALIGN="middle">
+          <TD>
+            <CENTER>
+				$ADLINE_BOTTOM
+            </CENTER>
+            </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+</TABLE>
+<P>&nbsp;</P>
+</BODY><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-278580-1";urchinTracker();</script>
+</html>

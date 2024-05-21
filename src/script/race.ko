@@ -1,0 +1,382 @@
+# Society: Classism Personalism Totalism
+# Gravity: G(real). 
+# Temperature: K(Kelvin)
+# Tech: Social, Life, Matter, Info, 직접 코드 번호
+# Control : Environment, Growth, Efficiency, Genius, Production,
+#      Facility Cost, Military, Ship Mobility, Commerce, Spy,
+#      Diplomacy, Ship Defense, Ship Attack,
+#      Research(Social, Life, Matter, Info)
+#      -: -    else: +
+# Air: H2, Cl2, CO2, O2, N2, CH4, H2O 순서로 0-5값을 사용 string 구성
+# H2=1, N2=4 ====> 1000400
+# Bonus, Penalty, Device - 나중에 번호로 변경(일단은 설정된 바가 없는
+#			  관계로 문자열)
+# Device: Space Mining Module, Psionic Barrier, 생체 장갑
+# Penalty: PSEUDOHERO
+<인간>
+{
+	Number(1),
+	Description("인간들의 수명은 아주 짧은 편이지만, 팽창기에 있는 인간들의 인구 증가는 대단히 빠르다. 그래서 다른 종족들은 인간이 세력을 확장하는 맹렬한 기세에 늘 경계를 품어왔다. 그러나 그들이 쉽게 눈치채지 못하는 인간들의 또다른 강점은 철학과 사회학을 비롯한 인문학적 성향에 있다. 쉼없이 더 나은 이상을 추구하는 정신이 다른 종족에는 없는 인간들의 역동성을 낳고 있다."),
+	Society("Classism"),
+	<Tech>
+	[
+		Number(1104),
+		Number(1105),
+		Number(1106),
+		Number(1107)
+	],
+	<Home>
+	{	
+		Air("0001400"),
+		Gravity(1),
+		Temperature(300)
+	},
+	<Control>
+	{	
+		Environment(-1),
+		Growth(2),
+		Efficiency(-1),
+		Genius(2),
+		Research Social(3)
+	},
+	<Fleet>
+	{
+		Survival(5)
+	}
+},
+
+<타고이드>
+{
+	Number(2),
+	Description("타고이드는 하나의 모체에서 종족의 모든 개체가 탄생하고 모체에 의해 제어받는 전체주의 사회를 유지한다. 그들의 모체는 종족의 유전자를 완전히 컨트롤할 수 있어 새로운 개체들을 그것이 사용될 용도에 따라 합목적적으로 변형시켜 출산한다. 이것은 그들의 생명체가 생쥐만한 마이크로 노동자에서 2km길이의 전투생물까지 다양하다는 것을 뜻한다. 타고이드의 일꾼들은 극히 능률적으로 자원을 채집하고 시설을 건설하는 것으로 유명하다."),
+	Society("Totalism"),
+	<Tech>
+	[
+		Number(1404),
+		Number(1405),
+		Number(1406)
+	],
+	<Home>
+	{	
+		Air("0010310"),
+		Gravity(1.2),
+		Temperature(340)
+	},
+	<Control>
+	{	
+		Growth(2),
+		Production(2),
+		Facility Cost(4),
+		Research(-1)
+	},
+	<Ability>
+	{
+		Ability("Genetic Engineering Specialist"),
+		Ability("Fragile Mind Structure"),
+		Ability("Great Spawning Pool")
+	},
+	<Fleet>
+	{
+		Berserk(5),
+		Survival(-5)
+	}
+},
+
+<버캐니어>
+{
+	Number(3),
+	Description("우주선이 버캐니어들의 고향이자 삶의 기반이다. 그들은 인생의 대부분을 우주를 방랑하며 교역이나 (가끔은) 해적행위를 통해 행운을 구하며 보낸다. 버캐니어들은 이런 생활에 익숙하기 때문에 그들의 함대는 기민하게 움직이며 쉽게 추적당하지도 않는다. 버캐니어 상인들은 무역에 도움을 주기 위한 나름의 정보망과 조직을 갖추고 있어서 은하의 상권을 거의 독점하고 있다. 그들의 함선에는 오랜 우주생활을 가능하도록 하기 위해 내부에 물자 생산시설을 구축해 놓은 경우가 많다."),
+	Society("Personalism"),
+	<Home>
+	{	
+		Air("0200300"),
+		Gravity(0.7),
+		Temperature(270)
+	},
+	<Control>
+	{	
+		Growth(-1),
+		Military(-2),
+#		Ship Mobility(3),
+		Commerce(3)
+	},
+	<Ability>
+	{
+		Ability("Fast Maneuver"),
+		Ability("Stealth")
+	},
+	<Fleet>
+	{
+		Morale(5),
+		Survival(5)
+	}
+#	Device("Space Mining Module")
+},
+<테카노이드>
+{
+	Number(4),
+	Description("테카노이드들은 자신들의 신체에 컴퓨터와 기계를 결합함으로써 스스로 진화의 열쇠를 구하려고 했다. 그 결과로 그들 종족의 엘리트들은 강인한 육체와 초지성을 얻었다. 그러나 그 이면에는 신성(神性)을 얻지 못한 극빈한 하층계급들이 있어, 그들은 사회를 떠받치는 불안정한 기둥이 되어 있다. 그들의 뇌는 컴퓨터와 결합됨과 동시에 비약적인 정보처리 능력과 전자적인 침투 기술을 얻었지만 그 대가로 -- 인간으로 말하자면 -- 인간성의 상실을 감수해야만 했다."),
+	Society("Classism"),
+	<Tech>
+	[
+		Number(1204),
+		Number(1205),
+		Number(1206)
+	],
+	<Home>
+	{
+		Air("0021200"),
+		Gravity(1.3),
+		Temperature(240)
+	},
+	<Control>
+	{
+		Environment(2),
+		Spy(2),
+		Research Social(-2),
+		Research Info(4)
+	},
+	<Ability>
+	{
+		Ability("Information Network Specialist"),
+		Ability("Scavenger")
+	},
+	<Fleet>
+	{
+		Morale(5)
+	}
+},
+<에빈토스>
+{
+	Number(5),
+	Description("은하계의 거의 모든 종족들과는 다르게도, 에빈토스들의 신체는 규소와 금으로 이루어져 있고 그들의 신경계나 물질대사 역시 판이하다. 그래서 잊혀진 고대인의 인공 생명체가 그들의 기원이라고 믿어진다. 때문에 그들은 다른 종족들로부터 종종 배척당하곤하며, 과학이나 사회의 혁신이 어려운 경직된 사고구조를 가진 듯 하다. 그렇지만 이러한 그들의 약점은 시계처럼 정확하게 통제되는 그들의 사회조직과 높은 생산성으로 보상받는다."),
+	Society("Totalism"),
+	<Tech>
+	[
+		Number(1204),
+		Number(1205),
+		Number(1206),
+		Number(1306),
+		Number(1307),
+		Number(1308),
+		Number(1309)
+	],
+	<Home>
+	{
+		Air("0000000"),
+		Gravity(0.8),
+		Temperature(300)
+	},
+	<Control>
+	{
+		Production(3),
+		Efficiency(3),
+		Diplomacy(-2),
+		Research(-2)
+	},
+	<Ability>
+	{
+		Ability("No Breath"),
+		Ability("Efficient Investment"),
+		Ability("Downloadable Commander Experience")
+	},
+	<Fleet>
+	{
+		Morale(-5),
+		Berserk(-5)
+	}
+},
+<아게루스>
+{
+	Number(6),
+	Description("한층 더 특이한 존재인 아게루스는 '행성 생명체'라고밖에는 표현할 수 없을 것이다. 그들이 과연 지적 생명체인지조차 의심하는 학자들도 있을 정도로 아게루스와 다른 종족의 커뮤니케이션은 지금까지 거의 전혀 이루어지지 않았고, 그들의 기원도 불명확하다. 그(들)이 자신의 방어를 위해 운용하는 우주함대는 모행성에서 분리된 일종의 포자가 소행성에 이식되어 성장한 것이다. 이런 아게루스의 자식들과 자연적인 소행성을 구분하는 일은 쉬운 것이 아니다."),
+	Society("Totalism"),
+	<Tech>
+	[
+		Number(1404),
+		Number(1405),
+		Number(1406)
+	],
+	<Home>
+	{
+		Air("3000200"),
+		Gravity(1.5),
+		Temperature(370)
+	},
+	<Control>
+	{
+		Military(4),
+#		Ship Defense(4),
+		Commerce(-3),
+		Diplomacy(-3),
+		Research Life(3)
+	},
+	<Ability>
+	{
+		Ability("No Spy"),
+		Ability("Asteroid Management"),
+		Ability("Stealth")
+	},
+	<Fleet>
+	{
+		Berserk(-5),
+		Survival(-10)
+	}
+#	Penalty("PSEUDOHERO")
+#	Device("생체 장갑")
+},
+<보살리언>
+{
+	Number(7),
+	Description("보살리언들은 분쟁을 싫어하는 평화주의자이다. 그들의 고매한 철학과 공평무사함은 여러번 다른 종족과의 전쟁을 중재하기도 했으며, 그들의 의견은 언제나 많은 종족들에게서 존중을 받는다. 평화주의자라고 해서 그들이 약골이라는 뜻은 아니다. '만물은 그대의 마음에서 비롯되는 것'이라는 그들의 사상대로, 보살리언들은 초능력을 자유롭게 사용할 수 있다. 대개 그들의 강렬한 오오라는 인간처럼 시지각이 둔감한 종족조차 볼 수 있을 정도로 찬란하다."),
+	Society("Personalism"),
+	Empire(75),
+	<Tech>
+	[
+		Number(1419)
+	],
+	<Home>
+	{
+		Air("0001301"),
+		Gravity(2),
+		Temperature(350)
+	},
+	<Control>
+	{
+		Military(-2),
+#		Ship Attack(-2),
+		Diplomacy(4),
+		Research Life(2),
+		Research Social(2)
+	},
+	<Ability>
+	{
+		Ability("PSI"),
+		Ability("Diplomat"),
+		Ability("Trained Mind"),
+		Ability("Pacifist")
+	},
+	<Fleet>
+	{
+		Berserk(-5),
+		Survival(10)
+	}
+},
+<젤로스>
+{
+	Number(8),
+	Description("마젤란 은하의 붕괴에서 빠져나온 종족인 젤로스에 대해서는 그들의 광신적인 신앙에 대한 악명이 자자하다. 그들은 신의 이름 아래 이교도들을 절멸시키는 일을 서슴치않고 실행해왔다. 그들은 초능력을 이용하여 사정없이 이교도를 공격할 뿐 아니라, 종족의 개개인이 자기 보호 본능을 신을 위해 가볍게 버릴 수 있다는 사실은 젤로스 군의 무시무시한 명성에 붉은 밑줄을 긋도록 해주었다. 젤로스와 만나고 싶어하는 종족은 거의 없고, 확실히 그들은 옳다."),
+	Society("Totalism"),
+	Empire(20),
+	<Tech>
+	[
+		Number(1419)
+	],
+	<Home>
+	{
+		Air("0110300"),
+		Gravity(2),
+		Temperature(230)
+	},
+	<Control>
+	{
+		Military(2),
+		Diplomacy(-2)
+	},
+	<Ability>
+	{
+		Ability("PSI"),
+		Ability("Fanatic Fleet")
+	},
+	<Fleet>
+	{
+		Morale(-5),
+		Berserk(5),
+		Survival(-5)
+	}
+},
+<제루시언>
+{
+	Number(9),
+	Description("제루시언은 오랜 군사적 전통을 자랑한다. 그들의 군대는 비록 소수일지라도 언제나 은하계의 최정예 부대였다. 이것은 즉 그들의 화려한 군장은 속빈 강정이 아니라는 뜻이다. 또한 제루시언들은 군사적으로 즉시 응용이 가능한 물질-에너지 분야의 과학에 비상한 관심을 가지고 발전시켜왔다. 비효율적인 관료체제와 고질적인 내분으로 인한 에너지의 낭비만이 그들이 은하계를 정복하는데 장애물로 작용하고 있다. 그들이 젤로스와 오래 투쟁한 결과를 바탕으로, 초능력을 상당히 저지하는 모종의 방법을 갖고있다는 사실은 특기할 만 하다."),
+	Society("Classism"),
+	Empire(30),
+	<Tech>
+	[
+		Number(1306),
+		Number(1307),
+		Number(1308),
+		Number(1309),
+		Number(1310),
+		Number(1311),
+		Number(1312),
+		Number(1313),
+		Number(1314)
+	],
+	<Home>
+	{
+		Air("0100400"),
+		Gravity(1.4),
+		Temperature(280)
+	},
+	<Control>
+	{
+#		Ship Attack(2),
+#		Ship Defense(2),
+		Efficiency(-2),
+		Research Matter(3)
+	},
+	<Ability>
+	{
+		Ability("High Morale")
+	},
+	<Fleet>
+	{
+		Morale(-5),
+		Berserk(5)
+	}
+#	Device("Psionic Barrier")
+},
+<제스페라도스>
+{
+	Number(10),
+	Description("젤로스나 제루시언과 같이, 제스페라도스는 처음에는 마젤란 은하 붕괴시 탈출한 군소 종족들의 집합이었다. 그러나 은하계에서도 여러 군소 종족과 주도적인 종족의 이단자들이 그들의 이상을 따라 합세함으로써 무시할 수 없는 세력이 되었다. 여러 종족의 연합체라는 사실은 암약하는 다른 종족의 스파이들이나 생명유지시설의 복잡화같은 골치아픈 문제를 야기하기도 한다. 그러나 그들의 이상인 종족 상대주의와 열린 사고는 학문의 발달에 큰 자극이 되며, 이상에 불타는 많은 인재들을 끌어모으고 있다."),
+	Society("Personalism"),
+	Empire(30),
+	<Home>
+	{
+		Air("0000000"),
+		Gravity(1),
+		Temperature(300)
+	},
+	<Control>
+	{
+		Spy(-3),
+		Genius(3),
+		Facility Cost(-5),
+		Research(2)
+	},
+	<Ability>
+	{
+		Ability("No Breath")
+	}
+}
+#<타레니언>
+#{
+#	Number(11),
+#	Description("이 언제나 편안하고 낙천적인 종족은 매사에 결코 서두르는 법이 없다. 그들은 파워게임에는 관심이 없는 듯 하며, 생존을 위해 많은 자원을 주장하지도 않는다. 많은 종족들은 대체로 타레니언들을 무시하며 서로 간섭하지 않으려 (어짜피 타레니언들이 누군가를 간섭하는 일은 역사에 없다) 한다. 왜냐하면 누군가가 타레니언과 가까이 접근하면 별 이유 없이 만사가 귀찮아지는 분위기에 휩싸여 소위 Tarenize(타레니안화)되기 때문이다. 아마도 이들은 아직 규명되지 않은 종류의 초능력을 갖고 있다고 추측된다."),
+#	Society("Personalism"),
+#	<Home>
+#	{
+#		Air("0001400"),
+#		Gravity(1),
+#		Temperature(300)
+#	},
+#	<Control>
+#	{
+#		Growth(4),
+#		Production(-4),
+#		Ship Mobility(4)
+#	},
+#	Players in war with Tarenian Production(-4): Applied Once
+#}

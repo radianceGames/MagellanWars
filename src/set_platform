@@ -1,0 +1,143 @@
+#!/bin/sh
+#set -x
+
+case "$1" in
+	freebsd)
+		echo "Setting Makefile for FreeBSD....."
+
+		/bin/rm -f $PWD/libs/key/Makefile
+		/bin/rm -f $PWD/libs/cgi/Makefile
+		/bin/rm -f $PWD/libs/frame/Makefile
+		/bin/rm -f $PWD/libs/runtime/Makefile
+		/bin/rm -f $PWD/libs/net/Makefile
+		/bin/rm -f $PWD/libs/util/Makefile
+		/bin/rm -f $PWD/libs/database/Makefile
+		/bin/rm -f $PWD/apps/archspace/Makefile
+		/bin/rm -f $PWD/libs/Makefile
+		/bin/rm -f $PWD/apps/archspace/msg/Makefile
+
+		/bin/ln -s $PWD/libs/key/Makefile.FreeBSD $PWD/libs/key/Makefile
+		/bin/ln -s $PWD/libs/cgi/Makefile.FreeBSD $PWD/libs/cgi/Makefile
+		/bin/ln -s $PWD/libs/frame/Makefile.FreeBSD $PWD/libs/frame/Makefile
+		/bin/ln -s $PWD/libs/runtime/Makefile.FreeBSD $PWD/libs/runtime/Makefile
+		/bin/ln -s $PWD/libs/net/Makefile.FreeBSD $PWD/libs/net/Makefile
+		/bin/ln -s $PWD/libs/database/Makefile.FreeBSD $PWD/libs/database/Makefile
+		/bin/ln -s $PWD/libs/util/Makefile.FreeBSD $PWD/libs/util/Makefile
+		/bin/ln -s $PWD/apps/archspace/Makefile.FreeBSD $PWD/apps/archspace/Makefile
+		/bin/ln -s $PWD/libs/Makefile.FreeBSD $PWD/libs/Makefile
+		echo "The job has finished"
+	;;
+	
+	linux)
+		echo "Setting Makefile for Linux....."
+
+		/bin/rm -f $PWD/libs/key/Makefile
+		/bin/rm -f $PWD/libs/cgi/Makefile
+		/bin/rm -f $PWD/libs/frame/Makefile
+		/bin/rm -f $PWD/libs/runtime/Makefile
+		/bin/rm -f $PWD/libs/net/Makefile
+		/bin/rm -f $PWD/libs/util/Makefile
+		/bin/rm -f $PWD/libs/database/Makefile
+		/bin/rm -f $PWD/apps/archspace/Makefile
+		/bin/rm -f $PWD/libs/Makefile
+		/bin/rm -f $PWD/apps/archspace/msg/Makefile
+
+		/bin/ln -s $PWD/libs/key/Makefile.Linux $PWD/libs/key/Makefile
+		/bin/ln -s $PWD/libs/cgi/Makefile.Linux $PWD/libs/cgi/Makefile
+		/bin/ln -s $PWD/libs/frame/Makefile.Linux $PWD/libs/frame/Makefile
+		/bin/ln -s $PWD/libs/runtime/Makefile.Linux $PWD/libs/runtime/Makefile
+		/bin/ln -s $PWD/libs/net/Makefile.Linux $PWD/libs/net/Makefile
+		/bin/ln -s $PWD/libs/database/Makefile.Linux $PWD/libs/database/Makefile
+		/bin/ln -s $PWD/libs/util/Makefile.Linux $PWD/libs/util/Makefile
+		/bin/ln -s $PWD/apps/archspace/Makefile.Linux $PWD/apps/archspace/Makefile
+		/bin/ln -s $PWD/libs/Makefile.Linux $PWD/libs/Makefile
+		/bin/ln -s $PWD/apps/archspace/msg/Makefile.Linux $PWD/apps/archspace/msg/Makefile
+		echo "The job has finished"
+	;;
+
+	solaris)
+		echo "Setting Makefile for Solaris....."
+
+		/bin/rm -f $PWD/libs/key/Makefile
+		/bin/rm -f $PWD/libs/cgi/Makefile
+		/bin/rm -f $PWD/libs/frame/Makefile
+		/bin/rm -f $PWD/libs/runtime/Makefile
+		/bin/rm -f $PWD/libs/net/Makefile
+		/bin/rm -f $PWD/libs/util/Makefile
+		/bin/rm -f $PWD/libs/database/Makefile
+		/bin/rm -f $PWD/apps/archspace/Makefile
+		/bin/rm -f $PWD/libs/Makefile
+		/bin/rm -f $PWD/apps/archspace/msg/Makefile
+
+		/bin/ln -s $PWD/libs/key/Makefile.Solaris $PWD/libs/key/Makefile
+		/bin/ln -s $PWD/libs/cgi/Makefile.Solaris $PWD/libs/cgi/Makefile
+		/bin/ln -s $PWD/libs/frame/Makefile.Solaris $PWD/libs/frame/Makefile
+		/bin/ln -s $PWD/libs/runtime/Makefile.Solaris $PWD/libs/runtime/Makefile
+		/bin/ln -s $PWD/libs/net/Makefile.Solaris $PWD/libs/net/Makefile
+		/bin/ln -s $PWD/libs/database/Makefile.Solaris $PWD/libs/database/Makefile
+		/bin/ln -s $PWD/libs/util/Makefile.Solaris $PWD/libs/util/Makefile
+		/bin/ln -s $PWD/apps/archspace/Makefile.Solaris $PWD/apps/archspace/Makefile
+		/bin/ln -s $PWD/libs/Makefile.Solaris $PWD/libs/Makefile
+		echo "The job has finished"
+	;;
+
+	optimized)
+		echo "Setting Makefile for Linux Optimized....."
+
+		/bin/rm -f $PWD/libs/key/Makefile
+		/bin/rm -f $PWD/libs/cgi/Makefile
+		/bin/rm -f $PWD/libs/frame/Makefile
+		/bin/rm -f $PWD/libs/runtime/Makefile
+		/bin/rm -f $PWD/libs/net/Makefile
+		/bin/rm -f $PWD/libs/util/Makefile
+		/bin/rm -f $PWD/libs/database/Makefile
+		/bin/rm -f $PWD/apps/archspace/Makefile
+		/bin/rm -f $PWD/libs/Makefile
+		/bin/rm -f $PWD/apps/archspace/msg/Makefile
+
+		/bin/ln -s $PWD/libs/key/Makefile.Optimized $PWD/libs/key/Makefile
+		/bin/ln -s $PWD/libs/cgi/Makefile.Optimized $PWD/libs/cgi/Makefile
+		/bin/ln -s $PWD/libs/frame/Makefile.Optimized $PWD/libs/frame/Makefile
+		/bin/ln -s $PWD/libs/runtime/Makefile.Optimized $PWD/libs/runtime/Makefile
+		/bin/ln -s $PWD/libs/net/Makefile.Optimized $PWD/libs/net/Makefile
+		/bin/ln -s $PWD/libs/database/Makefile.Optimized $PWD/libs/database/Makefile
+		/bin/ln -s $PWD/libs/util/Makefile.Optimized $PWD/libs/util/Makefile
+		/bin/ln -s $PWD/apps/archspace/Makefile.Optimized $PWD/apps/archspace/Makefile
+		/bin/ln -s $PWD/libs/Makefile.Optimized $PWD/libs/Makefile
+		/bin/ln -s $PWD/apps/archspace/msg/Makefile.Optimized $PWD/apps/archspace/msg/Makefile
+		echo "The job has finished"
+	;;
+
+	Mindwarper)
+		echo "Setting Makefile for Mindwarper....."
+
+		/bin/rm -f $PWD/libs/key/Makefile
+		/bin/rm -f $PWD/libs/cgi/Makefile
+		/bin/rm -f $PWD/libs/frame/Makefile
+		/bin/rm -f $PWD/libs/runtime/Makefile
+		/bin/rm -f $PWD/libs/net/Makefile
+		/bin/rm -f $PWD/libs/util/Makefile
+		/bin/rm -f $PWD/libs/database/Makefile
+		/bin/rm -f $PWD/apps/archspace/Makefile
+		/bin/rm -f $PWD/libs/Makefile
+		/bin/rm -f $PWD/apps/archspace/msg/Makefile
+
+		/bin/ln -s $PWD/libs/key/Makefile.Mindwarper $PWD/libs/key/Makefile
+		/bin/ln -s $PWD/libs/cgi/Makefile.Mindwarper $PWD/libs/cgi/Makefile
+		/bin/ln -s $PWD/libs/frame/Makefile.Mindwarper $PWD/libs/frame/Makefile
+		/bin/ln -s $PWD/libs/runtime/Makefile.Mindwarper $PWD/libs/runtime/Makefile
+		/bin/ln -s $PWD/libs/net/Makefile.Mindwarper $PWD/libs/net/Makefile
+		/bin/ln -s $PWD/libs/database/Makefile.Mindwarper $PWD/libs/database/Makefile
+		/bin/ln -s $PWD/libs/util/Makefile.Mindwarper $PWD/libs/util/Makefile
+		/bin/ln -s $PWD/apps/archspace/Makefile.Mindwarper $PWD/apps/archspace/Makefile
+		/bin/ln -s $PWD/libs/Makefile.Mindwarper $PWD/libs/Makefile
+		/bin/ln -s $PWD/apps/archspace/msg/Makefile.Mindwarper $PWD/apps/archspace/msg/Makefile
+		echo "The job has finished"
+	;;
+
+	*)
+		echo "Unknown platform symbol!"
+	;;
+esac
+
+exit

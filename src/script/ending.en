@@ -1,0 +1,168 @@
+#ending
+
+<Human Ending Mk.I>
+{
+	Number(9001),
+	<Condition>
+	{
+#Ultimate Truth
+		Tech(1131),
+#University of Past, Present, and Future
+		Project(7020),
+		Planet(10),
+		Cluster(3),
+		CommanderLevel(10)
+	},
+	Project(7201),
+#Human
+	Race(1),
+	Description("Human race has taken many pains for millennia looking for a solution to the construction of Utopia. Finally human race succeeded in developing a computer with transcendental ability. Many questions were thrown at it upon coming out. When it was finally asked for the solution to the ultimate truth, life and space, it gave out the answer 'Forty Two.' (Special thanks to: Douglas Adams, who now travels in other space.)")
+},
+<Evintos Ending Mk.I>
+{
+	Number(9002),
+	<Condition>
+	{
+#Oracle Computing
+		Tech(1225),
+		Planet(10),
+		Cluster(2),
+		Fleet(20),
+		Council(4),
+	},
+	Project(7202),
+#Evintos
+	Race(5),
+	Description("For a race whose everyday life consisted of seclusion at the outer part of the Empire along with lifeless production and disassembly, your contact with carbon-based life form resulted in a massive load of information. To adapt and compete in this Galaxy, you are mandated to fortify the strength of the race, which originates from the Creators of Evintos. Other than that, there doesn't seem to be much of a chance of survival.")
+},
+<Xesperados Ending Mk.I>
+{
+	Number(9003),
+	<Condition>
+	{
+		TechAll(0),
+		RP(30000),
+		DAequalORless(10),
+		Planet(5),
+	},
+	Project(7203),
+#Xesperados
+	Race(10),
+	Description("Technological achievement during the past have given your race the confidence, and bought envy from many a race as well. However, there isn't much of a progress recently, with labs that can't publish the research progress. Many scientists worry that current science and technology have hit the plateau finally. Possibly, by the acquisition of the lost results of Trabotulins in the past, this problem can be solved, they hope. You will have to challenge the Empire for this, of course.")
+},
+<Tecanoid Ending Mk.I>
+{
+	Number(9004),
+	<Condition>
+	{
+#Oracle Computing
+		Tech(1225),
+#Ultimate Truth
+		Tech2(1131),
+		Planet(10),
+		Efficiency(5)
+	},
+	Project(7204),
+#Tecanoid
+	Race(4),
+	Description("By the ultimate progress of engineering, your race have reached the status of demi god. You are stronger, more intelligent than many other barbarians, and even better yet, you all can sustain your lives practically for eternity. Who more deserves the throne of this Galaxy than you? You carefully start crafting the plans to advance to the throne at Caput Mundi, the Imperial Capital.")
+},
+<Bosalian Ending Mk.I>
+{
+	Number(9005),
+	<Condition>
+	{
+#Ultimate Truth
+		Tech(1131),
+		HaveTitle(0),
+		NoWarInCouncil(0),
+		DAgreater(50)
+	},
+	Project(7205),
+#Bosalian
+	Race(7),
+	Description("You finally stop your meditation. You realized that, in this endless pan-galactic chaos, every effort till these days to lead the multitude to the path of truth and out of the wheels of karma was but wasted. To protect the good, and to cast light upon the path to the truth, you must vanquish whoever that stops you.")
+},
+<Xerusian Ending Mk.I>
+{
+	Number(9006),
+	<Condition>
+	{
+#Permanent Engine
+		Tech(1336),
+		HaveDoomstar(1),
+#Nova Plant
+		CouncilProject(7024),
+		DA(0)
+	},
+	Project(7206),
+#Xerusian
+	Race(9),
+	Description("3・ 2・ 1・ Fire! Silent, yet excited atmosphere surrounds the scientists, staring down the experiment from their lab afar. Ultra-powerful Energy rays out of the test warship just disposed the target down to molecular level. This weapon, utilizing the Permanent Engine, is named \"Nahodoom,\" and will render the futile resistance of the aboriginal creatures in the new world quite hopeless and useless - if they can miniaturize this beast, that is.")
+},
+<Targoid Ending Mk.I>
+{
+	Number(9007),
+	<Condition>
+	{
+#Cloning
+		Tech(1411),
+		ShipPool(1000),
+		PopulationIncreasedLess(250000),
+#Military
+		ConcentrationMode(2)
+	},
+	Project(7207),
+#Targoid
+	Race(2),
+	Description("New Targoids are waiting for their hatching in the hatchery. But this planet is not enough to hatch every component - drones, soldiers or overlords. After some reflection, you decide to carry the hatching eggs to the orbital cryostation. You once believed this space was vast enough for your race・ You start recalling the memories of close clusters, and investigating new planet to expand. Soon you order the metamorphosis of warships out of the hatching eggs.")
+},
+<Agerus Ending Mk.I>
+{
+	Number(9008),
+	<Condition>
+	{
+#Ascension
+		Tech(1426),
+		Planet(20),
+		PopulationIncreasedEqualOrMore(1000000)
+	},
+	Project(7208),
+#Agerus
+	Race(6),
+	Description("While carrying your spore to the new planet, you feel the imminent change within your body. You suddenly feel that what once was your own body structure is now a part of your greater self. Also, you suddenly feel the presence of lower-class Agerus under your command as a part of your greater self too. You have transcended the limit of organism, and became aware of the greater self and unified will.")
+},
+<Buckaneer Ending Mk.I>
+{
+	Number(9009),
+	<Condition>
+	{
+#Anarchism
+		Tech(1127),
+		Planet(5),
+		Cluster(2),
+		Fleet(20),
+	},
+	Project(7209),
+#Buckaneer
+	Race(3),
+	Description("Armed group of so-called 'citizens' came with a few heavy equipments to dismantle the Planetary Administration Building. This is the final assault of Buckaneers, who want to see what we call 'Government' forgotten into the wake of oblivion. After all, who cares about Government?  Time will pass and they will live on as a wandering tribe in the space.")
+},
+<Xeloss Ending Mk.I>
+{
+	Number(9010),
+	<Condition>
+	{
+#Thought of God
+		Tech(1130),
+#Fallen Head
+		Project(7022),
+		CouncilSpeaker(0),
+		Council(5)
+	},
+	Project(7210),
+#Xeloss
+	Race(8),
+	Description("Pan-denominational mass as that of today is not what they could afford in the last few millennia. You've led your people to the Promised Land during the Judgment of Fire, and now you are selected as the Highest Priest. Now you are holding the mass, and everybody around you considers you as the much-prophesied Messiah. They're all solemnly attending the mass. You now pray to the God that Xeloss be blessed with the opportunity to settle down in the Promised Land.")
+}
+
